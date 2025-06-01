@@ -33,7 +33,11 @@ for idx, row in df.iterrows():
         predicted_label = None
         elapsed_time = 0.0
 
-    match = int(str(predicted_label).strip().replace(" ", "") == str(true_label).strip().replace(" ", ""))
+    def normalize_label(s):
+        return str(s).strip().replace("\n", "").replace(" ", "")
+
+    match = int(normalize_label(predicted_label) == normalize_label(true_label))
+    
     correct += match
     total_elapsed_time += elapsed_time
 
@@ -113,7 +117,11 @@ def evaluate_fold(test_df, system_prompt, fold_idx, prompt_type):
             predicted_label = None
             elapsed_time = 0.0
 
-        match = int(str(predicted_label).strip().replace(" ", "") == str(true_label).strip().replace(" ", ""))
+        def normalize_label(s):
+            return str(s).strip().replace("\n", "").replace(" ", "")
+
+        match = int(normalize_label(predicted_label) == normalize_label(true_label))
+        
         correct += match 
         total_elapsed_time += elapsed_time
 

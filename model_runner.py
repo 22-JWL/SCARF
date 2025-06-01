@@ -1,8 +1,9 @@
 import torch
 import time
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from prompt_combine import system_prompt
+# from prompt_combine import system_prompt
 # from prompt_only import system_prompt
+from prompt_combine_none import system_prompt
 from intent_classifier import classify_text 
 import re
 

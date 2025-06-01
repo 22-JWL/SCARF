@@ -33,7 +33,7 @@ for idx, row in df.iterrows():
         predicted_label = None
         elapsed_time = 0.0
 
-    match = int(predicted_label == true_label)
+    match = int(str(predicted_label).strip().replace(" ", "") == str(true_label).strip().replace(" ", ""))
     correct += match
     total_elapsed_time += elapsed_time
 
@@ -113,8 +113,8 @@ def evaluate_fold(test_df, system_prompt, fold_idx, prompt_type):
             predicted_label = None
             elapsed_time = 0.0
 
-        match = int(predicted_label == true_label)
-        correct += match
+        match = int(str(predicted_label).strip().replace(" ", "") == str(true_label).strip().replace(" ", ""))
+        correct += match 
         total_elapsed_time += elapsed_time
 
         category_total[cnum] += 1

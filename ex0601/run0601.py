@@ -26,7 +26,7 @@ for idx, row in df.iterrows():
     true_label = row["label"]
 
     try:
-        result = run_model(user_input)
+        result = run_model(user_input, system_prompt)
         predicted_label = result["output"]
         elapsed_time = result["elapsed_time"]
     except:
@@ -44,6 +44,8 @@ for idx, row in df.iterrows():
         irrelevant_correct += match
     else:
         complex_correct += match
+        
+    print(f"{idx}번째 처리중")
 
     results.append({
         "text": user_input,

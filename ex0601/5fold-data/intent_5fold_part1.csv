@@ -1,0 +1,49 @@
+text,label,cnum
+설정 모드로 바꿔,"switch_mode(""SETUP"")",0
+허용 오차 변경해줘,"open_settings(""change_tolerance"")",0
+검사 끄고 싶어,"open_settings(""toggle_inspection"")",0
+드라이버 업데이트 해야 해?,NO_FUNCTION,1
+모니터링 창 보여줘,open_monitor_window(),0
+레시피 복사해,"open_settings(""copy_recipe"")",0
+티칭 열고 레시피 바꿔줘,"open_teaching_window(""LGA"")
+open_settings(""change_recipe"")",2
+우리 회사 조직도 알려줘,NO_FUNCTION,1
+QFN 티칭창 열고 검사 모드로 전환해줘,"open_teaching_window(""QFN"")
+switch_mode(""RUN"")",2
+카메라 축소 해줘,"camera_live_action(""zoom_in"")",0
+내일 몇 도야?,NO_FUNCTION,1
+새 레시피 만들자,"open_settings(""create_recipe"")",0
+카메라 화면 저장해,"camera_live_action(""save_image"")",0
+오늘 환율 얼마야?,NO_FUNCTION,1
+Mapping 카메라 켜고 확대해줘,"toggle_camera_live(""Mapping"", True)
+camera_live_action(""zoom_in"")",2
+현재 창 닫아줘,close_window(),0
+Pad Pitch 보정 켜줘,"open_calibration(""Pad Pitch Calibration"")",0
+로또 번호 좀 알려줘,NO_FUNCTION,1
+탑 지그 캘리브레이션 열어,"open_calibration(""Top Jig Calibration"")",0
+검사 모드 셋업으로 바꾸고 검사 다시 시작해줘,"switch_mode(""SETUP"")
+switch_mode(""RUN"")",2
+라이브 카메라에 히스토그램 띄워,"camera_live_action(""show_gray_histogram"")",0
+Mapping 화면 키고싶어,"toggle_camera_live(""Mapping"", True)",0
+조명 설정 보고 싶어,open_light_window(),0
+주말에 뭐 했어?,NO_FUNCTION,1
+Mapping 검사 티칭을 열어,"open_teaching_window(""Mapping"")",0
+라이브 멈춰,"camera_live_action(""stop"")",0
+피자 주문할 수 있어?,NO_FUNCTION,1
+Top Jig 보정 열고 십자선 표시해,"open_calibration(""Top Jig Calibration"")
+camera_live_action(""toggle_reticle"")",2
+테이블 정보 입력창 열어,"open_settings(""set_table_info"")",0
+레시피를 복사하고 검사 ON으로 바꿔줘,"open_settings(""copy_recipe"")
+toggle_inspection(""ON"")",2
+SETUP 모드로 변경해줘,"switch_mode(""SETUP"")",0
+레시피 복사하고 색상도 변경해줘,"open_settings(""copy_recipe"")
+open_settings(""change_result_color"")",2
+검사 기록 창 열어줘,open_history_window(),0
+허용 오차 수정할래,"open_settings(""change_tolerance"")",0
+이미지 저장 방식 바꿔줘,"open_settings(""change_image_save_mode"")",0
+검사 이력 봐볼래,open_history_window(),0
+BarCode 카메라 꺼,"toggle_camera_live(""BarCode"", False)",0
+Bottom Jig 정렬 해줘,"open_calibration(""Bottom Jig Calibration"")",0
+커피 마시고 싶다,NO_FUNCTION,1
+레시피 복사하고 검사 ON으로 바꿔줘,"open_settings(""copy_recipe"")
+open_settings(""toggle_inspection"")",2

@@ -1,0 +1,49 @@
+text,label,cnum
+3 포인트 캘리브레이션 설정할래,"open_calibration(""3 Point Calibration"")",0
+조명 창 띄워줘,open_light_window(),0
+검사 기록창 열어,open_history_window(),0
+BTS 멤버가 누구야?,NO_FUNCTION,1
+검사 기록 창 열어줘,open_history_window(),0
+라이브 줌아웃 해줘,"camera_live_action(""zoom_out"")",0
+조명 설정 창 열고 디바이스 정보 입력해줘,"open_light_window()
+open_settings(""set_device_info"")",2
+한국이 언제 독립했어?,NO_FUNCTION,1
+레시피 바꾸고 이미지 저장 방식도 바꿔줘,"open_settings(""change_recipe"")
+switch_mode(""change_image_save_mode"")",2
+레시피 바꾸자,"open_settings(""change_recipe"")",0
+누가 대통령이야?,NO_FUNCTION,1
+카메라 창 최대화 해줘,"camera_live_action(""maximize_window"")",0
+히스토그램 띄워,"camera_live_action(""show_gray_histogram"")",0
+GPT가 뭔지 알아?,NO_FUNCTION,1
+테이블 정보 입력하고 이미지 저장 방식도 설정해줘,"open_settings(""set_table_info"")
+open_settings(""change_image_save_mode"")",2
+카메라 라이브 확대해줘,"camera_live_action(""zoom_in"")",0
+조명값 조정하고 싶어,open_light_window(),0
+오늘 몇 월 며칠이야?,NO_FUNCTION,1
+기록창 켜,open_history_window(),0
+바코드 카메라 켜고 그리드 표시해줘,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""display_mapping_grid"")",2
+카메라 라이브 시작해,"camera_live_action(""start"")",0
+라이브 줌 리셋,"camera_live_action(""reset_zoom"")",0
+모니터 창 켜 줘,open_monitor_window(),0
+무슨 노래 좋아해?,NO_FUNCTION,1
+레시피 삭제해줘,"open_settings(""delete_recipe"")",0
+조명값 조정하고 싶어,open_light_window(),0
+버스 시간 확인해줘,NO_FUNCTION,1
+모든 창 닫고 모니터링 창 열어줘,"close_window()
+open_monitor_window()",2
+BarCode 카메라 끄고싶어,"toggle_camera_live(""BarCode"", False)",0
+바코드 카메라 켜고 이미지 저장해,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")",2
+히스토그램 표시해줘,"camera_live_action(""show_gray_histogram"")",0
+조명 설정 창 열고 레시피도 만들거야,"open_light_window()
+open_settings(""create_recipe"")",2
+3 Point Calibration 설정 띄워줘,"open_calibration(""3 Point Calibration"")",0
+Side 라이브 켜,"toggle_camera_live(""Side"", True)",0
+현재 창을 꺼,close_window(),0
+라이브 카메라에 십자선 표시해줘,"camera_live_action(""toggle_reticle"")",0
+이 창 종료해,close_window(),0
+Setting X1 카메라 켜,"toggle_camera_live(""Setting X1"", True)",0
+고양이 사진 보여줘,NO_FUNCTION,1
+검사 OFF하고 창 닫아줘,"open_settings(""toggle_inspection"")
+close_window()",2

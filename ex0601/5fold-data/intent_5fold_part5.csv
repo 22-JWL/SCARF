@@ -1,0 +1,50 @@
+text,label,cnum
+오프셋 보여줘,"camera_live_action(""display_offset"")",0
+AllPass 모드로 검사 바꿔,"open_settings(""switch_inspection_mode"")",0
+히스토리 보여줘,open_history_window(),0
+넌 사람 아니지?,NO_FUNCTION,1
+패드 간격 설정 열어줘,"open_calibration(""Pad Pitch Calibration"")",0
+Mapping 티칭을 열어,"open_teaching_window(""Mapping"")",0
+검사 결과 색상 변경하고 창 닫아줘,"open_settings(""change_result_color"")
+close_window()",2
+퇴근 시간 언제야?,NO_FUNCTION,1
+설정창 열고 레시피 삭제해,"open_settings(""delete_recipe"")
+close_window()",2
+라이트 설정 보고싶어,open_light_window(),0
+요즘 유행하는 기술 뭐야?,NO_FUNCTION,1
+Bottom Jig 캘리브 해줘,"open_calibration(""Bottom Jig Calibration"")",0
+라이브 멈춰,"camera_live_action(""stop"")",0
+지금 몇 시야?,NO_FUNCTION,1
+티칭창 열고 테이블 정보도 입력해,"open_teaching_window(""BGA"")
+open_settings(""set_table_info"")",2
+LGA 티칭 시작하자,"open_teaching_window(""LGA"")",0
+조명 창 띄워줘,open_light_window(),0
+축구 경기 결과 알려줘,NO_FUNCTION,1
+라이브 줌인 해줘,"camera_live_action(""zoom_in"")",0
+모든 창 닫고 검사 기록 열어,"close_window()
+open_history_window()
+",2
+LGA 티칭창 열어줘,"open_teaching_window(""LGA"")",0
+상태창 띄워줘,open_monitor_window(),0
+설정 모드로 바꿔,"switch_mode(""SETUP"")",0
+복권 당첨되면 뭐할 거야?,NO_FUNCTION,1
+새 레시피 만들어줘,"open_settings(""create_recipe"")",0
+디바이스 정보 설정하자,"open_settings(""set_device_info"")",0
+졸려서 집중이 안돼,NO_FUNCTION,1
+설정 모드로 바꾸고 LGA 티칭창 열어,"switch_mode(""SETUP"")
+open_teaching_window(""LGA"")",2
+검사 시작하자 RUN 모드로,"switch_mode(""RUN"")",0
+Mapping 카메라 켜고 히스토그램 표시해줘,"toggle_camera_live(""Mapping"", True)
+camera_live_action(""show_gray_histogram"")",2
+검사 모드로 전환해줘,"switch_mode(""RUN"")",0
+검사 종료하고 설정에서 검사 OFF로 바꿔,"switch_mode(""SETUP"")
+open_settings(""toggle_inspection"")",2
+지금 창 닫아,close_window(),0
+상태창 띄워줘,open_monitor_window(),0
+조명 설정 켜줘,open_light_window(),0
+RUN 모드로 시작하자,"switch_mode(""RUN"")",0
+카메라 스크린샷 하자,"camera_live_action(""save_image"")",0
+Mapping 화면 끄고싶어,"toggle_camera_live(""Mapping"", False)",0
+AI가 세상을 바꿀까?,NO_FUNCTION,1
+패드 간격 조정하고 검사시작할거야,"open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")",2

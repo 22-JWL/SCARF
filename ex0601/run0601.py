@@ -10,16 +10,15 @@ results = []
 correct = 0
 total_elapsed_time = 0.0  # 응답 시간 누적 변수
 
-# 범주별 카운터 (100개 기준: 일반 60, 관련 없음 20, 복합 20)
-general_total = 60
-irrelevant_total = 20
-complex_total = 20
-
+# 범주별 카운터
 general_correct = 0
-irrelevant_correct = 0
-complex_correct = 0
+general_total = 120
 
-wrong_predictions = []  # 틀린 예측 모음
+irrelevant_correct = 0
+irrelevant_total = 40  # 121~160
+
+complex_correct = 0
+complex_total = 40  # 161~200
 
 # 2. 모델 실행 및 정답 비교
 for idx, row in df.iterrows():
@@ -38,20 +37,13 @@ for idx, row in df.iterrows():
     correct += match
     total_elapsed_time += elapsed_time
 
-    # 범주별 정답 카운트 (순서: 일반 0~59, 관련 없음 60~79, 복합 80~99)
-    if idx < 60:
+    # 범주별 정답 카운트
+    if idx < 120:
         general_correct += match
-    elif idx < 80:
+    elif idx < 160:
         irrelevant_correct += match
     else:
         complex_correct += match
-
-    if not match:
-        wrong_predictions.append({
-            "input": user_input,
-            "label": true_label,
-            "output": predicted_label
-        })
 
     results.append({
         "text": user_input,
@@ -74,16 +66,11 @@ complex_percent = round(complex_correct / complex_total * 100, 2)
 avg_response_time = round(total_elapsed_time / total, 3)
 
 print(f"✅ 전체 정확도: {correct}/{total} ({accuracy_percent}%)")
-print(f"  └ 일반 질의 (1~60): {general_correct}/{general_total} ({general_percent}%)")
-print(f"  └ 관련 없는 질의 (61~80): {irrelevant_correct}/{irrelevant_total} ({irrelevant_percent}%)")
-print(f"  └ 복합 질의 (81~100): {complex_correct}/{complex_total} ({complex_percent}%)")
+print(f"  └ 일반 질의 (1~120): {general_correct}/{general_total} ({general_percent}%)")
+print(f"  └ 관련 없는 질의 (121~160): {irrelevant_correct}/{irrelevant_total} ({irrelevant_percent}%)")
+print(f"  └ 복합 질의 (161~200): {complex_correct}/{complex_total} ({complex_percent}%)")
 print(f"총 응답 시간: {round(total_elapsed_time, 2)}초")
 print(f"평균 응답 시간: {avg_response_time}초")
-
-# 5. 틀린 예측 출력 (프롬프트용)
-print("\n❌ 틀린 예측 목록:")
-for item in wrong_predictions:
-    print(f"입력: {item['input']}\n 출력: {item['label']}\n")
     
     
 #===============================================================================ex2===============================================================================

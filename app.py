@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restx import Api, Resource, fields
 from model_runner import run_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
+import requests
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
@@ -38,7 +39,16 @@ class Instruct(Resource):
         """사용자 명령어를 입력받아 함수 호출 형식으로 응답"""
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
-        return run_model(user_input, model_name)
+        result = run_model(user_input, model_name)
+
+        api_url = f"http://localhost:5555{result["output"]}"
+        try:
+            response = requests.get(api_url)
+            # 필요하면 써
+        except Exception as err:
+            print(err)
+
+        return result
 
 
 # Intent 분류 namespace

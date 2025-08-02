@@ -1,0 +1,57 @@
+﻿text,label,generated_label,match,elapsed_time,cnum
+지금 창 닫아줘,close_window(),close_window(),1,0.16823,0
+PRS 카메라 라이브 켜줘,"toggle_camera_live(""PRS"", True)","toggle_camera_live(""PRS"", True)",1,0.32687,0
+히스토리 보여줘,open_history_window(),open_history_window(),1,0.22064,0
+영어로 검사 모드가 뭐야?,NO_FUNCTION,NO_FUNCTION,1,0.19636,1
+모든 창 닫아,close_window(),close_window(),1,0.17201,0
+라이브 정지,"camera_live_action(""stop"")","camera_live_action(""stop"")",1,0.28336,0
+Pad Pitch 보정 열고 검사 모드로 바꿔줘,"open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")","open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")",1,0.44791,2
+요즘 주식 어때?,NO_FUNCTION,NO_FUNCTION,1,0.18957,1
+Mapping 카메라 라이브 끄고 오프셋 표시해줘,"toggle_camera_live(""Mapping"", False)
+camera_live_action(""display_offset"")","toggle_camera_live(""Mapping"", False)
+camera_live_action(""display_offset"")",1,0.55745,2
+카메라 십자선 표시,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.38777,0
+감자랑 고구마 중 뭐가 좋아?,NO_FUNCTION,NO_FUNCTION,1,0.19445,1
+테이블 정보 입력,"open_settings(""set_table_info"")","open_settings(""set_table_info"")",1,0.32867,0
+레시피 복사하자,"open_settings(""copy_recipe"")","open_settings(""copy_recipe"")",1,0.31044,0
+좋아하는 색 있어?,NO_FUNCTION,NO_FUNCTION,1,0.19317,1
+레시피 바꾸고 자동 삭제 주기도 설정해줘,"open_settings(""change_recipe"")
+change_settings(""change_auto_delete_period"")","open_settings(""change_recipe"")
+open_settings(""change_auto_delete_period"")",0,0.55905,2
+시스템 상태 보고싶어,open_monitor_window(),open_monitor_window(),1,0.21154,0
+검사 이력 봐볼래,open_history_window(),open_history_window(),1,0.22629,0
+이 시스템 말고 다른 것도 있어?,NO_FUNCTION,NO_FUNCTION,1,0.19802,1
+창 최대화 해줘,"camera_live_action(""maximize_window"")","camera_live_action(""maximize_window"")",1,0.37171,0
+설정창 닫고 히스토리 창 열어줘,"close_window()
+open_history_window()","close_window()
+open_history_window()",1,0.34547,2
+맵핑 화면 켜줘,"toggle_camera_live(""Mapping"", True)","toggle_camera_live(""Mapping"", True)",1,0.31819,0
+Top Jig 캘리브레이션 열어,"open_calibration(""Top Jig Calibration"")","open_calibration(""Top Jig Calibration"")",1,0.3491,0
+라이브 저장,"camera_live_action(""save_image"")","camera_live_action(""save_image"")",1,0.34024,0
+책 추천해줘,NO_FUNCTION,NO_FUNCTION,1,0.20588,1
+SETUP 모드로 변경해줘,"switch_mode(""SETUP"")","switch_mode(""SETUP"")",1,0.23091,0
+히스토그램 띄워,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.42656,0
+넷플릭스 추천해줘,NO_FUNCTION,NO_FUNCTION,1,0.19413,1
+설정 모드로 바꾸고 BGA 티칭창 열어줘,"switch_mode(""SETUP"")
+open_teaching_window(""BGA"")","switch_mode(""SETUP"")
+open_teaching_window(""BGA"")",1,0.50207,2
+매핑 그리드도 표시해,"camera_live_action(""display_mapping_grid"")","camera_live_action(""display_mapping_grid"")",1,0.39515,0
+바코드 카메라 켜고 이미지 저장해,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")",1,0.59096,2
+검사 모드를 AllPass로 바꾸고 싶어,"open_settings(""switch_inspection_mode"")","switch_mode(""AllPass"")",0,0.24121,0
+LGA 티칭창 열고 허용 오차 바꿔줘,"open_teaching_window(""LGA"")
+open_settings(""change_tolerance"")","open_teaching_window(""LGA"")
+change_tolerance()",0,0.47341,2
+카메라 라이브 시작해,"camera_live_action(""start"")","camera_live_action(""start"")",1,0.28898,0
+십자선 표시해줘,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.37313,0
+Mapping 화면 꺼줘,"toggle_camera_live(""Mapping"", False)","toggle_camera_live(""Mapping"", False)",1,0.31893,0
+오프셋 보여줘,"camera_live_action(""display_offset"")",display_offset,0,0.20712,0
+검사 기록창 열어줘,open_history_window(),open_history_window(),1,0.21588,0
+카메라 확대 초기화 해줘,"camera_live_action(""reset_zoom"")","camera_live_action(""reset_zoom"")",1,0.33618,0
+점심 뭐 먹었어?,NO_FUNCTION,NO_FUNCTION,1,0.18976,1
+세팅 카메라 열고 십자선 표시도 해줘,"camera_live_action(""toggle_reticle"")
+toggle_camera_live(""Setting X1"", True)","open_settings(""open_camera_settings"")
+camera_live_action(""toggle_reticle"")",0,0.65898,2

@@ -1,0 +1,57 @@
+﻿text,label,generated_label,match,elapsed_time,cnum
+3 포인트 캘리브레이션 설정할래,"open_calibration(""3 Point Calibration"")","open_calibration(""3 Point Calibration"")",1,0.32376,0
+조명 창 띄워줘,open_light_window(),open_light_window(),1,0.21767,0
+검사 기록창 열어,open_history_window(),open_history_window(),1,0.22068,0
+BTS 멤버가 누구야?,NO_FUNCTION,NO_FUNCTION,1,0.21125,1
+검사 기록 창 열어줘,open_history_window(),open_history_window(),1,0.25605,0
+라이브 줌아웃 해줘,"camera_live_action(""zoom_out"")","camera_live_action(""zoom_out"")",1,0.33154,0
+조명 설정 창 열고 디바이스 정보 입력해줘,"open_light_window()
+open_settings(""set_device_info"")","open_light_window()
+open_settings(""set_device_info"")",1,0.54164,2
+한국이 언제 독립했어?,NO_FUNCTION,NO_FUNCTION,1,0.19126,1
+레시피 바꾸고 이미지 저장 방식도 바꿔줘,"open_settings(""change_recipe"")
+switch_mode(""change_image_save_mode"")","open_settings(""change_recipe"")
+open_settings(""change_image_save_mode"")",0,0.57868,2
+레시피 바꾸자,"open_settings(""change_recipe"")","open_settings(""change_recipe"")",1,0.34175,0
+누가 대통령이야?,NO_FUNCTION,NO_FUNCTION,1,0.19235,1
+카메라 창 최대화 해줘,"camera_live_action(""maximize_window"")","camera_live_action(""maximize_window"")",1,0.38746,0
+히스토그램 띄워,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.45677,0
+GPT가 뭔지 알아?,NO_FUNCTION,NO_FUNCTION,1,0.19634,1
+테이블 정보 입력하고 이미지 저장 방식도 설정해줘,"open_settings(""set_table_info"")
+open_settings(""change_image_save_mode"")","open_settings(""set_table_info"")
+open_settings(""change_image_save_mode"")",1,0.67519,2
+카메라 라이브 확대해줘,"camera_live_action(""zoom_in"")","camera_live_action(""zoom_in"")",1,0.33279,0
+조명값 조정하고 싶어,open_light_window(),open_light_window(),1,0.20829,0
+오늘 몇 월 며칠이야?,NO_FUNCTION,NO_FUNCTION,1,0.18738,1
+기록창 켜,open_history_window(),open_history_window(),1,0.20731,0
+바코드 카메라 켜고 그리드 표시해줘,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""display_mapping_grid"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""display_mapping_grid"")",1,0.64108,2
+카메라 라이브 시작해,"camera_live_action(""start"")","camera_live_action(""start"")",1,0.28414,0
+라이브 줌 리셋,"camera_live_action(""reset_zoom"")","camera_live_action(""reset_zoom"")",1,0.32867,0
+모니터 창 켜 줘,open_monitor_window(),open_monitor_window(),1,0.21064,0
+무슨 노래 좋아해?,NO_FUNCTION,NO_FUNCTION,1,0.18713,1
+레시피 삭제해줘,"open_settings(""delete_recipe"")","open_settings(""delete_recipe"")",1,0.33033,0
+조명값 조정하고 싶어,open_light_window(),open_light_window(),1,0.20761,0
+버스 시간 확인해줘,NO_FUNCTION,NO_FUNCTION,1,0.19427,1
+모든 창 닫고 모니터링 창 열어줘,"close_window()
+open_monitor_window()","close_window()
+open_monitor_window()",1,0.33704,2
+BarCode 카메라 끄고싶어,"toggle_camera_live(""BarCode"", False)","toggle_camera_live(""BarCode"", False)",1,0.32788,0
+바코드 카메라 켜고 이미지 저장해,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")",1,0.56093,2
+히스토그램 표시해줘,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.40629,0
+조명 설정 창 열고 레시피도 만들거야,"open_light_window()
+open_settings(""create_recipe"")","open_light_window()
+open_settings(""create_recipe"")",1,0.43892,2
+3 Point Calibration 설정 띄워줘,"open_calibration(""3 Point Calibration"")","open_calibration(""3 Point Calibration"")",1,0.32462,0
+Side 라이브 켜,"toggle_camera_live(""Side"", True)","toggle_camera_live(""Side"", True)",1,0.31801,0
+현재 창을 꺼,close_window(),close_window(),1,0.17374,0
+라이브 카메라에 십자선 표시해줘,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.37366,0
+이 창 종료해,close_window(),close_window(),1,0.17445,0
+Setting X1 카메라 켜,"toggle_camera_live(""Setting X1"", True)","toggle_camera_live(""Setting X1"", True)",1,0.36471,0
+고양이 사진 보여줘,NO_FUNCTION,NO_FUNCTION,1,0.20209,1
+검사 OFF하고 창 닫아줘,"open_settings(""toggle_inspection"")
+close_window()","switch_mode(""SETUP"")
+close_window()",0,0.36062,2

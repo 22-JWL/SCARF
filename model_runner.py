@@ -94,7 +94,9 @@ def run_model(prompt: str, model_name: str):
     elapsed_time = round(end - start, 5)
 
     decoded_output = current_tokenizer.decode(output[0], skip_special_tokens=True)
-    assistant_only = extract_assistant_response(decoded_output)
+    #assistant_only = extract_assistant_response(decoded_output)
+    assistant_only = decoded_output.split('[|assistant|]')[1].strip().strip("\n").strip("`")
+    print(assistant_only)
     allocated, reserved = get_gpu_memory()
 
     return {

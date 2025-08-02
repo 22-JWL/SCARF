@@ -1,0 +1,285 @@
+﻿text,label,generated_label,match,elapsed_time
+매핑 그리드도 표시해,"camera_live_action(""display_mapping_grid"")","camera_live_action(""display_mapping_grid"")",1,0.75276
+오프셋 보여줘,"camera_live_action(""display_offset"")",display_offset,0,0.19066
+오프셋 보여줘,"camera_live_action(""display_offset"")",display_offset,0,0.19306
+오프셋 보여줘,"camera_live_action(""display_offset"")",display_offset,0,0.19263
+창 최대화 해줘,"camera_live_action(""maximize_window"")","camera_live_action(""maximize_window"")",1,0.3689
+카메라 창 최대화 해줘,"camera_live_action(""maximize_window"")","camera_live_action(""maximize_window"")",1,0.36199
+카메라 확대 초기화 해줘,"camera_live_action(""reset_zoom"")","camera_live_action(""reset_zoom"")",1,0.32838
+라이브 줌 리셋,"camera_live_action(""reset_zoom"")","camera_live_action(""reset_zoom"")",1,0.32537
+카메라 화면 저장해,"camera_live_action(""save_image"")","camera_live_action(""save_image"")",1,0.32927
+카메라 스크린샷 하자,"camera_live_action(""save_image"")","camera_live_action(""save_image"")",1,0.32844
+라이브 저장,"camera_live_action(""save_image"")","camera_live_action(""save_image"")",1,0.33074
+히스토그램 띄워,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.40989
+라이브 카메라에 히스토그램 띄워,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.39978
+히스토그램 띄워,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.40079
+히스토그램 표시해줘,"camera_live_action(""show_gray_histogram"")","camera_live_action(""show_gray_histogram"")",1,0.40815
+카메라 라이브 시작해,"camera_live_action(""start"")","camera_live_action(""start"")",1,0.29443
+카메라 라이브 시작해,"camera_live_action(""start"")","camera_live_action(""start"")",1,0.29249
+라이브 멈춰,"camera_live_action(""stop"")","camera_live_action(""stop"")",1,0.29363
+라이브 멈춰,"camera_live_action(""stop"")","camera_live_action(""stop"")",1,0.29034
+라이브 정지,"camera_live_action(""stop"")","camera_live_action(""stop"")",1,0.29952
+십자선 표시해줘,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.36185
+라이브 카메라에 십자선 표시해줘,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.37442
+카메라 십자선 표시,"camera_live_action(""toggle_reticle"")","camera_live_action(""toggle_reticle"")",1,0.36606
+십자선 켜,"camera_live_action(""toggle_reticle"")","toggle_camera_live(""Mapping"", True)
+camera_live_action(""toggle_reticle"")",0,0.6652
+카메라 축소 해줘,"camera_live_action(""zoom_in"")","camera_live_action(""zoom_out"")",0,0.34513
+카메라 라이브 확대해줘,"camera_live_action(""zoom_in"")","camera_live_action(""zoom_in"")",1,0.33501
+라이브 줌인 해줘,"camera_live_action(""zoom_in"")","camera_live_action(""zoom_in"")",1,0.32405
+라이브 줌아웃 해줘,"camera_live_action(""zoom_out"")","camera_live_action(""zoom_out"")",1,0.33172
+카메라 창 최대화 해줘,camera_live_action(maximize_window),"camera_live_action(""maximize_window"")",0,0.37258
+지금 창 닫아줘,close_window(),close_window(),1,0.16961
+이 창 종료해,close_window(),close_window(),1,0.17225
+모든 창 닫아,close_window(),close_window(),1,0.17464
+현재 창을 꺼,close_window(),close_window(),1,0.17188
+현재 창 닫아줘,close_window(),close_window(),1,0.17035
+지금 창 닫아,close_window(),close_window(),1,0.17033
+3 Point Calibration 설정 띄워줘,"open_calibration(""3 Point Calibration"")","open_calibration(""3 Point Calibration"")",1,0.30712
+3 Point Calibration 설정 띄워줘,"open_calibration(""3 Point Calibration"")","open_calibration(""3 Point Calibration"")",1,0.31303
+3 포인트 캘리브레이션 설정할래,"open_calibration(""3 Point Calibration"")","open_calibration(""3 Point Calibration"")",1,0.3143
+Bottom Jig 정렬 해줘,"open_calibration(""Bottom Jig Calibration"")","open_calibration(""Bottom Jig Calibration"")",1,0.32967
+Bottom Jig 캘리브 해줘,"open_calibration(""Bottom Jig Calibration"")","open_calibration(""Bottom Jig Calibration"")",1,0.32972
+Pad Pitch 보정 바꿔,"open_calibration(""Pad Pitch Calibration"")","open_calibration(""Pad Pitch Calibration"")",1,0.30613
+Pad Pitch 보정 켜줘,"open_calibration(""Pad Pitch Calibration"")","open_calibration(""Pad Pitch Calibration"")",1,0.30615
+패드 간격 설정 열어줘,"open_calibration(""Pad Pitch Calibration"")","open_calibration(""Pad Pitch Calibration"")",1,0.31343
+Top Jig 캘리브레이션 열어,"open_calibration(""Top Jig Calibration"")","open_calibration(""Top Jig Calibration"")",1,0.32085
+탑 지그 캘리브레이션 열어,"open_calibration(""Top Jig Calibration"")","open_calibration(""Top Jig Calibration"")",1,0.33198
+검사 기록 창 열어줘,open_history_window(),open_history_window(),1,0.24844
+히스토리 보여줘,open_history_window(),open_history_window(),1,0.21637
+기록창 켜,open_history_window(),open_history_window(),1,0.22248
+검사 이력 봐볼래,open_history_window(),open_history_window(),1,0.21011
+검사 기록 창 열어줘,open_history_window(),open_history_window(),1,0.2559
+히스토리 보여줘,open_history_window(),open_history_window(),1,0.22741
+기록창 켜,open_history_window(),open_history_window(),1,0.2142
+검사 이력 봐볼래,open_history_window(),open_history_window(),1,0.21054
+검사 기록창 열어줘,open_history_window(),open_history_window(),1,0.22099
+검사 기록창 열어,open_history_window(),open_history_window(),1,0.21143
+조명 설정 열어,open_light_window(),open_light_window(),1,0.68612
+라이트 설정 보고싶어,open_light_window(),open_light_window(),1,0.22445
+조명 창 띄워줘,open_light_window(),open_light_window(),1,0.32193
+조명값 조정하고 싶어,open_light_window(),open_light_window(),1,0.20816
+조명 설정 열어,open_light_window(),open_light_window(),1,0.20727
+라이트 설정창 켜,open_light_window(),open_light_window(),1,0.76844
+조명 창 띄워줘,open_light_window(),open_light_window(),1,0.21557
+조명값 조정하고 싶어,open_light_window(),open_light_window(),1,0.21618
+조명 설정 켜줘,open_light_window(),open_light_window(),1,0.21377
+조명 설정 보고 싶어,open_light_window(),open_light_window(),1,0.20884
+모니터링 창 보여줘,open_monitor_window(),open_monitor_window(),1,0.20746
+시스템 모니터링 하고싶어,open_monitor_window(),open_monitor_window(),1,0.20574
+상태창 띄워줘,open_monitor_window(),open_monitor_window(),1,0.2102
+모니터링 창 보여줘,open_monitor_window(),open_monitor_window(),1,0.20956
+시스템 상태 보고싶어,open_monitor_window(),open_monitor_window(),1,0.20657
+모니터 열어줘,open_monitor_window(),open_monitor_window(),1,0.20534
+상태창 띄워줘,open_monitor_window(),open_monitor_window(),1,0.20619
+시스템 모니터 열어줘,open_monitor_window(),open_monitor_window(),1,0.20591
+모니터 창 켜 줘,open_monitor_window(),open_monitor_window(),1,0.20632
+이미지 자동삭제 주기 바꿔,"open_settings(""change_auto_delete_period"")",change_auto_delete_period,0,0.3167
+이미지 저장 방식 바꿔줘,"open_settings(""change_image_save_mode"")","open_settings(""change_image_save_mode"")",1,0.37632
+이미지 저장 방식 바꾸자,"open_settings(""change_image_save_mode"")","open_settings(""change_image_save_mode"")",1,0.36066
+레시피 변경할래,"open_settings(""change_recipe"")","open_settings(""change_recipe"")",1,0.26605
+레시피 바꾸자,"open_settings(""change_recipe"")","open_settings(""change_recipe"")",1,0.31447
+검사 결과 색상 바꾸고 싶어,"open_settings(""change_result_color"")",change_result_color(),0,0.25078
+결과 색상 바꾸자,"open_settings(""change_result_color"")",change_result_color,0,0.22903
+허용 오차 변경해줘,"open_settings(""change_tolerance"")",change_tolerance,0,0.23513
+허용 오차 수정할래,"open_settings(""change_tolerance"")",change_tolerance,0,0.2368
+레시피 복사해,"open_settings(""copy_recipe"")","open_settings(""copy_recipe"")",1,0.30925
+레시피 복사하자,"open_settings(""copy_recipe"")","open_settings(""copy_recipe"")",1,0.30879
+새 레시피 만들자,"open_settings(""create_recipe"")","open_settings(""create_recipe"")",1,0.31011
+새 레시피 만들어줘,"open_settings(""create_recipe"")","open_settings(""create_recipe"")",1,0.31393
+레시피 삭제해줘,"open_settings(""delete_recipe"")","open_settings(""delete_recipe"")",1,0.34247
+레시피 삭제할래,"open_settings(""delete_recipe"")","open_settings(""delete_recipe"")",1,0.91875
+디바이스 정보 설정하자,"open_settings(""set_device_info"")","open_settings(""set_device_info"")",1,0.42872
+테이블 정보 입력,"open_settings(""set_table_info"")","open_settings(""set_table_info"")",1,0.36781
+테이블 정보 입력창 열어,"open_settings(""set_table_info"")","open_settings(""set_table_info"")",1,0.36136
+검사 모드를 AllPass로 바꾸고 싶어,"open_settings(""switch_inspection_mode"")","switch_mode(""AllPass"")",0,0.26918
+AllPass 모드로 검사 바꿔,"open_settings(""switch_inspection_mode"")","switch_mode(""AllPass"")",0,0.24875
+검사 끄고 싶어,"open_settings(""toggle_inspection"")","switch_mode(""SETUP"")",0,0.24614
+BGA 티칭화면 띄워줘,"open_teaching_window(""BGA"")","open_teaching_window(""BGA"")",1,0.37315
+BGA 티칭화면 띄워줘,"open_teaching_window(""BGA"")","open_teaching_window(""BGA"")",1,0.3376
+LGA 티칭창 열어줘,"open_teaching_window(""LGA"")","open_teaching_window(""LGA"")",1,0.3344
+LGA 티칭 시작하자,"open_teaching_window(""LGA"")","open_teaching_window(""LGA"")",1,0.31053
+Mapping 검사 티칭을 열어,"open_teaching_window(""Mapping"")","open_teaching_window(""Mapping"")",1,0.31332
+Mapping 티칭을 열어,"open_teaching_window(""Mapping"")","open_teaching_window(""Mapping"")",1,0.3415
+QFN 티칭 화면 열어줘,"open_teaching_window(""QFN"")","open_teaching_window(""QFN"")",1,0.38236
+검사 모드로 전환해줘,"switch_mode(""RUN"")","switch_mode(""RUN"")",1,0.21444
+RUN 모드로 시작하자,"switch_mode(""RUN"")","switch_mode(""RUN"")",1,0.20895
+검사 시작하자 RUN 모드로,"switch_mode(""RUN"")","switch_mode(""RUN"")
+switch_mode(""RUN"")",0,0.36443
+설정 모드로 바꿔,"switch_mode(""SETUP"")","switch_mode(""SETUP"")",1,0.23234
+SETUP 모드로 변경해줘,"switch_mode(""SETUP"")","switch_mode(""SETUP"")",1,0.23828
+설정 모드로 바꿔,"switch_mode(""SETUP"")","switch_mode(""SETUP"")",1,0.2332
+SETUP 모드로 변경해줘,"switch_mode(""SETUP"")","switch_mode(""SETUP"")",1,0.231
+BarCode 카메라 끄고싶어,"toggle_camera_live(""BarCode"", False)","toggle_camera_live(""BarCode"", False)",1,0.33345
+BarCode 카메라 꺼,"toggle_camera_live(""BarCode"", False)","toggle_camera_live(""BarCode"", False)",1,0.33678
+Mapping 화면 끄고싶어,"toggle_camera_live(""Mapping"", False)","toggle_camera_live(""Mapping"", False)",1,0.31264
+Mapping 화면 꺼줘,"toggle_camera_live(""Mapping"", False)","toggle_camera_live(""Mapping"", False)",1,0.3007
+Mapping 화면 키고싶어,"toggle_camera_live(""Mapping"", True)","toggle_camera_live(""Mapping"", True)",1,0.30735
+맵핑 화면 켜줘,"toggle_camera_live(""Mapping"", True)","toggle_camera_live(""Mapping"", True)",1,0.30901
+PRS 카메라 켜,"toggle_camera_live(""PRS"", True)","toggle_camera_live(""PRS"", True)",1,0.32923
+PRS 카메라 라이브 켜줘,"toggle_camera_live(""PRS"", True)","toggle_camera_live(""PRS"", True)",1,0.32559
+Setting X1 카메라 켜,"toggle_camera_live(""Setting X1"", True)","toggle_camera_live(""Setting X1"", True)",1,0.34616
+Setting X2 꺼줘,"toggle_camera_live(""Setting X2"", False)","toggle_camera_live(""Setting X2"", False)",1,0.36869
+Side 라이브 켜,"toggle_camera_live(""Side"", True)","toggle_camera_live(""Side"", True)",1,0.30923
+오늘 날씨 어때?,NO_FUNCTION,NO_FUNCTION,1,0.19999
+점심 뭐 먹었어?,NO_FUNCTION,NO_FUNCTION,1,0.19043
+주말에 뭐 했어?,NO_FUNCTION,NO_FUNCTION,1,0.19753
+음악 좀 틀어줘,NO_FUNCTION,NO_FUNCTION,1,0.20059
+축구 경기 결과 알려줘,NO_FUNCTION,NO_FUNCTION,1,0.21069
+커피 마시고 싶다,NO_FUNCTION,NO_FUNCTION,1,0.19177
+요즘 유행하는 기술 뭐야?,NO_FUNCTION,NO_FUNCTION,1,0.19293
+GPT가 뭔지 알아?,NO_FUNCTION,NO_FUNCTION,1,0.19943
+우리 회사 조직도 알려줘,NO_FUNCTION,NO_FUNCTION,1,0.20133
+BTS 멤버가 누구야?,NO_FUNCTION,NO_FUNCTION,1,0.20138
+넷플릭스 추천해줘,NO_FUNCTION,NO_FUNCTION,1,0.2071
+고양이 사진 보여줘,NO_FUNCTION,NO_FUNCTION,1,0.20884
+내일 몇 도야?,NO_FUNCTION,NO_FUNCTION,1,0.20486
+영어로 검사 모드가 뭐야?,NO_FUNCTION,NO_FUNCTION,1,0.20382
+좋아하는 색 있어?,NO_FUNCTION,NO_FUNCTION,1,0.2004
+이 시스템 말고 다른 것도 있어?,NO_FUNCTION,NO_FUNCTION,1,0.19606
+오늘 몇 월 며칠이야?,NO_FUNCTION,NO_FUNCTION,1,0.19572
+한국이 언제 독립했어?,NO_FUNCTION,NO_FUNCTION,1,0.21324
+졸려서 집중이 안돼,NO_FUNCTION,NO_FUNCTION,1,0.19775
+로또 번호 좀 알려줘,NO_FUNCTION,NO_FUNCTION,1,0.22288
+오늘 환율 얼마야?,NO_FUNCTION,NO_FUNCTION,1,0.20356
+AI가 세상을 바꿀까?,NO_FUNCTION,NO_FUNCTION,1,0.19977
+영화 예매 좀 해줘,NO_FUNCTION,NO_FUNCTION,1,0.19283
+피자 주문할 수 있어?,NO_FUNCTION,NO_FUNCTION,1,0.18905
+요즘 주식 어때?,NO_FUNCTION,NO_FUNCTION,1,0.18808
+드라이버 업데이트 해야 해?,NO_FUNCTION,NO_FUNCTION,1,0.18887
+넌 어디서 만들어졌어?,NO_FUNCTION,NO_FUNCTION,1,0.19193
+감자랑 고구마 중 뭐가 좋아?,NO_FUNCTION,NO_FUNCTION,1,0.19011
+비가 올 것 같아,NO_FUNCTION,NO_FUNCTION,1,0.18827
+유튜브 틀어줘,NO_FUNCTION,NO_FUNCTION,1,0.19244
+무슨 노래 좋아해?,NO_FUNCTION,NO_FUNCTION,1,0.19345
+일기 예보 좀 알려줘,NO_FUNCTION,NO_FUNCTION,1,0.18958
+버스 시간 확인해줘,NO_FUNCTION,NO_FUNCTION,1,0.19871
+퇴근 시간 언제야?,NO_FUNCTION,NO_FUNCTION,1,0.20274
+넌 사람 아니지?,NO_FUNCTION,NO_FUNCTION,1,0.18891
+복권 당첨되면 뭐할 거야?,NO_FUNCTION,NO_FUNCTION,1,0.19094
+책 추천해줘,NO_FUNCTION,NO_FUNCTION,1,0.18987
+누가 대통령이야?,NO_FUNCTION,NO_FUNCTION,1,0.1894
+지금 몇 시야?,NO_FUNCTION,NO_FUNCTION,1,0.19155
+피곤해 죽겠어,NO_FUNCTION,NO_FUNCTION,1,0.18797
+QFN 검사 티칭 모드로 바꿔,"open_teaching_window(""QFN"")
+switch_mode(""RUN"")","open_teaching_window(""QFN"")
+switch_mode(""SETUP"")
+open_settings(""switch_inspection_mode"")",0,0.70798
+설정 모드로 바꾸고 BGA 티칭창 열어줘,"switch_mode(""SETUP"")
+open_teaching_window(""BGA"")","switch_mode(""SETUP"")
+open_teaching_window(""BGA"")",1,0.45389
+티칭 열고 레시피 바꿔줘,"open_teaching_window(""LGA"")
+open_settings(""change_recipe"")","open_teaching_window(""LGA"")
+open_settings(""change_recipe"")",1,0.50736
+매핑 카메라 켜고 라이브 화면 확대해줘,"toggle_camera_live(""Mapping"", True)
+camera_live_action(""zoom_in"")","toggle_camera_live(""Mapping"", True)
+camera_live_action(""zoom_in"")",1,0.54997
+검사 종료하고 설정에서 검사 OFF로 바꿔,"switch_mode(""SETUP"")
+open_settings(""toggle_inspection"")","switch_mode(""SETUP"")
+toggle_inspection(""OFF"")",0,0.4293
+Top Jig 보정 열고 십자선 표시해,"open_calibration(""Top Jig Calibration"")
+camera_live_action(""toggle_reticle"")","open_calibration(""Top Jig Calibration"")
+camera_live_action(""toggle_reticle"")",1,0.64631
+모든 창 닫고 검사 기록 열어,"close_window()
+open_history_window()
+","close_window()
+open_history_window()",1,0.3454
+레시피 바꾸고 이미지 저장 방식도 바꿔줘,"open_settings(""change_recipe"")
+switch_mode(""change_image_save_mode"")","open_settings(""change_recipe"")
+open_settings(""change_image_save_mode"")",0,0.5691
+레시피를 복사하고 검사 ON으로 바꿔줘,"open_settings(""copy_recipe"")
+toggle_inspection(""ON"")","open_settings(""copy_recipe"")
+open_settings(""toggle_inspection"")",0,0.59334
+테이블 정보 입력하고 이미지 저장 방식도 설정해줘,"open_settings(""set_table_info"")
+open_settings(""change_image_save_mode"")","open_settings(""set_table_info"")
+open_settings(""change_image_save_mode"")",1,0.63971
+세팅 카메라 열고 십자선 표시도 해줘,"camera_live_action(""toggle_reticle"")
+toggle_camera_live(""Setting X1"", True)","open_settings(""open_camera_settings"")
+camera_live_action(""toggle_reticle"")",0,0.65575
+모든 창 닫고 모니터링 창 열어줘,"close_window()
+open_monitor_window()","close_window()
+open_monitor_window()",1,0.33373
+검사 모드 셋업으로 바꾸고 검사 다시 시작해줘,"switch_mode(""SETUP"")
+switch_mode(""RUN"")","switch_mode(""SETUP"")
+switch_mode(""RUN"")",1,0.40077
+레시피 바꾸고 자동 삭제 주기도 설정해줘,"open_settings(""change_recipe"")
+change_settings(""change_auto_delete_period"")","open_settings(""change_recipe"")
+open_settings(""change_auto_delete_period"")",0,0.54064
+Mapping 카메라 라이브 끄고 오프셋 표시해줘,"toggle_camera_live(""Mapping"", False)
+camera_live_action(""display_offset"")","toggle_camera_live(""Mapping"", False)
+camera_live_action(""display_offset"")",1,0.53156
+LGA 티칭창 열고 허용 오차 바꿔줘,"open_teaching_window(""LGA"")
+open_settings(""change_tolerance"")","open_teaching_window(""LGA"")
+change_tolerance()",0,0.47479
+조명 설정 창 열고 레시피도 만들거야,"open_light_window()
+open_settings(""create_recipe"")","open_light_window()
+open_settings(""create_recipe"")",1,0.41754
+바코드 카메라 켜고 이미지 저장해,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")",1,0.55694
+패드 간격 조정하고 검사시작할거야,"open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")","open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")",1,0.41669
+레시피 복사하고 색상도 변경해줘,"open_settings(""copy_recipe"")
+open_settings(""change_result_color"")","open_settings(""copy_recipe"")
+open_settings(""change_result_color"")",1,0.57422
+QFN 티칭창 열고 검사 모드로 전환해줘,"open_teaching_window(""QFN"")
+switch_mode(""RUN"")","open_teaching_window(""QFN"")
+switch_mode(""RUN"")",1,0.44553
+설정 모드로 바꾸고 LGA 티칭창 열어,"switch_mode(""SETUP"")
+open_teaching_window(""LGA"")","switch_mode(""SETUP"")
+open_teaching_window(""LGA"")",1,0.46204
+검사창 닫고 모니터링 창 열어줘,"close_window()
+open_monitor_window()","close_window()
+open_monitor_window()",1,0.33258
+레시피 복사하고 검사 ON으로 바꿔줘,"open_settings(""copy_recipe"")
+open_settings(""toggle_inspection"")","open_settings(""copy_recipe"")
+toggle_inspection(""ON"")",0,0.54398
+바코드 카메라 켜고 이미지 저장해,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""save_image"")",1,0.5967
+Mapping 카메라 켜고 확대해줘,"toggle_camera_live(""Mapping"", True)
+camera_live_action(""zoom_in"")","toggle_camera_live(""Mapping"", True)
+camera_live_action(""zoom_in"")",1,0.54894
+검사 모드로 바꾸고 오프셋 표시해줘,"switch_mode(""RUN"")
+camera_live_action(""display_offset"")","switch_mode(""RUN"")
+toggle_camera_live(""Mapping"", True)
+display_offset """"",0,0.5963
+설정창 닫고 히스토리 창 열어줘,"close_window()
+open_history_window()","close_window()
+open_history_window()",1,0.33867
+레시피 바꾸고 자동 삭제 주기 설정해,"open_settings(""change_recipe"")
+open_settings(""change_auto_delete_period"")","open_settings(""change_recipe"")
+open_settings(""change_auto_delete_period"")",1,1.16981
+허용 오차 바꾸고 검사 모드로 전환해,"open_settings(""change_tolerance"")
+switch_mode(""RUN"")","change_tolerance()
+switch_mode(""RUN"")",0,0.57589
+조명 설정 창 열고 디바이스 정보 입력해줘,"open_light_window()
+open_settings(""set_device_info"")","open_light_window()
+open_settings(""set_device_info"")",1,0.6796
+Top Jig 보정 열고 십자선 표시해줘,"open_calibration(""Top Jig Calibration"")
+camera_live_action(""toggle_reticle"")","open_calibration(""Top Jig Calibration"")
+camera_live_action(""toggle_reticle"")",1,0.66177
+검사 OFF하고 창 닫아줘,"open_settings(""toggle_inspection"")
+close_window()","switch_mode(""SETUP"")
+close_window()",0,0.37002
+Mapping 카메라 켜고 히스토그램 표시해줘,"toggle_camera_live(""Mapping"", True)
+camera_live_action(""show_gray_histogram"")","toggle_camera_live(""Mapping"", True)
+camera_live_action(""show_gray_histogram"")",1,0.61655
+티칭창 열고 테이블 정보도 입력해,"open_teaching_window(""BGA"")
+open_settings(""set_table_info"")","open_teaching_window(""LGA"")
+open_settings(""set_table_info"")",0,0.61252
+검사 결과 색상 변경하고 창 닫아줘,"open_settings(""change_result_color"")
+close_window()","change_result_color("""")
+close_window()",0,0.43186
+Pad Pitch 보정 열고 검사 모드로 바꿔줘,"open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")","open_calibration(""Pad Pitch Calibration"")
+switch_mode(""RUN"")",1,0.42168
+바코드 카메라 켜고 그리드 표시해줘,"toggle_camera_live(""BarCode"", True)
+camera_live_action(""display_mapping_grid"")","toggle_camera_live(""BarCode"", True)
+camera_live_action(""display_mapping_grid"")",1,0.63148
+설정창 열고 레시피 삭제해,"open_settings(""delete_recipe"")
+close_window()","open_settings(""delete_recipe"")",0,0.30483
+LGA 티칭 열고 검사 시작할게,"open_teaching_window(""LGA"")
+switch_mode(""RUN"")","open_teaching_window(""LGA"")
+switch_mode(""RUN"")",1,0.44161

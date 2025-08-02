@@ -26,9 +26,42 @@ def extract_assistant_response(full_text: str) -> str:
 
     return "\n".join(clean_lines)
 
-#model_name = "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct"
+def extract_function_calls_trillion(full_text: str) -> str:
+    # 1. Trillion 스타일: 'assistant' 다음 줄부터 내용 추출
+    match = re.search(r"assistant\s*\n(.+)", full_text, re.DOTALL)
+    if not match:
+        return full_text.strip()
+
+    assistant_text = match.group(1).strip()
+
+    # 2. 코드 블록 제거 (```python ... ``` 등)
+    assistant_text = re.sub(r"```(?:python)?\s*(.*?)```", r"\1", assistant_text, flags=re.DOTALL)
+
+    # 3. 줄별로 함수 호출만 추출
+    lines = assistant_text.splitlines()
+    pattern = r"^[a-zA-Z_][a-zA-Z0-9_]*\s*\(.*?\)$"  # 함수명(인자) 형태
+    clean_lines = [line.strip(" `\"'") for line in lines if re.match(pattern, line.strip(" `\"'"))]
+
+    return "\n".join(clean_lines)
+
+# def extract_assistant_response(text: str) -> str:
+#     match = re.search(r"\[\|assistant\|\](.+)", text, re.DOTALL)
+#     if match:
+#         assistant_text = match.group(1).strip()
+#     else:
+#         match2 = re.search(r"assistant\s*\n(.+)", text, re.DOTALL)
+#         if match2:
+#             assistant_text = match2.group(1).strip()
+#         else:
+#             assistant_text = text.strip()
+#     assistant_text = assistant_text.strip(" `")
+#     pattern = r"[a-zA-Z_]+\([^\)]*\)"
+#     calls = re.findall(pattern, assistant_text)
+#     return "\n".join(calls) if calls else ""
+
+model_name = "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct"
 #model_name = "trillionlabs/Trillion-7B-preview"
-model_name = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
+#model_name = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -71,9 +104,14 @@ def run_model(text, system_prompt=""):
     elapsed_time = round(end - start, 5)
 
     decoded_output = tokenizer.decode(output[0], skip_special_tokens=True)
-    assistant_only = extract_assistant_response(decoded_output)
+   
     
-    # ✅ 후처리로 None 보장
+    
+    if model_name == "trillionlabs/Trillion-7B-preview":
+        assistant_only = extract_function_calls_trillion(decoded_output)
+    else:
+        assistant_only = extract_assistant_response(decoded_output)
+    
     if not assistant_only.strip():
         assistant_only = "NO_FUNCTION"
     

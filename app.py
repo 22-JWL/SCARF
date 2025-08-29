@@ -41,7 +41,7 @@ class Instruct(Resource):
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         result = run_model(user_input, model_name)
 
-        api_url = f"http://localhost:5555{result["output"]}"
+        api_url = f"http://localhost:3000{result['output']}"
         try:
             response = requests.get(api_url)
             # 필요하면 써

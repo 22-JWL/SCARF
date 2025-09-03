@@ -6,4 +6,4 @@
 ### 0829
 - /test/run/prs
 - /test/run/map
-- 이 두가지 기능 추가
+- 이 두가지 추가

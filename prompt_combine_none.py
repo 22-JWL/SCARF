@@ -22,6 +22,8 @@ system_prompt = """
 - `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 0~5)
 - `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 0~5)
 - `/api/status` : 현재 시스템 상태 반환
+
+
 - `/test/run/prs` : PRS 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행

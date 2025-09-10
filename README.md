@@ -7,3 +7,9 @@
 - /test/run/prs
 - /test/run/map
 - 이 두가지 추가
+
+
+
+
+## gpu 개선 2025.09.10
+pip install accelerate

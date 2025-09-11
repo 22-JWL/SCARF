@@ -3,6 +3,7 @@
 ## Prompt_combine_none.py 파일에 추가
 ## 0911
 - /chat/clear 추가
+- history 기간 설정(set)
 
 ### 0903
 - /closeWindows 추가

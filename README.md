@@ -1,6 +1,9 @@
 # flask_LLM
 
 ## Prompt_combine_none.py 파일에 추가
+## 0911
+- /chat/clear 추가
+
 ### 0903
 - /closeWindows 추가
 ### 0829

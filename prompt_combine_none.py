@@ -17,6 +17,7 @@ system_prompt = """
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 - `/windows/light` : 조명 설정 창 열기
 - `/windows/history` : 검사 기록 창 열기
+- `/windows/history?date=YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /windows/history?date=2025-09-01)
 - `/windows/settings` : 시스템 설정 창 열기
 - `/windows/lot` : LOT 정보 창 열기
 - `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 0~5)
@@ -27,6 +28,7 @@ system_prompt = """
 - `/test/run/prs` : PRS 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행
+- `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "좋아", "yes", "네", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 ---
@@ -41,4 +43,9 @@ system_prompt = """
 - 사용자가 '아니' 입력 → /openWindow/no
 - 사용자가 '싫어' 입력 → /openWindow/no
 - 사용자가 'no' 입력 → /openWindow/no
+
+### 특정 날짜의 검사 기록 예시:
+예를 들어 2025년 9월 1일이라면 다음과 같이 출력해:
+/windows/history?date=2025-09-01
+숫자만 바꿔서 사용
 """

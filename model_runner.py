@@ -12,10 +12,17 @@ import re
 #model_name = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
 #model_name = "distilbert-base-multilingual-cased"
 
-# 전역 캐시
-current_model = None
-current_tokenizer = None
-current_model_name = None
+DEFAULT_MODEL_NAME = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
+
+print(f"[INFO] Preloading model: {DEFAULT_MODEL_NAME}")
+current_model = AutoModelForCausalLM.from_pretrained(
+    DEFAULT_MODEL_NAME,
+    torch_dtype=torch.bfloat16,
+    trust_remote_code=True,
+    device_map="auto"   # GPU에 바로 올려
+)
+current_tokenizer = AutoTokenizer.from_pretrained(DEFAULT_MODEL_NAME)
+current_model_name = DEFAULT_MODEL_NAME
 
 
 def extract_assistant_response(text: str) -> str:
@@ -43,9 +50,7 @@ def get_gpu_memory():
 def run_model(prompt: str, model_name: str):
     global current_model, current_tokenizer, current_model_name
 
-    # 추론 실행
-    start = time.time()
-    
+   
     # 분기 처리 - intent classifier는 별도 처리
     if model_name == "distilbert-base-multilingual-cased":
         result = classify_text(prompt)
@@ -57,25 +62,32 @@ def run_model(prompt: str, model_name: str):
                 "reserved_mb": 0.0
             }
         }
-
-    # 모델 캐시 확인
-    if current_model is None or current_model_name != model_name:
+    
+    #다른 모델 교체되면 동적으로 로드
+    if model_name != current_model_name:
         print(f"[INFO] Loading model: {model_name}")
         current_model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype=torch.bfloat16,
-            trust_remote_code=True
-        ).to("cuda")
+            trust_remote_code=True,
+            device_map="auto"  # GPU에 올림
+        )
         current_tokenizer = AutoTokenizer.from_pretrained(model_name)
         current_model_name = model_name
     else:
         print(f"[INFO] Reusing model: {model_name}")
 
+
+
+     # 추론 실행
+    start = time.time()
+    
     # 프롬프트 구성
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": prompt}
     ]
+    
 
     input_ids = current_tokenizer.apply_chat_template(
         messages,

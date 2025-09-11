@@ -63,23 +63,18 @@ def run_model(prompt: str, model_name: str):
             }
         }
     
+    #다른 모델 교체되면 동적으로 로드
     if model_name != current_model_name:
-        raise ValueError(
-            f"Requested model {model_name}, but only {current_model_name} is preloaded."
-        )
-
-
-    # 모델 캐시 확인
-    #if current_model is None or current_model_name != model_name:
         print(f"[INFO] Loading model: {model_name}")
         current_model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype=torch.bfloat16,
-            trust_remote_code=True
-        ).to("cuda")
+            trust_remote_code=True,
+            device_map="auto"  # GPU에 올림
+        )
         current_tokenizer = AutoTokenizer.from_pretrained(model_name)
         current_model_name = model_name
-    #else:
+    else:
         print(f"[INFO] Reusing model: {model_name}")
 
 

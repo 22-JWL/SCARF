@@ -20,8 +20,8 @@ system_prompt = """
 - `/windows/history?date=YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /windows/history?date=2025-09-01)
 - `/windows/settings` : 시스템 설정 창 열기
 - `/windows/lot` : LOT 정보 창 열기
-- `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 0~5)
-- `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 0~5)
+- `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
+- `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
 - `/api/status` : 현재 시스템 상태 반환
 
 

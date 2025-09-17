@@ -6,11 +6,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from prompt_combine_none import system_prompt
 from intent_classifier import classify_text 
 import re
+import gc
 
 #model_name = "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct"
 #model_name = "trillionlabs/Trillion-7B-preview"
 #model_name = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
 #model_name = "distilbert-base-multilingual-cased"
+#model_name = "Qwen/Qwen3-0.6B"
+
 
 DEFAULT_MODEL_NAME = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
 
@@ -46,6 +49,62 @@ def get_gpu_memory():
     reserved_mb = torch.cuda.memory_reserved() / 1024**2
     return round(allocated_mb, 2), round(reserved_mb, 2)
 
+
+# -----------------------------------------------------------------------------
+# 모델 전환 API
+# -----------------------------------------------------------------------------
+def switch_model(new_model_name: str):
+    """
+    기존 모델/토크나이저를 언로드하고(new_model_name으로) 새 모델을 로드한다.
+
+    - VRAM 해제 순서: del -> gc.collect() -> torch.cuda.empty_cache()
+    - 로딩: device_map="auto"로 GPU 우선 적재(부족분은 CPU/디스크 오프로딩)
+    - 반환: 상태, 현재 모델명, 장치 배치(hf_device_map), GPU 메모리 지표
+    """
+    global current_model, current_tokenizer, current_model_name
+
+    if not new_model_name:
+        raise ValueError("model_name is required")
+
+    if current_model_name == new_model_name:
+        allocated, reserved = get_gpu_memory()
+        return {
+            "status": "reused",
+            "model_name": current_model_name,
+            "hf_device_map": getattr(current_model, "hf_device_map", None),
+            "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
+        }
+
+    print(f"[INFO] Switching model: {current_model_name} -> {new_model_name}")
+
+    # 1) 기존 모델 언로드 및 캐시 정리
+    try:
+        if current_model is not None:
+            del current_model
+        if current_tokenizer is not None:
+            del current_tokenizer
+    finally:
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
+        # 2) 새 모델 로드 (GPU 우선, 자동 오프로딩)
+        current_model = AutoModelForCausalLM.from_pretrained(
+            new_model_name,
+            torch_dtype=torch.bfloat16,
+            trust_remote_code=True,
+            device_map="auto",
+        )
+        current_tokenizer = AutoTokenizer.from_pretrained(new_model_name)
+        current_model_name = new_model_name
+
+        allocated, reserved = get_gpu_memory()
+        return {
+            "status": "loaded",
+            "model_name": current_model_name,
+            "hf_device_map": getattr(current_model, "hf_device_map", None),
+            "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
+        }
 
 def run_model(prompt: str, model_name: str):
     global current_model, current_tokenizer, current_model_name

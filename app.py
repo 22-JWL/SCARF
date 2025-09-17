@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restx import Api, Resource, fields
-from model_runner import run_model
+from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
 
@@ -74,6 +74,36 @@ class Classify(Resource):
         text = api.payload['text']
         model_dir = api.payload.get('model_dir', DEFAULT_MODEL_DIR)
         return classify_text(text, model_dir)
+
+# ----- 새 네임스페이스: 모델 전환 -----
+ns_models = api.namespace('models', description='모델 전환/관리')
+
+switch_request = api.model('ModelSwitchRequest', {
+    'model_name': fields.String(required=True, description='로드할 모델 이름 (HF Hub 식별자 또는 로컬 경로)'),
+})
+
+switch_response = api.model('ModelSwitchResponse', {
+    'status': fields.String(description='loaded 또는 reused'),
+    'model_name': fields.String(description='현재 로드된 모델명'),
+    'hf_device_map': fields.Raw(description='Accelerate가 결정한 장치 매핑(hf_device_map)'),
+    'gpu_memory': fields.Nested(api.model('GpuMem', {
+        'allocated_mb': fields.Float,
+        'reserved_mb': fields.Float,
+    })),
+})
+
+@ns_models.route('/switch')
+class ModelSwitch(Resource):
+    @ns_models.expect(switch_request)
+    @ns_models.marshal_with(switch_response)
+    def post(self):
+        """
+        기존 모델을 언로드하고 요청된 model_name으로 새 모델을 로드합니다.
+        """
+        payload = api.payload or {}
+        new_name = payload.get('model_name')
+        result = switch_model(new_name)
+        return result
 
 # 서버 실행
 

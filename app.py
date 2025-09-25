@@ -37,6 +37,7 @@ class Instruct(Resource):
     @ns_instruct.marshal_with(output_model)
     def post(self):
         """사용자 명령어를 입력받아 함수 호출 형식으로 응답"""
+        print("Received JSON payload:", api.payload)  # <-- 여기 추가
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         result = run_model(user_input, model_name)

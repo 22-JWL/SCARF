@@ -75,7 +75,7 @@ class Classify(Resource):
         model_dir = api.payload.get('model_dir', DEFAULT_MODEL_DIR)
         return classify_text(text, model_dir)
 
-# ----- 새 네임스페이스: 모델 전환 -----
+# llm모델 전환 namespace
 ns_models = api.namespace('models', description='모델 전환/관리')
 
 switch_request = api.model('ModelSwitchRequest', {
@@ -97,15 +97,12 @@ class ModelSwitch(Resource):
     @ns_models.expect(switch_request)
     @ns_models.marshal_with(switch_response)
     def post(self):
-        """
-        기존 모델을 언로드하고 요청된 model_name으로 새 모델을 로드합니다.
-        """
+        """기존 모델을 언로드하고 요청된 model_name으로 새 모델을 로드합니다."""
         payload = api.payload or {}
         new_name = payload.get('model_name')
         result = switch_model(new_name)
         return result
 
 # 서버 실행
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)

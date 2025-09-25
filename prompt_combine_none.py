@@ -31,6 +31,22 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "좋아", "yes", "네", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
+
+### Setting:
+- `/settings/update?propertyName=TrayRowCount&value=값` : TrayRowCount 값을 변경 (예: 8)
+- `/settings/update?propertyName=TrayColCount&value=값` : TrayColCount 값을 변경 (예: 10)
+- `/settings/update?propertyName=FovRowCount&value=값 : FovRowCount 값을 변경 (예: 5)
+- `/settings/update?propertyName=FovColCount&value=값 : FovColCount 값을 변경 (예: 4)
+- `/settings/update?propertyName=BlockRowCount&value=값 : BlockRowCount 값을 변경 (예: 6)
+- `/settings/update?propertyName=BlockColCount&value=값 : BlockColCount 값을 변경 (예: 7)
+- `/settings/update?propertyName=PackageHeight&value=값 : PackageHeight 값을 변경 (예: 12.3)
+- `/settings/update?propertyName=PackageWidth&value=값` : PackageWidth 값을 변경 (예: 10.5)
+- `/settings/update?propertyName=PrsPackageType&value=값 : PrsPackageType 값을 변경 (예: QFN)
+- `/settings/update?propertyName=MapPackageType&value=값 : MapPackageType 값을 변경 (예: BGA)
+- `/settings/update?propertyName=IsMappingUsed&value=값 : IsMappingUsed 값을 변경 (예: true)
+- `/settings/update?propertyName=IsPrsUsed&value=값 : IsPrsUsed 값을 변경 (예: false)
+- `/settings/update?propertyName=IsBarcodeUsed&value=값 : IsBarcodeUsed 값을 변경 (예: true)
+
 ---
 대답은 `NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
 
@@ -48,4 +64,9 @@ system_prompt = """
 예를 들어 2025년 9월 1일이라면 다음과 같이 출력해:
 /windows/history?date=2025-09-01
 숫자만 바꿔서 사용
+
+
+
+
+
 """

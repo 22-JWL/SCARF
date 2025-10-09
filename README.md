@@ -1,5 +1,10 @@
 # flask_LLM
 
+# 1001
+- 빠른 시현용 :prompt_combine_none.py
+- 현재 개발용(누적중): prompt_combine_none_add_ex1.py
+    - 위 파일에 setting prompt 있음!!
+
 ## Prompt_combine_none.py 파일에 추가
 ## 0911
 - /chat/clear 추가

@@ -1,10 +1,13 @@
 import torch
 import time
+import pandas as pd
+import os
 from transformers import AutoModelForCausalLM, AutoTokenizer
 # from prompt_combine import system_prompt
 # from prompt_only import system_prompt
 from prompt_combine_none import system_prompt
 from intent_classifier import classify_text 
+from rag import create_vectorstore, query_vectorstore
 import re
 import gc
 
@@ -27,6 +30,11 @@ current_model = AutoModelForCausalLM.from_pretrained(
 current_tokenizer = AutoTokenizer.from_pretrained(DEFAULT_MODEL_NAME)
 current_model_name = DEFAULT_MODEL_NAME
 
+# rag를 위한 코드...최초 1회 실행. 벡터스토어 생성...
+vectorstore = create_vectorstore() # prompt_combine_none.py 를 청킹, 임베딩, 백스터화? 함
+print(type(vectorstore))
+print("총 문서 청킹 수:", len(vectorstore._collection.get()['metadatas']))
+# vectorstore.persist() # 저장
 
 def extract_assistant_response(text: str) -> str:
     match = re.search(r"\[\|assistant\|\](.+)", text, re.DOTALL)
@@ -49,6 +57,37 @@ def get_gpu_memory():
     reserved_mb = torch.cuda.memory_reserved() / 1024**2
     return round(allocated_mb, 2), round(reserved_mb, 2)
 
+# 유저 채팅과 rag 결과 확인용...
+csv_path = "rag_results.csv" 
+
+def save_messages(messages, llm_response):
+    # messages에서 role별로 content 가져오기
+    system_message = next((m['content'] for m in messages if m['role'] == 'system'), "")
+    user_message = next((m['content'] for m in messages if m['role'] == 'user'), "")
+
+    # DataFrame 생성
+    df = pd.DataFrame([{
+        "usermessage": user_message,
+        "system_message": system_message,
+        "llm_response": llm_response
+    }])
+
+    # 기존 CSV가 있으면 이어서 저장
+    if os.path.exists(csv_path):
+        df_old = pd.read_csv(csv_path)
+        df['index'] = df_old['index'].max() + 1 + df.index
+        df = pd.concat([df_old, df], ignore_index=True)
+    else:
+        df['index'] = df.index + 1
+
+    df = df[["index", "usermessage", "system_message", "llm_response"]]
+    df.to_csv(csv_path, index=False)
+
+# 프롬프트 앞에 가이드는 미리 저장 
+with open("rag_prompt.py", "r", encoding="utf-8") as f:
+    text = f.read()  # 전체 문자열
+system_lines = text.splitlines()
+system_prompt_head = "\n".join(system_lines[0:5])
 
 # -----------------------------------------------------------------------------
 # 모델 전환 API
@@ -140,13 +179,14 @@ def run_model(prompt: str, model_name: str):
 
      # 추론 실행
     start = time.time()
-    
+
+    system_prompt_rag = query_vectorstore(vectorstore, prompt)
+    system_prompt_rag_str = " ".join(system_prompt_rag)
     # 프롬프트 구성
     messages = [
-        {"role": "system", "content": system_prompt},
+        {"role": "system", "content": system_prompt_head + system_prompt_rag_str},  # system_prompt 원래 코드...
         {"role": "user", "content": prompt}
     ]
-    
 
     input_ids = current_tokenizer.apply_chat_template(
         messages,
@@ -168,6 +208,7 @@ def run_model(prompt: str, model_name: str):
     #assistant_only = extract_assistant_response(decoded_output)
     assistant_only = decoded_output.split('[|assistant|]')[1].strip().strip("\n").strip("`")
     print(assistant_only)
+    save_messages(messages, assistant_only)  # rag 결과를 llm 답변과 함께 저장
     allocated, reserved = get_gpu_memory()
 
     return {
@@ -178,3 +219,4 @@ def run_model(prompt: str, model_name: str):
             "reserved_mb": reserved
         }
     }
+

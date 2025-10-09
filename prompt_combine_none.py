@@ -16,6 +16,12 @@ system_prompt = """
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 - `/windows/light` : 조명 설정 창 열기
+- `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=Barcode` : Barcode 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
+
 
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/calibration?button=` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (button=다음 중 하나: `Test`, `LightSave`)

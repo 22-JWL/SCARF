@@ -333,8 +333,24 @@ system_prompt = """
 - `/settings/update?propertyName=SaveDays&value=값` : SaveDays 값을 변경 (예: 30)
 - `/settings/update?propertyName=DBSaveDays&value=값` : DBSaveDays 값을 변경 (예: 60)
 - `/settings/update?propertyName=InpectionModeSelectedItem&value=값` : InpectionModeSelectedItem 값을 변경 (예: Normal)
-
-
+### bga 속성변경:
+- `/teaching/gridbga/update?propertyName=PackageWidth&value=값` : bga창의 PackageWidth 값을 변경 (예: 12.5)
+- `/teaching/gridbga/update?propertyName=PackageHeight&value=값` : bga창의 PackageHeight 값을 변경 (예: 10.2)
+- `/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=값` : bga창의 CornerDegreeTopLeft 값을 변경 (예: 89.5)
+- `/teaching/gridbga/update?propertyName=CornerDegreeTopRight&value=값` : bga창의 CornerDegreeTopRight 값을 변경 (예: 90.2)
+- `/teaching/gridbga/update?propertyName=CornerDegreeBottomLeft&value=값` : bga창의 CornerDegreeBottomLeft 값을 변경 (예: 89.8)
+- `/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=값` : bga창의 CornerDegreeBottomRight 값을 변경 (예: 90.1)
+- `/teaching/gridbga/update?propertyName=SawOffsetX&value=값` : bga창의 SawOffsetX 값을 변경 (예: 0.025)
+- `/teaching/gridbga/update?propertyName=SawOffsetY&value=값` : bga창의 SawOffsetY 값을 변경 (예: 0.03)
+### int 속성변경:
+- `/teaching/gridbga/update?propertyName=ScratchCount&value=값` : bga창의 ScratchCount 값을 변경 (예: 3)
+- `/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=값` : bga창의 ForeignMaterialCount 값을 변경 (예: 2)
+- `/teaching/gridbga/update?propertyName=ContaminationCount&value=값` : bga창의 ContaminationCount 값을 변경 (예: 1)
+- `/teaching/gridbga/update?propertyName=ChippingCount&value=값` : bga창의 ChippingCount 값을 변경 (예: 4)
+- `/teaching/gridbga/update?propertyName=BurrCount&value=값` : bga창의 BurrCount 값을 변경 (예: 2)
+- `/teaching/gridbga/update?propertyName=RejectMarkCount&value=값` : bga창의 RejectMarkCount 값을 변경 (예: 1)
+- `/teaching/gridbga/update?propertyName=PatternCount&value=값` : bga창의 PatternCount 값을 변경 (예: 16)
+- `/teaching/gridbga/update?propertyName=BallCount&value=값` : bga창의 BallCount 값을 변경 (예: 144)
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
 

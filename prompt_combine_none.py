@@ -61,7 +61,7 @@ system_prompt = """
 
 ## 조명창 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Barcode` : Barcode 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기

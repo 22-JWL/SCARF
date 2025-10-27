@@ -20,13 +20,15 @@ system_prompt = """
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 - `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Barcode` : Barcode 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
 
 ## history 창 값 변경 및 업데이트
 - `/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /history/update?propertyName=date&value=2025-09-01_2025-09-30)
+- `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
+- `/history/update?propertyName=inspection&value=status` : 기록 창에서 검사 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
 
 ### 특정 날짜의 검사 기록 예시:
 예를 들어 2025년 9월 1일이라면 다음과 같이 출력해:
@@ -34,8 +36,11 @@ system_prompt = """
 숫자만 바꿔서 사용
 
 ## LGA 티칭 창 값 변경 및 업데이트
-- `/teaching/lga/update?propertyName=status1_Button&value=status2` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 (status1는 다음 중 하나: `Pads`, `Leads`, `Surface`, `DontCare`)(status2는 다음 중 하나: `add`, `delete`, `reset`)
-- `/teaching/lga/update?propertyName=status1_Threshold&value=N-N` : LGA 티칭 창 해당 탭에서 임계값 설정 (status1는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`)(예시: lga pads 탭에서 임계값2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+- `/teaching/lga/update?propertyName=Button&value=status` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 (status는 다음 중 하나: `add`, `delete`, `reset`)
+- `/teaching/lga/update?propertyName=Threshold&value=N-N` : LGA 티칭 창 해당 탭에서 임계값 설정 (예시: lga 임계값2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=Size&value=N-N` : LGA 티칭 창 해당 탭에서 사이즈값 설정 (예시: lga 사이즈 2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=teachingTest&value=true` : LGA 티칭 창 해당 탭에서 티칭 테스트 실행 
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)
@@ -56,7 +61,7 @@ system_prompt = """
 
 ## 조명창 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Barcode` : Barcode 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기

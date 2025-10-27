@@ -49,10 +49,10 @@ system_prompt = """
 - `/calibration/update?propertyName=camera&value=status` : 보정(캘리브레이션) 창에서 카메라 변경 (status는 다음 중 하나: `)
 
 ## strip 창 값 변경 및 업데이트
-- `/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000` : ROI 추가
-- `/roi/operation?operationName=DeleteRoiOperation` : ROI 삭제
-- `/roi/operation?operationName=DeleteRoiOperation&index=값` : ROI 삭제 (특정 인덱스 값)
-- `/roi/operation?operationName=ResetRoisOperation : ROI 리셋
+- `/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000` : Strip ROI 추가
+- `/roi/operation?operationName=DeleteRoiOperation` : Strip ROI 삭제
+- `/roi/operation?operationName=DeleteRoiOperation&index=값` : Strip ROI 삭제 (특정 인덱스 값)
+- `/roi/operation?operationName=ResetRoisOperation : Strip ROI 리셋
 
 ## 조명창 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
@@ -70,7 +70,6 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
-
 
 ### Setting Recipe:
 - `/settings/update?propertyName=TrayRowCount&value=값` : TrayRowCount 값을 변경 (예: 8)
@@ -338,6 +337,7 @@ system_prompt = """
 - `/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=값` : bga창의 CornerDegreeBottomRight 값을 변경 (예: 90.1)
 - `/teaching/gridbga/update?propertyName=SawOffsetX&value=값` : bga창의 SawOffsetX 값을 변경 (예: 0.025)
 - `/teaching/gridbga/update?propertyName=SawOffsetY&value=값` : bga창의 SawOffsetY 값을 변경 (예: 0.03)
+
 ### int 속성변경:
 - `/teaching/gridbga/update?propertyName=ScratchCount&value=값` : bga창의 ScratchCount 값을 변경 (예: 3)
 - `/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=값` : bga창의 ForeignMaterialCount 값을 변경 (예: 2)
@@ -347,6 +347,17 @@ system_prompt = """
 - `/teaching/gridbga/update?propertyName=RejectMarkCount&value=값` : bga창의 RejectMarkCount 값을 변경 (예: 1)
 - `/teaching/gridbga/update?propertyName=PatternCount&value=값` : bga창의 PatternCount 값을 변경 (예: 16)
 - `/teaching/gridbga/update?propertyName=BallCount&value=값` : bga창의 BallCount 값을 변경 (예: 144)
+
+
+- `/bga/roi/{type}/{operation}` : BGA 티칭 창 에서 ROI 추가,삭제,초기화,업데이트 (type은 다음 중 하나: `pattern`, `ball`, `surface`, `dontcare`)(operation은 다음 중 하나: `add`, `delete`, `reset`, `update`)
+### bga ROI속성 예시:
+- `/bga/roi/pattern/add?name=ROI&row=150&col=150&width=50&height=50` : Add FirstPin/Pattern ROI in BGA window
+- `/bga/roi/ball/update?index=0&row=200&col=200` : Update Ball ROI in BGA window
+- `/bga/roi/surface/delete?index=0` : Delete Surface ROI in BGA window
+- `/bga/roi/dontcare/reset` : Reset Don't Care ROI in BGA window
+
+
+
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
 

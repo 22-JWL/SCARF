@@ -27,6 +27,8 @@ system_prompt = """
 
 ## history 창 값 변경 및 업데이트
 - `/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /history/update?propertyName=date&value=2025-09-01_2025-09-30)
+- `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
+- `/history/update?propertyName=inspection&value=status` : 기록 창에서 검사 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
 
 ### 특정 날짜의 검사 기록 예시:
 예를 들어 2025년 9월 1일이라면 다음과 같이 출력해:
@@ -34,8 +36,11 @@ system_prompt = """
 숫자만 바꿔서 사용
 
 ## LGA 티칭 창 값 변경 및 업데이트
-- `/teaching/lga/update?propertyName=status1_Button&value=status2` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 (status1는 다음 중 하나: `Pads`, `Leads`, `Surface`, `DontCare`)(status2는 다음 중 하나: `add`, `delete`, `reset`)
-- `/teaching/lga/update?propertyName=status1_Threshold&value=N-N` : LGA 티칭 창 해당 탭에서 임계값 설정 (status1는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`)(예시: lga pads 탭에서 임계값2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+- `/teaching/lga/update?propertyName=Button&value=status` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 (status는 다음 중 하나: `add`, `delete`, `reset`)
+- `/teaching/lga/update?propertyName=Threshold&value=N-N` : LGA 티칭 창 해당 탭에서 임계값 설정 (예시: lga 임계값2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=Size&value=N-N` : LGA 티칭 창 해당 탭에서 사이즈값 설정 (예시: lga 사이즈 2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
+- `/teaching/lga/update?propertyName=teachingTest&value=true` : LGA 티칭 창 해당 탭에서 티칭 테스트 실행 
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)
@@ -49,14 +54,14 @@ system_prompt = """
 - `/calibration/update?propertyName=camera&value=status` : 보정(캘리브레이션) 창에서 카메라 변경 (status는 다음 중 하나: `)
 
 ## strip 창 값 변경 및 업데이트
-- `/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000` : ROI 추가
-- `/roi/operation?operationName=DeleteRoiOperation` : ROI 삭제
-- `/roi/operation?operationName=DeleteRoiOperation&index=값` : ROI 삭제 (특정 인덱스 값)
-- `/roi/operation?operationName=ResetRoisOperation : ROI 리셋
+- `/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000` : Strip ROI 추가
+- `/roi/operation?operationName=DeleteRoiOperation` : Strip ROI 삭제
+- `/roi/operation?operationName=DeleteRoiOperation&index=값` : Strip ROI 삭제 (특정 인덱스 값)
+- `/roi/operation?operationName=ResetRoisOperation : Strip ROI 리셋
 
 ## 조명창 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Barcode` : Barcode 카메라 실시간 라이브 뷰 열기
+- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
@@ -70,7 +75,6 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
-
 
 ### Setting Recipe:
 - `/settings/update?propertyName=TrayRowCount&value=값` : TrayRowCount 값을 변경 (예: 8)
@@ -329,6 +333,34 @@ system_prompt = """
 - `/settings/update?propertyName=SaveDays&value=값` : SaveDays 값을 변경 (예: 30)
 - `/settings/update?propertyName=DBSaveDays&value=값` : DBSaveDays 값을 변경 (예: 60)
 - `/settings/update?propertyName=InpectionModeSelectedItem&value=값` : InpectionModeSelectedItem 값을 변경 (예: Normal)
+### bga 속성변경:
+- `/teaching/gridbga/update?propertyName=PackageWidth&value=값` : bga창의 PackageWidth 값을 변경 (예: 12.5)
+- `/teaching/gridbga/update?propertyName=PackageHeight&value=값` : bga창의 PackageHeight 값을 변경 (예: 10.2)
+- `/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=값` : bga창의 CornerDegreeTopLeft 값을 변경 (예: 89.5)
+- `/teaching/gridbga/update?propertyName=CornerDegreeTopRight&value=값` : bga창의 CornerDegreeTopRight 값을 변경 (예: 90.2)
+- `/teaching/gridbga/update?propertyName=CornerDegreeBottomLeft&value=값` : bga창의 CornerDegreeBottomLeft 값을 변경 (예: 89.8)
+- `/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=값` : bga창의 CornerDegreeBottomRight 값을 변경 (예: 90.1)
+- `/teaching/gridbga/update?propertyName=SawOffsetX&value=값` : bga창의 SawOffsetX 값을 변경 (예: 0.025)
+- `/teaching/gridbga/update?propertyName=SawOffsetY&value=값` : bga창의 SawOffsetY 값을 변경 (예: 0.03)
+
+### int 속성변경:
+- `/teaching/gridbga/update?propertyName=ScratchCount&value=값` : bga창의 ScratchCount 값을 변경 (예: 3)
+- `/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=값` : bga창의 ForeignMaterialCount 값을 변경 (예: 2)
+- `/teaching/gridbga/update?propertyName=ContaminationCount&value=값` : bga창의 ContaminationCount 값을 변경 (예: 1)
+- `/teaching/gridbga/update?propertyName=ChippingCount&value=값` : bga창의 ChippingCount 값을 변경 (예: 4)
+- `/teaching/gridbga/update?propertyName=BurrCount&value=값` : bga창의 BurrCount 값을 변경 (예: 2)
+- `/teaching/gridbga/update?propertyName=RejectMarkCount&value=값` : bga창의 RejectMarkCount 값을 변경 (예: 1)
+- `/teaching/gridbga/update?propertyName=PatternCount&value=값` : bga창의 PatternCount 값을 변경 (예: 16)
+- `/teaching/gridbga/update?propertyName=BallCount&value=값` : bga창의 BallCount 값을 변경 (예: 144)
+
+
+- `/bga/roi/{type}/{operation}` : BGA 티칭 창 에서 ROI 추가,삭제,초기화,업데이트 (type은 다음 중 하나: `pattern`, `ball`, `surface`, `dontcare`)(operation은 다음 중 하나: `add`, `delete`, `reset`, `update`)
+### bga ROI속성 예시:
+- `/bga/roi/pattern/add?name=ROI&row=150&col=150&width=50&height=50` : Add FirstPin/Pattern ROI in BGA window
+- `/bga/roi/ball/update?index=0&row=200&col=200` : Update Ball ROI in BGA window
+- `/bga/roi/surface/delete?index=0` : Delete Surface ROI in BGA window
+- `/bga/roi/dontcare/reset` : Reset Don't Care ROI in BGA window
+
 
 
 --- 

@@ -30,17 +30,63 @@ system_prompt = """
 - `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
 - `/history/update?propertyName=inspection&value=status` : 기록 창에서 검사 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
 
-### 특정 날짜의 검사 기록 예시:
-예를 들어 2025년 9월 1일이라면 다음과 같이 출력해:
-/windows/history?date=2025-09-01
-숫자만 바꿔서 사용
-
 ## LGA 티칭 창 값 변경 및 업데이트
+### LGA 티칭 창 임계값 변경
+-`/teaching/lga/update?propertyName=PackageThreshold&value=N-N` : LGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=FirstPinThreshold&value=N-N` : LGA 티칭 창 package FirstPin 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=MultiPadThreshold&value=N-N` : LGA 티칭 창 Pad 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=LeadThreshold&value=N-N` : LGA 티칭 창 Lead 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ScratchThreshold&value=N-N` : LGA 티칭 창 Scratch 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ForeignMaterialThreshold&value=N-N` : LGA 티칭 창 ForeignMaterial 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ContaminationThreshold&value=N-N` : LGA 티칭 창 Contamination 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=OutlineThreshold&value=N-N` : LGA 티칭 창 sawing 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=RejectMarkThreshold&value=N-N` : LGA 티칭 창 RejectMark 탭에서 임계값 설정(N 은 숫자)
+(예시: lga 창 package 탭에서 임계값 2-33, /teaching/lga/update?propertyName=PackageThreshold&value=2-33)
+
+### LGA 티칭 창 사이즈값 변경
+-`/teaching/lga/update?propertyName=PadContaminationSize&value=N-N` : LGA 티칭 창 Pad 탭 사이즈 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=LeadContaminationSize&value=N-N` : LGA 티칭 창 Lead 탭 사이즈 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ScratchSize&value=N-N` : LGA 티칭 창 Scratch 탭 사이즈 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ForeignMaterialSize&value=N-N` : LGA 티칭 창 ForeignMaterial 사이즈 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=ContaminationSize&value=N-N` : LGA 티칭 창 Contamination 사이즈 설정(N 은 숫자)
+-`/teaching/lga/update?propertyName=RejectMarkSize&value=N-N` : LGA 티칭 창 RejectMark 탭 사이즈 설정(N 은 숫자)
+
+### LGA 티칭 창 ROI 생성/삭제/초기화 버튼
+- `/teaching/lga/update?propertyName=PadRois&value=status` : LGA 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
+- `/teaching/lga/update?propertyName=SurfaceRoi&value=status` : LGA 티칭 창 Surface 탭 ROI 추가,삭제,초기화 
+- `/teaching/lga/update?propertyName=DontCareRoi&value=status` : LGA 티칭 창 DontCare 탭 ROI 추가,삭제,초기화 
+- `/teaching/lga/update?propertyName=LeadRois&value=status` : LGA 티칭 창 Lead 탭 ROI 추가,삭제,초기화 
+(status는 다음 중 하나: `add`, `delete`, `reset`)
+,(예시: lga 창 surface 탭 roi add, /teaching/lga/update?propertyName=SurfaceRois&value=add)
+
+### LGA 티칭 창 roi, threshold 자동 생성 버튼
+- `/teaching/lga/update?propertyName=findPackageRoiAutoCommand&value=1` : LGA 티칭 창에서 ROI 자동 생성
+- `/teaching/lga/update?propertyName=autoThresholdCommand&value=1` : LGA 티칭 창에서 임계값 자동 설정
+
+### LGA 티칭 테스트
+- `/teaching/lga/update?propertyName=FindPackagesTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
+- `/teaching/lga/update?propertyName=findpadsTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
+- `/teaching/lga/update?propertyName=findLeadsTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
+- `/teaching/lga/update?propertyName=findSurfaceTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
+- `/teaching/lga/update?propertyName=findSawingTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
+- `/teaching/lga/update?propertyName=inspectRejectMarkTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭 
+- `/teaching/lga/update?propertyName=inspectTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭 
+
+### LGA 티칭 창 탭 이동
 - `/teaching/lga/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
-- `/teaching/lga/update?propertyName=Button&value=status` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 (status는 다음 중 하나: `add`, `delete`, `reset`)
-- `/teaching/lga/update?propertyName=Threshold&value=N-N` : LGA 티칭 창 해당 탭에서 임계값 설정 (예시: lga 임계값2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
-- `/teaching/lga/update?propertyName=Size&value=N-N` : LGA 티칭 창 해당 탭에서 사이즈값 설정 (예시: lga 사이즈 2-33, /teaching/lga/update?propertyName=Pads_Threshold&value=2-33)
-- `/teaching/lga/update?propertyName=teachingTest&value=true` : LGA 티칭 창 해당 탭에서 티칭 테스트 실행 
+
+### LGA 티칭 창 roi 단일 생성 버튼
+- `/teaching/lga/update?propertyName=status&value=N-N-N-N` : LGA 티칭 창 해당 탭에서 ROI 추가,삭제,초기화 
+(status는 다음 중 하나: 
+    PackageRoiTop_
+    PackageRoiLeft_
+    PackageRoiBottom_
+    PackageRoiRight_
+    PackageModelRoi_
+    FirstPinRoi_
+    RejectMarkRoi_
+) ,(예시: lga 창 model roi 10-20-30-40, /teaching/lga/update?propertyName=PackageModelRoi_&value=10-20-30-40)
+(예시2: lga 창 Package Roi Top 생성, /teaching/lga/update?propertyName=PackageModelRoi_&value=1)
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)

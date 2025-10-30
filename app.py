@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restx import Api, Resource, fields
+from flask import request
 from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
@@ -42,7 +43,15 @@ class Instruct(Resource):
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         result = run_model(user_input, model_name)
 
-        api_url = f"http://localhost:3000{result['output']}"
+        # 클라이언트 IP 주소 가져오기
+        client_ip = request.remote_addr
+        
+        # 클라이언트 IP로 API 주소를 만듦
+        api_url = f"http://{client_ip}:3000{result['output']}"
+        
+        #local에서..
+        #api_url = f"http://localhost:3000{result['output']}"
+        
         try:
             response = requests.get(api_url)
             # 필요하면 써

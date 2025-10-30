@@ -25,6 +25,107 @@ system_prompt = """
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
 
+## BGA 티칭 창 값 변경 및 업데이트
+### BGA 티칭 창 임계값 변경
+-`/teaching/bga/update?propertyName=PackageThreshold&value=N-N` : BGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=ScratchThreshold&value=N-N` : BGA 티칭 창 Scratch 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=ForeignMaterialThreshold&value=N-N` : BGA 티칭 창 ForeignMaterial 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=ContaminationThreshold&value=N-N` : BGA 티칭 창 Contamination 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=OutlineThreshold&value=N-N` : BGA 티칭 창 sawing 탭에서 Outline 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=RejectMarkThreshold&value=N-N` : BGA 티칭 창 RejectMark 탭에서 임계값 설정(N 은 숫자)
+(예시: bga 창 package 탭에서 임계값 2-33, /teaching/bga/update?propertyName=PackageThreshold&value=2-33)
+
+### BGA 티칭 창 탭 이동
+- `/teaching/bga/update?propertyName=moveTab&value=status` : BGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `FirstPin/Pattern, `Ball`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+
+### Package 탭
+- `/teaching/bga/update?propertyName=PackageRoiTop&value=N-N-N-N` : Package 외곽 ROI (상단)
+- `/teaching/bga/update?propertyName=PackageRoiBottom&value=N-N-N-N` : Package 외곽 ROI (하단)
+- `/teaching/bga/update?propertyName=PackageRoiLeft&value=N-N-N-N` : Package 외곽 ROI (좌측)
+- `/teaching/bga/update?propertyName=PackageRoiRight&value=N-N-N-N` : Package 외곽 ROI (우측)
+- `/teaching/bga/update?propertyName=PackageThreshold&value=N-N` : BGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
+- `/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=<Direction>` : Edge 감지 방향 (Direction은 다음 중 하나 : `All`, `Horizontal`, `Vertical`)
+- `/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=<Mode>` : Edge 감지 모드(Mode는 다음 중 하나 `First`, `Last`, `Best`)
+- `/teaching/bga/update?propertyName=PackageThresholdDiff&value=N` : Edge Threshold Amplitude 값 설정
+- `/teaching/bga/update?propertyName=PackageModelRoi&value=N-N-N-N` : Package 모델 ROI
+- `/teaching/bga/update?propertyName=findPackageRoiAutoTeaching&value=1` : BGA 티칭창 Package탭에서 Auto ROI 버튼 클릭
+- `/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1` :  BGA 티칭창 Package탭에서 AutoThreshold 버튼 클릭
+- `/teaching/bga/update?propertyName=inspectPackageTeaching&value=1` : BGA 티칭창 Package탭에서 Find Package 버튼 클릭
+
+### FirstPin/Pattern 탭
+# - `/teaching/bga/update?propertyName=FirstPinRoi&value=N-N-N-N` : First Pin ROI
+- `/teaching/bga/update?propertyName=FirstPinThreshold&value=N-N` : BGA 티칭 창 FirstPin/Pattern 탭에서 FirstPin 임계값 설정(N 은 숫자)
+# - `/teaching/bga/update?propertyName=PatternRois&value=[{"Row1":N,...},{"Row1":N,...}]` : bga roi 설정
+-`/teaching/bga/update?propertyName=PatternThreshold&value=N-N` : BGA 티칭 창 FirstPin/Pattern 탭에서 Pattern 임계값 설정(N 은 숫자)
+-`/teaching/bga/update?propertyName=findFirstPinAndPatternTeaching&value=1` : findPattern and FirstPin 버튼 클릭(N 은 숫자)
+
+### Ball 탭
+
+# - `/teaching/bga/update?propertyName=BallRois&value=[{"Row1":N,...},{"Row1":N,...}]` : Ball ROI
+- `/teaching/bga/update?propertyName=BallThreshold&value=N-N` : BGA 티칭 창 Ball 탭에서 임계값 설정(N 은 숫자)
+- `/teaching/bga/update?propertyName=BallPositionOffset&value=N` : Ball Offset Tolerance 설정(N 은 숫자)
+- `/teaching/bga/update?propertyName=BallMinCircularity&value=N` : Ball Min Circularity 퍼센트 설정(N은 숫자)
+- `/teaching/bga/update?propertyName=BallMinSize&value=N` : Ball 최소 크기(N은 숫자)
+- `/teaching/bga/update?propertyName=BallMaxSize&value=N` : Ball 최대 크기(N은 숫자)
+- `/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1` : BGA ball 탭에서 Auto ROI 버튼 클릭
+- `/teaching/bga/update?propertyName=findBallsTeaching&value=1` : findBalls 버튼 클릭
+
+### Surface 탭
+
+# - `/teaching/bga/update?propertyName=SurfaceRois&value=[{"Row1":N,...},{"Row1":N,...}]` : 표면 검사 ROI
+- `/teaching/bga/update?propertyName=ScratchThreshold&value=N-N` : Scratch 임계값
+- `/teaching/bga/update?propertyName=ScratchSize&value=N-N` : Scratch 최소, 최대 크기 설정
+# - `/teaching/bga/update?propertyName=ScratchMaxSize&value=N` : Scratch 최대 크기
+- `/teaching/bga/update?propertyName=ForeignMaterialThreshold&value=N-N` : 이물질 임계값
+- `/teaching/bga/update?propertyName=ForeignMaterialSize&value=N-N` : 이물질 최소, 최대 크기 설정
+# - `/teaching/bga/update?propertyName=ForeignMaterialMaxSize&value=N` : 이물질 최대 크기
+- `/teaching/bga/update?propertyName=ContaminationThreshold&value=N-N` : 오염 임계값
+- `/teaching/bga/update?propertyName=ContaminationSize&value=N-N` : 오염 최소, 최대 크기 설정
+# - `/teaching/bga/update?propertyName=ContaminationMaxSize&value=N` : 오염 최대 크기
+- `/teaching/bga/update?propertyName=inspectSurfaceTeaching&value=1` : inspectSurface 버튼 클릭
+
+
+### Sawing 탭
+
+# - `/teaching/bga/update?propertyName=SawOffsetItems&value=[{"Standard":N,"Offset":N,...}]` : Saw Offset
+- `/teaching/bga/update?propertyName=SawOffsetItems&value=N-N` : Saw Offset 설정
+- `/teaching/bga/update?propertyName=OutlineWidth&value=N` : 외곽선 너비
+- `/teaching/bga/update?propertyName=OutlineThreshold&value=N-N` : 외곽선 임계값
+- `/teaching/bga/update?propertyName=MinLengthOfShortSide&value=N` : 짧은 변 최소 길이
+- `/teaching/bga/update?propertyName=MaxLengthOfShortSide&value=N` : 짧은 변 최대 길이
+- `/teaching/bga/update?propertyName=MinLengthOfLongSide&value=N` : 긴 변 최소 길이
+- `/teaching/bga/update?propertyName=MaxLengthOfLongSide&value=N` : 긴 변 최대 길이
+- `/teaching/bga/update?propertyName=inspectSawingTeaching&value=1` : inspect Sawing 버튼 클릭
+
+### Reject Mark 탭
+
+# - `/teaching/bga/update?propertyName=RejectMarkRoi&value={"Row1":N,"Column1":N,"Row2":N,"Column2":N}` : Reject Mark ROI
+# - `/teaching/bga/update?propertyName=RejectMarkRoi&value=N-N-N-N` : Reject Mark ROI
+- `/teaching/bga/update?propertyName=RejectMarkThreshold&value=N-N` : Reject Mark 임계값
+- `/teaching/bga/update?propertyName=RejectMarkMinSize&value=N-N` : Reject Mark 최소, 최대 크기
+# - `/teaching/bga/update?propertyName=RejectMarkMaxSize&value=N` : Reject Mark 최대 크기
+- `/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1` : inspectRejectMark 버튼 클릭
+
+### Don't Care 탭
+
+# - `/teaching/bga/update?propertyName=DontCareRois&value=[{"Row1":N,...},{"Row1":N,...}]` : Don't Care ROI
+# - `/teaching/bga/update?propertyName=DontCareRois&value=N-N-N-N` : Don't Care ROI
+
+
+### Result 탭
+- `/teaching/bga/update?propertyName=inspectTeaching&value=1` : Result 탭 Inspection 버튼 클릭
+
+  ---
+### BGA 티칭 창 ROI 생성/삭제/초기화 버튼
+- `/teaching/bga/update?propertyName=PatternRois&value=status` : BGA 티칭 창 FirstPin/Pattern 탭 ROI 추가,삭제,초기화 
+- `/teaching/bga/update?propertyName=BallRoi&value=status` : BGA 티칭 창 Ball 탭 ROI 추가,삭제,초기화 
+- `/teaching/bga/update?propertyName=RejectMarkRoi&value=status` : BGA 티칭 창 RejectMark 탭 ROI 추가,삭제,초기화 
+- `/teaching/bga/update?propertyName=DontCareRoi&value=status` : BGA 티칭 창 DontCare 탭 ROI 추가,삭제,초기화 
+(status는 다음 중 하나: `add`, `delete`, `reset`)
+,(예시: bga 창 surface 탭 roi add, /teaching/bga/update?propertyName=SurfaceRois&value=add)
+
+
+
 ## history 창 값 변경 및 업데이트
 - `/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /history/update?propertyName=date&value=2025-09-01_2025-09-30)
 - `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
@@ -379,33 +480,33 @@ system_prompt = """
 - `/settings/update?propertyName=SaveDays&value=값` : SaveDays 값을 변경 (예: 30)
 - `/settings/update?propertyName=DBSaveDays&value=값` : DBSaveDays 값을 변경 (예: 60)
 - `/settings/update?propertyName=InpectionModeSelectedItem&value=값` : InpectionModeSelectedItem 값을 변경 (예: Normal)
-### bga 속성변경:
-- `/teaching/gridbga/update?propertyName=PackageWidth&value=값` : bga창의 PackageWidth 값을 변경 (예: 12.5)
-- `/teaching/gridbga/update?propertyName=PackageHeight&value=값` : bga창의 PackageHeight 값을 변경 (예: 10.2)
-- `/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=값` : bga창의 CornerDegreeTopLeft 값을 변경 (예: 89.5)
-- `/teaching/gridbga/update?propertyName=CornerDegreeTopRight&value=값` : bga창의 CornerDegreeTopRight 값을 변경 (예: 90.2)
-- `/teaching/gridbga/update?propertyName=CornerDegreeBottomLeft&value=값` : bga창의 CornerDegreeBottomLeft 값을 변경 (예: 89.8)
-- `/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=값` : bga창의 CornerDegreeBottomRight 값을 변경 (예: 90.1)
-- `/teaching/gridbga/update?propertyName=SawOffsetX&value=값` : bga창의 SawOffsetX 값을 변경 (예: 0.025)
-- `/teaching/gridbga/update?propertyName=SawOffsetY&value=값` : bga창의 SawOffsetY 값을 변경 (예: 0.03)
-
-### int 속성변경:
-- `/teaching/gridbga/update?propertyName=ScratchCount&value=값` : bga창의 ScratchCount 값을 변경 (예: 3)
-- `/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=값` : bga창의 ForeignMaterialCount 값을 변경 (예: 2)
-- `/teaching/gridbga/update?propertyName=ContaminationCount&value=값` : bga창의 ContaminationCount 값을 변경 (예: 1)
-- `/teaching/gridbga/update?propertyName=ChippingCount&value=값` : bga창의 ChippingCount 값을 변경 (예: 4)
-- `/teaching/gridbga/update?propertyName=BurrCount&value=값` : bga창의 BurrCount 값을 변경 (예: 2)
-- `/teaching/gridbga/update?propertyName=RejectMarkCount&value=값` : bga창의 RejectMarkCount 값을 변경 (예: 1)
-- `/teaching/gridbga/update?propertyName=PatternCount&value=값` : bga창의 PatternCount 값을 변경 (예: 16)
-- `/teaching/gridbga/update?propertyName=BallCount&value=값` : bga창의 BallCount 값을 변경 (예: 144)
-
-
-- `/bga/roi/{type}/{operation}` : BGA 티칭 창 에서 ROI 추가,삭제,초기화,업데이트 (type은 다음 중 하나: `pattern`, `ball`, `surface`, `dontcare`)(operation은 다음 중 하나: `add`, `delete`, `reset`, `update`)
-### bga ROI속성 예시:
-- `/bga/roi/pattern/add?name=ROI&row=150&col=150&width=50&height=50` : Add FirstPin/Pattern ROI in BGA window
-- `/bga/roi/ball/update?index=0&row=200&col=200` : Update Ball ROI in BGA window
-- `/bga/roi/surface/delete?index=0` : Delete Surface ROI in BGA window
-- `/bga/roi/dontcare/reset` : Reset Don't Care ROI in BGA window
+# ### bga 속성변경:
+# - `/teaching/gridbga/update?propertyName=PackageWidth&value=값` : bga창의 PackageWidth 값을 변경 (예: 12.5)
+# - `/teaching/gridbga/update?propertyName=PackageHeight&value=값` : bga창의 PackageHeight 값을 변경 (예: 10.2)
+# - `/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=값` : bga창의 CornerDegreeTopLeft 값을 변경 (예: 89.5)
+# - `/teaching/gridbga/update?propertyName=CornerDegreeTopRight&value=값` : bga창의 CornerDegreeTopRight 값을 변경 (예: 90.2)
+# - `/teaching/gridbga/update?propertyName=CornerDegreeBottomLeft&value=값` : bga창의 CornerDegreeBottomLeft 값을 변경 (예: 89.8)
+# - `/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=값` : bga창의 CornerDegreeBottomRight 값을 변경 (예: 90.1)
+# - `/teaching/gridbga/update?propertyName=SawOffsetX&value=값` : bga창의 SawOffsetX 값을 변경 (예: 0.025)
+# - `/teaching/gridbga/update?propertyName=SawOffsetY&value=값` : bga창의 SawOffsetY 값을 변경 (예: 0.03)
+# 
+# ### int 속성변경:
+# - `/teaching/gridbga/update?propertyName=ScratchCount&value=값` : bga창의 ScratchCount 값을 변경 (예: 3)
+# - `/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=값` : bga창의 ForeignMaterialCount 값을 변경 (예: 2)
+# - `/teaching/gridbga/update?propertyName=ContaminationCount&value=값` : bga창의 ContaminationCount 값을 변경 (예: 1)
+# - `/teaching/gridbga/update?propertyName=ChippingCount&value=값` : bga창의 ChippingCount 값을 변경 (예: 4)
+# - `/teaching/gridbga/update?propertyName=BurrCount&value=값` : bga창의 BurrCount 값을 변경 (예: 2)
+# - `/teaching/gridbga/update?propertyName=RejectMarkCount&value=값` : bga창의 RejectMarkCount 값을 변경 (예: 1)
+# - `/teaching/gridbga/update?propertyName=PatternCount&value=값` : bga창의 PatternCount 값을 변경 (예: 16)
+# - `/teaching/gridbga/update?propertyName=BallCount&value=값` : bga창의 BallCount 값을 변경 (예: 144)
+# 
+# 
+# - `/bga/roi/{type}/{operation}` : BGA 티칭 창 에서 ROI 추가,삭제,초기화,업데이트 (type은 다음 중 하나: `pattern`, `ball`, `surface`, `dontcare`)(operation은 다음 중 하나: `add`, `delete`, `reset`, `update`)
+# ### bga ROI속성 예시:
+# - `/bga/roi/pattern/add?name=ROI&row=150&col=150&width=50&height=50` : Add FirstPin/Pattern ROI in BGA window
+# - `/bga/roi/ball/update?index=0&row=200&col=200` : Update Ball ROI in BGA window
+# - `/bga/roi/surface/delete?index=0` : Delete Surface ROI in BGA window
+# - `/bga/roi/dontcare/reset` : Reset Don't Care ROI in BGA window
 
 
 

@@ -42,6 +42,8 @@ class Instruct(Resource):
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         result = run_model(user_input, model_name)
+        # output에서 "json\n" 제거
+        result['output'] = result['output'].replace("json\n", "").strip()
 
         # 클라이언트 IP 주소 가져오기
         client_ip = request.remote_addr

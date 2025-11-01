@@ -88,24 +88,23 @@ def switch_model(new_model_name: str):
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
-        # 2) 새 모델 로드 (GPU 우선, 자동 오프로딩)
-        current_model = AutoModelForCausalLM.from_pretrained(
-            new_model_name,
-            torch_dtype=torch.bfloat16,
-            trust_remote_code=True,
-            device_map="auto",
-        )
-        current_tokenizer = AutoTokenizer.from_pretrained(new_model_name)
-        current_model_name = new_model_name
+    # 2) 새 모델 로드 (GPU 우선, 자동 오프로딩)
+    current_model = AutoModelForCausalLM.from_pretrained(
+        new_model_name,
+        torch_dtype=torch.bfloat16,
+        trust_remote_code=True,
+        device_map="auto",
+    )
+    current_tokenizer = AutoTokenizer.from_pretrained(new_model_name)
+    current_model_name = new_model_name
 
-        allocated, reserved = get_gpu_memory()
-        
-        return {
-            "status": "loaded",
-            "model_name": current_model_name,
-            "hf_device_map": None,
-            "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
-        }
+    allocated, reserved = get_gpu_memory()
+    return {
+        "status": "loaded",
+        "model_name": current_model_name,
+        "hf_device_map": getattr(current_model, "hf_device_map", None),
+        "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
+    }
     
 # 벡터 기반 유사도 판별 함수 -> 유사도 기준 높으면 바로 처리, 아니면 LLM으로 처리
 def hybrid_command_or_llm(user_input, vector_searcher, sim_threshold=0.9, top_k=3, llm_model_name=DEFAULT_MODEL_NAME):

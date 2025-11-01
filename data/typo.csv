@@ -1,0 +1,158 @@
+id,text,label,index,description
+2000,련 모드로 바꿔죠,/mode/set?mode=RUN,,런 모드로 바꿔줘
+2001,맵핑 래티칭 시작,/windows/teaching/mapping/reteach,,매핑 리티칭 시작
+2002,스트립 티치앛ㅇ 열어,/windows/teaching/strip,,스트립 티칭 창 열어
+2003,럿 창 볼래움,/windows/lot,,로트 창 보여줘
+2004,검ㅅㅏ 모ㅡ드 변경,/mode/set?mode=RUN,,검사 모드로 변경
+2005,lga 티칭 창 열여,/windows/teaching/lga,,LGA 티칭 창 열어
+2006,히스톨이창 보여줘,/windows/history,,히스토리 창 보여줘
+2007,5번 카머메라 꺼줘,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼줘
+2008,lot 정보 창 엶,/windows/lot,,로트 정보 창 열어
+2009,pw 테슽틀런,/test/run/prs,,PRS 테스트 런
+2010,환경설정 보여줭,/windows/settings,,환경설정 보여줘
+2011,창아 꺼조,/closeWindows,,창 닫아줘
+2012,조명장 엾어,/windows/light,,조명창 열어
+2013,4번 커메라 켜져봐봐,/live/toggle?switch=ON&no=4,,4번 카메라 켜줘
+2014,카멜라 2 뻔 꺼요,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼줘
+2015,2 가메라 켜,/live/toggle?switch=ON&no=2,,2번 카메라 켜
+2016,피알에스 재티칭 시작,/windows/teaching/prs/reteach,,PRS 재티칭 시작
+2017,bga티칭창 열어볼래,/windows/teaching/bga,,BGA 티칭 창 열어줘
+2018,맵 제티칭 해,/windows/teaching/mapping/reteach,,매핑 재티칭 실행
+2019,스트림 빌 티칭 창 열어,/windows/teaching/strip,,스트립 빌 티칭 창 열어
+2020,런 모드루 바꿔주세요,/mode/set?mode=RUN,,런 모드로 바꿔주세요
+2021,qc ㅌㅣ칭창 열여줘,/windows/teaching/qc,,QC 티칭 창 열어줘
+2022,bga 티칭창열여,/windows/teaching/bga,,BGA 티칭 창 열어
+2023,0번 카메라 끄기,/live/toggle?switch=OFF&no=0,,0번 카메라 끄기
+2024,런몯루 바꿔,/mode/set?mode=RUN,,런 모드로 바꿔
+2025,스트립티칭 열여,/windows/teaching/strip,,스트립 티칭 열어
+2026,카머라 1번 킨다,/live/toggle?switch=ON&no=1,,1번 카메라 켜
+2027,4번 카메라 보여조,/live/toggle?switch=OFF&no=4,,4번 카메라 꺼줘
+2028,셋팅 모드 열어,/windows/settings,,세팅 모드 열어
+2029,0번 커메라 끄기,/live/toggle?switch=OFF&no=0,,0번 카메라 끄기
+2030,카메라 3번 키워,/live/toggle?switch=ON&no=3,,3번 카메라 켜
+2031,lga 티칭챵 열어줘,/windows/teaching/lga,,LGA 티칭 창 열어줘
+2032,5번 커마래 꺼,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼
+2033,맵 테습트런 실행,/test/run/map,,매핑 테스트런 실행
+2034,모든창 닫아버려,/closeWindows,,모든 창 닫아줘
+2035,커매라 5번 끄고싶어,/live/toggle?switch=OFF&no=5,,5번 카메라 끄고 싶어
+2036,맵 피 티칭 작동,/windows/teaching/mapping,,매핑 티칭 창 작동
+2037,검솝모드로 변겅,/mode/set?mode=RUN,,검사 모드로 변경
+2038,0번 카메라 커,/live/toggle?switch=ON&no=0,,0번 카메라 켜
+2039,설쩡 모드로 바꿔주세여,/mode/set?mode=SETUP,,설정 모드로 바꿔주세요
+2040,런모드로 변결,/mode/set?mode=RUN,,런 모드로 변경
+2041,prw테스트 실행,/test/run/prs,,PRS 테스트 실행
+2042,윈도우 다닫기,/closeWindows,,모든 창 닫기
+2043,세팅 화면 보여줘,/windows/settings,,세팅 화면 보여줘
+2044,매퓨팅 제티칭,/windows/teaching/mapping/reteach,,매핑 티칭 재티칭
+2045,lga 칭 열여,/windows/teaching/lga,,LGA 티칭 창 열어
+2046,시스톨이 보여죠,/windows/history,,히스토리 보여줘
+2047,bga 띠칭장은,/windows/teaching/bga,,BGA 티칭 창은
+2048,3번 카메라 켜라,/live/toggle?switch=ON&no=3,,3번 카메라 켜라
+2049,2번 케메라 꺼줘,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼줘
+2050,히스톨이 창 나와라,/windows/history,,히스토리 창 나와라
+2051,stripp 창열기,/windows/teaching/strip,,스트립 창 열기
+2052,lga창열여,/windows/teaching/lga,,LGA 창 열어
+2053,런 모드박아줘,/mode/set?mode=RUN,,런 모드로 변경해줘
+2054,스트립티칠 열여,/windows/teaching/strip,,스트립 티칭 열어
+2055,5번카며라꺼,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼
+2056,prw런해줭,/test/run/prs,,PRS 테스트 런 해줘
+2057,환경설정나와봐,/windows/settings,,환경설정 보여줘
+2058,창끄기,/closeWindows,,창 끄기
+2059,돛명창 열오,/windows/light,,조명창 열어
+2060,네 번 카메라 켜,/live/toggle?switch=ON&no=4,,4번 카메라 켜
+2061,케메라 2본 꺼,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼
+2062,피알에스재티칭,/windows/teaching/prs/reteach,,PRS 재티칭
+2063,lga 티칭치장,/windows/teaching/lga,,LGA 티칭 창
+2064,런모드로,/mode/set?mode=RUN,,런 모드로
+2065,카메라 0반껏줘,/live/toggle?switch=OFF&no=0,,0번 카메라 꺼줘
+2066,LGA티칭창열어조,/windows/teaching/lga,,LGA 티칭 창 열어줘
+2067,BGA티칭창열려,/windows/teaching/bga,,BGA 티칭 창 열어
+2068,lga 티칭창 열여서 pads 탭 가고 ROI 처초화,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Pads
+/teaching/lga/update?propertyName=Button&value=reset",,"LGA 티칭 창 열어서 Pads 탭 이동, ROI 초기화"
+2069,qfn 찬 여고 커너디그리 2.5 설정후 테스트,"/windows/teaching/qfn
+/settings/update?propertyName=QfnCornerDegree&value=2.5
+/teaching/lga/update?propertyName=teachingTest&value=true",,QFN 창 열고 CornerDegree 2.5로 설정 후 티칭 테스트
+2070,calibration 창 열구 바텀탭에 roi 다시설정 임개값 100-200돼,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=roi&value=recreate
+/calibration/update?propertyName=threshold&value=100-200",,"Calibration 창 열고 bottom 탭에서 ROI 재생성, 임계값 100-200으로 설정"
+2071,맺핑티칭창 여러재티칭도 해,"/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,매핑 티칭 창 열고 재티칭 실행
+2072,strip티칭 창 열어 roi 추가 500 500 1000 1000 런모드로,"/windows/teaching/strip
+/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000
+/mode/set?mode=RUN",,"Strip 티칭 창 열고 ROI(500, 500, 1000, 1000) 추가 후 Run 모드로 변경"
+2073,검사 기록창 여구 이번달 prs기록봐,"/windows/history
+/history/update?propertyName=date&value=2025-10-01_2025-10-31
+/history/update?propertyName=camera&value=PRS",,검사 기록 창 열고 이번 달 PRS 기록 보여줘
+2074,prs카머라 실시간 뷰하고 조명창도 열아바,"/windows/light/live?camera=PRS
+/windows/light",,PRS 카메라 실시간 라이브 켜고 조명창도 열기
+2075,calibration 창서 원유사도60으로 사이즈 1-999초기화,"/calibration/update?propertyName=shape&value=circle_60
+/calibration/update?propertyName=size&value=1-999",,"Calibration 창에서 원형 유사도 60, 사이즈 1-999로 초기화"
+2076,lga 찬 서피스탭 가서 티칭테스트 하기,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Surface
+/teaching/lga/update?propertyName=teachingTest&value=true",,"LGA 창 Surface 탭 이동, 티칭 테스트"
+2077,qfn티칭창 열고 roi 추가 후 임개값 2-50으로 맞춰,"/windows/teaching/qfn
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=Threshold&value=2-50",,"QFN 티칭 창 열고 ROI 추가, 임계값 2-50으로 설정"
+2078,"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘","/windows/teaching/bga
+/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=89.8
+/teaching/gridbga/update?propertyName=BallCount&value=200",,"BGA 티칭 창 열고 CornerDegreeTopLeft 89.8, BallCount 200으로 변경"
+2079,capliration창 바텀탭 +카메라바텀 테스트버튼,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=camera&value=bottom
+/calibration/update?propertyName=button&value=Test",,"Calibration 창 bottom 탭, 카메라 bottom, Test 실행"
+2080,mapping캬머라 라이부랑 mapping티칭창열어서 재티칭,"/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭"
+2081,창 다닫귀하고 run 모드로,"/closeWindows, /mode/set?mode=RUN",,모든 창 닫고 run 모드로 변경
+2082,prs테스트 끝나고 창끄기,"/test/run/prs
+/closeWindows",,PRS 테스트 후 창 닫기
+2083,캘리브창 pad탭서 라이트save,"/windows/calibration
+/calibration/update?propertyName=tab&value=pad
+/calibration/update?propertyName=button&value=LightSave",,"Calibration 창 pad 탭 이동, LightSave 실행"
+2084,lga 패키지오프셋을 트루로 색상 블루로설정,"/settings/update?propertyName=UseLgaPackageOffset&value=true
+/settings/update?propertyName=LgaPackageOffsetColor&value=Blue",,"LGA PackageOffset true, 색상 Blue로 변경"
+2085,qfn 리드피치 0.5 리드오프셋x 0.1로,"/settings/update?propertyName=QfnLeadPitch&value=0.5
+/settings/update?propertyName=QfnLeadOffsetX&value=0.1",,"QFN LeadPitch 0.5, LeadOffsetX 0.1로 설정"
+2086,mapping 패키지 폭12 높이6 마크카운터3,"/settings/update?propertyName=MapPackageSizeWidth&value=12.0
+/settings/update?propertyName=MapPackageSizeHeight&value=6.0
+/settings/update?propertyName=MarkCount&value=3",,"Mapping 패키지 사이즈 폭 12, 높이 6, MarkCount 3"
+2087,"bga 볼피치 0.8, standard 0.9, 리젝트마크골드","/settings/update?propertyName=BgaBallPitch&value=0.8
+/settings/update?propertyName=BgaBallPitchStandard&value=0.9
+/settings/update?propertyName=BgaRejectMarkColor&value=Gold",,"BGA BallPitch 0.8, Standard 0.9, RejectMarkColor Gold로 변경"
+2088,"lga 리드x 0.1 y 0.1 t 0.05, 페리미터1.5","/settings/update?propertyName=LgaLeadOffsetX&value=0.1
+/settings/update?propertyName=LgaLeadOffsetY&value=0.1
+/settings/update?propertyName=LgaLeadOffsetT&value=0.05
+/settings/update?propertyName=LgaLeadPerimeter&value=1.5",,"LGA LeadOffsetX 0.1, Y 0.1, T 0.05, Perimeter 1.5 설정"
+2089,calibration창 rectype풀사이즈 roi재생,"/calibration/update?propertyName=recticletype&value=FULLSIZE
+/calibration/update?propertyName=roi&value=recreate",,"Calibration 창 recticletype FULLSIZE, ROI 재생성"
+2090,lga 티칭 창 리즈탭 ROI추가 후 테스트,"/windows/teaching/lga, /teaching/lga/update?propertyName=moveTab&value=Leads
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=teachingTest&value=true",,"LGA 티칭 창 Leads 탭으로 이동, ROI 추가 후 테스트"
+2091,qc 티칭창 열고 임계값3-45로 테스트,"/windows/teaching/qc
+/teaching/lga/update?propertyName=Threshold&value=3-45
+/teaching/lga/update?propertyName=teachingTest&value=true",,QC 티칭 창 열고 임계값 3-45로 테스트
+2092,mapping 오프셋true에 스크래치컬러 브라운,"/settings/update?propertyName=UseMapPackageOffset&value=true
+/settings/update?propertyName=MapScratchColor&value=Brown",,"Mapping PackageOffset true, ScratchColor Brown로 설정"
+2093,setx1 카메라 라이브키고 캘리브 비젼탭,"/windows/light/live?camera=SettingX1
+/windows/calibration
+/calibration/update?propertyName=tab&value=vision",,SettingX1 카메라 라이브 켜고 Calibration 창 vision 탭 이동
+2094,tray로우카운트8 col10 block6셋팅,"/settings/update?propertyName=TrayRowCount&value=8
+/settings/update?propertyName=TrayColCount&value=10
+/settings/update?propertyName=BlockRowCount&value=6",,"TrayRowCount 8, TrayColCount 10, BlockRowCount 6 설정"
+2095,패키지 높이12.3 너비10.5 저장옵션1,"/settings/update?propertyName=PackageHeight&value=12.3
+/settings/update?propertyName=PackageWidth&value=10.5
+/settings/update?propertyName=SaveOption&value=Option1",,"PackageHeight 12.3, Width 10.5, SaveOption Option1"
+2096,"mappingused 트루, prsused 폴스 런모드","/settings/update?propertyName=IsMappingUsed&value=true
+/settings/update?propertyName=IsPrsUsed&value=false
+/mode/set?mode=RUN",,"IsMappingUsed true, IsPrsUsed false, Run 모드 진입"
+2097,bga 쏘오프셋x0.3 y0.3 테스트런,"/settings/update?propertyName=BgaSawOffsetX&value=0.3
+/settings/update?propertyName=BgaSawOffsetY&value=0.3, /test/run/prs",,"BGA SawOffsetX 0.3, SawOffsetY 0.3, 테스트 실행"
+2098,qfn쏘오프셋 x0.3 y0.3 코너디그리2,"/settings/update?propertyName=QfnSawOffsetX&value=0.3
+/settings/update?propertyName=QfnSawOffsetY&value=0.3
+/settings/update?propertyName=QfnCornerDegree&value=2.0",,"QFN SawOffsetX 0.3, SawOffsetY 0.3, CornerDegree 2.0로 변경"
+2099,"lga치핑컬러 바이올렛, 리젝마크코랄","/settings/update?propertyName=LgaChippingColor&value=Violet
+/settings/update?propertyName=LgaRejectMarkColor&value=Coral",,"LGA ChippingColor Violet, RejectMarkColor Coral로 변경"
+2100,"calibration창 임게값0-255,roi재생","/calibration/update?propertyName=threshold&value=0-255
+/calibration/update?propertyName=roi&value=recreate",,"Calibration 창 임계값 0-255, ROI 재생성"

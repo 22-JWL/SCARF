@@ -147,30 +147,4 @@ class ModelSwitch(Resource):
 
 # 서버 실행
 if __name__ == '__main__':
-    examples = [
-    "BGA 노디바이스 색상 blue ",
-    "LGA 창 열기",
-    "PRS 결과 확인",
-    "BGA 티칭 지잆",      # 오타
-    "LGA 탭 이동 테스트",
-    #"오늘 날씨 어때?",
-    #"컴퓨터 켜줘",
-    "조명 화면 보기",
-    "히스토리 열기",
-    "PRS 결과 재티칭 시도",
-    "안녕"
-]
-    
-    for ex in examples:
-        print(f"\n입력: {ex}")
-        res = hybrid_command_or_llm(
-            ex,
-            vector_searcher=vector_searcher,
-            sim_threshold=0.9,
-            top_k=3
-        )
-        print("실행 결과:")
-        print(res)
-        print("-" * 40)
-     
     app.run(host='0.0.0.0', port=5000, debug=False)

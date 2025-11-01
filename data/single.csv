@@ -1,0 +1,305 @@
+id,text,label,index,description
+1,BGA 티칭 시작,/windows/teaching/bga,1,
+2,lighting 화면 열기,/windows/light,1,
+3,히스토리 보여줘,/windows/history,1,
+4,PRS 결과 재티칭,/windows/teaching/prs/reteach,1,
+5,LGA 창 켜,/windows/teaching/lga,1,
+6,매핑 재티칭 시작,/windows/teaching/mapping/reteach,1,
+7,빛 세팅 열어,/windows/light,1,
+8,QC 창 열기,/windows/teaching/qc,1,
+9,스트립 화면 열기,/windows/teaching/strip,1,
+10,맵핑 리티칭 실행,/windows/teaching/mapping/reteach,1,
+11,BGA 티칭 창 켜,/windows/teaching/bga,1,
+12,매핑 샷 재활성화,/windows/teaching/mapping/reteach,1,
+13,Strip 티칭 켜줘,/windows/teaching/strip,1,
+14,LOT 화면 켜줘,/windows/lot,1,
+15,LGA 티칭 열어줘,/windows/teaching/lga,1,
+16,검사 로그 열어줘,/windows/history,1,
+17,랏 정보 열어,/windows/lot,1,
+18,시스템 옵션 열기,/windows/settings,1,
+19,PRS 창 재실행,/windows/teaching/prs/reteach,1,
+20,BGA 설정창 띄워,/windows/teaching/bga,1,
+21,스트립 티칭 열어,/windows/teaching/strip,1,
+22,맵핑 윈도우 열기,/windows/teaching/mapping,1,
+23,QC 티칭 열어줘,/windows/teaching/qc,1,
+24,Strip 창 띄워,/windows/teaching/strip,1,
+25,시스템 설정 열어,/windows/settings,1,
+26,LGA 화면 보여,/windows/teaching/lga,1,
+27,매핑 티칭 열어,/windows/teaching/mapping,1,
+28,QFN 화면 열어,/windows/teaching/qfn,1,
+29,QC 교정창 띄워,/windows/teaching/qc,1,
+30,기록 창 열어,/windows/history,1,
+31,검사 이력 볼래,/windows/history,1,
+32,맵핑 다시 티칭,/windows/teaching/mapping/reteach,1,
+33,LGA 티칭 창 열기,/windows/teaching/lga,1,
+34,매핑 작업 시작,/windows/teaching/mapping,1,
+35,스트립 교정 시작,/windows/teaching/strip,1,
+36,로트 창 열기,/windows/lot,1,
+37,조명 설정창 켜,/windows/light,1,
+38,PRS 재작업 실행,/windows/teaching/prs/reteach,1,
+39,검사 기록 확인,/windows/history,1,
+40,QFN 창 켜줘,/windows/teaching/qfn,1,
+41,QFN 티칭 열어,/windows/teaching/qfn,1,
+42,라이트 세팅 열기,/windows/light,1,
+43,검사 이력 봐볼래,/windows/history,1,
+44,QFN 작업창 띄워,/windows/teaching/qfn,1,
+45,캘리브레이션 창 보여줘 ,/windows/calibration,1,캘리브레이션(보정) 창 열기
+46,캘리 창 열기 ,/windows/calibration,1,보정 창 열기
+47,바코드 실시간 보기 ,/windows/light/live?camera=Barcode,1,바코드 카메라 라이브 뷰
+48,SettingX1 뷰 보여 ,/windows/light/live?camera=SettingX1,1,카메라 X1 라이브 창 열기
+49,Mapping 라이브 켜 ,/windows/light/live?camera=Mapping,1,매핑 카메라 라이브 뷰 창
+50,PRS 라이브 켜 ,/windows/light/live?camera=PRS,1,PRS 카메라 라이브 뷰
+51,조명 라이브 켜기 ,/windows/light/live?camera=PRS,1,PRS 카메라 라이브
+52,스트립 티칭 창 열어줘 ,/windows/teaching/strip,1,스트립 티칭 창 열기
+53,맵핑 창 열어 ,/windows/teaching/mapping,1,맵핑 티칭 창 열기
+54,맵핑 창 띄워줘 ,/windows/teaching/mapping,1,맵핑 창 열기
+55,QC 창 띄워줘 ,/windows/teaching/qc,1,QC 창 열기
+56,QFN 티칭 열기 ,/windows/teaching/qfn,1,QFN 티칭 창 열기
+57,QFN 창 보여줘 ,/windows/teaching/qfn,1,QFN 창 열기
+58,LGA 티칭 켜줘 ,/windows/teaching/lga,1,LGA 티칭 창 열기
+59,불 켜 줘 ,/windows/light,1,조명 창 열기
+60,조명 세팅 열기 ,/windows/light,1,조명 설정 창 열기
+61,조명 창 열어줘 ,/windows/light,1,조명 창 열기
+62,히스토리 창 열어줘 ,/windows/history,1,검사 이력/기록 창 열기
+63,이력 확인 창 열어 ,/windows/history,1,검사 기록 창 열기
+64,맵핑 재티칭 창 열어줘 ,/windows/teaching/mapping/reteach,1,맵핑 샷 기반 재티칭 창 열기
+65,PRS 재티칭 화면 열기 ,/windows/teaching/prs/reteach,1,PRS 결과 기반 재티칭 화면
+66,설정 창 열어줘 ,/windows/settings,1,전역/시스템 설정 창 열기
+67,strip 티칭 띄워 ,/windows/teaching/strip,1,strip 창 열기
+68,히스토리 보여줘 ,/windows/history,1,검사 이력 창 열기
+69,기록 확인할래 ,/windows/history,1,전체 검사 기록 창 열기
+70,오늘 검사 이력 보여줘 ,/windows/history?date={today},1,오늘 날짜 검사 기록 보기
+71,2025년 10월 12일 기록 보여 ,/windows/history?date=2025-10-12,1,지정 날짜 검사 기록 창 열기
+72,최근 검사 기록 열어줘 ,/windows/history,1,전체 검사 이력 비교
+73,랏별 기록 데이터 줘 ,/windows/lot,1,lot 정보 기록 창 열기
+74,히스토리 2025-09-18로 보여 ,/windows/history?date=2025-09-18,1,지정일자 히스토리 창 열기
+75,최근 기록 ,/windows/history,1,최근 전체 이력 빠른 조회
+76,로그 확인 ,/windows/history,1,로그 데이터 확인
+77,LGA 티칭 탭 열기 ,/windows/teaching/lga,1,LGA 티칭 창 열기
+78,BGA 티칭 시작 ,/windows/teaching/bga,1,BGA 티칭 창 열기
+79,QC 티칭 부분 열기 ,/windows/teaching/qc,1,QC 티칭 창 열기
+80,Strip 티칭 창 열어 ,/windows/teaching/strip,1,Strip 티칭 창 열기
+81,Mapping 티칭 창 열기 ,/windows/teaching/mapping,1,Mapping 티칭 창 열기
+82,Mapping 재티칭 실행 ,/windows/teaching/mapping/reteach,1,Mapping 샷 기반 재티칭 실행
+83,PRS 재티칭 실행 ,/windows/teaching/prs/reteach,1,PRS 결과 기반 재티칭 실행
+84,Strip 교정 시작 ,/windows/teaching/strip,1,Strip 티칭 교정 시작
+85,QFN 티칭 창 열기 ,/windows/teaching/qfn,1,QFN 티칭 창 열기
+86,QFN 작업창 화면 ,/windows/teaching/qfn,1,QFN 작업창 열기
+87,캘리브레이션 창 열어 ,/windows/calibration,1,보정(캘리브레이션) 창 열기
+88,보정 화면 켜줘 ,/windows/calibration,1,보정 창 열기
+89,조명 켜. ,/windows/light,1,
+90,불 좀 켜줘. ,/windows/light,1,
+91,불 밝게 해줘. ,/windows/light,1,
+92,조명 켜 주세요. ,/windows/light,1,
+93,조명 좀 밝혀. ,/windows/light,1,
+94,불을 최대 밝기로 해! ,/windows/light,1,
+95,불 켜주실 수 있나요? ,/windows/light,1,
+96,조명 최대 밝기. ,/windows/light,1,
+97,라이트 ON ,/windows/light,1,
+98,조명 꺼. ,/windows/light,1,
+99,조명 꺼 주세요. ,/windows/light,1,
+100,불 끄기. ,/windows/light,1,
+101,불 꺼줘. ,/windows/light,1,
+102,불 안 보여. ,/windows/light,1,
+103,불 좀 꺼 ,/windows/light,1,
+104,티칭 창 띄워. ,/windows/teaching/lga,1,
+105,티칭 창 열어 주세요. ,/windows/teaching/lga,1,
+106,LGA 티칭 보여줘. ,/windows/teaching/lga,1,
+107,로트창 열어. ,/windows/lot,1,
+108,로트 창 보여줘. ,/windows/lot,1,
+109,이력창 보여줘. ,/windows/history,1,
+110,이력 창 열어. ,/windows/history,1,
+111,히스토리 창 열어 줘. ,/windows/history,1,
+112,히스토리 보여줘. ,/windows/history,1,
+113,BGA 창 열어. ,/windows/teaching/bga,1,
+114,BGA 티칭 켜줘. ,/windows/teaching/bga,1,
+115,QFN 창 보여줘. ,/windows/teaching/qfn,1,
+116,QFN 티칭 켜. ,/windows/teaching/qfn,1,
+117,QC 창 켜. ,/windows/teaching/qc,1,
+118,QC 티칭 보여줘. ,/windows/teaching/qc,1,
+119,Strip 창 켜. ,/windows/teaching/strip,1,
+120,Strip 창 보여줘. ,/windows/teaching/strip,1,
+121,맵핑 창 보여줘. ,/windows/teaching/mapping,1,
+122,맵핑 창 열어 줘. ,/windows/teaching/mapping,1,
+123,맵핑 티칭 실행! ,/windows/teaching/mapping,1,
+124,캘리브레이션 창 열어줘. ,/windows/calibration,1,
+125,보정 창 열어. ,/windows/calibration,1,
+126,보정 창 켜줘. ,/windows/calibration,1,
+127,보정 상태 보여줘. ,/windows/calibration,1,
+128,바코드 라이브 켜. ,/windows/light/live?camera=Barcode,1,
+129,PRS 라이브 켜. ,/windows/light/live?camera=PRS,1,
+130,맵핑 라이브 켜줘. ,/windows/light/live?camera=Mapping,1,
+131,카메라 2번 켜,/live/toggle?switch=ON&no=2,2,
+132,1번 카메라 꺼,/live/toggle?switch=OFF&no=1,2,
+133,카메라 2 볼래,/live/toggle?switch=ON&no=2,2,
+134,카메라 3 끄기,/live/toggle?switch=OFF&no=3,2,
+135,3번 카메라 켜 줘,/live/toggle?switch=ON&no=3,2,
+136,2번 카메라 켜 줘,/live/toggle?switch=ON&no=2,2,
+137,카메라 4 OFF,/live/toggle?switch=OFF&no=4,2,
+138,카메라 4번 라이브 켜,/live/toggle?switch=ON&no=4,2,
+139,카메라 0 끄기,/live/toggle?switch=OFF&no=0,2,
+140,2번 카메라 라이브 켜,/live/toggle?switch=ON&no=2,2,
+141,4번 카메라 켜,/live/toggle?switch=ON&no=4,2,
+142,카메라 1 OFF,/live/toggle?switch=OFF&no=1,2,
+143,0번 카메라 꺼줘,/live/toggle?switch=OFF&no=0,2,
+144,카메라 1 온,/live/toggle?switch=ON&no=1,2,
+145,4번 카메라 꺼,/live/toggle?switch=OFF&no=4,2,
+146,3번 카메라 켜,/live/toggle?switch=ON&no=3,2,
+147,5번 카메라 꺼,/live/toggle?switch=OFF&no=5,2,
+148,5번 카메라 꺼줘,/live/toggle?switch=OFF&no=5,2,
+149,0번 카메라 켜,/live/toggle?switch=ON&no=0,2,
+150,2번 카메라 꺼,/live/toggle?switch=OFF&no=2,2,
+151,3번 카메라 라이브 켜,/live/toggle?switch=ON&no=3,2,
+152,카메라 5 끄기,/live/toggle?switch=OFF&no=5,2,
+153,4번 카메라 꺼줘,/live/toggle?switch=OFF&no=4,2,
+154,5번 카메라 라이브 켜,/live/toggle?switch=ON&no=5,2,
+155,1번 카메라 켜 줘,/live/toggle?switch=ON&no=1,2,
+156,카메라 0번 켜,/live/toggle?switch=ON&no=0,2,
+157,카메라 3 OFF,/live/toggle?switch=OFF&no=3,2,
+158,카메라 2번 라이브 켜,/live/toggle?switch=ON&no=2,2,
+159,카메라 1번 켜,/live/toggle?switch=ON&no=1,2,
+160,카메라 3번 라이브 켜,/live/toggle?switch=ON&no=3,2,
+161,0번 카메라 꺼,/live/toggle?switch=OFF&no=0,2,
+162,카메라 3 보여줘,/live/toggle?switch=ON&no=3,2,
+163,삼번 카메라 볼래,/live/toggle?switch=ON&no=3,2,
+164,카메라 0 OFF,/live/toggle?switch=OFF&no=0,2,
+165,1번 카메라 꺼줘,/live/toggle?switch=OFF&no=1,2,
+166,카메라 1 켜 ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+167,1번 카메라 On ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+168,카메라 one 라이브 켜줘 ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+169,1 카메라 라이브 ,/live/toggle?switch=ON&no=1,2,1번 카메라 라이브 켜기
+170,2번 카메라 켜 줘 ,/live/toggle?switch=ON&no=2,2,2번 카메라 켜기
+171,카메라 3 켜 ,/live/toggle?switch=ON&no=3,2,3번 카메라 켜기
+172,삼번 카메라 on 시켜줘 ,/live/toggle?switch=ON&no=3,2,3번 카메라 켜기
+173,카메라 4 켜줘 ,/live/toggle?switch=ON&no=4,2,4번 카메라 켜기
+174,카메라 5 켜 ,/live/toggle?switch=ON&no=5,2,5번 카메라 켜기
+175,카메라 1 OFF ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+176,1번 카메라 꺼 ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+177,1번 카메라 꺼 줘 ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+178,카메라 2 꺼 ,/live/toggle?switch=OFF&no=2,2,2번 카메라 끄기
+179,이번 카메라 꺼 ,/live/toggle?switch=OFF&no=2,2,2번 카메라 끄기
+180,카메라 3꺼 줘 ,/live/toggle?switch=OFF&no=3,2,3번 카메라 끄기
+181,삼번 카메라 꺼 ,/live/toggle?switch=OFF&no=3,2,3번 카메라 꺼기
+182,4번 카메라 끄기 ,/live/toggle?switch=OFF&no=4,2,4번 카메라 끄기
+183,5번 카메라 끄기 ,/live/toggle?switch=OFF&no=5,2,5번 카메라 끄기
+184,3번 카메라 on/off ,"/live/toggle?switch=ON&no=3, /live/toggle?switch=OFF&no=3",2,3번 켜고 끄기
+185,5번 카메라 라이브 ,/live/toggle?switch=ON&no=5,2,5번 카메라 라이브
+186,카메라 0번 켜 ,/live/toggle?switch=ON&no=0,2,0번 카메라 켜기
+187,0번 카메라 끄기 ,/live/toggle?switch=OFF&no=0,2,0번 카메라 끄기
+188,카메라 Zero ON ,/live/toggle?switch=ON&no=0,2,0번 켜기(자연어/영문변형)
+189,트레이 행 개수 8로 세팅해 ,/settings/update?propertyName=TrayRowCount&value=8,3,TrayRowCount=8 변경
+190,트레이 열 10으로 변경해줘 ,/settings/update?propertyName=TrayColCount&value=10,3,TrayColCount=10 변경
+191,카메라 FOV 행 5로 바꿔 ,/settings/update?propertyName=FovRowCount&value=5,3,FovRowCount=5 바꿈
+192,블록 열 개수 7로 해 ,/settings/update?propertyName=BlockColCount&value=7,3,BlockColCount=7 변경
+193,패키지 높이 12.3으로 변경 ,/settings/update?propertyName=PackageHeight&value=12.3,3,PackageHeight=12.3 변경
+194,맵 패키지 타입 BGA로 변경 ,/settings/update?propertyName=MapPackageType&value=BGA,3,MapPackageType=BGA
+195,불량맵핑 사용 false로 설정 ,/settings/update?propertyName=IsMappingUsed&value=false,3,IsMappingUsed 비활성화
+196,PRS 기능 켜 ,/settings/update?propertyName=IsPrsUsed&value=true,3,IsPrsUsed 활성화
+197,바코드 사용 false ,/settings/update?propertyName=IsBarcodeUsed&value=false,3,IsBarcodeUsed 비활성화
+198,BGA 노디바이스 ON ,/settings/update?propertyName=UseBgaNoDevice&value=true,3,UseBgaNoDevice 활성화
+199,BGA 패키지사이즈 사용 꺼 ,/settings/update?propertyName=UseBgaPackageSize&value=false,3,UseBgaPackageSize 비활성화
+200,QFN 패키지 오프셋 True로 ,/settings/update?propertyName=UseQfnPackageOffset&value=true,3,UseQfnPackageOffset 활성화
+201,BGA 노디바이스 색상 Red로 ,/settings/update?propertyName=BgaNoDeviceColor&value=Red,3,BgaNoDeviceColor=Red
+202,BGA 코너 각도 2.5로 세팅 ,/settings/update?propertyName=BgaCornerDegree&value=2.5,3,BgaCornerDegree=2.5
+203,패키지 높이 15로 바꿔 줘 ,/settings/update?propertyName=PackageHeight&value=15,3,PackageHeight=15
+204,맵 패키지 타입 QFN으로 해 ,/settings/update?propertyName=MapPackageType&value=QFN,3,MapPackageType=QFN
+205,바코드 켜줘 ,/settings/update?propertyName=IsBarcodeUsed&value=true,3,IsBarcodeUsed 활성화
+206,블록 행 개수 6으로 지정 ,/settings/update?propertyName=BlockRowCount&value=6,3,BlockRowCount=6
+207,FOV 열 개수 4로 맞춰 ,/settings/update?propertyName=FovColCount&value=4,3,FovColCount=4
+208,트레이 행 20개로 변경 ,/settings/update?propertyName=TrayRowCount&value=20,3,TrayRowCount=20
+209,맵 텍스트 오프셋X 1로 바꿔 ,/settings/update?propertyName=MapTextOffsetX&value=1,3,MapTextOffsetX=1
+210,이번 달 기록만 ,/history/update?propertyName=date&value={this_month},4,이번 달 검사 기록만 필터
+211,지난주 기록만 뽑아줘 ,/history/update?propertyName=date&value=2025-10-13_2025-10-19,4,지난주 기간 기록 필터
+212,오늘 검사 로그 열기 ,/history/update?propertyName=date&value={last_week},4,오늘 검사 기록 로그
+213,2025년 10월 전체 기록 보여줘 ,/history/update?propertyName=date&value=2025-10-01_2025-10-31,4,10월 한 달 전체 검사 뷰
+214,이번달 히스토리 기록 ,/history/update?propertyName=date&value={this_month},4,10월 전체 검사 결과표시
+215,2025년 9월 검사기록 요청 ,/history/update?propertyName=date&value=2025-09-01_2025-09-30,4,2025년 9월 전체 이력
+216,주간 기록 보여 줘. ,/history/update?propertyName=date&value={last_week},4,
+217,LGA 티칭 부분 설정 ,/teaching/lga/update?propertyName=Pads_Button&value=add,5,LGA Pads ROI 추가
+218,LGA 임계값 2-33 설정 ,/teaching/lga/update?propertyName=Pads_Threshold&value=2-33,5,LGA Pads 임계값 변경
+219,BGA 경로 초기화 ,/teaching/bga/update?propertyName=reset,5,BGA 경로 초기화
+220,Grid BGA Package Width 설정 ,/teaching/gridbga/update?propertyName=PackageWidth&value=12.5,5,BGA Package Width 설정
+221,Grid BGA Package Height 설정 ,/teaching/gridbga/update?propertyName=PackageHeight&value=10.2,5,BGA Package Height 설정
+222,Grid BGA Corner Degree Top Left 설정 ,/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=89.5,5,BGA 코너 상단 좌측 각도 설정
+223,Grid BGA Saw Offset X 변경 ,/teaching/gridbga/update?propertyName=SawOffsetX&value=0.025,5,BGA Saw Offset X 설정
+224,Grid BGA Scratch Count 입력 ,/teaching/gridbga/update?propertyName=ScratchCount&value=3,5,BGA Scratch Count 설정
+225,Grid BGA Foreign Material Count 상태 변경 ,/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=2,5,BGA Foreign Material Count 설정
+226,Grid BGA Pattern Count 확인 ,/teaching/gridbga/update?propertyName=PatternCount&value=16,5,BGA Pattern Count 입력
+227,임계값 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+228,보정 버튼 눌러줘 ,/calibration/update?propertyName=button&value=Test,6,보정 테스트 버튼 클릭
+229,로이 생성해 ,/calibration/update?propertyName=roi&value=create,6,ROI 생성
+230,보정 탭 바꿔줘 ,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+231,십자선 타입 기본으로 바꿔 ,/calibration/update?propertyName=recticletype&value=DEFAULT,6,십자선 타입 변경
+232,카메라 변경해 ,/calibration/update?propertyName=camera&value=SettingX1,6,보정 카메라 변경
+233,매핑 테스트 돌려,/test/run/map,7,
+234,PRS 기반 테스트,/test/run/prs,7,
+235,PRS 레시피 확인,/test/run/prs,7,
+236,맵핑 테스트 실행,/test/run/map,7,
+237,PRS 실행,/test/run/prs,7,
+238,맵 테스트 실행,/test/run/map,7,
+239,맵핑 레시피 검증,/test/run/map,7,
+240,PRS 검사 실행 ,/test/run/prs,7,PRS 검사 실행
+241,맵핑 테스트 돌려 ,/test/run/map,7,매핑 테스트 실행
+242,현재 티칭 정보 점검 ,/test/run/prs,7,현재 티칭 정보 검증
+243,매핑 레시피 점검 ,/test/run/map,7,매핑 레시피 검증
+244,검사 테스트 시작해 ,/test/run/prs,7,검사 테스트 시작
+245,맵 레시피 실행 ,/test/run/map,7,맵핑 레시피 실행
+246,ROI 추가해 ,/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000,8,ROI 추가
+247,ROI 새로 만들어 줘 ,/roi/operation?operationName=CreateRoiOperation,8,ROI 새로 생성
+248,ROI 삭제해 줘 ,/roi/operation?operationName=DeleteRoiOperation,8,ROI 전체 삭제
+249,3번 ROI 삭제 ,/roi/operation?operationName=DeleteRoiOperation&index=3,8,특정 ROI(3번) 삭제
+250,ROI 리셋해 줘 ,/roi/operation?operationName=ResetRoisOperation,8,ROI 전체 리셋
+251,테스트용 ROI 넣기 ,/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=300&col=300&height=200&width=200,8,테스트 ROI 추가
+252,ROI 영역 초기화 ,/roi/operation?operationName=ResetRoisOperation,8,ROI 영역 초기화
+253,ROI 영역 다시 만들기 ,/roi/operation?operationName=CreateRoiOperation,8,ROI 영역 재생성
+254,런 모드 실행,/mode/set?mode=RUN,9,
+255,운전 모드 전환,/mode/set?mode=RUN,9,
+256,검사 시작 모드,/mode/set?mode=RUN,9,
+257,RU1 모드 켜,/mode/set?mode=RUN,9,
+258,세팅 모드로 바꿔,/mode/set?mode=SETUP,9,
+259,검사 모드로 변경,/mode/set?mode=RUN,9,
+260,환경 설정 모드,/mode/set?mode=SETUP,9,
+261,실행모드로,/mode/set?mode=RUN,9,
+262,RUN 모드 켜,/mode/set?mode=RUN,9,
+263,런 모드 실행 ,/mode/set?mode=RUN,9,Run 모드 전환
+264,운전 모드로 바꿔 ,/mode/set?mode=RUN,9,Run 모드 전환
+265,검사 시작 모드 켜줘 ,/mode/set?mode=RUN,9,검사 모드 켜기
+266,설정 모드로 변경 ,/mode/set?mode=SETUP,9,Setup 모드 전환
+267,세팅 모드 진입 ,/mode/set?mode=SETUP,9,Setup 모드 진입
+268,검사 모드로 변경 ,/mode/set?mode=RUN,9,검사 모드 전환
+269,장비 운전 모드 시작 ,/mode/set?mode=RUN,9,장비 운전 모드 실행
+270,시스템 런 모드 변환 ,/mode/set?mode=RUN,9,시스템 런 모드 변환
+271,세팅 시작 ,/mode/set?mode=SETUP,9,세팅 모드 시작
+272,장비 설정 모드로 변경 ,/mode/set?mode=SETUP,9,장비 설정 모드 변경
+273,운전모드 시작해. ,/mode/set?mode=RUN,9,
+274,운전 모드 바꿔줘. ,/mode/set?mode=RUN,9,
+275,장비 운전모드. ,/mode/set?mode=RUN,9,
+276,Setup 모드 해줘. ,/mode/set?mode=SETUP,9,
+277,설정모드로 전환해. ,/mode/set?mode=SETUP,9,
+278,세팅 모드 진입,/mode/set?mode=SETUP,9,
+279,채팅 초기화 해 ,/chat/clear,10,채팅/대화 초기화
+280,대화 새로 시작 ,/chat/clear,10,채팅 새로 고침
+281,이번주 검사 이력. ,/history/update?propertyName=date&value={this_week},4,
+282,채팅 창 닫아,/closeWindows,99,
+283,시스템 체크,/api/status,99,
+284,열린 창 끄기,/closeWindows,99,
+285,윈도우 닫기,/closeWindows,99,
+286,창 닫아,/closeWindows,99,
+287,상태창 보여,/api/status,99,
+288,윈도우 창 꺼줘 ,/closeWindows,99,열린 창 모두 닫기
+289,창 다 꺼 ,/closeWindows,99,전체 창 종료
+290,응 ,/openWindow/yes,99,긍정 단답 yes 처리
+291,네 ,/openWindow/yes,99,긍정 단답 yes 처리
+292,yes ,/openWindow/yes,99,영어 긍정 yes 처리
+293,좋아 ,/openWindow/yes,99,긍정 단답
+294,예 ,/openWindow/yes,99,긍정 단답
+295,아니 ,/openWindow/no,99,부정 단답 no 처리
+296,싫어 ,/openWindow/no,99,부정 단답
+297,no ,/openWindow/no,99,영어 부정 no 처리
+298,아니요 ,/openWindow/no,99,부정 단답
+299,창 닫아 ,/closeWindows,99,열린 창 모두 닫기
+300,윈도우 모두 닫아 ,/closeWindows,99,모든 창 닫기
+301,상태 표시 보여줘 ,/api/status,99,시스템 상태 표시
+302,시스템 점검 ,/api/status,99,시스템 상태 점검
+303,대화창 종료 ,/closeWindows,99,창 닫기
+304,모든 창 끄기 ,/closeWindows,99,열린 창 모두 종료

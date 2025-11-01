@@ -1,5 +1,3 @@
-# command_vector_search.py : test_search.py 함수 구조 리팩토링 [test]
-
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -18,7 +16,6 @@ class CommandVectorSearch:
         # 1. DB/모델 로드
         self.client = chromadb.PersistentClient(path=chroma_path)
         self.command_col = self.client.get_or_create_collection(collection_name)
-        print(f"✅ '{collection_name}' 컬렉션 준비 완료")
         self.df_commands = pd.read_csv(csv_path)
         self.df_commands['id'] = self.df_commands.index.astype(str)
 
@@ -49,8 +46,6 @@ class CommandVectorSearch:
                 metadatas=new_metadatas,
                 documents=new_documents,
             )
-
-        print(f"✅ '{collection_name}' 컬렉션에 {len(new_ids)}개 문서 추가 완료")
 
     def execute_command(self, text, top_k=5, threshold=0.75, important_labels=None):
         if important_labels is None:
@@ -114,27 +109,3 @@ class CommandVectorSearch:
             "top_results": top_results,
             "executed_commands": executed_commands
         }
-
-# =========================================
-# 모듈 직접 실행 - 테스트 코드
-# =========================================
-
-if __name__ == "__main__":
-    searcher = CommandVectorSearch()
-    examples = [
-        "BGA 시작",
-        "LGA 창 열기",
-        "PRS 결과 확인",
-        "BGA 티칭 지잆",      # 오타
-        "LGA 탭 이동 테스트",
-        "오늘 날씨 어때?",
-        "컴퓨터 켜줘",
-        "조명 화면 보기",
-        "히스토리 열기",
-        "PRS 결과 재티칭 시도"
-    ]
-    for ex in examples:
-        print(f"\n입력: {ex}")
-        res = searcher.execute_command(ex, top_k=3, threshold=0.85, important_labels=["/windows/teaching/prs/reteach"])
-        print(res)
-        print("-"*50)

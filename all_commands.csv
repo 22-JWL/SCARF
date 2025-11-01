@@ -1,0 +1,813 @@
+id,text,label,index,description,category,difficulty
+1,BGA 티칭 시작,/windows/teaching/bga,1.0,,single,easy
+2,lighting 화면 열기,/windows/light,1.0,,single,easy
+3,히스토리 보여줘,/windows/history,1.0,,single,easy
+4,PRS 결과 재티칭,/windows/teaching/prs/reteach,1.0,,single,easy
+5,LGA 창 켜,/windows/teaching/lga,1.0,,single,easy
+6,매핑 재티칭 시작,/windows/teaching/mapping/reteach,1.0,,single,easy
+7,빛 세팅 열어,/windows/light,1.0,,single,easy
+8,QC 창 열기,/windows/teaching/qc,1.0,,single,easy
+9,스트립 화면 열기,/windows/teaching/strip,1.0,,single,easy
+10,맵핑 리티칭 실행,/windows/teaching/mapping/reteach,1.0,,single,easy
+11,BGA 티칭 창 켜,/windows/teaching/bga,1.0,,single,easy
+12,매핑 샷 재활성화,/windows/teaching/mapping/reteach,1.0,,single,easy
+13,Strip 티칭 켜줘,/windows/teaching/strip,1.0,,single,easy
+14,LOT 화면 켜줘,/windows/lot,1.0,,single,easy
+15,LGA 티칭 열어줘,/windows/teaching/lga,1.0,,single,easy
+16,검사 로그 열어줘,/windows/history,1.0,,single,easy
+17,랏 정보 열어,/windows/lot,1.0,,single,easy
+18,시스템 옵션 열기,/windows/settings,1.0,,single,easy
+19,PRS 창 재실행,/windows/teaching/prs/reteach,1.0,,single,easy
+20,BGA 설정창 띄워,/windows/teaching/bga,1.0,,single,easy
+21,스트립 티칭 열어,/windows/teaching/strip,1.0,,single,easy
+22,맵핑 윈도우 열기,/windows/teaching/mapping,1.0,,single,easy
+23,QC 티칭 열어줘,/windows/teaching/qc,1.0,,single,easy
+24,Strip 창 띄워,/windows/teaching/strip,1.0,,single,easy
+25,시스템 설정 열어,/windows/settings,1.0,,single,easy
+26,LGA 화면 보여,/windows/teaching/lga,1.0,,single,easy
+27,매핑 티칭 열어,/windows/teaching/mapping,1.0,,single,easy
+28,QFN 화면 열어,/windows/teaching/qfn,1.0,,single,easy
+29,QC 교정창 띄워,/windows/teaching/qc,1.0,,single,easy
+30,기록 창 열어,/windows/history,1.0,,single,easy
+31,검사 이력 볼래,/windows/history,1.0,,single,easy
+32,맵핑 다시 티칭,/windows/teaching/mapping/reteach,1.0,,single,easy
+33,LGA 티칭 창 열기,/windows/teaching/lga,1.0,,single,easy
+34,매핑 작업 시작,/windows/teaching/mapping,1.0,,single,easy
+35,스트립 교정 시작,/windows/teaching/strip,1.0,,single,easy
+36,로트 창 열기,/windows/lot,1.0,,single,easy
+37,조명 설정창 켜,/windows/light,1.0,,single,easy
+38,PRS 재작업 실행,/windows/teaching/prs/reteach,1.0,,single,easy
+39,검사 기록 확인,/windows/history,1.0,,single,easy
+40,QFN 창 켜줘,/windows/teaching/qfn,1.0,,single,easy
+41,QFN 티칭 열어,/windows/teaching/qfn,1.0,,single,easy
+42,라이트 세팅 열기,/windows/light,1.0,,single,easy
+43,검사 이력 봐볼래,/windows/history,1.0,,single,easy
+44,QFN 작업창 띄워,/windows/teaching/qfn,1.0,,single,easy
+45,캘리브레이션 창 보여줘 ,/windows/calibration,1.0,캘리브레이션(보정) 창 열기,single,easy
+46,캘리 창 열기 ,/windows/calibration,1.0,보정 창 열기,single,easy
+47,바코드 실시간 보기 ,/windows/light/live?camera=Barcode,1.0,바코드 카메라 라이브 뷰,single,easy
+48,SettingX1 뷰 보여 ,/windows/light/live?camera=SettingX1,1.0,카메라 X1 라이브 창 열기,single,easy
+49,Mapping 라이브 켜 ,/windows/light/live?camera=Mapping,1.0,매핑 카메라 라이브 뷰 창,single,easy
+50,PRS 라이브 켜 ,/windows/light/live?camera=PRS,1.0,PRS 카메라 라이브 뷰,single,easy
+51,조명 라이브 켜기 ,/windows/light/live?camera=PRS,1.0,PRS 카메라 라이브,single,easy
+52,스트립 티칭 창 열어줘 ,/windows/teaching/strip,1.0,스트립 티칭 창 열기,single,easy
+53,맵핑 창 열어 ,/windows/teaching/mapping,1.0,맵핑 티칭 창 열기,single,easy
+54,맵핑 창 띄워줘 ,/windows/teaching/mapping,1.0,맵핑 창 열기,single,easy
+55,QC 창 띄워줘 ,/windows/teaching/qc,1.0,QC 창 열기,single,easy
+56,QFN 티칭 열기 ,/windows/teaching/qfn,1.0,QFN 티칭 창 열기,single,easy
+57,QFN 창 보여줘 ,/windows/teaching/qfn,1.0,QFN 창 열기,single,easy
+58,LGA 티칭 켜줘 ,/windows/teaching/lga,1.0,LGA 티칭 창 열기,single,easy
+59,불 켜 줘 ,/windows/light,1.0,조명 창 열기,single,easy
+60,조명 세팅 열기 ,/windows/light,1.0,조명 설정 창 열기,single,easy
+61,조명 창 열어줘 ,/windows/light,1.0,조명 창 열기,single,easy
+62,히스토리 창 열어줘 ,/windows/history,1.0,검사 이력/기록 창 열기,single,easy
+63,이력 확인 창 열어 ,/windows/history,1.0,검사 기록 창 열기,single,easy
+64,맵핑 재티칭 창 열어줘 ,/windows/teaching/mapping/reteach,1.0,맵핑 샷 기반 재티칭 창 열기,single,easy
+65,PRS 재티칭 화면 열기 ,/windows/teaching/prs/reteach,1.0,PRS 결과 기반 재티칭 화면,single,easy
+66,설정 창 열어줘 ,/windows/settings,1.0,전역/시스템 설정 창 열기,single,easy
+67,strip 티칭 띄워 ,/windows/teaching/strip,1.0,strip 창 열기,single,easy
+68,히스토리 보여줘 ,/windows/history,1.0,검사 이력 창 열기,single,easy
+69,기록 확인할래 ,/windows/history,1.0,전체 검사 기록 창 열기,single,easy
+70,오늘 검사 이력 보여줘 ,/windows/history?date={today},1.0,오늘 날짜 검사 기록 보기,single,easy
+71,2025년 10월 12일 기록 보여 ,/windows/history?date=2025-10-12,1.0,지정 날짜 검사 기록 창 열기,single,easy
+72,최근 검사 기록 열어줘 ,/windows/history,1.0,전체 검사 이력 비교,single,easy
+73,랏별 기록 데이터 줘 ,/windows/lot,1.0,lot 정보 기록 창 열기,single,easy
+74,히스토리 2025-09-18로 보여 ,/windows/history?date=2025-09-18,1.0,지정일자 히스토리 창 열기,single,easy
+75,최근 기록 ,/windows/history,1.0,최근 전체 이력 빠른 조회,single,easy
+76,로그 확인 ,/windows/history,1.0,로그 데이터 확인,single,easy
+77,LGA 티칭 탭 열기 ,/windows/teaching/lga,1.0,LGA 티칭 창 열기,single,easy
+78,BGA 티칭 시작 ,/windows/teaching/bga,1.0,BGA 티칭 창 열기,single,easy
+79,QC 티칭 부분 열기 ,/windows/teaching/qc,1.0,QC 티칭 창 열기,single,easy
+80,Strip 티칭 창 열어 ,/windows/teaching/strip,1.0,Strip 티칭 창 열기,single,easy
+81,Mapping 티칭 창 열기 ,/windows/teaching/mapping,1.0,Mapping 티칭 창 열기,single,easy
+82,Mapping 재티칭 실행 ,/windows/teaching/mapping/reteach,1.0,Mapping 샷 기반 재티칭 실행,single,easy
+83,PRS 재티칭 실행 ,/windows/teaching/prs/reteach,1.0,PRS 결과 기반 재티칭 실행,single,easy
+84,Strip 교정 시작 ,/windows/teaching/strip,1.0,Strip 티칭 교정 시작,single,easy
+85,QFN 티칭 창 열기 ,/windows/teaching/qfn,1.0,QFN 티칭 창 열기,single,easy
+86,QFN 작업창 화면 ,/windows/teaching/qfn,1.0,QFN 작업창 열기,single,easy
+87,캘리브레이션 창 열어 ,/windows/calibration,1.0,보정(캘리브레이션) 창 열기,single,easy
+88,보정 화면 켜줘 ,/windows/calibration,1.0,보정 창 열기,single,easy
+89,조명 켜. ,/windows/light,1.0,,single,easy
+90,불 좀 켜줘. ,/windows/light,1.0,,single,easy
+91,불 밝게 해줘. ,/windows/light,1.0,,single,easy
+92,조명 켜 주세요. ,/windows/light,1.0,,single,easy
+93,조명 좀 밝혀. ,/windows/light,1.0,,single,easy
+94,불을 최대 밝기로 해! ,/windows/light,1.0,,single,easy
+95,불 켜주실 수 있나요? ,/windows/light,1.0,,single,easy
+96,조명 최대 밝기. ,/windows/light,1.0,,single,easy
+97,라이트 ON ,/windows/light,1.0,,single,easy
+98,조명 꺼. ,/windows/light,1.0,,single,easy
+99,조명 꺼 주세요. ,/windows/light,1.0,,single,easy
+100,불 끄기. ,/windows/light,1.0,,single,easy
+101,불 꺼줘. ,/windows/light,1.0,,single,easy
+102,불 안 보여. ,/windows/light,1.0,,single,easy
+103,불 좀 꺼 ,/windows/light,1.0,,single,easy
+104,티칭 창 띄워. ,/windows/teaching/lga,1.0,,single,easy
+105,티칭 창 열어 주세요. ,/windows/teaching/lga,1.0,,single,easy
+106,LGA 티칭 보여줘. ,/windows/teaching/lga,1.0,,single,easy
+107,로트창 열어. ,/windows/lot,1.0,,single,easy
+108,로트 창 보여줘. ,/windows/lot,1.0,,single,easy
+109,이력창 보여줘. ,/windows/history,1.0,,single,easy
+110,이력 창 열어. ,/windows/history,1.0,,single,easy
+111,히스토리 창 열어 줘. ,/windows/history,1.0,,single,easy
+112,히스토리 보여줘. ,/windows/history,1.0,,single,easy
+113,BGA 창 열어. ,/windows/teaching/bga,1.0,,single,easy
+114,BGA 티칭 켜줘. ,/windows/teaching/bga,1.0,,single,easy
+115,QFN 창 보여줘. ,/windows/teaching/qfn,1.0,,single,easy
+116,QFN 티칭 켜. ,/windows/teaching/qfn,1.0,,single,easy
+117,QC 창 켜. ,/windows/teaching/qc,1.0,,single,easy
+118,QC 티칭 보여줘. ,/windows/teaching/qc,1.0,,single,easy
+119,Strip 창 켜. ,/windows/teaching/strip,1.0,,single,easy
+120,Strip 창 보여줘. ,/windows/teaching/strip,1.0,,single,easy
+121,맵핑 창 보여줘. ,/windows/teaching/mapping,1.0,,single,easy
+122,맵핑 창 열어 줘. ,/windows/teaching/mapping,1.0,,single,easy
+123,맵핑 티칭 실행! ,/windows/teaching/mapping,1.0,,single,easy
+124,캘리브레이션 창 열어줘. ,/windows/calibration,1.0,,single,easy
+125,보정 창 열어. ,/windows/calibration,1.0,,single,easy
+126,보정 창 켜줘. ,/windows/calibration,1.0,,single,easy
+127,보정 상태 보여줘. ,/windows/calibration,1.0,,single,easy
+128,바코드 라이브 켜. ,/windows/light/live?camera=Barcode,1.0,,single,easy
+129,PRS 라이브 켜. ,/windows/light/live?camera=PRS,1.0,,single,easy
+130,맵핑 라이브 켜줘. ,/windows/light/live?camera=Mapping,1.0,,single,easy
+131,카메라 2번 켜,/live/toggle?switch=ON&no=2,2.0,,single,easy
+132,1번 카메라 꺼,/live/toggle?switch=OFF&no=1,2.0,,single,easy
+133,카메라 2 볼래,/live/toggle?switch=ON&no=2,2.0,,single,easy
+134,카메라 3 끄기,/live/toggle?switch=OFF&no=3,2.0,,single,easy
+135,3번 카메라 켜 줘,/live/toggle?switch=ON&no=3,2.0,,single,easy
+136,2번 카메라 켜 줘,/live/toggle?switch=ON&no=2,2.0,,single,easy
+137,카메라 4 OFF,/live/toggle?switch=OFF&no=4,2.0,,single,easy
+138,카메라 4번 라이브 켜,/live/toggle?switch=ON&no=4,2.0,,single,easy
+139,카메라 0 끄기,/live/toggle?switch=OFF&no=0,2.0,,single,easy
+140,2번 카메라 라이브 켜,/live/toggle?switch=ON&no=2,2.0,,single,easy
+141,4번 카메라 켜,/live/toggle?switch=ON&no=4,2.0,,single,easy
+142,카메라 1 OFF,/live/toggle?switch=OFF&no=1,2.0,,single,easy
+143,0번 카메라 꺼줘,/live/toggle?switch=OFF&no=0,2.0,,single,easy
+144,카메라 1 온,/live/toggle?switch=ON&no=1,2.0,,single,easy
+145,4번 카메라 꺼,/live/toggle?switch=OFF&no=4,2.0,,single,easy
+146,3번 카메라 켜,/live/toggle?switch=ON&no=3,2.0,,single,easy
+147,5번 카메라 꺼,/live/toggle?switch=OFF&no=5,2.0,,single,easy
+148,5번 카메라 꺼줘,/live/toggle?switch=OFF&no=5,2.0,,single,easy
+149,0번 카메라 켜,/live/toggle?switch=ON&no=0,2.0,,single,easy
+150,2번 카메라 꺼,/live/toggle?switch=OFF&no=2,2.0,,single,easy
+151,3번 카메라 라이브 켜,/live/toggle?switch=ON&no=3,2.0,,single,easy
+152,카메라 5 끄기,/live/toggle?switch=OFF&no=5,2.0,,single,easy
+153,4번 카메라 꺼줘,/live/toggle?switch=OFF&no=4,2.0,,single,easy
+154,5번 카메라 라이브 켜,/live/toggle?switch=ON&no=5,2.0,,single,easy
+155,1번 카메라 켜 줘,/live/toggle?switch=ON&no=1,2.0,,single,easy
+156,카메라 0번 켜,/live/toggle?switch=ON&no=0,2.0,,single,easy
+157,카메라 3 OFF,/live/toggle?switch=OFF&no=3,2.0,,single,easy
+158,카메라 2번 라이브 켜,/live/toggle?switch=ON&no=2,2.0,,single,easy
+159,카메라 1번 켜,/live/toggle?switch=ON&no=1,2.0,,single,easy
+160,카메라 3번 라이브 켜,/live/toggle?switch=ON&no=3,2.0,,single,easy
+161,0번 카메라 꺼,/live/toggle?switch=OFF&no=0,2.0,,single,easy
+162,카메라 3 보여줘,/live/toggle?switch=ON&no=3,2.0,,single,easy
+163,삼번 카메라 볼래,/live/toggle?switch=ON&no=3,2.0,,single,easy
+164,카메라 0 OFF,/live/toggle?switch=OFF&no=0,2.0,,single,easy
+165,1번 카메라 꺼줘,/live/toggle?switch=OFF&no=1,2.0,,single,easy
+166,카메라 1 켜 ,/live/toggle?switch=ON&no=1,2.0,1번 카메라 켜기,single,easy
+167,1번 카메라 On ,/live/toggle?switch=ON&no=1,2.0,1번 카메라 켜기,single,easy
+168,카메라 one 라이브 켜줘 ,/live/toggle?switch=ON&no=1,2.0,1번 카메라 켜기,single,easy
+169,1 카메라 라이브 ,/live/toggle?switch=ON&no=1,2.0,1번 카메라 라이브 켜기,single,easy
+170,2번 카메라 켜 줘 ,/live/toggle?switch=ON&no=2,2.0,2번 카메라 켜기,single,easy
+171,카메라 3 켜 ,/live/toggle?switch=ON&no=3,2.0,3번 카메라 켜기,single,easy
+172,삼번 카메라 on 시켜줘 ,/live/toggle?switch=ON&no=3,2.0,3번 카메라 켜기,single,easy
+173,카메라 4 켜줘 ,/live/toggle?switch=ON&no=4,2.0,4번 카메라 켜기,single,easy
+174,카메라 5 켜 ,/live/toggle?switch=ON&no=5,2.0,5번 카메라 켜기,single,easy
+175,카메라 1 OFF ,/live/toggle?switch=OFF&no=1,2.0,1번 카메라 끄기,single,easy
+176,1번 카메라 꺼 ,/live/toggle?switch=OFF&no=1,2.0,1번 카메라 끄기,single,easy
+177,1번 카메라 꺼 줘 ,/live/toggle?switch=OFF&no=1,2.0,1번 카메라 끄기,single,easy
+178,카메라 2 꺼 ,/live/toggle?switch=OFF&no=2,2.0,2번 카메라 끄기,single,easy
+179,이번 카메라 꺼 ,/live/toggle?switch=OFF&no=2,2.0,2번 카메라 끄기,single,easy
+180,카메라 3꺼 줘 ,/live/toggle?switch=OFF&no=3,2.0,3번 카메라 끄기,single,easy
+181,삼번 카메라 꺼 ,/live/toggle?switch=OFF&no=3,2.0,3번 카메라 꺼기,single,easy
+182,4번 카메라 끄기 ,/live/toggle?switch=OFF&no=4,2.0,4번 카메라 끄기,single,easy
+183,5번 카메라 끄기 ,/live/toggle?switch=OFF&no=5,2.0,5번 카메라 끄기,single,easy
+184,3번 카메라 on/off ,"/live/toggle?switch=ON&no=3, /live/toggle?switch=OFF&no=3",2.0,3번 켜고 끄기,single,easy
+185,5번 카메라 라이브 ,/live/toggle?switch=ON&no=5,2.0,5번 카메라 라이브,single,easy
+186,카메라 0번 켜 ,/live/toggle?switch=ON&no=0,2.0,0번 카메라 켜기,single,easy
+187,0번 카메라 끄기 ,/live/toggle?switch=OFF&no=0,2.0,0번 카메라 끄기,single,easy
+188,카메라 Zero ON ,/live/toggle?switch=ON&no=0,2.0,0번 켜기(자연어/영문변형),single,easy
+189,트레이 행 개수 8로 세팅해 ,/settings/update?propertyName=TrayRowCount&value=8,3.0,TrayRowCount=8 변경,single,easy
+190,트레이 열 10으로 변경해줘 ,/settings/update?propertyName=TrayColCount&value=10,3.0,TrayColCount=10 변경,single,easy
+191,카메라 FOV 행 5로 바꿔 ,/settings/update?propertyName=FovRowCount&value=5,3.0,FovRowCount=5 바꿈,single,easy
+192,블록 열 개수 7로 해 ,/settings/update?propertyName=BlockColCount&value=7,3.0,BlockColCount=7 변경,single,easy
+193,패키지 높이 12.3으로 변경 ,/settings/update?propertyName=PackageHeight&value=12.3,3.0,PackageHeight=12.3 변경,single,easy
+194,맵 패키지 타입 BGA로 변경 ,/settings/update?propertyName=MapPackageType&value=BGA,3.0,MapPackageType=BGA,single,easy
+195,불량맵핑 사용 false로 설정 ,/settings/update?propertyName=IsMappingUsed&value=false,3.0,IsMappingUsed 비활성화,single,easy
+196,PRS 기능 켜 ,/settings/update?propertyName=IsPrsUsed&value=true,3.0,IsPrsUsed 활성화,single,easy
+197,바코드 사용 false ,/settings/update?propertyName=IsBarcodeUsed&value=false,3.0,IsBarcodeUsed 비활성화,single,easy
+198,BGA 노디바이스 ON ,/settings/update?propertyName=UseBgaNoDevice&value=true,3.0,UseBgaNoDevice 활성화,single,easy
+199,BGA 패키지사이즈 사용 꺼 ,/settings/update?propertyName=UseBgaPackageSize&value=false,3.0,UseBgaPackageSize 비활성화,single,easy
+200,QFN 패키지 오프셋 True로 ,/settings/update?propertyName=UseQfnPackageOffset&value=true,3.0,UseQfnPackageOffset 활성화,single,easy
+201,BGA 노디바이스 색상 Red로 ,/settings/update?propertyName=BgaNoDeviceColor&value=Red,3.0,BgaNoDeviceColor=Red,single,easy
+202,BGA 코너 각도 2.5로 세팅 ,/settings/update?propertyName=BgaCornerDegree&value=2.5,3.0,BgaCornerDegree=2.5,single,easy
+203,패키지 높이 15로 바꿔 줘 ,/settings/update?propertyName=PackageHeight&value=15,3.0,PackageHeight=15,single,easy
+204,맵 패키지 타입 QFN으로 해 ,/settings/update?propertyName=MapPackageType&value=QFN,3.0,MapPackageType=QFN,single,easy
+205,바코드 켜줘 ,/settings/update?propertyName=IsBarcodeUsed&value=true,3.0,IsBarcodeUsed 활성화,single,easy
+206,블록 행 개수 6으로 지정 ,/settings/update?propertyName=BlockRowCount&value=6,3.0,BlockRowCount=6,single,easy
+207,FOV 열 개수 4로 맞춰 ,/settings/update?propertyName=FovColCount&value=4,3.0,FovColCount=4,single,easy
+208,트레이 행 20개로 변경 ,/settings/update?propertyName=TrayRowCount&value=20,3.0,TrayRowCount=20,single,easy
+209,맵 텍스트 오프셋X 1로 바꿔 ,/settings/update?propertyName=MapTextOffsetX&value=1,3.0,MapTextOffsetX=1,single,easy
+210,이번 달 기록만 ,/history/update?propertyName=date&value={this_month},4.0,이번 달 검사 기록만 필터,single,easy
+211,지난주 기록만 뽑아줘 ,/history/update?propertyName=date&value=2025-10-13_2025-10-19,4.0,지난주 기간 기록 필터,single,easy
+212,오늘 검사 로그 열기 ,/history/update?propertyName=date&value={last_week},4.0,오늘 검사 기록 로그,single,easy
+213,2025년 10월 전체 기록 보여줘 ,/history/update?propertyName=date&value=2025-10-01_2025-10-31,4.0,10월 한 달 전체 검사 뷰,single,easy
+214,이번달 히스토리 기록 ,/history/update?propertyName=date&value={this_month},4.0,10월 전체 검사 결과표시,single,easy
+215,2025년 9월 검사기록 요청 ,/history/update?propertyName=date&value=2025-09-01_2025-09-30,4.0,2025년 9월 전체 이력,single,easy
+216,주간 기록 보여 줘. ,/history/update?propertyName=date&value={last_week},4.0,,single,easy
+217,LGA 티칭 부분 설정 ,/teaching/lga/update?propertyName=Pads_Button&value=add,5.0,LGA Pads ROI 추가,single,easy
+218,LGA 임계값 2-33 설정 ,/teaching/lga/update?propertyName=Pads_Threshold&value=2-33,5.0,LGA Pads 임계값 변경,single,easy
+219,BGA 경로 초기화 ,/teaching/bga/update?propertyName=reset,5.0,BGA 경로 초기화,single,easy
+220,Grid BGA Package Width 설정 ,/teaching/gridbga/update?propertyName=PackageWidth&value=12.5,5.0,BGA Package Width 설정,single,easy
+221,Grid BGA Package Height 설정 ,/teaching/gridbga/update?propertyName=PackageHeight&value=10.2,5.0,BGA Package Height 설정,single,easy
+222,Grid BGA Corner Degree Top Left 설정 ,/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=89.5,5.0,BGA 코너 상단 좌측 각도 설정,single,easy
+223,Grid BGA Saw Offset X 변경 ,/teaching/gridbga/update?propertyName=SawOffsetX&value=0.025,5.0,BGA Saw Offset X 설정,single,easy
+224,Grid BGA Scratch Count 입력 ,/teaching/gridbga/update?propertyName=ScratchCount&value=3,5.0,BGA Scratch Count 설정,single,easy
+225,Grid BGA Foreign Material Count 상태 변경 ,/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=2,5.0,BGA Foreign Material Count 설정,single,easy
+226,Grid BGA Pattern Count 확인 ,/teaching/gridbga/update?propertyName=PatternCount&value=16,5.0,BGA Pattern Count 입력,single,easy
+227,임계값 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6.0,임계값 설정,single,easy
+228,보정 버튼 눌러줘 ,/calibration/update?propertyName=button&value=Test,6.0,보정 테스트 버튼 클릭,single,easy
+229,로이 생성해 ,/calibration/update?propertyName=roi&value=create,6.0,ROI 생성,single,easy
+230,보정 탭 바꿔줘 ,/calibration/update?propertyName=tab&value=setting,6.0,보정 탭 변경,single,easy
+231,십자선 타입 기본으로 바꿔 ,/calibration/update?propertyName=recticletype&value=DEFAULT,6.0,십자선 타입 변경,single,easy
+232,카메라 변경해 ,/calibration/update?propertyName=camera&value=SettingX1,6.0,보정 카메라 변경,single,easy
+233,매핑 테스트 돌려,/test/run/map,7.0,,single,easy
+234,PRS 기반 테스트,/test/run/prs,7.0,,single,easy
+235,PRS 레시피 확인,/test/run/prs,7.0,,single,easy
+236,맵핑 테스트 실행,/test/run/map,7.0,,single,easy
+237,PRS 실행,/test/run/prs,7.0,,single,easy
+238,맵 테스트 실행,/test/run/map,7.0,,single,easy
+239,맵핑 레시피 검증,/test/run/map,7.0,,single,easy
+240,PRS 검사 실행 ,/test/run/prs,7.0,PRS 검사 실행,single,easy
+241,맵핑 테스트 돌려 ,/test/run/map,7.0,매핑 테스트 실행,single,easy
+242,현재 티칭 정보 점검 ,/test/run/prs,7.0,현재 티칭 정보 검증,single,easy
+243,매핑 레시피 점검 ,/test/run/map,7.0,매핑 레시피 검증,single,easy
+244,검사 테스트 시작해 ,/test/run/prs,7.0,검사 테스트 시작,single,easy
+245,맵 레시피 실행 ,/test/run/map,7.0,맵핑 레시피 실행,single,easy
+246,ROI 추가해 ,/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000,8.0,ROI 추가,single,easy
+247,ROI 새로 만들어 줘 ,/roi/operation?operationName=CreateRoiOperation,8.0,ROI 새로 생성,single,easy
+248,ROI 삭제해 줘 ,/roi/operation?operationName=DeleteRoiOperation,8.0,ROI 전체 삭제,single,easy
+249,3번 ROI 삭제 ,/roi/operation?operationName=DeleteRoiOperation&index=3,8.0,특정 ROI(3번) 삭제,single,easy
+250,ROI 리셋해 줘 ,/roi/operation?operationName=ResetRoisOperation,8.0,ROI 전체 리셋,single,easy
+251,테스트용 ROI 넣기 ,/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=300&col=300&height=200&width=200,8.0,테스트 ROI 추가,single,easy
+252,ROI 영역 초기화 ,/roi/operation?operationName=ResetRoisOperation,8.0,ROI 영역 초기화,single,easy
+253,ROI 영역 다시 만들기 ,/roi/operation?operationName=CreateRoiOperation,8.0,ROI 영역 재생성,single,easy
+254,런 모드 실행,/mode/set?mode=RUN,9.0,,single,easy
+255,운전 모드 전환,/mode/set?mode=RUN,9.0,,single,easy
+256,검사 시작 모드,/mode/set?mode=RUN,9.0,,single,easy
+257,RU1 모드 켜,/mode/set?mode=RUN,9.0,,single,easy
+258,세팅 모드로 바꿔,/mode/set?mode=SETUP,9.0,,single,easy
+259,검사 모드로 변경,/mode/set?mode=RUN,9.0,,single,easy
+260,환경 설정 모드,/mode/set?mode=SETUP,9.0,,single,easy
+261,실행모드로,/mode/set?mode=RUN,9.0,,single,easy
+262,RUN 모드 켜,/mode/set?mode=RUN,9.0,,single,easy
+263,런 모드 실행 ,/mode/set?mode=RUN,9.0,Run 모드 전환,single,easy
+264,운전 모드로 바꿔 ,/mode/set?mode=RUN,9.0,Run 모드 전환,single,easy
+265,검사 시작 모드 켜줘 ,/mode/set?mode=RUN,9.0,검사 모드 켜기,single,easy
+266,설정 모드로 변경 ,/mode/set?mode=SETUP,9.0,Setup 모드 전환,single,easy
+267,세팅 모드 진입 ,/mode/set?mode=SETUP,9.0,Setup 모드 진입,single,easy
+268,검사 모드로 변경 ,/mode/set?mode=RUN,9.0,검사 모드 전환,single,easy
+269,장비 운전 모드 시작 ,/mode/set?mode=RUN,9.0,장비 운전 모드 실행,single,easy
+270,시스템 런 모드 변환 ,/mode/set?mode=RUN,9.0,시스템 런 모드 변환,single,easy
+271,세팅 시작 ,/mode/set?mode=SETUP,9.0,세팅 모드 시작,single,easy
+272,장비 설정 모드로 변경 ,/mode/set?mode=SETUP,9.0,장비 설정 모드 변경,single,easy
+273,운전모드 시작해. ,/mode/set?mode=RUN,9.0,,single,easy
+274,운전 모드 바꿔줘. ,/mode/set?mode=RUN,9.0,,single,easy
+275,장비 운전모드. ,/mode/set?mode=RUN,9.0,,single,easy
+276,Setup 모드 해줘. ,/mode/set?mode=SETUP,9.0,,single,easy
+277,설정모드로 전환해. ,/mode/set?mode=SETUP,9.0,,single,easy
+278,세팅 모드 진입,/mode/set?mode=SETUP,9.0,,single,easy
+279,채팅 초기화 해 ,/chat/clear,10.0,채팅/대화 초기화,single,easy
+280,대화 새로 시작 ,/chat/clear,10.0,채팅 새로 고침,single,easy
+281,이번주 검사 이력. ,/history/update?propertyName=date&value={this_week},4.0,,single,easy
+282,채팅 창 닫아,/closeWindows,99.0,,single,easy
+283,시스템 체크,/api/status,99.0,,single,easy
+284,열린 창 끄기,/closeWindows,99.0,,single,easy
+285,윈도우 닫기,/closeWindows,99.0,,single,easy
+286,창 닫아,/closeWindows,99.0,,single,easy
+287,상태창 보여,/api/status,99.0,,single,easy
+288,윈도우 창 꺼줘 ,/closeWindows,99.0,열린 창 모두 닫기,single,easy
+289,창 다 꺼 ,/closeWindows,99.0,전체 창 종료,single,easy
+290,응 ,/openWindow/yes,99.0,긍정 단답 yes 처리,single,easy
+291,네 ,/openWindow/yes,99.0,긍정 단답 yes 처리,single,easy
+292,yes ,/openWindow/yes,99.0,영어 긍정 yes 처리,single,easy
+293,좋아 ,/openWindow/yes,99.0,긍정 단답,single,easy
+294,예 ,/openWindow/yes,99.0,긍정 단답,single,easy
+295,아니 ,/openWindow/no,99.0,부정 단답 no 처리,single,easy
+296,싫어 ,/openWindow/no,99.0,부정 단답,single,easy
+297,no ,/openWindow/no,99.0,영어 부정 no 처리,single,easy
+298,아니요 ,/openWindow/no,99.0,부정 단답,single,easy
+299,창 닫아 ,/closeWindows,99.0,열린 창 모두 닫기,single,easy
+300,윈도우 모두 닫아 ,/closeWindows,99.0,모든 창 닫기,single,easy
+301,상태 표시 보여줘 ,/api/status,99.0,시스템 상태 표시,single,easy
+302,시스템 점검 ,/api/status,99.0,시스템 상태 점검,single,easy
+303,대화창 종료 ,/closeWindows,99.0,창 닫기,single,easy
+304,모든 창 끄기 ,/closeWindows,99.0,열린 창 모두 종료,single,easy
+1000,카메라 1번 켜고 조명 창 열어,"/live/toggle?switch=ON&no=1
+/windows/light",,,composite,hard
+1001,검사 모드로 바꾸고 히스토리 띄워,"/mode/set?mode=RUN
+/windows/history",,,composite,hard
+1002,LOT 창 열고 QC 티칭도 해,"/windows/lot
+/windows/teaching/qc",,,composite,hard
+1003,2번 카메라 끄고 매핑창 켜,"/live/toggle?switch=OFF&no=2
+/windows/teaching/mapping",,,composite,hard
+1004,설정 모드 전환 후 라이트 열어,"/mode/set?mode=SETUP
+/windows/light",,,composite,hard
+1005,1번 카메라 켜고 스트립 티칭창 열어줘,"/live/toggle?switch=ON&no=1
+/windows/teaching/strip",,,composite,hard
+1006,맵 테스팅 하고 기록창 확인,"/test/run/map
+/windows/history",,,composite,hard
+1007,카메라 3 켜고 나서 창 닫아,"/live/toggle?switch=ON&no=3
+/closeWindows",,,composite,hard
+1008,검사모드 실행 후 PRS 테스트,"/mode/set?mode=RUN
+/test/run/prs",,,composite,hard
+1009,QFN 티칭 시작하고 설정 모드로 전환,"/windows/teaching/qfn
+/mode/set?mode=SETUP",,,composite,hard
+1010,lga 티칭창 열고 qc 티칭창 열어,"/windows/teaching/lga
+/windows/teaching/qc",,,composite,hard
+1011,lga 티칭 보고 조명창 띄워,"/windows/teaching/lga
+/windows/light",,,composite,hard
+1012,LGA 티칭창 열고 검사모드로 바꿔,"/windows/teaching/lga
+/mode/set?mode=RUN",,,composite,hard
+1013,3번 카메라 끄고 창 닫아,"/live/toggle?switch=OFF&no=3
+/closeWindows",,,composite,hard
+1014,2번 카메라 끄고 라이트창 열기,"/live/toggle?switch=OFF&no=2
+/windows/light",,,composite,hard
+1015,bga랑 map 티칭창 보고싶어,"/windows/teaching/bga
+/windows/teaching/mapping",,,composite,hard
+1016,PRS 테스트 실행 후 창 닫아줘,"/test/run/prs
+/closeWindows",,,composite,hard
+1017,롯 보고 매핑도 궁금해,"/windows/lot
+/windows/teaching/mapping",,,composite,hard
+1018,5번 카메라 꺼 창 닫아,"/live/toggle?switch=OFF&no=5
+/closeWindows",,,composite,hard
+1019,맵 테스트 실행 끝나면 창 닫아,"/test/run/map
+/closeWindows",,,composite,hard
+1020,셋 모드에서 0번카메라 꺼,"/mode/set?mode=SETUP
+/live/toggle?switch=OFF&no=0",,,composite,hard
+1021,런 모드에서 띄웠던 창 닫아,"/mode/set?mode=RUN
+/closeWindows",,,composite,hard
+1022,라이트창이랑 세팅창 열어,"/windows/light
+/windows/settings",,,composite,hard
+1023,prs test하자. 그리고 재팅칭도 해,"/test/run/prs
+/windows/teaching/prs/reteach",,,composite,hard
+1024,bga티칭창이랑 strip 티칭창 보고싶어,"/windows/teaching/bga
+/windows/teaching/strip",,,composite,hard
+1025,맵 테스트하고 셋업모드 변경,"/test/run/map
+/mode/set?mode=SETUP",,,composite,hard
+1026,피알에스 테스트하고 스트립 티칭창 열어,"/test/run/prs
+/windows/teaching/strip",,,composite,hard
+1027,스트립이랑 비지에이 티칭창 보여줘,"/windows/teaching/strip
+/windows/teaching/bga",,,composite,hard
+1028,큐씨티칭창 보고 런모드로 가자,"/windows/teaching/qc
+/mode/set?mode=RUN",,,composite,hard
+1029,조명창 열고 검사 뭐했었는지 보여줘,"/windows/light
+/windows/history",,,composite,hard
+1030,히스토리 띄우고 QC 티칭창도 보여줘,"/windows/history
+/windows/teaching/qc",,,composite,hard
+1031,히스토리랑 조명,"/windows/history
+/windows/light",,,composite,hard
+1032,1번 카메라 켠 뒤 qc 티칭창 띄워,"/live/toggle?switch=ON&no=1
+/windows/teaching/qc",,,composite,hard
+1033,prs 재티칭하고 설정모드로,"/windows/teaching/prs/reteach
+/mode/set?mode=SETUP",,,composite,hard
+1034,조명창 켜고 셋업모드로,"/windows/light
+/mode/set?mode=SETUP",,,composite,hard
+1035,매핑 티칭창 열고 검사모드로 전환해줘,"/windows/teaching/mapping
+/mode/set?mode=RUN",,,composite,hard
+1036,4번 카메라 열고 prs 리티칭,"/live/toggle?switch=ON&no=4
+/windows/teaching/prs/reteach",,,composite,hard
+1037,맵핑 티칭창 열고 prs 재티칭 해,"/windows/teaching/mapping
+/windows/teaching/prs/reteach",,,composite,hard
+1038,2번 카메라 보여주고 매핑티칭창 열어,"/live/toggle?switch=ON&no=2
+/windows/teaching/mapping",,,composite,hard
+1039,bga티칭창이랑 qfn 티칭창 보고싶어,"/windows/teaching/bga
+/windows/teaching/qfn",,,composite,hard
+1040,카메라 1 off 하고 4번 카메라 켜,"/live/toggle?switch=OFF&no=1
+/live/toggle?switch=ON&no=4",,,composite,hard
+1041,"Strip 티칭 창 , 조명 설정 창 둘 다 열어줘","/windows/teaching/strip
+/windows/light",,,composite,hard
+1042,LGA 티칭 창 열고 Pads 탭으로 이동한 다음 ROI 초기화해줘,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Pads
+/teaching/lga/update?propertyName=Button&value=reset",,,composite,hard
+1043,QFN 티칭 창 연 다음 CornerDegree를 2.5로 맞추고 테스트 실행해,"/windows/teaching/qfn
+/settings/update?propertyName=QfnCornerDegree&value=2.5
+/teaching/lga/update?propertyName=teachingTest&value=true",,,composite,hard
+1044,Calibration 창 열고 bottom 탭에서 로이 재생성하고 임계값 100-200으로 설정,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=roi&value=recreate
+/calibration/update?propertyName=threshold&value=100-200",,,composite,hard
+1045,매핑 티칭 창 열고 현재 매핑 샷 재티칭 시작해,"/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,,composite,hard
+1046,"Strip 티칭 창 열고 ROI 추가 좌표 500,500 크기 1000,1000으로 만들고 검사 모드로 바꿔","/windows/teaching/strip
+/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000
+/mode/set?mode=RUN",,,composite,hard
+1047,검사 기록 창 열고 이번 달 PRS 카메라 기록 보여줘,"/windows/history
+/history/update?propertyName=date&value=2025-10-01_2025-10-31
+/history/update?propertyName=camera&value=PRS",,어려울듯,composite,hard
+1048,PRS 카메라 실시간 라이브 켜고 조명창도 같이 열어,"/windows/light/live?camera=PRS
+/windows/light",,,composite,hard
+1049,Calibration 창에서 유사도 원형(60)으로 바꾸고 크기 1-999로 바꿔,"/calibration/update?propertyName=shape&value=circle_60
+/calibration/update?propertyName=size&value=1-999",,,composite,hard
+1050,LGA 티칭창 열고 Surface 탭으로 이동한 후 티칭 테스트 실행해,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Surface
+/teaching/lga/update?propertyName=teachingTest&value=true",,,composite,hard
+1051,QFN 티칭 창 열고 ROI 추가 후 Threshold 2-50으로 수정,"/windows/teaching/qfn
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=Threshold&value=2-50",,,composite,hard
+1052,BGA 티칭 창 열고 CornerDegreeTopLeft를 89.8로 변경하고 BallCount 200으로 바꿔,"/windows/teaching/bga
+/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=89.8
+/teaching/gridbga/update?propertyName=BallCount&value=200",,bga 창의 cornerdegree 값이 바뀌는지 확인 필요,composite,hard
+1053,Calibration 창 열고 바텀 탭으로 변경한 뒤 Test 버튼 눌러,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=button&value=Test",,*`/calibration/update?propertyName=camera&value=status` : 보정(캘리브레이션) 창에서 카메라 변경 (status는 다음 중 하나: `) - 프롬프트 확인필요,composite,hard
+1054,"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭 진행","/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,,composite,hard
+1055,모든 창 닫고 시스템을 Run 모드로 전환,"/closeWindows
+/mode/set?mode=RUN",,,composite,hard
+1056,PRS 기반 테스트 실행 후 결과 창 닫기,"/test/run/prs
+/closeWindows",,,composite,hard
+1057,Calibration 창 열고 tab을 pad로 변경한 다음 LightSave 작업 수행,"/windows/calibration
+/calibration/update?propertyName=tab&value=pad
+/calibration/update?propertyName=button&value=LightSave",,,composite,hard
+1058,LGA PackageOffset을 true로 변경하고 색상을 Blue로 지정,"/settings/update?propertyName=UseLgaPackageOffset&value=true
+/settings/update?propertyName=LgaPackageOffsetColor&value=Blue",,,composite,hard
+1059,QFN LeadPitch를 0.5로 맞추고 LeadOffsetX 0.1로 변경,"/settings/update?propertyName=QfnLeadPitch&value=0.5
+/settings/update?propertyName=QfnLeadOffsetX&value=0.1",,,composite,hard
+1060,"매핑 패키지 사이즈 폭 12.0, 높이 6.0으로 수정하고 MarkCount를 3으로 바꿔","/settings/update?propertyName=MapPackageSizeWidth&value=12.0
+/settings/update?propertyName=MapPackageSizeHeight&value=6.0
+/settings/update?propertyName=MarkCount&value=3",,,composite,hard
+1061,"BGA BallPitch 0.8, BallPitchStandard 0.9로 변경하고 RejectMarkColor Gold로 바꿔","/settings/update?propertyName=BgaBallPitch&value=0.8
+/settings/update?propertyName=BgaBallPitchStandard&value=0.9
+/settings/update?propertyName=BgaRejectMarkColor&value=Gold",,,composite,hard
+1062,"LGA LeadOffsetX 0.1, Y 0.1, T 0.05로 설정하고 Perimeter 1.5로 지정해","/settings/update?propertyName=LgaLeadOffsetX&value=0.1
+/settings/update?propertyName=LgaLeadOffsetY&value=0.1
+/settings/update?propertyName=LgaLeadOffsetT&value=0.05
+/settings/update?propertyName=LgaLeadPerimeter&value=1.5",,,composite,hard
+1063,캘리 창에서 recticletype FULLSIZE로 설정 후 recreate ROI 실행,"/calibration/update?propertyName=recticletype&value=FULLSIZE
+/calibration/update?propertyName=roi&value=recreate",,,composite,hard
+1064,LGA 티칭 창 열고 Leads 탭으로 이동해서 ROI 추가 후 테스트,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Leads
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=teachingTest&value=true",,,composite,hard
+1065,LGA 티칭 창 Threshold를 3-45로 설정한 다음 티칭 테스트 시작,"/teaching/lga/update?propertyName=Threshold&value=3-45
+/teaching/lga/update?propertyName=teachingTest&value=true",,,composite,hard
+1066,Mapping package offset을 true로 바꾸고 ScratchColor를 Brown으로 설정,"/settings/update?propertyName=UseMapPackageOffset&value=true
+/settings/update?propertyName=MapScratchColor&value=Brown",,,composite,hard
+1067,SettingX1 카메라 라이브 켜고 Calibration 창에서 vision 탭 열기,"/windows/light/live?camera=SettingX1
+/windows/calibration
+/calibration/update?propertyName=tab&value=vision",,,composite,hard
+1068,"TrayRowCount를 8로, TrayColCount를 10으로 바꾼 뒤 BlockRowCount 6으로 맞춰","/settings/update?propertyName=TrayRowCount&value=8
+/settings/update?propertyName=TrayColCount&value=10
+/settings/update?propertyName=BlockRowCount&value=6",,,composite,hard
+1069,"PackageHeight 12.3, Width 10.5 설정 후 SaveOption Option1로 지정","/settings/update?propertyName=PackageHeight&value=12.3
+/settings/update?propertyName=PackageWidth&value=10.5
+/settings/update?propertyName=SaveOption&value=Option1",,,composite,hard
+1070,"IsMappingUsed true, IsPrsUsed false로 수정하고 Run 모드로 진입","/settings/update?propertyName=IsMappingUsed&value=true
+/settings/update?propertyName=IsPrsUsed&value=false
+/mode/set?mode=RUN",,,composite,hard
+1071,"BGA SawOffsetX, Y를 0.3으로 변경 후 테스트 실행","/settings/update?propertyName=BgaSawOffsetX&value=0.3
+/settings/update?propertyName=BgaSawOffsetY&value=0.3
+/test/run/prs",,,composite,hard
+1072,"QFN SawOffsetX 0.3, SawOffsetY 0.3으로 맞추고 CornerDegree 2.0으로 설정","/settings/update?propertyName=QfnSawOffsetX&value=0.3
+/settings/update?propertyName=QfnSawOffsetY&value=0.3
+/settings/update?propertyName=QfnCornerDegree&value=2.0",,,composite,hard
+1073,"LGA ChippingColor Violet, RejectMarkColor Coral로 수정","/settings/update?propertyName=LgaChippingColor&value=Violet
+/settings/update?propertyName=LgaRejectMarkColor&value=Coral",,,composite,hard
+1074,Calibration 창 열고 threshold 0-255로 초기화한 후 roi 재생성,"/calibration/update?propertyName=threshold&value=0-255
+/calibration/update?propertyName=roi&value=recreate",,,composite,hard
+1075,"Mapping WrongMark 기능 false, TextAngle true로 바꾸고 색상 Purple로 지정","/settings/update?propertyName=UseMapWrongMark&value=false
+/settings/update?propertyName=UseMapTextAngle&value=true
+/settings/update?propertyName=MapTextAngleColor&value=Purple",,,composite,hard
+1076,"QFN LeadCount true, LeadPitch true로 두고 색상 각각 Purple, White로 세팅","/settings/update?propertyName=UseQfnLeadCount&value=true
+/settings/update?propertyName=UseQfnLeadPitch&value=true
+/settings/update?propertyName=QfnLeadCountColor&value=Purple
+/settings/update?propertyName=QfnLeadPitchColor&value=White",,,composite,hard
+1077,BGA NoDevice true로 바꾸고 색상 Red로 지정,"/settings/update?propertyName=UseBgaNoDevice&value=true
+/settings/update?propertyName=BgaNoDeviceColor&value=Red",,,composite,hard
+1078,"Calibration 창 열고 shape circle_60, select BIGGEST로 바꾸기","/calibration/update?propertyName=shape&value=circle_60
+/calibration/update?propertyName=select&value=BIGGEST",,,composite,hard
+1079,"LGA LeadOffset true, 색상 Lime으로 변경 후 LeadContamination true로 세팅","/settings/update?propertyName=UseLgaLeadOffset&value=true
+/settings/update?propertyName=LgaLeadOffsetColor&value=Lime
+/settings/update?propertyName=UseLgaLeadContamination&value=true",,,composite,hard
+1080,calibration 창 열고 pad 탭으로 이동 후 size 1-500으로 설정,"/windows/calibration
+/calibration/update?propertyName=tab&value=pad
+/calibration/update?propertyName=size&value=1-500",,,composite,hard
+1081,Mapping ForeignMaterial 기능 false로 하고 색상을 Pink로 변경,"/settings/update?propertyName=UseMapForeignMaterial&value=false
+/settings/update?propertyName=MapForeignMaterialColor&value=Pink",,,composite,hard
+1082,LGA CornerDegree를 3.0으로 설정하고 PadPitch 1.0으로 맞춰,"/settings/update?propertyName=LgaCornerDegree&value=3.0
+/settings/update?propertyName=LgaPadPitch&value=1.0",,,composite,hard
+1083,"QFN PadSizeWidth 3.0, Height 2.0, PadArea 4로 업데이트","/settings/update?propertyName=QfnPadSizeWidth&value=3.0
+/settings/update?propertyName=QfnPadSizeHeight&value=2.0
+/settings/update?propertyName=QfnPadArea&value=4",,,composite,hard
+1084,"BGA 패턴 개수 16으로, BurrCount 2로, RejectMarkCount 1로 세팅","/teaching/gridbga/update?propertyName=PatternCount&value=16
+/teaching/gridbga/update?propertyName=BurrCount&value=2
+/teaching/gridbga/update?propertyName=RejectMarkCount&value=1",,,composite,hard
+1085,calibration 창에서 tab tray 선택 후 Test 버튼 실행,"/calibration/update?propertyName=tab&value=tray
+/calibration/update?propertyName=button&value=Test",,,composite,hard
+1086,SettingX2 카메라 실시간 보기 열고 live no=4 끄기,"/windows/light/live?camera=SettingX2
+/live/toggle?switch=OFF&no=4",,,composite,hard
+1087,LGA 티칭 창 열고 ROI 모두 삭제 후 Result 탭으로 이동,"/windows/teaching/lga
+/teaching/lga/update?propertyName=Button&value=delete
+/teaching/lga/update?propertyName=moveTab&value=Result",,,composite,hard
+1088,mapping 티칭 창 열고 MappingSawOffsetColor를 Navy로 설정,"/windows/teaching/mapping
+/settings/update?propertyName=MappingSawOffsetColor&value=Navy",,,composite,hard
+1089,BGA 티칭 창 열고 PatternCount 20으로 수정하고 ForeignMaterialCount 3으로 입력,"/windows/teaching/bga
+/teaching/gridbga/update?propertyName=PatternCount&value=20
+/teaching/gridbga/update?propertyName=ForeignMaterialCount&value=3",,,composite,hard
+1090,"BGA BallSizeDiameter 1.0, Standard 1.2로 변경 후 SaveDays 30 설정","/settings/update?propertyName=BgaBallSizeDiameter&value=1.0
+/settings/update?propertyName=BgaBallSizeDiameterStandard&value=1.2
+/settings/update?propertyName=SaveDays&value=30",,,composite,hard
+1091,모든 창 닫고 새채팅으로 초기화,"/closeWindows
+/chat/clear",,,composite,hard
+1092,"BGA 티칭 창 열고 CornerDegreeBottomRight 90.1로, RejectMarkCount 3으로 변경해","/windows/teaching/bga
+/teaching/gridbga/update?propertyName=CornerDegreeBottomRight&value=90.1
+/teaching/gridbga/update?propertyName=RejectMarkCount&value=3",,,composite,hard
+1093,Calibration 창 열고 vision 탭에서 유사도 사각형 50 설정하고 카메라 CENTER로 바꿔,"/windows/calibration
+/calibration/update?propertyName=tab&value=vision
+/calibration/update?propertyName=shape&value=rectangle_50
+/calibration/update?propertyName=select&value=CENTER",,,composite,hard
+1094,Strip 창 열고 ROI 모두 리셋 후 검사 모드로 변경,"/windows/teaching/strip
+/roi/operation?operationName=ResetRoisOperation
+/mode/set?mode=RUN",,,composite,hard
+1095,"mapping 티칭 창 열고 MapTextAngle 1.0, MapTextOffsetY 1.0으로 세팅","/windows/teaching/mapping
+/settings/update?propertyName=MapTextAngle&value=1.0
+/settings/update?propertyName=MapTextOffsetY&value=1.0",,,composite,hard
+1096,"LGA 티칭 창 열고 Leads 탭에서 LeadCount true, LeadCountColor Pink로 수정","/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Leads
+/settings/update?propertyName=UseLgaLeadCount&value=true
+/settings/update?propertyName=LgaLeadCountColor&value=Pink",,,composite,hard
+1097,"QFN 티칭 창 열고 QfnLeadOffsetY 0.2, QfnLeadOffsetT 0.08로 설정","/windows/teaching/qfn
+/settings/update?propertyName=QfnLeadOffsetY&value=0.2
+/settings/update?propertyName=QfnLeadOffsetT&value=0.08",,,composite,hard
+1098,Calibration 창에서 tray 탭으로 이동 후 크기 min1-max99999 초기화,"/windows/calibration
+/calibration/update?propertyName=tab&value=tray
+/calibration/update?propertyName=size&value=1-999999",,,composite,hard
+1099,"Mapping 창 열고 MapForeignMaterial true, MapForeignMaterialColor Pink로 지정","/windows/teaching/mapping
+/settings/update?propertyName=UseMapForeignMaterial&value=true
+/settings/update?propertyName=MapForeignMaterialColor&value=Pink",,,composite,hard
+1100,BGA 티칭창 열고 BallCount 100으로 바꾸고 ChippingCount 4로 변경,"/windows/teaching/bga
+/teaching/gridbga/update?propertyName=BallCount&value=100
+/teaching/gridbga/update?propertyName=ChippingCount&value=4",,,composite,hard
+1101,검사 기록 창 열고 PRS 및 BarCode 카메라 기록 각각 별도 필터로 출력,"/windows/history
+/history/update?propertyName=camera&value=PRS
+/history/update?propertyName=camera&value=Barcode",,,composite,hard
+3000,오늘 날씨 어때?,/NO_FUNCTION,,,irrelevant,hard
+3001,점심 뭐 먹지?,/NO_FUNCTION,,,irrelevant,hard
+3002,주말에 뭐하지?,/NO_FUNCTION,,,irrelevant,hard
+3003,영화 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3004,휴가 일정 언제야?,/NO_FUNCTION,,,irrelevant,hard
+3005,친구랑 약속 있어?,/NO_FUNCTION,,,irrelevant,hard
+3006,어떻게 지내?,/NO_FUNCTION,,,irrelevant,hard
+3007,음악 틀어줘,/NO_FUNCTION,,,irrelevant,hard
+3008,뉴스 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3009,SNS에 사진 올려줘,/NO_FUNCTION,,,irrelevant,hard
+3010,오늘의 운세가 뭐야?,/NO_FUNCTION,,,irrelevant,hard
+3011,내일 비오나?,/NO_FUNCTION,,,irrelevant,hard
+3012,피자 주문해줘,/NO_FUNCTION,,,irrelevant,hard
+3013,실시간 검색어 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3014,유튜브 켜줘,/NO_FUNCTION,,,irrelevant,hard
+3015,너 어디 살아?,/NO_FUNCTION,,,irrelevant,hard
+3016,새로운 소식 없어?,/NO_FUNCTION,,,irrelevant,hard
+3017,오늘 생일이야,/NO_FUNCTION,,,irrelevant,hard
+3018,시험 잘 볼 수 있을까?,/NO_FUNCTION,,,irrelevant,hard
+3019,지하철 시간표 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3020,오늘의 명언 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3021,택시 불러줘,/NO_FUNCTION,,,irrelevant,hard
+3022,아침 몇 시에 일어나?,/NO_FUNCTION,,,irrelevant,hard
+3023,지금 몇 시지?,/NO_FUNCTION,,,irrelevant,hard
+3024,날씨 알람 맞춰줘,/NO_FUNCTION,,,irrelevant,hard
+3025,사진찍어줘,/NO_FUNCTION,,,irrelevant,hard
+3026,독감 예방접종 필요해?,/NO_FUNCTION,,,irrelevant,hard
+3027,오늘의 핫이슈 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3028,생일 축하해줘,/NO_FUNCTION,,,irrelevant,hard
+3029,배달 음식 뭐가 맛있어?,/NO_FUNCTION,,,irrelevant,hard
+3030,넷플릭스 새작품 뭐 있어?,/NO_FUNCTION,,,irrelevant,hard
+3031,티비 켜줘,/NO_FUNCTION,,,irrelevant,hard
+3032,오늘의 주식 상승종목?,/NO_FUNCTION,,,irrelevant,hard
+3033,주식 투자 잘하는 법 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3034,이모티콘 보내줘,/NO_FUNCTION,,,irrelevant,hard
+3035,출근시간 몇 시야?,/NO_FUNCTION,,,irrelevant,hard
+3036,하늘 사진 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3037,주유소 어디 있어?,/NO_FUNCTION,,,irrelevant,hard
+3038,오늘의 명작 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3039,시계 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3040,오래 살려면 어떻게 해야 해?,/NO_FUNCTION,,,irrelevant,hard
+3041,희귀 동물 사진 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3042,운동 루틴 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3043,점심 뭐 추천해?,/NO_FUNCTION,,,irrelevant,hard
+3044,교통상황 어때?,/NO_FUNCTION,,,irrelevant,hard
+3045,커피 쿠폰 줘,/NO_FUNCTION,,,irrelevant,hard
+3046,반려동물 이름 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3047,책 제목 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3048,걷기 기록 시작,/NO_FUNCTION,,,irrelevant,hard
+3049,영어 단어 테스트,/NO_FUNCTION,,,irrelevant,hard
+3050,계산기 실행,/NO_FUNCTION,,,irrelevant,hard
+3051,도시락 메뉴 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3052,숙제 도와줘,/NO_FUNCTION,,,irrelevant,hard
+3053,오늘 할 일 정리해줘,/NO_FUNCTION,,,irrelevant,hard
+3054,나 대신 전화해줘,/NO_FUNCTION,,,irrelevant,hard
+3055,지하철 노선도 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3056,요리 레시피 추천해줄래?,/NO_FUNCTION,,,irrelevant,hard
+3057,날씨 정보 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3058,환율 정보 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3059,집 가는 길 안내해줘,/NO_FUNCTION,,,irrelevant,hard
+3060,공부 자극해줘,/NO_FUNCTION,,,irrelevant,hard
+3061,미세먼지 농도 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3062,투자 성향 테스트 해줘,/NO_FUNCTION,,,irrelevant,hard
+3063,뉴스 속보 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3064,지도 펼쳐줘,/NO_FUNCTION,,,irrelevant,hard
+3065,영화 관람평 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3066,오늘 휴게소 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3067,고양이 사진 골라줘,/NO_FUNCTION,,,irrelevant,hard
+3068,오늘 생일인 사람 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3069,유행어 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3070,건강검진 예약 해줘,/NO_FUNCTION,,,irrelevant,hard
+3071,칼로리 계산기 틀어줘,/NO_FUNCTION,,,irrelevant,hard
+3072,운동 타이머 시작해줘,/NO_FUNCTION,,,irrelevant,hard
+3073,채팅방 입장,/NO_FUNCTION,,,irrelevant,hard
+3074,지도에서 길 찾기,/NO_FUNCTION,,,irrelevant,hard
+3075,선물 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3076,화분 관리 방법 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3077,집주소 저장,/NO_FUNCTION,,,irrelevant,hard
+3078,수면 시간 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3079,온라인 쇼핑몰 추천해줘,/NO_FUNCTION,,,irrelevant,hard
+3080,여름방학 추천 여행지,/NO_FUNCTION,,,irrelevant,hard
+3081,일기 써줘,/NO_FUNCTION,,,irrelevant,hard
+3082,영화 티켓 예매해줘,/NO_FUNCTION,,,irrelevant,hard
+3083,부동산 시세 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3084,오늘 이벤트 뭐 있어?,/NO_FUNCTION,,,irrelevant,hard
+3085,시내버스 첫차 시간,/NO_FUNCTION,,,irrelevant,hard
+3086,친구한테 문자 보내줘,/NO_FUNCTION,,,irrelevant,hard
+3087,환자 위치 추적,/NO_FUNCTION,,,irrelevant,hard
+3088,음식점 예약해줘,/NO_FUNCTION,,,irrelevant,hard
+3089,기차 시간표 보여줘,/NO_FUNCTION,,,irrelevant,hard
+3090,노래 따라 불러줘,/NO_FUNCTION,,,irrelevant,hard
+3091,PC방 위치 알려줘,/NO_FUNCTION,,,irrelevant,hard
+3092,여권 발급 정보,/NO_FUNCTION,,,irrelevant,hard
+3093,국제 학생증 만들기,/NO_FUNCTION,,,irrelevant,hard
+3094,소식지 구독 신청,/NO_FUNCTION,,,irrelevant,hard
+3095,쪽지 남겨줘,/NO_FUNCTION,,,irrelevant,hard
+3096,호텔 예약 해줘,/NO_FUNCTION,,,irrelevant,hard
+3097,창문 닫아줘,/NO_FUNCTION,,,irrelevant,hard
+3098,물 값 계산해줘,/NO_FUNCTION,,,irrelevant,hard
+3099,대박이다,/NO_FUNCTION,,,irrelevant,hard
+3100,저녁 추천좀,/NO_FUNCTION,,,irrelevant,hard
+2000,련 모드로 바꿔죠,/mode/set?mode=RUN,,런 모드로 바꿔줘,typo,medium
+2001,맵핑 래티칭 시작,/windows/teaching/mapping/reteach,,매핑 리티칭 시작,typo,medium
+2002,스트립 티치앛ㅇ 열어,/windows/teaching/strip,,스트립 티칭 창 열어,typo,medium
+2003,럿 창 볼래움,/windows/lot,,로트 창 보여줘,typo,medium
+2004,검ㅅㅏ 모ㅡ드 변경,/mode/set?mode=RUN,,검사 모드로 변경,typo,medium
+2005,lga 티칭 창 열여,/windows/teaching/lga,,LGA 티칭 창 열어,typo,medium
+2006,히스톨이창 보여줘,/windows/history,,히스토리 창 보여줘,typo,medium
+2007,5번 카머메라 꺼줘,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼줘,typo,medium
+2008,lot 정보 창 엶,/windows/lot,,로트 정보 창 열어,typo,medium
+2009,pw 테슽틀런,/test/run/prs,,PRS 테스트 런,typo,medium
+2010,환경설정 보여줭,/windows/settings,,환경설정 보여줘,typo,medium
+2011,창아 꺼조,/closeWindows,,창 닫아줘,typo,medium
+2012,조명장 엾어,/windows/light,,조명창 열어,typo,medium
+2013,4번 커메라 켜져봐봐,/live/toggle?switch=ON&no=4,,4번 카메라 켜줘,typo,medium
+2014,카멜라 2 뻔 꺼요,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼줘,typo,medium
+2015,2 가메라 켜,/live/toggle?switch=ON&no=2,,2번 카메라 켜,typo,medium
+2016,피알에스 재티칭 시작,/windows/teaching/prs/reteach,,PRS 재티칭 시작,typo,medium
+2017,bga티칭창 열어볼래,/windows/teaching/bga,,BGA 티칭 창 열어줘,typo,medium
+2018,맵 제티칭 해,/windows/teaching/mapping/reteach,,매핑 재티칭 실행,typo,medium
+2019,스트림 빌 티칭 창 열어,/windows/teaching/strip,,스트립 빌 티칭 창 열어,typo,medium
+2020,런 모드루 바꿔주세요,/mode/set?mode=RUN,,런 모드로 바꿔주세요,typo,medium
+2021,qc ㅌㅣ칭창 열여줘,/windows/teaching/qc,,QC 티칭 창 열어줘,typo,medium
+2022,bga 티칭창열여,/windows/teaching/bga,,BGA 티칭 창 열어,typo,medium
+2023,0번 카메라 끄기,/live/toggle?switch=OFF&no=0,,0번 카메라 끄기,typo,medium
+2024,런몯루 바꿔,/mode/set?mode=RUN,,런 모드로 바꿔,typo,medium
+2025,스트립티칭 열여,/windows/teaching/strip,,스트립 티칭 열어,typo,medium
+2026,카머라 1번 킨다,/live/toggle?switch=ON&no=1,,1번 카메라 켜,typo,medium
+2027,4번 카메라 보여조,/live/toggle?switch=OFF&no=4,,4번 카메라 꺼줘,typo,medium
+2028,셋팅 모드 열어,/windows/settings,,세팅 모드 열어,typo,medium
+2029,0번 커메라 끄기,/live/toggle?switch=OFF&no=0,,0번 카메라 끄기,typo,medium
+2030,카메라 3번 키워,/live/toggle?switch=ON&no=3,,3번 카메라 켜,typo,medium
+2031,lga 티칭챵 열어줘,/windows/teaching/lga,,LGA 티칭 창 열어줘,typo,medium
+2032,5번 커마래 꺼,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼,typo,medium
+2033,맵 테습트런 실행,/test/run/map,,매핑 테스트런 실행,typo,medium
+2034,모든창 닫아버려,/closeWindows,,모든 창 닫아줘,typo,medium
+2035,커매라 5번 끄고싶어,/live/toggle?switch=OFF&no=5,,5번 카메라 끄고 싶어,typo,medium
+2036,맵 피 티칭 작동,/windows/teaching/mapping,,매핑 티칭 창 작동,typo,medium
+2037,검솝모드로 변겅,/mode/set?mode=RUN,,검사 모드로 변경,typo,medium
+2038,0번 카메라 커,/live/toggle?switch=ON&no=0,,0번 카메라 켜,typo,medium
+2039,설쩡 모드로 바꿔주세여,/mode/set?mode=SETUP,,설정 모드로 바꿔주세요,typo,medium
+2040,런모드로 변결,/mode/set?mode=RUN,,런 모드로 변경,typo,medium
+2041,prw테스트 실행,/test/run/prs,,PRS 테스트 실행,typo,medium
+2042,윈도우 다닫기,/closeWindows,,모든 창 닫기,typo,medium
+2043,세팅 화면 보여줘,/windows/settings,,세팅 화면 보여줘,typo,medium
+2044,매퓨팅 제티칭,/windows/teaching/mapping/reteach,,매핑 티칭 재티칭,typo,medium
+2045,lga 칭 열여,/windows/teaching/lga,,LGA 티칭 창 열어,typo,medium
+2046,시스톨이 보여죠,/windows/history,,히스토리 보여줘,typo,medium
+2047,bga 띠칭장은,/windows/teaching/bga,,BGA 티칭 창은,typo,medium
+2048,3번 카메라 켜라,/live/toggle?switch=ON&no=3,,3번 카메라 켜라,typo,medium
+2049,2번 케메라 꺼줘,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼줘,typo,medium
+2050,히스톨이 창 나와라,/windows/history,,히스토리 창 나와라,typo,medium
+2051,stripp 창열기,/windows/teaching/strip,,스트립 창 열기,typo,medium
+2052,lga창열여,/windows/teaching/lga,,LGA 창 열어,typo,medium
+2053,런 모드박아줘,/mode/set?mode=RUN,,런 모드로 변경해줘,typo,medium
+2054,스트립티칠 열여,/windows/teaching/strip,,스트립 티칭 열어,typo,medium
+2055,5번카며라꺼,/live/toggle?switch=OFF&no=5,,5번 카메라 꺼,typo,medium
+2056,prw런해줭,/test/run/prs,,PRS 테스트 런 해줘,typo,medium
+2057,환경설정나와봐,/windows/settings,,환경설정 보여줘,typo,medium
+2058,창끄기,/closeWindows,,창 끄기,typo,medium
+2059,돛명창 열오,/windows/light,,조명창 열어,typo,medium
+2060,네 번 카메라 켜,/live/toggle?switch=ON&no=4,,4번 카메라 켜,typo,medium
+2061,케메라 2본 꺼,/live/toggle?switch=OFF&no=2,,2번 카메라 꺼,typo,medium
+2062,피알에스재티칭,/windows/teaching/prs/reteach,,PRS 재티칭,typo,medium
+2063,lga 티칭치장,/windows/teaching/lga,,LGA 티칭 창,typo,medium
+2064,런모드로,/mode/set?mode=RUN,,런 모드로,typo,medium
+2065,카메라 0반껏줘,/live/toggle?switch=OFF&no=0,,0번 카메라 꺼줘,typo,medium
+2066,LGA티칭창열어조,/windows/teaching/lga,,LGA 티칭 창 열어줘,typo,medium
+2067,BGA티칭창열려,/windows/teaching/bga,,BGA 티칭 창 열어,typo,medium
+2068,lga 티칭창 열여서 pads 탭 가고 ROI 처초화,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Pads
+/teaching/lga/update?propertyName=Button&value=reset",,"LGA 티칭 창 열어서 Pads 탭 이동, ROI 초기화",typo,medium
+2069,qfn 찬 여고 커너디그리 2.5 설정후 테스트,"/windows/teaching/qfn
+/settings/update?propertyName=QfnCornerDegree&value=2.5
+/teaching/lga/update?propertyName=teachingTest&value=true",,QFN 창 열고 CornerDegree 2.5로 설정 후 티칭 테스트,typo,medium
+2070,calibration 창 열구 바텀탭에 roi 다시설정 임개값 100-200돼,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=roi&value=recreate
+/calibration/update?propertyName=threshold&value=100-200",,"Calibration 창 열고 bottom 탭에서 ROI 재생성, 임계값 100-200으로 설정",typo,medium
+2071,맺핑티칭창 여러재티칭도 해,"/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,매핑 티칭 창 열고 재티칭 실행,typo,medium
+2072,strip티칭 창 열어 roi 추가 500 500 1000 1000 런모드로,"/windows/teaching/strip
+/roi/operation?operationName=AddRoiOperation&roiName=TestROI&row=500&col=500&height=1000&width=1000
+/mode/set?mode=RUN",,"Strip 티칭 창 열고 ROI(500, 500, 1000, 1000) 추가 후 Run 모드로 변경",typo,medium
+2073,검사 기록창 여구 이번달 prs기록봐,"/windows/history
+/history/update?propertyName=date&value=2025-10-01_2025-10-31
+/history/update?propertyName=camera&value=PRS",,검사 기록 창 열고 이번 달 PRS 기록 보여줘,typo,medium
+2074,prs카머라 실시간 뷰하고 조명창도 열아바,"/windows/light/live?camera=PRS
+/windows/light",,PRS 카메라 실시간 라이브 켜고 조명창도 열기,typo,medium
+2075,calibration 창서 원유사도60으로 사이즈 1-999초기화,"/calibration/update?propertyName=shape&value=circle_60
+/calibration/update?propertyName=size&value=1-999",,"Calibration 창에서 원형 유사도 60, 사이즈 1-999로 초기화",typo,medium
+2076,lga 찬 서피스탭 가서 티칭테스트 하기,"/windows/teaching/lga
+/teaching/lga/update?propertyName=moveTab&value=Surface
+/teaching/lga/update?propertyName=teachingTest&value=true",,"LGA 창 Surface 탭 이동, 티칭 테스트",typo,medium
+2077,qfn티칭창 열고 roi 추가 후 임개값 2-50으로 맞춰,"/windows/teaching/qfn
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=Threshold&value=2-50",,"QFN 티칭 창 열고 ROI 추가, 임계값 2-50으로 설정",typo,medium
+2078,"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘","/windows/teaching/bga
+/teaching/gridbga/update?propertyName=CornerDegreeTopLeft&value=89.8
+/teaching/gridbga/update?propertyName=BallCount&value=200",,"BGA 티칭 창 열고 CornerDegreeTopLeft 89.8, BallCount 200으로 변경",typo,medium
+2079,capliration창 바텀탭 +카메라바텀 테스트버튼,"/windows/calibration
+/calibration/update?propertyName=tab&value=bottom
+/calibration/update?propertyName=camera&value=bottom
+/calibration/update?propertyName=button&value=Test",,"Calibration 창 bottom 탭, 카메라 bottom, Test 실행",typo,medium
+2080,mapping캬머라 라이부랑 mapping티칭창열어서 재티칭,"/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/windows/teaching/mapping/reteach",,"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭",typo,medium
+2081,창 다닫귀하고 run 모드로,"/closeWindows, /mode/set?mode=RUN",,모든 창 닫고 run 모드로 변경,typo,medium
+2082,prs테스트 끝나고 창끄기,"/test/run/prs
+/closeWindows",,PRS 테스트 후 창 닫기,typo,medium
+2083,캘리브창 pad탭서 라이트save,"/windows/calibration
+/calibration/update?propertyName=tab&value=pad
+/calibration/update?propertyName=button&value=LightSave",,"Calibration 창 pad 탭 이동, LightSave 실행",typo,medium
+2084,lga 패키지오프셋을 트루로 색상 블루로설정,"/settings/update?propertyName=UseLgaPackageOffset&value=true
+/settings/update?propertyName=LgaPackageOffsetColor&value=Blue",,"LGA PackageOffset true, 색상 Blue로 변경",typo,medium
+2085,qfn 리드피치 0.5 리드오프셋x 0.1로,"/settings/update?propertyName=QfnLeadPitch&value=0.5
+/settings/update?propertyName=QfnLeadOffsetX&value=0.1",,"QFN LeadPitch 0.5, LeadOffsetX 0.1로 설정",typo,medium
+2086,mapping 패키지 폭12 높이6 마크카운터3,"/settings/update?propertyName=MapPackageSizeWidth&value=12.0
+/settings/update?propertyName=MapPackageSizeHeight&value=6.0
+/settings/update?propertyName=MarkCount&value=3",,"Mapping 패키지 사이즈 폭 12, 높이 6, MarkCount 3",typo,medium
+2087,"bga 볼피치 0.8, standard 0.9, 리젝트마크골드","/settings/update?propertyName=BgaBallPitch&value=0.8
+/settings/update?propertyName=BgaBallPitchStandard&value=0.9
+/settings/update?propertyName=BgaRejectMarkColor&value=Gold",,"BGA BallPitch 0.8, Standard 0.9, RejectMarkColor Gold로 변경",typo,medium
+2088,"lga 리드x 0.1 y 0.1 t 0.05, 페리미터1.5","/settings/update?propertyName=LgaLeadOffsetX&value=0.1
+/settings/update?propertyName=LgaLeadOffsetY&value=0.1
+/settings/update?propertyName=LgaLeadOffsetT&value=0.05
+/settings/update?propertyName=LgaLeadPerimeter&value=1.5",,"LGA LeadOffsetX 0.1, Y 0.1, T 0.05, Perimeter 1.5 설정",typo,medium
+2089,calibration창 rectype풀사이즈 roi재생,"/calibration/update?propertyName=recticletype&value=FULLSIZE
+/calibration/update?propertyName=roi&value=recreate",,"Calibration 창 recticletype FULLSIZE, ROI 재생성",typo,medium
+2090,lga 티칭 창 리즈탭 ROI추가 후 테스트,"/windows/teaching/lga, /teaching/lga/update?propertyName=moveTab&value=Leads
+/teaching/lga/update?propertyName=Button&value=add
+/teaching/lga/update?propertyName=teachingTest&value=true",,"LGA 티칭 창 Leads 탭으로 이동, ROI 추가 후 테스트",typo,medium
+2091,qc 티칭창 열고 임계값3-45로 테스트,"/windows/teaching/qc
+/teaching/lga/update?propertyName=Threshold&value=3-45
+/teaching/lga/update?propertyName=teachingTest&value=true",,QC 티칭 창 열고 임계값 3-45로 테스트,typo,medium
+2092,mapping 오프셋true에 스크래치컬러 브라운,"/settings/update?propertyName=UseMapPackageOffset&value=true
+/settings/update?propertyName=MapScratchColor&value=Brown",,"Mapping PackageOffset true, ScratchColor Brown로 설정",typo,medium
+2093,setx1 카메라 라이브키고 캘리브 비젼탭,"/windows/light/live?camera=SettingX1
+/windows/calibration
+/calibration/update?propertyName=tab&value=vision",,SettingX1 카메라 라이브 켜고 Calibration 창 vision 탭 이동,typo,medium
+2094,tray로우카운트8 col10 block6셋팅,"/settings/update?propertyName=TrayRowCount&value=8
+/settings/update?propertyName=TrayColCount&value=10
+/settings/update?propertyName=BlockRowCount&value=6",,"TrayRowCount 8, TrayColCount 10, BlockRowCount 6 설정",typo,medium
+2095,패키지 높이12.3 너비10.5 저장옵션1,"/settings/update?propertyName=PackageHeight&value=12.3
+/settings/update?propertyName=PackageWidth&value=10.5
+/settings/update?propertyName=SaveOption&value=Option1",,"PackageHeight 12.3, Width 10.5, SaveOption Option1",typo,medium
+2096,"mappingused 트루, prsused 폴스 런모드","/settings/update?propertyName=IsMappingUsed&value=true
+/settings/update?propertyName=IsPrsUsed&value=false
+/mode/set?mode=RUN",,"IsMappingUsed true, IsPrsUsed false, Run 모드 진입",typo,medium
+2097,bga 쏘오프셋x0.3 y0.3 테스트런,"/settings/update?propertyName=BgaSawOffsetX&value=0.3
+/settings/update?propertyName=BgaSawOffsetY&value=0.3, /test/run/prs",,"BGA SawOffsetX 0.3, SawOffsetY 0.3, 테스트 실행",typo,medium
+2098,qfn쏘오프셋 x0.3 y0.3 코너디그리2,"/settings/update?propertyName=QfnSawOffsetX&value=0.3
+/settings/update?propertyName=QfnSawOffsetY&value=0.3
+/settings/update?propertyName=QfnCornerDegree&value=2.0",,"QFN SawOffsetX 0.3, SawOffsetY 0.3, CornerDegree 2.0로 변경",typo,medium
+2099,"lga치핑컬러 바이올렛, 리젝마크코랄","/settings/update?propertyName=LgaChippingColor&value=Violet
+/settings/update?propertyName=LgaRejectMarkColor&value=Coral",,"LGA ChippingColor Violet, RejectMarkColor Coral로 변경",typo,medium
+2100,"calibration창 임게값0-255,roi재생","/calibration/update?propertyName=threshold&value=0-255
+/calibration/update?propertyName=roi&value=recreate",,"Calibration 창 임계값 0-255, ROI 재생성",typo,medium

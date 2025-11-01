@@ -1,12 +1,29 @@
 from flask import Flask
 from flask_restx import Api, Resource, fields
-from flask import request
 from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
 
+from command_vector_search import CommandVectorSearch  # 벡터 탐색기(위에서 모듈화한 것)[test]
+from model_runner import hybrid_command_or_llm #from command_vector_search import CommandVectorSearch[test]
+
+# 모델 명 앞뒤로 추가
+from command_vector_search import CommandVectorSearch  # 벡터 탐색기(위에서 모듈화한 것)[test]
+from model_runner import hybrid_command_or_llm #from command_vector_search import CommandVectorSearch[test]
+
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
+# 서버 시작 시 vector_searcher 객체 준비 [test]
+vector_searcher = CommandVectorSearch(
+    csv_path="all_commands.csv",
+    chroma_path="./chroma_db"
+)
+
+# 서버 시작 시 vector_searcher 객체 준비 [test]
+vector_searcher = CommandVectorSearch(
+    csv_path="all_commands.csv",
+    chroma_path="./chroma_db"
+)
 
 app = Flask(__name__)
 api = Api(app, version='1.1', title='반도체 검사 시스템 인터페이스',
@@ -32,6 +49,7 @@ output_model = api.model('OutputModel', {
     'gpu_memory': fields.Nested(gpu_model)
 })
 
+#해당 부분 수정
 @ns_instruct.route('/')
 class Instruct(Resource):
     @ns_instruct.expect(input_model)
@@ -41,17 +59,32 @@ class Instruct(Resource):
         print("Received JSON payload:", api.payload)  # <-- 여기 추가
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
-        result = run_model(user_input, model_name)
 
-        # 클라이언트 IP 주소 가져오기
-        client_ip = request.remote_addr
+        # 하이브리드 처리
+        result_hybrid = hybrid_command_or_llm(
+            user_input, 
+            vector_searcher=vector_searcher, 
+            sim_threshold=0.9, 
+            top_k=3,
+            llm_model_name=model_name
+        )
         
-        # 클라이언트 IP로 API 주소를 만듦
-        api_url = f"http://{client_ip}:3000{result['output']}"
-        
-        #local에서..
-        #api_url = f"http://localhost:3000{result['output']}"
-        
+        # result 딕셔너리 구성
+        if result_hybrid['step'] == "vector_match":
+            result = {
+                "output": result_hybrid['executed_command']['label'],
+                "elapsed_time": 0.0,
+                "gpu_memory": {"allocated_mb": 0, "reserved_mb": 0}
+            }
+        else:
+            llm_result = result_hybrid['llm_result']
+            result = {
+                "output": llm_result['output'],
+                "elapsed_time": llm_result['elapsed_time'],
+                "gpu_memory": llm_result['gpu_memory']
+            }
+
+        api_url = f"http://localhost:3000{result['output']}"
         try:
             response = requests.get(api_url)
             # 필요하면 써
@@ -59,7 +92,6 @@ class Instruct(Resource):
             print(err)
 
         return result
-
 
 # Intent 분류 namespace
 ns_classify = api.namespace('classify', description='문장 intent 분류')
@@ -115,4 +147,30 @@ class ModelSwitch(Resource):
 
 # 서버 실행
 if __name__ == '__main__':
+    examples = [
+    "BGA 노디바이스 색상 blue ",
+    "LGA 창 열기",
+    "PRS 결과 확인",
+    "BGA 티칭 지잆",      # 오타
+    "LGA 탭 이동 테스트",
+    #"오늘 날씨 어때?",
+    #"컴퓨터 켜줘",
+    "조명 화면 보기",
+    "히스토리 열기",
+    "PRS 결과 재티칭 시도",
+    "안녕"
+]
+    
+    for ex in examples:
+        print(f"\n입력: {ex}")
+        res = hybrid_command_or_llm(
+            ex,
+            vector_searcher=vector_searcher,
+            sim_threshold=0.9,
+            top_k=3
+        )
+        print("실행 결과:")
+        print(res)
+        print("-" * 40)
+     
     app.run(host='0.0.0.0', port=5000, debug=False)

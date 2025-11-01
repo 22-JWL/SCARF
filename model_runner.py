@@ -99,12 +99,41 @@ def switch_model(new_model_name: str):
         current_model_name = new_model_name
 
         allocated, reserved = get_gpu_memory()
+        
         return {
             "status": "loaded",
             "model_name": current_model_name,
-            "hf_device_map": getattr(current_model, "hf_device_map", None),
+            "hf_device_map": None,
             "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
         }
+    
+# 벡터 기반 유사도 판별 함수 -> 유사도 기준 높으면 바로 처리, 아니면 LLM으로 처리
+def hybrid_command_or_llm(user_input, vector_searcher, sim_threshold=0.9, top_k=3, llm_model_name=DEFAULT_MODEL_NAME):
+    """
+    1. 유사도 기반 명령어 우선 실행
+    2. threshold 미만이면 LLM 파이프라인 연결
+    """
+    # 벡터DB에서 유사 명령 탐색
+    vec_res = vector_searcher.execute_command(user_input, top_k=top_k, threshold=sim_threshold)
+    top_score = vec_res['cosine_score']
+    top_cmd = vec_res['executed_commands'][0] if vec_res['executed_commands'] else None
+
+    if vec_res['status'] == "MATCH" and top_score >= sim_threshold and top_cmd and top_cmd['label'] != "/NO_FUNCTION":
+        print(f"\n[임베딩 우선] 입력 '{user_input}' → '{top_cmd['label']}' (score: {top_score:.2f})")
+        result = {
+            "step": "vector_match",
+            "executed_command": top_cmd,
+            "vector_result": vec_res
+        }
+    else:
+        print(f"\n[LLM Fallback] 벡터DB 미매칭 또는 유사도 부족 ({top_score:.2f}) → LLM 실행")
+        llm_res = run_model(user_input, llm_model_name)
+        result = {
+            "step": "llm_fallback",
+            "llm_result": llm_res,
+            "vector_result": vec_res
+        }
+    return result
 
 def run_model(prompt: str, model_name: str):
     global current_model, current_tokenizer, current_model_name

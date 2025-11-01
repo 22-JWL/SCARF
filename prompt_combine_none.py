@@ -117,8 +117,6 @@ system_prompt = """
 (status는 다음 중 하나: `add`, `delete`, `reset`)
 ,(예시: bga 창 surface 탭 roi add, /teaching/bga/update?propertyName=SurfaceRois&value=add)
 
-
-
 ## history 창 값 변경 및 업데이트
 - `/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. (예시: 이번달 기록 보여줘 /history/update?propertyName=date&value=2025-09-01_2025-09-30)
 - `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
@@ -201,23 +199,23 @@ system_prompt = """
 - `/teaching/mapping/update?propertyName=inspectSurfaceTeaching&value=1` : mapping 티칭 창에서 티칭 테스트
 - `/teaching/mapping/update?propertyName=inspectSawingTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
 - `/teaching/mapping/update?propertyName=inspectRejectMarkTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectTeaching&value=1` : mapping 티칭 창 result 탭에서 티칭 테스트 
 
 ### mapping 티칭 창 탭 이동
 - `/teaching/mapping/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Mark`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
 
 ### mapping 티칭 창 roi 단일 생성 버튼
-- `/mapping/lga/update?propertyName=status&value=N-N-N-N` : mapping 티칭 창 해당 탭에서 ROI 생성
-(status는 다음 중 하나: 
-    CodeRoi_
-    RejectMarkRoi_
-) ,(예시: mapping 창 model RejectMark roi 10-20-30-40, /teaching/mapping/update?propertyName=RejectMarkRoi_&value=10-20-30-40)
+- `/teaching/mapping/update?propertyName=GridRoi_&value=N-N-N-N` : mapping 티칭 창 package 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=CodeRoi_&value=N-N-N-N` : mapping 티칭 창 Mark 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=RejectMarkRoi_&value=N-N-N-N` : mapping 티칭 창 RejectMark 탭에서 ROI 생성
+(예시: mapping 창 model RejectMark roi 10-20-30-40, /teaching/mapping/update?propertyName=RejectMarkRoi_&value=10-20-30-40)
 (예시2: mapping 창 model RejectMark roi 생성, /teaching/mapping/update?propertyName=PackageModelRoi_&value=1)
 
-### mapping 티칭 창 ROI 생성/삭제/초기화 버튼
+### mapping 티칭 창 ROI 생성/삭제/초기화/읽기 버튼
 - `/teaching/mapping/update?propertyName=MarkRoi&value=status` : mapping 티칭 창 Mark 탭 ROI 추가,삭제,초기화 
 - `/teaching/mapping/update?propertyName=DontCareRoi&value=status` : mapping 티칭 창 DontCare 탭 ROI 추가,삭제,초기화 
 - `/teaching/mapping/update?propertyName=SurfaceRoi&value=status` : mapping 티칭 창 Surface 탭 ROI 추가,삭제,초기화 
-(status는 다음 중 하나: `add`, `delete`, `reset`)
+(status는 다음 중 하나: `add`, `delete`, `reset`, `read`)
 ,(예시: mapping 창 surface 탭 roi add, /teaching/mapping/update?propertyName=SurfaceRoi&value=add)
 
 ### mapping 티칭 창 roi, threshold 자동 생성 버튼
@@ -281,8 +279,6 @@ system_prompt = """
 ) ,(예시: lga 창 model roi 10-20-30-40, /teaching/lga/update?propertyName=PackageModelRoi_&value=10-20-30-40)
 (예시2: lga 창 Package Roi Top 생성, /teaching/lga/update?propertyName=PackageModelRoi_&value=1)
 
-
-
 ### Strip 티칭 창 roi 단일 생성 버튼
 - `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성
 ### Strip 티칭 창 ROI 생성/삭제/초기화 버튼
@@ -291,7 +287,6 @@ system_prompt = """
 ,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=StripRois&value=add)
 ### Strip 티칭 창 findCode 버튼 클릭
 - `/teaching/strip/update?propertyName=findCodeTeaching&value=1` : Strip 티칭 창 findCode 버튼 클릭
-
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)
@@ -578,8 +573,6 @@ system_prompt = """
 - `/settings/update?propertyName=SaveDays&value=값` : SaveDays 값을 변경 (예: 30)
 - `/settings/update?propertyName=DBSaveDays&value=값` : DBSaveDays 값을 변경 (예: 60)
 - `/settings/update?propertyName=InpectionModeSelectedItem&value=값` : InpectionModeSelectedItem 값을 변경 (예: Normal)
-
-
 
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.

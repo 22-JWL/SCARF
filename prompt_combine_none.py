@@ -281,12 +281,17 @@ system_prompt = """
 ) ,(예시: lga 창 model roi 10-20-30-40, /teaching/lga/update?propertyName=PackageModelRoi_&value=10-20-30-40)
 (예시2: lga 창 Package Roi Top 생성, /teaching/lga/update?propertyName=PackageModelRoi_&value=1)
 
+
+
 ### Strip 티칭 창 roi 단일 생성 버튼
 - `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성
 ### Strip 티칭 창 ROI 생성/삭제/초기화 버튼
 - `/teaching/Strip/update?propertyName=PadRois&value=status` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
 (status는 다음 중 하나: `add`, `delete`, `reset`)
 ,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=StripRois&value=add)
+### Strip 티칭 창 findCode 버튼 클릭
+- `/teaching/strip/update?propertyName=findCodeTeaching&value=1` : Strip 티칭 창 findCode 버튼 클릭
+
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)

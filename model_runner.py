@@ -107,32 +107,38 @@ def switch_model(new_model_name: str):
     }
     
 # 벡터 기반 유사도 판별 함수 -> 유사도 기준 높으면 바로 처리, 아니면 LLM으로 처리
-def hybrid_command_or_llm(user_input, vector_searcher, sim_threshold=0.8, top_k=3, llm_model_name=DEFAULT_MODEL_NAME):
-    """
-    1. 유사도 기반 명령어 우선 실행
-    2. threshold 미만이면 LLM 파이프라인 연결
-    """
-    # 벡터DB에서 유사 명령 탐색
+def hybrid_command_or_llm(
+    user_input, 
+    vector_searcher, 
+    sim_threshold=0.7,  # 0.8 → 0.7로 조정
+    top_k=3, 
+    llm_model_name=DEFAULT_MODEL_NAME
+):
     vec_res = vector_searcher.execute_command(user_input, top_k=top_k, threshold=sim_threshold)
-    top_score = vec_res['cosine_score']
+    top_score = vec_res.get('cosine_score', 0.0)
     top_cmd = vec_res['executed_commands'][0] if vec_res['executed_commands'] else None
+    top_label = top_cmd['label'] if top_cmd else None
+    status = vec_res.get('status', 'NO_MATCH')
 
-    if vec_res['status'] == "MATCH" and top_score >= sim_threshold and top_cmd and top_cmd['label'] != "/NO_FUNCTION":
-        print(f"\n[임베딩 우선] 입력 '{user_input}' → '{top_cmd['label']}' (score: {top_score:.2f})")
+    # ✅ 여기 조건문을 이렇게 명확하게 구분
+    if status == "MATCH" and top_score >= sim_threshold and top_label and top_label != "/NO_FUNCTION":
+        print(f"\n[임베딩 우선] 입력 '{user_input}' → '{top_label}' (score: {top_score:.2f})")
         result = {
             "step": "vector_match",
             "executed_command": top_cmd,
             "vector_result": vec_res
         }
     else:
-        print(f"\n[LLM Fallback] 벡터DB 미매칭 또는 유사도 부족 ({top_score:.2f}) → LLM 실행")
+        print(f"\n[LLM Fallback] 벡터DB 미매칭 또는 유사도 부족 ({top_score:.2f}, status={status}, label={top_label}) → LLM 실행")
         llm_res = run_model(user_input, llm_model_name)
         result = {
             "step": "llm_fallback",
             "llm_result": llm_res,
             "vector_result": vec_res
         }
+
     return result
+
 
 def run_model(prompt: str, model_name: str):
     global current_model, current_tokenizer, current_model_name

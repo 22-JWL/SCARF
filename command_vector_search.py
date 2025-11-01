@@ -63,7 +63,7 @@ class CommandVectorSearch:
     # ============================
     # 명령 실행 함수
     # ============================
-    def execute_command(self, text, top_k=5, threshold=0.2, important_labels=None, fallback_label="/NO_FUNCTION"):
+    def execute_command(self, text, top_k=5, threshold=0.7, important_labels=None, fallback_label="/NO_FUNCTION"):
         if important_labels is None:
             important_labels = []
 
@@ -128,35 +128,35 @@ class CommandVectorSearch:
         }
 
 
-# # ============================
-# # 단독 실행 테스트
-# # ============================
-# if __name__ == "__main__":
-#     searcher = CommandVectorSearch(
-#         csv_path="all_commands.csv",
-#         chroma_path="./chroma_db",
-#         collection_name="commands",
-#         embedding_model_name='paraphrase-multilingual-MiniLM-L12-v2',
-#         force_reload=False
-#     )
+# ============================
+# 단독 실행 테스트
+# ============================
+if __name__ == "__main__":
+    searcher = CommandVectorSearch(
+        csv_path="all_commands.csv",
+        chroma_path="./chroma_db",
+        collection_name="commands",
+        embedding_model_name='paraphrase-multilingual-MiniLM-L12-v2',
+        force_reload=False
+    )
 
-#     test_queries = [
-#         "BGA 티칭 시작",
-#         "lighting 화면 열기",
-#         "히스토리 보여줘",
-#         "PRS 결과 재티칭",
-#         "LGA 창 켜"
-#     ]
+    test_queries = [
+        "BGA 티칭 시작",
+        "lighting 화면 열기",
+        "히스토리 보여줘",
+        "PRS 결과 재티칭",
+        "LGA 창 켜"
+    ]
 
-#     for idx, q in enumerate(test_queries):
-#         print(f"\n=== 테스트 {idx+1}: '{q}' ===")
-#         result = searcher.execute_command(q, top_k=5, threshold=0.2)
-#         print("status:", result["status"])
-#         print("cosine_score:", result["cosine_score"])
-#         print("Top Results:")
-#         for r in result["top_results"]:
-#             print(f"  - label: {r['label']} / score: {r['score']:.4f}")
-#         print("Executed Commands:")
-#         for r in result["executed_commands"]:
-#             print(f"  - label: {r['label']} / score: {r['score']:.4f}")
-#         print("-" * 40)
+    for idx, q in enumerate(test_queries):
+        print(f"\n=== 테스트 {idx+1}: '{q}' ===")
+        result = searcher.execute_command(q, top_k=5, threshold=0.7)
+        print("status:", result["status"])
+        print("cosine_score:", result["cosine_score"])
+        print("Top Results:")
+        for r in result["top_results"]:
+            print(f"  - label: {r['label']} / score: {r['score']:.4f}")
+        print("Executed Commands:")
+        for r in result["executed_commands"]:
+            print(f"  - label: {r['label']} / score: {r['score']:.4f}")
+        print("-" * 40)

@@ -10,7 +10,7 @@ class CommandVectorSearch:
         csv_path="all_commands.csv",
         chroma_path="./chroma_db",
         collection_name="commands",
-        embedding_model_name='all-MiniLM-L6-v2',
+        embedding_model_name='paraphrase-multilingual-MiniLM-L12-v2',
         force_reload=False,
     ):
         # 1. DB/모델 로드

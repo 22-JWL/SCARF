@@ -1,23 +1,16 @@
 from flask import Flask
 from flask_restx import Api, Resource, fields
+from flask import request
 from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
 
-from command_vector_search import CommandVectorSearch  # 벡터 탐색기(위에서 모듈화한 것)[test]
-from model_runner import hybrid_command_or_llm #from command_vector_search import CommandVectorSearch[test]
 
 # 모델 명 앞뒤로 추가
-from command_vector_search import CommandVectorSearch  # 벡터 탐색기(위에서 모듈화한 것)[test]
-from model_runner import hybrid_command_or_llm #from command_vector_search import CommandVectorSearch[test]
+from command_vector_search import CommandVectorSearch
+from model_runner import hybrid_command_or_llm
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
-
-# 서버 시작 시 vector_searcher 객체 준비 [test]
-vector_searcher = CommandVectorSearch(
-    csv_path="all_commands.csv",
-    chroma_path="./chroma_db"
-)
 
 # 서버 시작 시 vector_searcher 객체 준비 [test]
 vector_searcher = CommandVectorSearch(
@@ -49,7 +42,6 @@ output_model = api.model('OutputModel', {
     'gpu_memory': fields.Nested(gpu_model)
 })
 
-#해당 부분 수정
 @ns_instruct.route('/')
 class Instruct(Resource):
     @ns_instruct.expect(input_model)
@@ -57,6 +49,7 @@ class Instruct(Resource):
     def post(self):
         """사용자 명령어를 입력받아 함수 호출 형식으로 응답"""
         print("Received JSON payload:", api.payload)  # <-- 여기 추가
+
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
 
@@ -64,11 +57,11 @@ class Instruct(Resource):
         result_hybrid = hybrid_command_or_llm(
             user_input, 
             vector_searcher=vector_searcher, 
-            sim_threshold=0.9, 
+            sim_threshold=0.8, 
             top_k=3,
             llm_model_name=model_name
         )
-        
+
         # result 딕셔너리 구성
         if result_hybrid['step'] == "vector_match":
             result = {
@@ -84,7 +77,19 @@ class Instruct(Resource):
                 "gpu_memory": llm_result['gpu_memory']
             }
 
-        api_url = f"http://localhost:3000{result['output']}"
+        
+        # output에서 "json\n" 제거
+        result['output'] = result['output'].replace("json\n", "").strip()
+
+        # 클라이언트 IP 주소 가져오기
+        client_ip = request.remote_addr
+        
+        # 클라이언트 IP로 API 주소를 만듦
+        api_url = f"http://{client_ip}:3000{result['output']}"
+        
+        #local에서..
+        #api_url = f"http://localhost:3000{result['output']}"
+        
         try:
             response = requests.get(api_url)
             # 필요하면 써
@@ -92,6 +97,7 @@ class Instruct(Resource):
             print(err)
 
         return result
+
 
 # Intent 분류 namespace
 ns_classify = api.namespace('classify', description='문장 intent 분류')

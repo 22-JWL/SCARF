@@ -107,7 +107,7 @@ def switch_model(new_model_name: str):
     }
     
 # 벡터 기반 유사도 판별 함수 -> 유사도 기준 높으면 바로 처리, 아니면 LLM으로 처리
-def hybrid_command_or_llm(user_input, vector_searcher, sim_threshold=0.9, top_k=3, llm_model_name=DEFAULT_MODEL_NAME):
+def hybrid_command_or_llm(user_input, vector_searcher, sim_threshold=0.8, top_k=3, llm_model_name=DEFAULT_MODEL_NAME):
     """
     1. 유사도 기반 명령어 우선 실행
     2. threshold 미만이면 LLM 파이프라인 연결
@@ -163,7 +163,6 @@ def run_model(prompt: str, model_name: str):
         current_model_name = model_name
     else:
         print(f"[INFO] Reusing model: {model_name}")
-
 
 
      # 추론 실행

@@ -5,6 +5,7 @@ import chromadb
 from sklearn.metrics.pairwise import cosine_similarity
 
 
+
 class CommandVectorSearch:
     def __init__(
         self,
@@ -14,7 +15,6 @@ class CommandVectorSearch:
         embedding_model_name='paraphrase-multilingual-MiniLM-L12-v2',
         force_reload=False,
     ):
-        # print("CSV 파일 존재 및 경로 확인:", csv_path)
 
         # 1. DB/모델 로드
         self.client = chromadb.PersistentClient(path=chroma_path)
@@ -28,19 +28,15 @@ class CommandVectorSearch:
             self.df_commands['text'].tolist(),
             show_progress_bar=True
         ).tolist()
-        # print("임베딩 벡터 shape 예시:", np.array(self.embeddings_list[0]).shape)
-
         # 3. 벡터DB 동기화 (중복 제외 or 강제 리셋)
         if force_reload:
-            # print("⚠️ 기존 컬렉션 전체 삭제 (force_reload=True)")
-            self.command_col.delete(where={})
+            #self.command_col.delete(where={}) #이전 방식
+            self.command_col.delete_all()
 
         try:
             existing_docs = self.command_col.get(ids=None, include=['ids'])
             existing_ids = set(existing_docs['ids'])
-            # print("ChromaDB docs 수:", len(existing_ids))
         except Exception as e:
-            # print("기존 컬렉션 로드 실패:", e)
             existing_ids = set()
 
         new_ids = [i for i in self.df_commands['id'] if i not in existing_ids]
@@ -54,11 +50,6 @@ class CommandVectorSearch:
                 metadatas=new_metadatas,
                 documents=new_documents
             )
-        #     print(f"✅ {len(new_ids)}개 새 명령어 추가 완료")
-
-        # print("명령어 shape:", self.df_commands.shape)
-        # print("명령어 헤드:", self.df_commands.head())
-        # print("text 컬럼 존재:", 'text' in self.df_commands.columns)
 
     # ============================
     # 명령 실행 함수
@@ -126,37 +117,3 @@ class CommandVectorSearch:
             "top_results": top_results,
             "executed_commands": executed_commands
         }
-
-
-# ============================
-# 단독 실행 테스트
-# ============================
-if __name__ == "__main__":
-    searcher = CommandVectorSearch(
-        csv_path="all_commands.csv",
-        chroma_path="./chroma_db",
-        collection_name="commands",
-        embedding_model_name='paraphrase-multilingual-MiniLM-L12-v2',
-        force_reload=False
-    )
-
-    test_queries = [
-        "BGA 티칭 시작",
-        "lighting 화면 열기",
-        "히스토리 보여줘",
-        "PRS 결과 재티칭",
-        "LGA 창 켜"
-    ]
-
-    for idx, q in enumerate(test_queries):
-        print(f"\n=== 테스트 {idx+1}: '{q}' ===")
-        result = searcher.execute_command(q, top_k=5, threshold=0.7)
-        print("status:", result["status"])
-        print("cosine_score:", result["cosine_score"])
-        print("Top Results:")
-        for r in result["top_results"]:
-            print(f"  - label: {r['label']} / score: {r['score']:.4f}")
-        print("Executed Commands:")
-        for r in result["executed_commands"]:
-            print(f"  - label: {r['label']} / score: {r['score']:.4f}")
-        print("-" * 40)

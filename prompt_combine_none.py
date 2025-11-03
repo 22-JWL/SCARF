@@ -36,7 +36,7 @@ system_prompt = """
 (예시: bga 창 package 탭에서 임계값 2-33, /teaching/bga/update?propertyName=PackageThreshold&value=2-33)
 
 ### BGA 티칭 창 탭 이동
-- `/teaching/bga/update?propertyName=moveTab&value=status` : BGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `FirstPin/Pattern, `Ball`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+- `/teaching/bga/update?propertyName=moveTab&value=status` : BGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `FirstPinPattern`, `Ball`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
 
 ### BGA Package 탭
 - `/teaching/bga/update?propertyName=PackageRoiTop&value=N-N-N-N` : Package 외곽 ROI (상단)
@@ -44,8 +44,8 @@ system_prompt = """
 - `/teaching/bga/update?propertyName=PackageRoiLeft&value=N-N-N-N` : Package 외곽 ROI (좌측)
 - `/teaching/bga/update?propertyName=PackageRoiRight&value=N-N-N-N` : Package 외곽 ROI (우측)
 - `/teaching/bga/update?propertyName=PackageThreshold&value=N-N` : BGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
-- `/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=<Direction>` : Edge 감지 방향 (Direction은 다음 중 하나 : `All`, `Horizontal`, `Vertical`)
-- `/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=<Mode>` : Edge 감지 모드(Mode는 다음 중 하나 `First`, `Last`, `Best`)
+- `/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=status` : BGA 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=status` : BGA 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
 - `/teaching/bga/update?propertyName=PackageThresholdDiff&value=N` : Edge Threshold Amplitude 값 설정
 - `/teaching/bga/update?propertyName=PackageModelRoi&value=N-N-N-N` : Package 모델 ROI
 - `/teaching/bga/update?propertyName=findPackageRoiAutoTeaching&value=1` : BGA 티칭창 Package탭에서 Auto ROI 버튼 클릭
@@ -174,6 +174,10 @@ system_prompt = """
 - `/teaching/qfn/update?propertyName=inspectSawingTeaching&value=1` : qfn 티칭 창에서 티칭 테스트 
 - `/teaching/qfn/update?propertyName=inspectRejectMarkTeaching&value=1` : qfn 티칭 창에서 티칭 테스트 
 
+### qfn combobox 값 변경
+- `/teaching/qfn/update?propertyName=PackageEdgeDetectDirection&value=status` : qfn 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/qfn/update?propertyName=PackageEdgeDetectMode&value=status` : qfn 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
+
 ### qfn 티칭 창 탭 이동
 - `/teaching/qfn/update?propertyName=moveTab&value=status` : qfn 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `padLeads`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
 
@@ -221,6 +225,10 @@ system_prompt = """
 ### mapping 티칭 창 roi, threshold 자동 생성 버튼
 - `/teaching/mapping/update?propertyName=autoThresholdCommand&value=1` : mapping 티칭 창에서 임계값 자동 설정
 
+### mapping combobox 값 변경
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectDirection&value=status` : mapping 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectMode&value=status` : mapping 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
+
 ## LGA 티칭 창 값 변경 및 업데이트
 ### LGA 티칭 창 임계값 변경
 -`/teaching/lga/update?propertyName=PackageThreshold&value=N-N` : LGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
@@ -262,6 +270,10 @@ system_prompt = """
 - `/teaching/lga/update?propertyName=findSawingTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭
 - `/teaching/lga/update?propertyName=inspectRejectMarkTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭 
 - `/teaching/lga/update?propertyName=inspectTeaching&value=1` : LGA 티칭 창에서 티칭 테스트 버튼 클릭 
+
+### LGA combobox 값 변경
+- `/teaching/lga/update?propertyName=PackageEdgeDetectDirection&value=status` : LGA 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/lga/update?propertyName=PackageEdgeDetectMode&value=status` : LGA 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
 
 ### LGA 티칭 창 탭 이동
 - `/teaching/lga/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Pads`, `Leads`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)

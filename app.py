@@ -41,7 +41,9 @@ class Instruct(Resource):
         print("Received JSON payload:", api.payload)  # <-- 여기 추가
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
-        result = run_model(user_input, model_name)
+        current_window_info = api.payload.get('current_opened_window_and_tab', {})
+
+        result = run_model(user_input, current_window_info, model_name)
         # output에서 "json\n" 제거
         result['output'] = result['output'].replace("json\n", "").strip()
 

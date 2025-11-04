@@ -48,13 +48,13 @@ class Instruct(Resource):
         result['output'] = result['output'].replace("json\n", "").strip()
 
         # 클라이언트 IP 주소 가져오기
-        # client_ip = request.remote_addr
+        client_ip = request.remote_addr
         
         # 클라이언트 IP로 API 주소를 만듦
-        # api_url = f"http://{client_ip}:3000{result['output']}"
+        api_url = f"http://{client_ip}:3000{result['output']}"
         
         #local에서..
-        api_url = f"http://localhost:3000{result['output']}"
+        # api_url = f"http://localhost:3000{result['output']}"
         
         try:
             response = requests.get(api_url)

@@ -41,20 +41,20 @@ class Instruct(Resource):
         print("Received JSON payload:", api.payload)  # <-- 여기 추가
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
-        current_window_info = api.payload.get('current_opened_window_and_tab', {})
+        current_window_info = api.payload['current_opened_window_and_tab']
 
         result = run_model(user_input, current_window_info, model_name)
         # output에서 "json\n" 제거
         result['output'] = result['output'].replace("json\n", "").strip()
 
         # 클라이언트 IP 주소 가져오기
-        client_ip = request.remote_addr
+        # client_ip = request.remote_addr
         
         # 클라이언트 IP로 API 주소를 만듦
-        api_url = f"http://{client_ip}:3000{result['output']}"
+        # api_url = f"http://{client_ip}:3000{result['output']}"
         
         #local에서..
-        #api_url = f"http://localhost:3000{result['output']}"
+        api_url = f"http://localhost:3000{result['output']}"
         
         try:
             response = requests.get(api_url)

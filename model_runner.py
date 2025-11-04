@@ -106,10 +106,9 @@ def switch_model(new_model_name: str):
         "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
     }
 
-def run_model(prompt: str, model_name: str):
+def run_model(prompt: str, current_window_info: dict, model_name: str):
     global current_model, current_tokenizer, current_model_name
 
-   
     # 분기 처리 - intent classifier는 별도 처리
     if model_name == "distilbert-base-multilingual-cased":
         result = classify_text(prompt)
@@ -136,15 +135,14 @@ def run_model(prompt: str, model_name: str):
     else:
         print(f"[INFO] Reusing model: {model_name}")
 
-
-
      # 추론 실행
     start = time.time()
     
     # 프롬프트 구성
     messages = [
         {"role": "system", "content": system_prompt},
-        {"role": "user", "content": prompt}
+        # {"role":"system", "content":  f"[Gvision Current Info]\n{current_window_info}"},
+        {"role": "user", "content": f"{prompt}\n\n[Gvision Current Info]\n{current_window_info}"}
     ]
     
 

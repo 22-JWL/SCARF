@@ -64,8 +64,11 @@ class Instruct(Resource):
 
         # result 딕셔너리 구성
         if result_hybrid['step'] == "vector_match":
+            label = result_hybrid['executed_command']['label']
+            formatted_output = f"[|assistant|]\n{label}\n"
+
             result = {
-                "output": result_hybrid['executed_command']['label'],
+                "output": formatted_output,
                 "elapsed_time": 0.0,
                 "gpu_memory": {"allocated_mb": 0, "reserved_mb": 0}
             }

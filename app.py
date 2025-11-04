@@ -57,7 +57,7 @@ class Instruct(Resource):
         result_hybrid = hybrid_command_or_llm(
             user_input, 
             vector_searcher=vector_searcher, 
-            sim_threshold=0.8, 
+            sim_threshold=0.98, 
             top_k=3,
             llm_model_name=model_name
         )

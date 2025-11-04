@@ -110,7 +110,7 @@ def switch_model(new_model_name: str):
 def hybrid_command_or_llm(
     user_input, 
     vector_searcher, 
-    sim_threshold=0.7,  # 0.8 → 0.7로 조정
+    sim_threshold=0.98,  # 0.8 → 0.7 → 0.98로 조정
     top_k=3, 
     llm_model_name=DEFAULT_MODEL_NAME
 ):
@@ -120,7 +120,7 @@ def hybrid_command_or_llm(
     top_label = top_cmd['label'] if top_cmd else None
     status = vec_res.get('status', 'NO_MATCH')
 
-    # ✅ 여기 조건문을 이렇게 명확하게 구분
+    # 여기 조건문을 이렇게 명확하게 구분
     if status == "MATCH" and top_score >= sim_threshold and top_label and top_label != "/NO_FUNCTION":
         print(f"\n[임베딩 우선] 입력 '{user_input}' → '{top_label}' (score: {top_score:.2f})")
         result = {

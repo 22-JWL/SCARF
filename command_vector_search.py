@@ -54,7 +54,7 @@ class CommandVectorSearch:
     # ============================
     # 명령 실행 함수
     # ============================
-    def execute_command(self, text, top_k=5, threshold=0.7, important_labels=None, fallback_label="/NO_FUNCTION"):
+    def execute_command(self, text, top_k=5, threshold=0.98, important_labels=None, fallback_label="/NO_FUNCTION"):
         if important_labels is None:
             important_labels = []
 
@@ -69,7 +69,6 @@ class CommandVectorSearch:
 
         for db_emb, meta, doc_text in zip(docs['embeddings'][0], docs['metadatas'][0], docs['documents'][0]):
             sim_score = float(cosine_similarity(query_emb, [np.array(db_emb)])[0][0])
-            print(f"sim_score({doc_text}): {sim_score:.4f}")
 
             label_str = meta.get('label', doc_text)
             desc_str = meta.get('description', label_str)
@@ -84,7 +83,6 @@ class CommandVectorSearch:
                 "label": label_str,
                 "description": desc_str
             })
-            print(f"실행: {label_str} -> {desc_str}")
             executed_commands.append({
                 "source": "command",
                 "score": sim_score,
@@ -111,6 +109,7 @@ class CommandVectorSearch:
         top_results = sorted(top_results, key=lambda x: x['score'], reverse=True)
         cosine_score = max([r['score'] for r in top_results], default=1.0)
         status = "MATCH" if top_results else "NO_MATCH"
+
         return {
             "status": status,
             "cosine_score": cosine_score,

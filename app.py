@@ -32,6 +32,8 @@ output_model = api.model('OutputModel', {
     'gpu_memory': fields.Nested(gpu_model)
 })
 
+
+
 @ns_instruct.route('/')
 class Instruct(Resource):
     @ns_instruct.expect(input_model)

@@ -4,9 +4,17 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # from prompt_combine import system_prompt
 # from prompt_only import system_prompt
 from prompt_combine_none import system_prompt
+from prompt_classify_by_windows.bga import system_prompt as bga_prompt
+from prompt_classify_by_windows.lga import system_prompt as lga_prompt
+from prompt_classify_by_windows.qfn import system_prompt as qfn_prompt
+from prompt_classify_by_windows.mapping import system_prompt as mapping_prompt
+from prompt_classify_by_windows.cali_his_light_strip import system_prompt as cali_his_light_strip_prompt
+from prompt_classify_by_windows.settings import system_prompt as settings_prompt
 from intent_classifier import classify_text 
 import re
 import gc
+import csv
+import os
 
 #model_name = "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct"
 #model_name = "trillionlabs/Trillion-7B-preview"
@@ -106,6 +114,49 @@ def switch_model(new_model_name: str):
         "gpu_memory": {"allocated_mb": allocated, "reserved_mb": reserved},
     }
 
+CSV_LOG_PATH = "model_logs.csv"   # 기록 저장 파일
+
+def log_to_csv(user_input,current_window_info, llm_output, System_prompt):
+    """user_input, result 를 CSV 파일에 누적 저장"""
+    file_exists = os.path.isfile(CSV_LOG_PATH)
+
+    with open(CSV_LOG_PATH, 'a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+
+        # 파일이 처음 생성될 때 헤더 추가
+        if not file_exists:
+            writer.writerow(["User_input", "Current_window_info", "System_prompt", "LLM_output"])
+
+        writer.writerow([
+            user_input,
+            current_window_info,
+            System_prompt,
+            llm_output
+        ])
+
+def filter_system_prompt(current_window_info: str) -> str:
+    info = current_window_info.lower()
+
+    mapping = {
+        "bga": bga_prompt,
+        "lga": lga_prompt,
+        "qfn": qfn_prompt,
+        "mapping": mapping_prompt,
+        "strip": cali_his_light_strip_prompt,
+        "light": cali_his_light_strip_prompt,
+        "calibration": cali_his_light_strip_prompt,
+        "history": cali_his_light_strip_prompt,
+        "settings": settings_prompt,
+        "": system_prompt
+    }
+
+    for key, prompt in mapping.items():
+        if key in info:
+            return key, prompt
+
+    return "", system_prompt
+
+
 def run_model(prompt: str, current_window_info: dict, model_name: str):
     global current_model, current_tokenizer, current_model_name
 
@@ -137,14 +188,13 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
 
      # 추론 실행
     start = time.time()
-    
+
     # 프롬프트 구성
+    selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()))
     messages = [
-        {"role": "system", "content": system_prompt},
-        # {"role":"system", "content":  f"[Gvision Current Info]\n{current_window_info}"},
+        {"role": "system", "content": system_prompt_selected},
         {"role": "user", "content": f"{prompt}\n\n[Gvision Current Info]\n{current_window_info}"}
     ]
-    
 
     input_ids = current_tokenizer.apply_chat_template(
         messages,
@@ -168,6 +218,7 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
     print(assistant_only)
     allocated, reserved = get_gpu_memory()
 
+    log_to_csv(prompt, current_window_info, assistant_only,selected_key) # 기록
     return {
         "output": assistant_only,
         "elapsed_time": elapsed_time,

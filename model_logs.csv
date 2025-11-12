@@ -1,0 +1,1094 @@
+User_input,Current_window_info,System_prompt,LLM_output
+strip 창 켜줘,{},,"json
+/windows/strip
+"
+bga 창 켜줘,{},,"json
+/windows/teaching/bga
+"
+setting 창 켜줘,{},,"json
+/windows/settings
+"
+strip 창 열어줘,{},,"json
+/windows/strip
+"
+/windows/teaching/strip,{},,"json
+/windows/teaching/strip/update?propertyName=Roi&value=N-N-N-N
+"
+/windows/teaching/strip,{},,"json
+/windows/teaching/strip/update?propertyName=Roi&value=N-N-N-N
+"
+/windows/teaching/strip,{},,"json
+/windows/teaching/strip/update?propertyName=Roi&value=N-N-N-N
+"
+/windows/teaching/strip 이거 그대로 바환,{},,"json
+/windows/teaching/strip
+"
+"Strip 창 roi add, /teaching/Strip/update?propertyName=Roi&value=add",{'strip': 'Barcode'},strip,/teaching/strip/update?propertyName=PadRois&value=add
+strip 창 켜줘,{},,"json
+/windows/strip
+"
+strip 창 열어줘,{},,"json
+/windows/strip
+"
+strip,{},,"json
+/windows/teaching/strip
+"
+strip roi add,{'strip': 'Barcode'},strip,/teaching/strip/update?propertyName=Roi&value=add
+안녕,{},,/settings/update?propertyName=GvisionCurrentInfo&value={}
+값 변경해줘,{'settings': 'Recipe'},settings,/settings/update?propertyName=Recipe&value=값
+히스토리 창 열어줘,{'settings': 'Recipe'},settings,"json
+/windows/history
+"
+history 열어,"{'settings': 'Recipe', 'history': 'NoTab'}",history,/windows/history
+history 열어,{},,"json
+/history/update?propertyName=date&value=2023-10-01_2023-10-31
+"
+히스토리,{},,"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+안녕,{},,/settings/update?propertyName=GvisionCurrentInfo&value={}
+bga 창열어줘,{},,"json
+/windows/teaching/bga
+"
+설명해줘,{},,"제가 제공하는 기능은 주로 반도체 공정 검사 시스템 내에서 사용자 인터페이스와 관련된 API 호출 주소들을 정확하게 제공하는 데 초점을 맞추고 있습니다. 사용자의 요청에 따라 특정 티칭 창(예: BGA, QFN, LGA 등), 설정 변경, 테스트 실행, 조명 설정 등 다양한 기능에 대한 API 주소를 반환합니다. 하지만, ""Gvision Current Info""에 대한 구체적인 정보나 요청은 현재 제공된 정보 범위"
+mapping,{},,"json
+/teaching/mapping/update?propertyName=GridRoi_&value=N-N-N-N
+"
+모든 창 꺼줘,{},,"json
+/closeWindows
+"
+모든 창 열어줘,{},,"json
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX"
+모든 창 꺼줘,{},,"json
+/closeWindows
+"
+런모드 켜줘,{},,"json
+/mode/set?mode=RUN
+"
+exit,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/NO_FUNCTION
+모든 창 켜줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,"json
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+"
+PRS live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+PRS live off,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+PRS live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+PRS live off,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'lga': 'Package'}",lga,/mode/set?mode=RUN
+BARCODE live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/NO_FUNCTION
+Lot data,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+SIZE,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,"json
+/teaching/mapping/update?propertyName=ScratchSize&value=N-N
+"
+Light,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/light
+창 닫아줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/closeWindows
+대화 초기화,{'Detail Inspection Result': 'NoTab'},,"json
+/chat/clear
+"
+네,{'Detail Inspection Result': 'NoTab'},,/NO_FUNCTION
+기능 알려줘,{'Detail Inspection Result': 'NoTab'},,"제공된 정보를 바탕으로 현재 Gvision 시스템에서 사용 가능한 주요 기능들을 요약해 드리겠습니다:
+
+### 기본 창 관리 및 설정
+- **`/windows/teaching/lga`**: LGA 티칭 창 열기
+- **`/windows/teaching/qfn`**: QFN 티칭 창 열기
+- **`/windows/teaching/bga`**: BGA 티칭 창 열기
+- **`/"
+Run Mode not on,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+Do not Initiaze Run Mode,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/bga/update?propertyName=PackageThreshold&value=N-N
+"
+dsmmi,{'Detail Inspection Result': 'NoTab'},,/teaching/bga/update?propertyName=inspectTeaching&value=1
+현재 디바이스 크기,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/bga/update?propertyName=DeviceSize&value={""Width"":N,""Height"":N,""Depth"":N}
+```
+
+**참고:**
+
+* `N`은 실제 디바이스의 너비, 높이, 깊이 값으로 대체해야 합니다. 
+* 정확한 값을 얻으려면 디바이스의 측정 도구를 사용하십시오."
+종료,{'Detail Inspection Result': 'NoTab'},,"json
+/closeWindows
+"
+디바이스 크기,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=DeviceSize&value=GvisionCurrentInfo
+"
+스마트 얼라인,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/bga/update?propertyName=inspectTab&value=stripAlignment
+"
+검사모드 알려줘,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+Settingx1 카메라 켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=SettingX1
+"
+라이브 실행시켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=PRS
+"
+바코드 라이브 실행 시켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=BarCode
+"
+티칭창 열어줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/bga
+"
+[창 닫고] 티칭창 열어줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/lga
+"
+BGA 티칭창 열어,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/bga
+"
+레시피 저장해줘,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=RecipeSave&value=true
+"
+Auto Roi,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/bga/update?propertyName=findAutoRoiTeaching&value=1
+"
+창 닫아줘,{'Detail Inspection Result': 'NoTab'},,"json
+/closeWindows
+"
+네,{'Detail Inspection Result': 'NoTab'},,/NO_FUNCTION
+티칭창 닫아줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/close
+"
+티칭창 열어줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/bga
+"
+티칭창 닫아줘,"{'Detail Inspection Result': 'NoTab', 'bga': 'Package'}",bga,/windows/teaching/bga
+티칭창 닫아줘,"{'Detail Inspection Result': 'NoTab', 'bga': 'Package'}",bga,/windows/teaching/bga
+티칭창 닫아줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/close
+"
+세팅창 열어줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/settings
+"
+런모드,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+런모드로 바꿔줘,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+검사 시작하자,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+change recipe,{'Detail Inspection Result': 'NoTab'},,"json
+/test/run/prs
+"
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+calibration,"{'Detail Inspection Result': 'NoTab', 'settings': 'Recipe'}",settings,"json
+/calibration
+"
+calibration,{'Detail Inspection Result': 'NoTab'},,"json
+/calibration/update?propertyName=select&value=MULTIOBJECT
+"
+change pad pitch,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=PadPitch&value=N-N-N-N 
+```
+
+Replace `N-N-N-N` with the desired pad pitch values in millimeters (e.g., `1.6-0.8-0.4-0.2`)."
+calibration,{'Detail Inspection Result': 'NoTab'},,"json
+/calibration/update?propertyName=select&value=MULTIOBJECT
+"
+exit calibration,"{'Detail Inspection Result': 'NoTab', 'calibration': 'NoTab'}",calibration,/calibration/update?propertyName=tab&value=status
+exit calibration,{'Detail Inspection Result': 'NoTab'},,"json
+/calibration/exit
+"
+lga,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/lga
+"
+monitor,{'Detail Inspection Result': 'NoTab'},,"json
+/monitor/status
+"
+프로그램 종료,{'Detail Inspection Result': 'NoTab'},,"json
+/NO_FUNCTION
+"
+setup mode,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=SETUP
+"
+recipe list,{'Detail Inspection Result': 'NoTab'},,/test/run/prs
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+insection mode change,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=INSECION
+"
+image save,{'Detail Inspection Result': 'NoTab'},,"json
+/image/save?filename=inspection_result&data={""Detail Inspection Result"": ""NoTab""}
+"
+test packet,{'Detail Inspection Result': 'NoTab'},,"json
+/test/run/prs
+"
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+test packet,{'Detail Inspection Result': 'NoTab'},,"json
+/test/run/prs
+"
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+exit,{'Detail Inspection Result': 'NoTab'},,/NO_FUNCTION
+chat 종료,{'Detail Inspection Result': 'NoTab'},,/chat/clear
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+shut down,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=SHUTDOWN
+"
+setup,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+device info,{'Detail Inspection Result': 'NoTab'},,"json
+/device/info
+"
+change recipe,{'Detail Inspection Result': 'NoTab'},,"json
+/test/run/prs
+"
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+lot info,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+calibration,{'Detail Inspection Result': 'NoTab'},,"json
+/calibration/update?propertyName=select&value=MULTIOBJECT
+"
+lot data,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+Setting,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"
+live,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=PRS
+"
+prs teaching,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/prs/reteach
+"
+prs teaching,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/prs/reteach
+"
+프로그램 종료,{'Detail Inspection Result': 'NoTab'},,"json
+/NO_FUNCTION
+"
+있는 기능이 뭐야,{'Detail Inspection Result': 'NoTab'},,"제공된 정보만으로는 현재 기능 목록을 정확히 파악하기 어렵습니다. 하지만 일반적으로 반도체 공정 비전 검사 시스템에서 기대되는 기능들을 기반으로 추정해 볼 수 있습니다:
+
+1. **LGA (Land Grid Array) 티칭 창**:
+   - `/windows/teaching/lga`: LGA 티칭 창 열기 및 설정 변경
+   - 예시: `/windows/teaching/lga/update?propertyName=PackageThreshold"
+rnu mode,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUNNING
+"
+a/s,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={'Detail Inspection Result': 'NoTab'}
+"
+history window,{'Detail Inspection Result': 'NoTab'},,"json
+/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD
+```
+
+Replace `YYYY-MM-DD` with the specific dates you want to retrieve from the history window. For example, to get records for September 2023:
+
+```json
+/history/update?propertyName=date&value=2023-09-01_2023"
+hi,{'Detail Inspection Result': 'NoTab'},,/windows/teaching/lga
+hello:),{'Detail Inspection Result': 'NoTab'},,/windows/teaching/lga
+mode,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+mode,{},,"json
+/mode/set?mode=RUN
+"
+open Lot data,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+chg mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=CHANGE
+close chat,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/closeWindows
+close chat -y,{'Detail Inspection Result': 'NoTab'},,"json
+/closeWindows
+"
+QFN,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/qfn/update?propertyName=PackageThreshold&value=N-N
+"
+not run mode,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+레시피 변경,{'Detail Inspection Result': 'NoTab'},,"json
+/test/run/prs
+"
+yes,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={""Detail Inspection Result"": ""NoTab""}
+"
+현재 레시피 삭제,{'Detail Inspection Result': 'NoTab'},,"json
+/settings/update?propertyName=CurrentRecipeDelete&value=true
+"
+PRS 조명 켜,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=PRS
+"
+이미지 저장 경로 알려줘,{'Detail Inspection Result': 'NoTab'},,"제공된 정보만으로는 이미지 저장 경로를 정확히 지정할 수 없습니다. 이미지 저장 경로는 시스템 설정, 프로젝트 디렉토리 구조, 또는 특정 API 호출에 따라 달라질 수 있습니다. 다음과 같은 정보가 더 필요합니다:
+
+1. **프로젝트 디렉토리 구조**: 현재 프로젝트의 구조나 특정 디렉토리 경로가 있는지 확인해 주세요.
+2. **API 호출**: 이미지 저장을 위한 특정 API 호출이 있는지 확인해 주세요."
+모든 창 열어줘,{},,"json
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX"
+lga,{},,"json
+/windows/teaching/lga
+"
+package threshold 2-33,{'lga': 'Package'},lga,/teaching/lga/update?propertyName=PackageThreshold&value=2-33
+lot data,{},,"It seems like you're looking for assistance with specific commands or actions related to a system that involves Gvision (likely referring to Google Vision API or a similar image analysis tool) and possibly some settings or data manipulation tasks. However, your request isn't clear regarding the exact nature of the ""lot data"" or what specific action you want to perform. Here are some general examples based on common tasks related to Gvision and settings management:
+
+### Example Commands Based on Common Tasks:"
+lot data 창 켜줘,{},,"json
+/windows/teaching/lga
+"
+lga 창 켜줘,{},,"json
+/windows/lga
+"
+lga,{},,"json
+/windows/teaching/lga
+"
+lga 꺼줘,{'lga': 'Package'},lga,/mode/set?mode=STOP
+창 꺼,{'lga': 'Package'},lga,/closeWindows
+lga package threshold 2-44,{},,"json
+/teaching/lga/update?propertyName=PackageThreshold&value=2-44
+"
+PRS live on,{},,"json
+/windows/light/live?camera=PRS
+"
+PRS live off,{'light': 'NoTab'},light,/live/toggle?switch=OFF&no=PRS
+recipe list,{'light': 'NoTab'},light,/test/run/prs
+yes,{'light': 'NoTab'},light,/windows/teaching/lga
+recipe list,{},,/test/run/prs
+no,{},,/NO_FUNCTION
+Lot data,{},,"It seems like you're looking for specific API commands related to Lot data management or updates within a system that utilizes Gvision for inspection purposes. However, your request isn't directly tied to any of the predefined categories like BGA, QFN, LGA 티칭 창, calibration, etc., but rather seems to be more about managing or updating settings or data related to ""Lot data.""
+
+Given the context and the structure you've provided, here are some potential API calls that"
+/windows/lot,{},,/NO_FUNCTION
+/windows/lot   이거 그대로 반환,{},,"json
+/windows/lot
+"
+Lot data,{},,"json
+/windows/lot/data
+"
+lot data 창 열기,{},,"json
+/windows/lot
+"
+PRS live on,{},,"json
+/windows/light/live?camera=PRS
+"
+SIZE,{},,"json
+/settings/update?propertyName=SIZE&value=N-N-N-N
+```
+
+Replace `N-N-N-N` with the desired size values (e.g., `100-200-300-400`)."
+대화 초기화,{},,"json
+/chat/clear
+"
+YES,{},,"json
+/windows/teaching/bga
+"
+응,{},,/settings/update?propertyName=UseBgaPackageSize&value=false
+네,{},,/NO_FUNCTION
+LGA,{},,"json
+/windows/teaching/lga
+"
+YES,{'lga': 'Package'},lga,"json
+/teaching/lga/update?propertyName=PackageThreshold&value=N-N
+"
+CHAT CLEAR,{'lga': 'Package'},lga,/chat/clear
+/openWindow/yes 이거만 반환,{'lga': 'Package'},lga,"json
+/openWindow/yes
+"
+Run Mode not on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+SET UP MODE ON,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=SETUP
+모든 창 꺼줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/closeWindows
+디바이스 크기,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/bga
+"
+Settingx1 카메라 켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=SettingX1
+"
+1번 카메라 켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=PRS
+"
+바코드 라이브 실행 시켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/light/live?camera=BarCode
+"
+모든 창 열어줘,{'Detail Inspection Result': 'NoTab'},,"json
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/mapping
+/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live"
+모델 전환 오류,{'Detail Inspection Result': 'NoTab'},,"제공된 정보만으로는 정확한 API 호출 주소를 결정하기 어렵습니다. 현재 상황에서 사용자의 요청이 명확하게 정의되지 않았기 때문입니다. 하지만, 주어진 정보와 관련된 몇 가지 가능한 시나리오와 그에 따른 API 호출 예시를 제시해 드릴 수 있습니다:
+
+1. **현재 상태 확인 및 오류 해결 요청**:
+   - 만약 사용자가 현재 상태를 확인하거나 오류 해결을 요청하고 있다면, 현재 상태 정보"
+런모드 켜줘,{'Detail Inspection Result': 'NoTab'},,"json
+/mode/set?mode=RUN
+"
+런모드 켜줘,{},,"json
+/mode/set?mode=RUN
+"
+PRS live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+LGA 티칭 창 열어줘,{},,"json
+/windows/teaching/lga
+"
+Open the QFN teaching window,{},,"json
+/windows/teaching/qfn
+"
+lga,{},,"json
+/windows/teaching/lga
+"
+BGA 티칭 창 열기,{},,"json
+/windows/teaching/bga
+"
+Open mapping teaching window,{},,"json
+/windows/teaching/mapping
+"
+Strip 티칭창 열어줘,{},,"json
+/windows/teaching/strip
+"
+검사 기록 창 열어줘,{},,"json
+/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD
+```
+
+**참고:** YYYY-MM-DD 대신 실제 검사 날짜를 입력해야 합니다. 예를 들어, 이번 달 기록을 보고 싶다면 `/history/update?propertyName=date&value=2023-10-01_2023-10-31` 와 같이 입력합니다."
+검사 기록 창 열어줘,{'history': 'NoTab'},history,/windows/history
+보정(캘리브레이션) 창 열어줘,{},,"json
+/calibration/update?propertyName=tab&value=status
+"
+Light setting window open,{},,"json
+/windows/light/live?camera=PRS
+"
+Settings window open,{'light': 'NoTab'},light,/windows/teaching/settings
+lga,{},,"json
+/windows/teaching/lga
+"
+PRS 결과 기반 재티칭 창 열어줘,{'light': 'NoTab'},light,/windows/teaching/prs
+PRS 결과 기반 재티칭 창 열어줘,{},,"json
+/windows/teaching/prs/reteach
+"
+LGA 티칭 창 열어줘,{},,"json
+/windows/teaching/lga
+"
+레시피 저장해줘,{},,"json
+/settings/update?propertyName=RecipeSave&value=true
+"
+PRS 결과 기반 재티칭 창 열어줘,{},,"json
+/windows/teaching/prs/reteach
+"
+lga auto roi,{},,"json
+/teaching/lga/update?propertyName=findAutoRoiCommand&value=1
+"
+auto roi,{'lga': 'Package'},lga,/teaching/lga/update?propertyName=findPackageRoiAutoCommand&value=1
+history,{},,"json
+/history/update?propertyName=date&value=2023-10-05_2023-10-10
+"
+창 닫아줘,{'history': 'NoTab'},history,/closeWindows
+change recipe,{},,"json
+/test/run/prs
+"
+PRS 결과 기반 재티칭 창 열어줘,{},,"json
+/windows/teaching/prs/reteach
+"
+yes,{},,"json
+/windows/teaching/bga
+"
+calibration,{},,"json
+/calibration/update?propertyName=threshold&value=100-200
+"
+device info,{},,"json
+/device/info
+"
+3번 카메라 켜줘,{},,"json
+/windows/light/live?camera=PRS
+"
+카메라 1번 라이브 켜기,{'light': 'NoTab'},light,/live/toggle?switch=ON&no=1
+go,{'light': 'NoTab'},light,/windows/teaching/lga
+lga,{},,
+bga,{},,
+안녕 하나은행 가는 법 알려줘,{},,
+lga,{},,"It looks like you've provided a placeholder or a template that might be used for displaying information related to LG AI Research, specifically something labeled ""[Gvision Current Info]"". However, the content within the brackets is empty (`{}`), indicating there's no specific data or update currently available under that label.
+
+If you're looking for information about LG AI Research, Gvision (which might refer to a specific project or technology within LG AI Research focused on vision-related AI"
+lga 창 켜줘,{},,/windows/teaching/lga
+lga 창 켜줘,{},,
+PRS 결과 기반 재티칭 창 열어줘,{},,"json
+/windows/teaching/prs/reteach
+"
+재티칭 창 열어줘,{},,"json
+/teaching/bga/update?propertyName=reteach&value=1
+"
+Open mapping shot reteaching window,{},,"json
+/teaching/mapping/reteach?propertyName=MappingShot&value=1
+"
+검사 모드로 바꿔줘,{},,"json
+/mode/set?mode=RUN
+"
+Switch to setup mode,{},,"json
+/mode/set?mode=SETUP
+"
+Switch to setup mode,{},,"json
+/mode/set?mode=SETUP
+"
+BGA package 임계값 2-33으로 변경 (값변경),{},,"json
+/teaching/bga/update?propertyName=PackageThreshold&value=2-33
+"
+Set BGA scratch threshold to 5-21 (값변경),{},,"json
+/teaching/bga/update?propertyName=ScratchThreshold&value=5-21
+"
+BGA package 임계값 2-33으로 변경 (값변경),{},,"json
+/teaching/bga/update?propertyName=PackageThreshold&value=2-33
+"
+Switch to setup mode,{},,"json
+/mode/set?mode=SETUP
+"
+Switch to setup mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=SETUP
+Settings window open,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/settings
+PRS 결과 기반 재티칭 창 열어줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/prs
+Open mapping shot reteaching window,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+Set BGA scratch threshold to 5-21 (값변경),"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/teaching/mapping/update?propertyName=ScratchThreshold&value=5-21
+BGA package ROI 상단 10-20-30-40 설정,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/teaching/mapping/update?propertyName=PackageModelRoi_&value=10-20-30-40
+Set BGA edge direction to OutToIn,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/teaching/mapping/update?propertyName=PackageEdgeDetectDirection&value=OutToIn
+Package auto ROI 눌러줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/teaching/mapping/update?propertyName=GridRoi_&value=auto
+FirstPin/Pattern 자동 찾기 해줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/teaching/mapping/update?propertyName=findPattern&value=1
+lga 값 변경,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,"system
+
+너는 반도체 공정 비전 검사 시스템의 대화형 인터페이스야.
+사용자가 말로 명령을 내리면, 아래의 API 주소들 중 적절한 API 호출 주소를 **정확한 주소 문자열로만** 반환해.
+설명이나 부가 텍스트는 절대 포함하지 마.
+만약 사용자의 요청이 아래 API들과 관련이 없거나 명확하지 않은 경우, 아무 설명도 없이 정확히 `/NO_FUNCTION`이라는 글자만 리턴해.
+---
+### 사용 가능한 API 목록:
+## 단순 창 열기
+- `/windows/teaching/lga` : LGA 티칭 창 열기
+- `/windows/teaching/qfn` : QFN 티칭 창 열기
+- `/windows/teaching/bga` : BGA 티칭 창 열기
+- `/windows/teaching/mapping` : MAPPING 티칭 창 열기
+- `/windows/teaching/strip` : Strip 티칭 창 열기
+- `/windows/history` : 검사 기록 창 열기
+- `/windows/light` : 조명 설정 창 열기
+- `/windows/calibration` : 보정(캘리브레이션) 창 열기
+- `/windows/calibration` : 보정(캘리브레이션) 창 열기
+- `/mode/set?mode=RUN` : 검사 모드로 변경
+- `/mode/set?mode=SETUP` : 설정 모드로 변경
+
+## 추가 기능
+- `/closeWindows` : '창 끄기' 라고 치면 실행
+- `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
+- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: ""응"", ""네"", ""yes"", ""좋아"", ""예""
+- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: ""아니"", ""싫어"", ""no""
+
+## mapping 티칭 창 값 변경 및 업데이트
+### mapping 티칭 창 임계값 변경
+-`/teaching/mapping/update?propertyName=MarkThreshold&value=N-N` : mapping 티칭 창 Mark 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ScratchThreshold&value=N-N` : mapping 티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ForeignMaterialThreshold&value=N-N` : mapping 티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ContaminationThreshold&value=N-N` : mapping  티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=OutlineThreshold&value=N-N` : mapping 티칭 창 sawing 탭 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=RejectMarkThreshold&value=N-N` : mapping 티칭 창 RejectMark 탭에서 임계값 설정(N 은 숫자)
+(예시: mapping창 Scratch 임계값 2-33, /teaching/mapping/update?propertyName=ScratchThreshold&value=2-33)
+
+### mapping 티칭 창 사이즈값 변경
+-`/teaching/mapping/update?propertyName=ScratchSize&value=N-N` : mapping 티칭 창 Scratch 탭 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ForeignMaterialSize&value=N-N` : mapping 티칭 창 ForeignMaterial 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ContaminationSize&value=N-N` : mapping 티칭 창 Contamination 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=RejectMarkSize&value=N-N` : mapping 티칭 창 RejectMark 탭 사이즈 설정(N 은 숫자)
+
+### mapping 티칭 테스트
+- `/teaching/mapping/update?propertyName=findPackagesTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectMarksAndDataCodeTeaching&value=1` : mapping 티칭 창에서 티칭 테스트
+- `/teaching/mapping/update?propertyName=inspectSurfaceTeaching&value=1` : mapping 티칭 창에서 티칭 테스트
+- `/teaching/mapping/update?propertyName=inspectSawingTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectRejectMarkTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectTeaching&value=1` : mapping 티칭 창 result 탭에서 티칭 테스트 
+
+### mapping 티칭 창 탭 이동
+- `/teaching/mapping/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Mark`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+
+### mapping 티칭 창 roi 단일 생성 버튼
+- `/teaching/mapping/update?propertyName=GridRoi_&value=N-N-N-N` : mapping 티칭 창 package 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=CodeRoi_&value=N-N-N-N` : mapping 티칭 창 Mark 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=RejectMarkRoi_&value=N-N-N-N` : mapping 티칭 창 RejectMark 탭에서 ROI 생성
+(예시: mapping 창 model RejectMark roi 10-20-30-40, /teaching/mapping/update?propertyName=RejectMarkRoi_&value=10-20-30-40)
+(예시2: mapping 창 model RejectMark roi 생성, /teaching/mapping/update?propertyName=PackageModelRoi_&value=1)
+
+### mapping 티칭 창 ROI 생성/삭제/초기화/읽기 버튼
+- `/teaching/mapping/update?propertyName=MarkRoi&value=status` : mapping 티칭 창 Mark 탭 ROI 추가,삭제,초기화 
+- `/teaching/mapping/update?propertyName=DontCareRoi&value=status` : mapping 티칭 창 DontCare 탭 ROI 추가,삭제,초기화 
+- `/teaching/mapping/update?propertyName=SurfaceRoi&value=status` : mapping 티칭 창 Surface 탭 ROI 추가,삭제,초기화 
+(status는 다음 중 하나: `add`, `delete`, `reset`, `read`)
+,(예시: mapping 창 surface 탭 roi add, /teaching/mapping/update?propertyName=SurfaceRoi&value=add)
+
+### mapping 티칭 창 roi, threshold 자동 생성 버튼
+- `/teaching/mapping/update?propertyName=autoThresholdCommand&value=1` : mapping 티칭 창에서 임계값 자동 설정
+
+### mapping combobox 값 변경
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectDirection&value=status` : mapping 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectMode&value=status` : mapping 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
+
+### mapping 값 변경
+- `/teaching/mapping/update?propertyName=OutlineWidth&value=N` : 외곽선 너비(N은 숫자)
+- `/teaching/mapping/update?propertyName=PackageThresholdDiff&value=N` : Edge Threshold Amplitude 값 설정(N은 숫자)
+- `/teaching/mapping/update?propertyName=RotateAngle&value=N` : 회전 각도 값 설정(N은 숫자, 다음중 하나: 0, 90, 180, 270)
+- `/teaching/mapping/update?propertyName=Row-Column&value=N-N` : 가로 세로 값 변경(N-N 은 숫자)
+
+--- 
+대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
+사용자가 말로 명령을 내리면, 아래의 API 주소들 중 적절한 API 호출 주소를 **정확한 주소 문자열로만** 반환해.
+
+user
+lga 값 변경
+
+[Gvision Current Info]
+{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}
+assistant
+/windows/teaching/lga"
+lga 티칭창,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,"system
+
+너는 반도체 공정 비전 검사 시스템의 대화형 인터페이스야.
+사용자가 말로 명령을 내리면, 아래의 API 주소들 중 적절한 API 호출 주소를 **정확한 주소 문자열로만** 반환해.
+설명이나 부가 텍스트는 절대 포함하지 마.
+만약 사용자의 요청이 아래 API들과 관련이 없거나 명확하지 않은 경우, 아무 설명도 없이 정확히 `/NO_FUNCTION`이라는 글자만 리턴해.
+---
+### 사용 가능한 API 목록:
+## 단순 창 열기
+- `/windows/teaching/lga` : LGA 티칭 창 열기
+- `/windows/teaching/qfn` : QFN 티칭 창 열기
+- `/windows/teaching/bga` : BGA 티칭 창 열기
+- `/windows/teaching/mapping` : MAPPING 티칭 창 열기
+- `/windows/teaching/strip` : Strip 티칭 창 열기
+- `/windows/history` : 검사 기록 창 열기
+- `/windows/light` : 조명 설정 창 열기
+- `/windows/calibration` : 보정(캘리브레이션) 창 열기
+- `/windows/calibration` : 보정(캘리브레이션) 창 열기
+- `/mode/set?mode=RUN` : 검사 모드로 변경
+- `/mode/set?mode=SETUP` : 설정 모드로 변경
+
+## 추가 기능
+- `/closeWindows` : '창 끄기' 라고 치면 실행
+- `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
+- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: ""응"", ""네"", ""yes"", ""좋아"", ""예""
+- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: ""아니"", ""싫어"", ""no""
+
+## mapping 티칭 창 값 변경 및 업데이트
+### mapping 티칭 창 임계값 변경
+-`/teaching/mapping/update?propertyName=MarkThreshold&value=N-N` : mapping 티칭 창 Mark 탭에서 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ScratchThreshold&value=N-N` : mapping 티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ForeignMaterialThreshold&value=N-N` : mapping 티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ContaminationThreshold&value=N-N` : mapping  티칭 창 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=OutlineThreshold&value=N-N` : mapping 티칭 창 sawing 탭 임계값 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=RejectMarkThreshold&value=N-N` : mapping 티칭 창 RejectMark 탭에서 임계값 설정(N 은 숫자)
+(예시: mapping창 Scratch 임계값 2-33, /teaching/mapping/update?propertyName=ScratchThreshold&value=2-33)
+
+### mapping 티칭 창 사이즈값 변경
+-`/teaching/mapping/update?propertyName=ScratchSize&value=N-N` : mapping 티칭 창 Scratch 탭 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ForeignMaterialSize&value=N-N` : mapping 티칭 창 ForeignMaterial 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=ContaminationSize&value=N-N` : mapping 티칭 창 Contamination 사이즈 설정(N 은 숫자)
+-`/teaching/mapping/update?propertyName=RejectMarkSize&value=N-N` : mapping 티칭 창 RejectMark 탭 사이즈 설정(N 은 숫자)
+
+### mapping 티칭 테스트
+- `/teaching/mapping/update?propertyName=findPackagesTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectMarksAndDataCodeTeaching&value=1` : mapping 티칭 창에서 티칭 테스트
+- `/teaching/mapping/update?propertyName=inspectSurfaceTeaching&value=1` : mapping 티칭 창에서 티칭 테스트
+- `/teaching/mapping/update?propertyName=inspectSawingTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectRejectMarkTeaching&value=1` : mapping 티칭 창에서 티칭 테스트 
+- `/teaching/mapping/update?propertyName=inspectTeaching&value=1` : mapping 티칭 창 result 탭에서 티칭 테스트 
+
+### mapping 티칭 창 탭 이동
+- `/teaching/mapping/update?propertyName=moveTab&value=status` : LGA 티칭 창에서 특정 탭으로 이동 (status는 다음 중 하나: `Package`, `Mark`, `Surface`, `Sawing`, `RejectMark`, `DontCare`, `Result`)
+
+### mapping 티칭 창 roi 단일 생성 버튼
+- `/teaching/mapping/update?propertyName=GridRoi_&value=N-N-N-N` : mapping 티칭 창 package 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=CodeRoi_&value=N-N-N-N` : mapping 티칭 창 Mark 탭에서 ROI 생성
+- `/teaching/mapping/update?propertyName=RejectMarkRoi_&value=N-N-N-N` : mapping 티칭 창 RejectMark 탭에서 ROI 생성
+(예시: mapping 창 model RejectMark roi 10-20-30-40, /teaching/mapping/update?propertyName=RejectMarkRoi_&value=10-20-30-40)
+(예시2: mapping 창 model RejectMark roi 생성, /teaching/mapping/update?propertyName=PackageModelRoi_&value=1)
+
+### mapping 티칭 창 ROI 생성/삭제/초기화/읽기 버튼
+- `/teaching/mapping/update?propertyName=MarkRoi&value=status` : mapping 티칭 창 Mark 탭 ROI 추가,삭제,초기화 
+- `/teaching/mapping/update?propertyName=DontCareRoi&value=status` : mapping 티칭 창 DontCare 탭 ROI 추가,삭제,초기화 
+- `/teaching/mapping/update?propertyName=SurfaceRoi&value=status` : mapping 티칭 창 Surface 탭 ROI 추가,삭제,초기화 
+(status는 다음 중 하나: `add`, `delete`, `reset`, `read`)
+,(예시: mapping 창 surface 탭 roi add, /teaching/mapping/update?propertyName=SurfaceRoi&value=add)
+
+### mapping 티칭 창 roi, threshold 자동 생성 버튼
+- `/teaching/mapping/update?propertyName=autoThresholdCommand&value=1` : mapping 티칭 창에서 임계값 자동 설정
+
+### mapping combobox 값 변경
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectDirection&value=status` : mapping 티칭 창 edge 방향값 변경(status는 다음 중 하나: `InToOut`, `OutToIn`)
+- `/teaching/mapping/update?propertyName=PackageEdgeDetectMode&value=status` : mapping 티칭 창 edge 모드 변경 (status는 다음 중 하나: `BlackToWhite`, `WhiteToBlack`)
+
+### mapping 값 변경
+- `/teaching/mapping/update?propertyName=OutlineWidth&value=N` : 외곽선 너비(N은 숫자)
+- `/teaching/mapping/update?propertyName=PackageThresholdDiff&value=N` : Edge Threshold Amplitude 값 설정(N은 숫자)
+- `/teaching/mapping/update?propertyName=RotateAngle&value=N` : 회전 각도 값 설정(N은 숫자, 다음중 하나: 0, 90, 180, 270)
+- `/teaching/mapping/update?propertyName=Row-Column&value=N-N` : 가로 세로 값 변경(N-N 은 숫자)
+
+--- 
+대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
+사용자가 말로 명령을 내리면, 아래의 API 주소들 중 적절한 API 호출 주소를 **정확한 주소 문자열로만** 반환해.
+
+user
+lga 티칭창
+
+[Gvision Current Info]
+{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}
+assistant
+/windows/teaching/lga"
+lga 티칭창,{},,
+PRS live on,{},,"json
+/windows/light/live?camera=PRS
+"
+PRS live off,{'light': 'NoTab'},light,/live/toggle?switch=OFF&no=PRS
+BARCODE live on,{'light': 'NoTab'},light,/windows/light/live?camera=BarCode
+BARCODE live on,{},,"json
+/windows/light/live?camera=BarCode
+"
+Lot data,{'light': 'NoTab'},light,"json
+/windows/light/update?propertyName=light&value=NoTab
+"
+Lot data,{},,"json
+/windows/lot/data
+"
+Light,{},,"json
+/windows/light/live?camera=PRS
+"
+창 닫아줘,{},,"json
+/closeWindows
+"
+LGA 티칭 창 Pad 탭 사이즈 8,{},,"json
+/teaching/lga/update?propertyName=PadContaminationSize&value=8
+"
+auto roi,{},,"json
+/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+"
+종료,{},,"json
+/NO_FUNCTION
+"
+대화 초기화,{},,"json
+/chat/clear
+"
+yes,{},,"json
+/windows/teaching/bga
+"
+PRS 테스트,{},,"json
+/test/run/prs
+"
+네,{},,/NO_FUNCTION
+PRS 테스트,{},,"json
+/test/run/prs
+"
+YES,{},,"json
+/windows/teaching/bga
+"
+종료,{},,"json
+/NO_FUNCTION
+"
+Run mapping test,{},,"json
+/teaching/mapping/update?propertyName=inspectMappingTeaching&value=1
+"
+Settingx1 카메라 켜줘,{},,"json
+/windows/light/live?camera=SettingX1
+"
+라이브 실행시켜줘,{},,"json
+/windows/light/live?camera=PRS
+"
+설정창 열기,{},,"json
+/windows/settings
+"
+/windows/light/live?camera=BarCode,{},,"json
+/windows/light/live?camera=BarCode
+"
+티칭창 열어줘,{},,"json
+/windows/teaching/bga
+"
+Run mapping test,{},,"json
+/teaching/mapping/update?propertyName=inspectMappingTeaching&value=1
+"
+prs 테스트,{},,"json
+/test/run/prs
+"
+티칭창 열어줘,{},,"json
+/windows/teaching/bga
+"
+창 닫고 티칭창 열어줘,{'bga': 'Package'},bga,"json
+/windows/teaching/bga
+"
+새 채팅 시작,{},,"json
+/chat/clear
+"
+yes,{},,"json
+/windows/teaching/bga
+"
+BGA 티칭창 열어,{},,"json
+/windows/teaching/bga
+"
+sp,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"
+Auto Roi,{},,"json
+/teaching/bga/update?propertyName=findAutoRoiTeaching&value=1
+"
+yes,{},,"json
+/windows/teaching/bga
+"
+BarCode로 조명창 라이브뷰,{},,"json
+/windows/light/live?camera=BarCode
+"
+창 닫아줘,{},,"json
+/closeWindows
+"
+네,{},,/NO_FUNCTION
+창 닫아줘,{'light': 'NoTab'},light,/closeWindows
+티칭창 닫아줘,{},,"json
+/windows/teaching/close
+"
+설정창 열기,{},,"json
+/windows/settings
+"
+조명 설정창 오픈,{},,"json
+/windows/light/live?camera=PRS
+"
+보정창 열어줘,{},,"json
+/calibration/update?propertyName=tab&value=status
+"
+세팅창 열어줘,{},,"json
+/windows/settings
+"
+보정창 light 저장 버튼 클릭,{'calibration': 'NoTab'},calibration,/calibration/update?propertyName=button&value=LightSave
+런모드,{},,"json
+/mode/set?mode=RUNNING
+"
+Mapping live view,{},,"json
+/windows/light/live?camera=Mapping
+"
+Camera PRS로 기록 필터,{'light': 'NoTab'},light,/history/update?propertyName=camera&value=PRS
+런모드로 바꿔줘,{},,"json
+/mode/set?mode=RUN
+"
+기록 2025-06-01~2025-06-30 조회,{},,"json
+/history/update?propertyName=date&value=2025-06-01_2025-06-30
+"
+검사 시작하자,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+UseBgaPackageSize를 false로 업데이트,{},,"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+calibration,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/calibration
+기록필터 Mapping,{},,"json
+/history/update?propertyName=inspection&value=Mapping
+"
+Barcode live view,{},,"json
+/windows/light/live?camera=BarCode
+"
+exit calibration,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/calibration
+Camera 2 live on,{},,"json
+/windows/light/live?camera=PRS
+"
+lga,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+Camera 2 live on,{},,"json
+/windows/light/live?camera=PRS
+"
+Turn on PRS camera live,{},,"json
+/windows/light/live?camera=PRS
+"
+monitor,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+monitor,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+Camera 6 live ,{},,"json
+/windows/light/live?camera=6
+"
+Pattern ROI 추가해줘,{},,"json
+/teaching/bga/update?propertyName=PatternRois&value=add
+"
+setup mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=SETUP
+Result 탭 inspectTeaching 실행,{},,"json
+/teaching/bga/update?propertyName=inspectTeaching&value=1
+"
+recipe list,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/NO_FUNCTION
+insection mode change,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=INSECION
+Result 탭 inspectTeaching 실행,{},,"json
+/teaching/bga/update?propertyName=inspectTeaching&value=1
+"
+test packet,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+Don't Care ROI 추가,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=DontCareRois&value=add
+test packet,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+Package auto ROI 눌러줘,{},,"json
+/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+"
+chat 종료,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/chat/clear
+Ball min size 9로 변경,{},,"json
+/teaching/bga/update?propertyName=BallMinSize&value=9
+"
+yes,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+setup,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=SETUP
+lot info,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+BGA scratch min/max size 2-5,{},,"json
+/teaching/bga/update?propertyName=ScratchSize&value=2-5
+"
+lot data,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/mapping
+prs teaching,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/prs
+Sawing outline width 7로 체크,{'bga': 'Result'},bga,/teaching/bga/update?propertyName=OutlineWidth&value=7
+Ball max size 66 set,{},,"json
+/teaching/bga/update?propertyName=BallMaxSize&value=66
+"
+rnu mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+history window,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/history
+Ball max size 66 set,{},,"json
+/teaching/bga/update?propertyName=BallMaxSize&value=66
+"
+hi,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/NO_FUNCTION
+hello,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/NO_FUNCTION
+Ball min size 9로 변경,{},,"json
+/teaching/bga/update?propertyName=BallMinSize&value=9
+"
+mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+open Lot data,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+chg mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=CHANGE
+BGA package ROI 상단 10-20-30-40 설정,{},,"json
+/teaching/bga/update?propertyName=PackageRoiTop_&value=10-20-30-40
+"
+close chat,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/closeWindows
+BGA package ROI bottom 6-9-12-15,{},,"json
+/teaching/bga/update?propertyName=PackageRoiBottom_&value=6-9-12-15
+"
+close chat -y,{'Detail Inspection Result': 'NoTab'},,"json
+/closeWindows
+"
+QFN,{'Detail Inspection Result': 'NoTab'},,"json
+/teaching/qfn/update?propertyName=PackageThreshold&value=N-N 
+"
+BGA package ROI 좌측 5-8-13-21로 설정,{},,"json
+/teaching/bga/update?propertyName=PackageRoiLeft_&value=5-8-13-21
+"
+BGA package ROI right 22-35-54-67,{},,"json
+/teaching/bga/update?propertyName=PackageRoiRight_&value=22-35-54-67
+"
+QFN,{},,"json
+/teaching/qfn/update?propertyName=PackageThreshold&value=N-N
+"
+Set BGA edge direction to OutToIn,{},,"json
+/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=OutToIn
+"
+BGA edge detect 모드 WhiteToBlack로 바꿔줘,{},,"json
+/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=WhiteToBlack
+"
+not run mode,{},,/mode/set?mode=RUN
+BGA package 모델 ROI 11-22-33-44 설정,{},,"json
+/teaching/bga/update?propertyName=PackageRoiTop_&value=11-22-33-44
+"
+PRS 조명 켜,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/light?device=PRS
+3번 카메라 켜줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+go,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/teaching/lga
+Package auto ROI 눌러줘,{},,"json
+/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+"
+PRS Live on,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/mode/set?mode=RUN
+안녕 런모드를 켠 후에 조명 창을 켜줄래?,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}",mapping,/windows/light
+BGA package 임계값 자동 버튼 눌러,{},,"json
+/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+"
+FirstPin ROI를 21-31-41-51로 변경,{},,"json
+/teaching/bga/update?propertyName=FirstPinRoi_&value=21-31-41-51
+"
+BGA FirstPin threshold 1-23 set,{},,"json
+/teaching/bga/update?propertyName=FirstPinThreshold&value=1-23
+"
+BGA Pattern threshold 10-25로 지정,{},,"json
+/teaching/bga/update?propertyName=FirstPinThreshold&value=10-25
+"
+FirstPin/Pattern 자동 찾기 해줘,{},,"json
+/teaching/bga/update?propertyName=findFirstPinAndPatternTeaching&value=1
+"
+live,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'System Usage': 'NoTab'}",mapping,/windows/teaching/lga
+BGA 이물질 크기 4-8로 제한,{},,"json
+/teaching/bga/update?propertyName=ForeignMaterialSize&value=4-8
+"
+BGA 오염 size 13-28,{},,"json
+/teaching/bga/update?propertyName=ContaminationSize&value=13-28
+"
+BGA scratch min/max size 2-5,{},,"json
+/teaching/bga/update?propertyName=ScratchSize&value=2-5
+"
+InspectSurface 버튼 실행,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=inspectSurfaceTeaching&value=1
+InspectSurface 버튼 실행,{},,"json
+/teaching/mapping/update?propertyName=inspectSurfaceTeaching&value=1
+"
+history,{},,"json
+/history/update?propertyName=date&value=2023-10-05_2023-10-10
+"
+help,{},,/NO_FUNCTION
+어떤 기능을 가지고 있어?,{},,"제공된 정보에는 특정 기능에 대한 자세한 설명이 포함되어 있지 않아 정확한 기능 목록을 제시하기 어렵습니다. 하지만, 주어진 API 주소들과 명령어 패턴을 바탕으로 추정 가능한 주요 기능들을 나열해 드릴 수 있습니다:
+
+1. **검사 및 티칭 인터페이스**:
+   - **BGA (Ball Grid Array), QFN (Quad Flat Package), LGA (Leadless Grid Array)** 검사 티칭 창 관리: 임"
+BGA티칭,{},,"json
+/teaching/bga/update?propertyName=PackageThreshold&value=N-N
+"
+package threshold 10-30 으로 변경,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=PackageThreshold&value=10-30
+lead threshold 10-30 으로 변경,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=PackageThreshold&value=10-30
+leadthreshold 15-20 으로 변경,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=PackageThreshold&value=15-20
+auto threshold 돌려줘,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+auto roi 돌려줘,{'bga': 'Package'},bga,"json
+/teaching/bga/findAutoThresholdTeaching
+"
+auto threshold 돌려줘,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+auto threshold 돌려줘,{'bga': 'Package'},bga,/teaching/bga/update?propertyName=findAutoThresholdTeaching&value=1
+pattern 찾아줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=PatternThreshold&value=N-N
+pattern roi 위로 올려줘,{'bga': 'FirstPin/Pattern'},bga,"json
+/teaching/bga/update?propertyName=FirstPinRoi_&value=N-N-N-N
+"
+pattern roi 10만큼 올려줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=FirstPinRoi_&value=10
+pattern roi 10만큼 올려줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=FirstPinRoi_&value=10
+pattern threshold 10씩 내려줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=PatternThreshold&value=10-10
+pattern threshold 전체적으로 5만큼 내려줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=PatternThreshold&value=5-5
+pattern threshold max를 5만큼 내려줘,{'bga': 'FirstPin/Pattern'},bga,/teaching/bga/update?propertyName=PatternThreshold&value=4
+LGA 티칭창 열지말고 LGA 티칭창 열어,{},,"json
+/windows/teaching/lga
+"
+아까 티칭한거 다시 열어,{},,"json
+/windows/teaching/lga
+"
+qfn 티칭창 열어줘,{},,"json
+/windows/teaching/qfn
+"
+다시열어,{},,"json
+{}
+"
+다시 티칭창 열어,{},,"json
+/windows/teaching/lga
+"
+조명창열어,{},,"json
+/windows/light/live?camera=PRS
+"
+카메라 바꿔,{'light': 'NoTab'},light,/calibration/update?propertyName=camera&value=status

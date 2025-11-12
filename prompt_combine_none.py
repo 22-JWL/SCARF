@@ -15,6 +15,7 @@ system_prompt = """
 - `/windows/light` : 조명 설정 창 열기
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기
+- `/windows/lot` : lot data 창 열기
 - `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
 - `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경

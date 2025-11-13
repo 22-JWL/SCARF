@@ -1101,3 +1101,54 @@ lot data,{},,"json
 lot data,{},,"json
 /windows/lot
 "
+카메라 1번 라이브 꺼줘,{},,"json
+/live/toggle?switch=OFF&no=1
+"
+카메라2번 라이브 켜줘,{},,"json
+/live/toggle?switch=ON&no=2
+"
+카메라1번 라이브 꺼줘,{},,"json
+/live/toggle?switch=OFF&no=1
+"
+카메라 1번 라이브 켜기,{},,"json
+/live/toggle?switch=ON&no=1
+"
+카메라 2번 라이브 켜기,{},,"json
+/live/toggle?switch=ON&no=2
+"
+카메라 3번 라이브 켜기,{},,"json
+/live/toggle?switch=ON&no=3
+"
+카메라 3번 라이브 켜,{},,"json
+/live/toggle?switch=ON&no=3
+"
+카메라 4번 라이브 켜,{},,"json
+/live/toggle?switch=ON&no=4
+"
+barcode 라이브 켜기,{},,"json
+/windows/light/live?camera=BarCode
+"
+barcode 라이브 켜줘,{},,"json
+/windows/light/live?camera=BarCode
+"
+barcode 라이브 켜줘,{},,"json
+/live/toggle?switch=ON&no=1
+"
+Notselected live on,{},,"json
+/live/toggle?switch=ON&no=2
+"
+prs live on,{},,"json
+/live/toggle?switch=ON&no=3
+"
+mapping live on,{},,"json
+/live/toggle?switch=ON&no=4
+"
+mapping live on,{},,"json
+/live/toggle?switch=ON&no=4
+"
+settingx2 live on,{},,"json
+/live/toggle?switch=ON&no=6
+"
+monitor 창 열기,{},,"json
+/windows/monitor
+"

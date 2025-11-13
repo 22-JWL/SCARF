@@ -16,14 +16,26 @@ system_prompt = """
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기
 - `/windows/lot` : lot data 창 열기
+- `/windows/monitor` : monitor 창 열기
 - `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
 - `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
 ## 추가 기능
-- `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
-- `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
+- `/live/toggle?switch=ON&no=1` : Barcode 라이브 켜기
+- `/live/toggle?switch=ON&no=2` : Notselected 라이브 켜기
+- `/live/toggle?switch=ON&no=3` : prs 라이브 켜기
+- `/live/toggle?switch=ON&no=4` : Mapping 라이브 켜기
+- `/live/toggle?switch=ON&no=5` : SettingX2 라이브 켜기
+- `/live/toggle?switch=ON&no=6` : SettingX1 라이브 켜기
+- `/live/toggle?switch=OFF&no=1` : Barcode 라이브 끄기
+- `/live/toggle?switch=OFF&no=2` : Notselected 라이브 끄기
+- `/live/toggle?switch=OFF&no=3` : prs 라이브 끄기
+- `/live/toggle?switch=OFF&no=4` : Mapping 라이브 끄기
+- `/live/toggle?switch=OFF&no=5` : SettingX2 라이브 끄기
+- `/live/toggle?switch=OFF&no=6` : SettingX1 라이브 끄기
+
 - `/test/run/prs` : PRS 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행

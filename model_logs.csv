@@ -1092,3 +1092,12 @@ qfn 티칭창 열어줘,{},,"json
 /windows/light/live?camera=PRS
 "
 카메라 바꿔,{'light': 'NoTab'},light,/calibration/update?propertyName=camera&value=status
+lot data,{},,"json
+/windows/teaching/lot
+"
+/windows/lot,{},,"json
+{}
+"
+lot data,{},,"json
+/windows/lot
+"

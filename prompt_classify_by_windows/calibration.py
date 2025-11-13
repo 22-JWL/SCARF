@@ -14,6 +14,8 @@ system_prompt = """
 - `/windows/history` : 검사 기록 창 열기
 - `/windows/light` : 조명 설정 창 열기
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
+- `/windows/settings` : 설정창 열기
+- `/windows/lot` : lot data 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
@@ -37,29 +39,6 @@ system_prompt = """
 - `/calibration/update?propertyName=select&value=status` : 보정(캘리브레이션) 창에서 기준 설정 (status는 다음 중 하나: `MULTIOBJECT`, `CENTER`, `BIGGEST`)
 - `/calibration/update?propertyName=RETICLETYPE&value=status` : 보정(캘리브레이션) 창에서 십자선 타입 설정 (status는 다음 중 하나: `NONE`, `DEFAULT`, `FULLSIZE`)
 - `/calibration/update?propertyName=camera&value=status` : 보정(캘리브레이션) 창에서 카메라 변경 (status는 다음 중 하나: `)
-
-## history 창 값 변경 및 업데이트
-- `/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD` : 특정 날짜의 검사 기록. 단, YYYY-MM-DD 대신 실제 날짜를 넣어야 해. 
-(예시: 이번달 기록 보여줘 /history/update?propertyName=date&value=2025-09-01_2025-09-30),
-(예시: 250901-251101 기록 /history/update?propertyName=date&value=2025-09-01_2025-11-01)
-- `/history/update?propertyName=camera&value=status` : 기록 창에서 카메라 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
-- `/history/update?propertyName=inspection&value=status` : 기록 창에서 검사 필터 설정. (status=다음 중 하나: `PRS`, `Barcode`, `SettingX1`, `SettingX2`, `Mapping`, `TopBarCode`, `Side`)
-
-## 조명창 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
-
-### Strip 티칭 창 roi 단일 생성 버튼
-- `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성
-### Strip 티칭 창 ROI 생성/삭제/초기화 버튼
-- `/teaching/Strip/update?propertyName=Roi&value=st atus` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
-(status는 다음 중 하나: `add`, `delete`, `reset`)
-,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=StripRois&value=add)
-### Strip 티칭 창 findCode 버튼 클릭
-- `/teaching/strip/update?propertyName=findCodeTeaching&value=1` : Strip 티칭 창 findCode 버튼 클릭
 
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.

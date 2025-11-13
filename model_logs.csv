@@ -1101,3 +1101,39 @@ lot data,{},,"json
 lot data,{},,"json
 /windows/lot
 "
+history,{},[],"json
+/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD
+```
+
+Replace `YYYY-MM-DD_YYYY-MM-DD` with the specific dates you want to retrieve from the history. For example:
+
+* `/history/update?propertyName=date&value=2023-10-26_2023-10-27"
+calibration,{'history': 'NoTab'},['history'],/windows/calibration
+cali shape circle 23,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/calibration/update?propertyName=shape&value=circle-23
+history camera PRS,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/history/update?propertyName=camera&value=PRS
+close history,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/closeWindows/window=history
+history,{},[],"json
+/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD
+```
+
+Replace `YYYY-MM-DD_YYYY-MM-DD` with the specific dates you want to retrieve from the history. For example:
+
+* `/history/update?propertyName=date&value=2023-10-26_2023-10-27"
+calibraiton,{'history': 'NoTab'},['history'],/windows/calibration
+close calibration,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/windows/calibration
+close calibration windwo,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/windows/teaching/calibration
+close history window,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/closeWindows/window=history
+close history window,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/closeWindows?window=history
+calibration,{},[],"json
+/calibration/update?propertyName=tab&value=status
+"
+history,{'calibration': 'NoTab'},['calibration'],/windows/history
+close history,"{'calibration': 'NoTab', 'history': 'NoTab'}","['calibration', 'history']",/closeWindows?window=history
+claibration,{},[],"/calibration/update?propertyName=status&value=status  # 여기서'status'는 사용자가 원하는 특정 설정 변경 상태를 지정해야 합니다. 예를 들어, 'enable', 'disable','reset' 등이 될 수 있습니다. 정확한 상태 값은 캘리브레이션 창에서 제공하는 옵션에 따라 달라집니다."
+histroy,{'calibration': 'NoTab'},['calibration'],/windows/history
+close histroy,"{'calibration': 'NoTab', 'history': 'NoTab'}","['calibration', 'history']",/closeWindows?window=history
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-05_2023-10-06
+"
+calibartion,{'history': 'NoTab'},['history'],/windows/calibration
+close history ,"{'history': 'NoTab', 'calibration': 'NoTab'}","['calibration', 'history']",/closeWindows?window=history

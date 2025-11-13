@@ -153,11 +153,22 @@ def filter_system_prompt(current_window_info: str) -> str:
         "": system_prompt
     }
 
-    for key, prompt in mapping.items():
-        if key in info:
-            return key, prompt
+    matched_keys = []
+    matched_prompts = []
 
-    return "", system_prompt
+    for key, prompt in mapping.items():
+        if key and key in info:  # 빈 문자열("")은 제외
+            matched_keys.append(key)
+            matched_prompts.append(prompt)
+
+    # 아무것도 매칭되지 않으면 기본 시스템 프롬프트 사용
+    if not matched_prompts:
+        return [], system_prompt
+
+    # 여러 개의 창 프롬프트를 하나로 결합 (공백이나 구분자 포함)
+    combined_prompt = "\n\n".join(matched_prompts)
+
+    return matched_keys, combined_prompt
 
 
 def run_model(prompt: str, current_window_info: dict, model_name: str):

@@ -353,6 +353,20 @@ system_prompt = """
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
 
+## 세팅창 레시피
+- `/recipes/add?name=MyNewRecipe` : 새 레시피 추가 (name은 새로 생성할 레시피의 이름)
+- `/recipes/add?name=test` : test 새 레시피 추가
+- `/recipes/copy?source=MyNewRecipe&dest=MyCopiedRecipe` : 레시피 복사(source: 복사할 원본 레시피의 이름, dest: 새로 생성될 복사본 레시피의 이름)
+- `/recipes/copy?source=TestRecipe&dest=MyCopiedRecipe` : TestRecipe를 TestRecipe_Copy로 복사
+- `/recipes/rename?old=MyNewRecipe&new=MyRenamedRecipe` : 레시피 이름 변경(old: 변경할 기존 레시피의 이름, new: 새로 변경할 레시피의 이름)
+- `/recipes/rename?old=TestRecipe&new=RenamedRecipe` : TestRecipe'를 'RenamedRecipe'로 변경
+- `/recipes/delete?name=MyCopiedRecipe` : 레시피 삭제 (name = 삭제할 레시피의 이름)
+- `/recipes/delete?name=Test` : Test 레시피 삭제
+- `/recipes/select?name=MyRenamedRecipe` : 레시피 선택/적용(name = 선택하여 적용할 레시피의 이름)
+- `/recipes/select?name=Test` : Test 레시피 선택
+
+우리는 음식 레시피는 절대 물어보지 않아
+
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
 사용자가 말로 명령을 내리면, 아래의 API 주소들 중 적절한 API 호출 주소를 **정확한 주소 문자열로만** 반환해.

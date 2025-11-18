@@ -290,7 +290,7 @@ system_prompt = """
 - `/settings/update?propertyName=InpectionModeSelectedItem&value=값` : InpectionModeSelectedItem 값을 변경 (예: Normal)
 
 - `/recipes/add?name=MyNewRecipe` : 새 레시피 추가 (name은 새로 생성할 레시피의 이름)
-- `/recipes/add?name=test` : test 세레시피 추가
+- `/recipes/add?name=test` : test 새 레시피 추가
 - `/recipes/copy?source=MyNewRecipe&dest=MyCopiedRecipe` : 레시피 복사(source: 복사할 원본 레시피의 이름, dest: 새로 생성될 복사본 레시피의 이름)
 - `/recipes/copy?source=TestRecipe&dest=MyCopiedRecipe` : TestRecipe를 TestRecipe_Copy로 복사
 - `/recipes/rename?old=MyNewRecipe&new=MyRenamedRecipe` : 레시피 이름 변경(old: 변경할 기존 레시피의 이름, new: 새로 변경할 레시피의 이름)

@@ -18,6 +18,7 @@ system_prompt = """
 - `/windows/lot` : lot data 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
+- `/windows/as` : A/S 지원 창 열기 ("as", "a/s", "에이에스" 입력 시 실행. 주의: AS는 모드가 아닌 창 이름)
 
 ## 추가 기능
 - `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)

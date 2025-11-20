@@ -22,6 +22,13 @@ system_prompt = """
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
+## A/S 지원 창 (고객 지원)
+- `/windows/as` : A/S 지원 창 열기
+  * 사용자가 다음을 입력하면 이 API를 반환: "as", "a/s", "AS", "A/S", "에이에스", "as창", "a/s창", "as 창 열어줘", "에이에스 열어줘", "고객지원", "지원창"
+  * 중요: "as"나 "a/s"는 창 이름이지 모드가 아님. mode가 아닌 windows API임
+  * 예시: 사용자 입력 "as" → 반환값 "/windows/as"
+  * 예시: 사용자 입력 "a/s" → 반환값 "/windows/as"
+
 ## 추가 기능
 - `/live/toggle?switch=ON&no=1` : Barcode 라이브 켜기
 - `/live/toggle?switch=ON&no=2` : Notselected 라이브 켜기

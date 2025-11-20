@@ -21,6 +21,8 @@ system_prompt = """
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
+
+
 ## BGA 티칭 창 값 변경 및 업데이트
 ### BGA 티칭 창 임계값 변경
 -`/teaching/bga/update?propertyName=PackageThreshold&value=N-N` : BGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
@@ -338,6 +340,7 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
+- `/exit` : 프로그램 나가기
 
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.

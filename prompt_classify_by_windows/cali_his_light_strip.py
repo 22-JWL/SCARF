@@ -17,6 +17,7 @@ system_prompt = """
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
+
 ## 추가 기능
 - `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
 - `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
@@ -26,6 +27,8 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
+- `/exit` : 프로그램 나가기
+
 
 ## calibration 창 값 변경 및 업데이트
 - `/calibration/update?propertyName=button&value=status` : 보정(캘리브레이션) 창에서 특정 버튼 클릭 (status=다음 중 하나: `Test`, `LightSave`)

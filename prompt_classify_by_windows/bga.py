@@ -5,6 +5,10 @@ system_prompt = """
 만약 사용자의 요청이 아래 API들과 관련이 없거나 명확하지 않은 경우, 아무 설명도 없이 정확히 `/NO_FUNCTION`이라는 글자만 리턴해.
 ---
 ### 사용 가능한 API 목록:
+
+## 추가 기능
+- `/exit` : 프로그램 나가기
+
 ## 단순 창 열기
 - `/windows/teaching/lga` : LGA 티칭 창 열기
 - `/windows/teaching/qfn` : QFN 티칭 창 열기

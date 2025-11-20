@@ -1092,3 +1092,44 @@ qfn 티칭창 열어줘,{},,"json
 /windows/light/live?camera=PRS
 "
 카메라 바꿔,{'light': 'NoTab'},light,/calibration/update?propertyName=camera&value=status
+hi,{},,/windows/teaching/lga
+lga,{},,/windows/teaching/lga
+lga,{},,/windows/teaching/lga
+history,{},,"json
+/history/update?propertyName=date&value=2023-10-05_2023-10-10
+"
+카메라 1번 라이브 끄기,{},,"json
+/live/toggle?switch=OFF&no=1
+"
+PRS 테스트,{},,"json
+/test/run/prs
+"
+네,{},,/NO_FUNCTION
+히스토리 창 열어줘,{},,"json
+/history/update?propertyName=date&value=2023-10-01_2023-10-31
+"
+exit,{},,/NO_FUNCTION
+exit,{},,/NO_FUNCTION
+exit,{},,/NO_FUNCTION
+/exit,{},,/NO_FUNCTION
+exit,{},,/exit
+exit,{},,/exit
+exit,{},,/exit
+a/s,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"
+히스토리,{},,"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+as,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"
+세팅,{},,"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+a/s,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"
+A/S,{},,"json
+/settings/update?propertyName=GvisionCurrentInfo&value={}
+"

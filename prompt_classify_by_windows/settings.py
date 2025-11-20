@@ -22,6 +22,8 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
+- `/exit` : 프로그램 나가기
+
 
 ### Setting Recipe:
 - `/settings/update?propertyName=TrayRowCount&value=값` : TrayRowCount 값을 변경 (예: 8)

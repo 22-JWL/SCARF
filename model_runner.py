@@ -8,7 +8,10 @@ from prompt_classify_by_windows.bga import system_prompt as bga_prompt
 from prompt_classify_by_windows.lga import system_prompt as lga_prompt
 from prompt_classify_by_windows.qfn import system_prompt as qfn_prompt
 from prompt_classify_by_windows.mapping import system_prompt as mapping_prompt
-from prompt_classify_by_windows.cali_his_light_strip import system_prompt as cali_his_light_strip_prompt
+from prompt_classify_by_windows.calibration import system_prompt as calibration_prompt
+from prompt_classify_by_windows.light import system_prompt as light_prompt
+from prompt_classify_by_windows.history import system_prompt as history_prompt
+from prompt_classify_by_windows.strip import system_prompt as strip_prompt
 from prompt_classify_by_windows.settings import system_prompt as settings_prompt
 from intent_classifier import classify_text 
 import re
@@ -142,19 +145,30 @@ def filter_system_prompt(current_window_info: str) -> str:
         "lga": lga_prompt,
         "qfn": qfn_prompt,
         "mapping": mapping_prompt,
-        "strip": cali_his_light_strip_prompt,
-        "light": cali_his_light_strip_prompt,
-        "calibration": cali_his_light_strip_prompt,
-        "history": cali_his_light_strip_prompt,
+        "strip": strip_prompt,
+        "light": light_prompt,
+        "calibration": calibration_prompt,
+        "history": history_prompt,
         "settings": settings_prompt,
         "": system_prompt
     }
 
-    for key, prompt in mapping.items():
-        if key in info:
-            return key, prompt
+    matched_keys = []
+    matched_prompts = []
 
-    return "", system_prompt
+    for key, prompt in mapping.items():
+        if key and key in info:  # 빈 문자열("")은 제외
+            matched_keys.append(key)
+            matched_prompts.append(prompt)
+
+    # 아무것도 매칭되지 않으면 기본 시스템 프롬프트 사용
+    if not matched_prompts:
+        return [], system_prompt
+
+    # 여러 개의 창 프롬프트를 하나로 결합 (공백이나 구분자 포함)
+    combined_prompt = "\n\n".join(matched_prompts)
+
+    return matched_keys, combined_prompt
 
 
 def run_model(prompt: str, current_window_info: dict, model_name: str):

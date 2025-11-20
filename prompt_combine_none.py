@@ -16,12 +16,11 @@ system_prompt = """
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기
 - `/windows/lot` : lot data 창 열기
+- `/windows/monitor` : monitor 창 열기
 - `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
 - `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
-
-
 
 ## BGA 티칭 창 값 변경 및 업데이트
 ### BGA 티칭 창 임계값 변경
@@ -302,9 +301,9 @@ system_prompt = """
 ### Strip 티칭 창 roi 단일 생성 버튼
 - `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성
 ### Strip 티칭 창 ROI 생성/삭제/초기화 버튼
-- `/teaching/Strip/update?propertyName=PadRois&value=status` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
+- `/teaching/Strip/update?propertyName=Roi&value=status` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
 (status는 다음 중 하나: `add`, `delete`, `reset`)
-,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=StripRois&value=add)
+,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=Roi&value=add)
 ### Strip 티칭 창 findCode 버튼 클릭
 - `/teaching/strip/update?propertyName=findCodeTeaching&value=1` : Strip 티칭 창 findCode 버튼 클릭
 
@@ -340,7 +339,6 @@ system_prompt = """
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
 - `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
 - `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
-- `/exit` : 프로그램 나가기
 
 --- 
 대답은 `/NO_FUNCTION` 또는 위에 정의된 API 주소 문자열만 포함해야 하며, 주소 앞뒤에 공백 없이 정확히 입력해야 함.
@@ -350,3 +348,4 @@ system_prompt = """
 - 사용자가 'UseBgaPackageSize를 false로 변경' 입력 → /settings/update?propertyName=UseBgaPackageSize&value=false
 
 """
+

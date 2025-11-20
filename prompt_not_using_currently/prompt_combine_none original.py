@@ -15,10 +15,23 @@ system_prompt = """
 - `/windows/light` : 조명 설정 창 열기
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기
+- `/windows/lot` : lot data 창 열기
 - `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
 - `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
+
+## 추가 기능
+- `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
+- `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
+- `/test/run/prs` : PRS 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
+- `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
+- `/closeWindows` : '창 끄기' 라고 치면 실행
+- `/closeWindows?window=status` : 사용자가 지정한 창만 끄기. current_opened_window_and_tab 값에서 window 부분을 status로 전달
+(예시: 현재 열려있는 창이 bga 티칭창이면, /closeWindows/window=bga)
+- `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
+- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
+- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 
 ## BGA 티칭 창 값 변경 및 업데이트
 ### BGA 티칭 창 임계값 변경
@@ -50,12 +63,12 @@ system_prompt = """
 ### BGA FirstPin/Pattern 탭
 # - `/teaching/bga/update?propertyName=FirstPinRoi_&value=N-N-N-N` : First Pin ROI
 - `/teaching/bga/update?propertyName=FirstPinThreshold&value=N-N` : BGA 티칭 창 FirstPin/Pattern 탭에서 FirstPin 임계값 설정(N 은 숫자)
-# - `/teaching/bga/update?propertyName=PatternRois&value=[{"Row1":N,...},{"Row1":N,...}]` : bga roi 설정
+# - `/teaching/bga/update?propertyName=PatternRois&value=status` : bga roi 설정 (status는 다음 중 하나: `add`, `delete`, `reset`)
 -`/teaching/bga/update?propertyName=PatternThreshold&value=N-N` : BGA 티칭 창 FirstPin/Pattern 탭에서 Pattern 임계값 설정(N 은 숫자)
 -`/teaching/bga/update?propertyName=findFirstPinAndPatternTeaching&value=1` : findPattern and FirstPin 버튼 클릭(N 은 숫자)
 
 ### BGA Ball 탭
-# - `/teaching/bga/update?propertyName=BallRois&value=[{"Row1":N,...},{"Row1":N,...}]` : Ball ROI
+# - `/teaching/bga/update?propertyName=BallRois&value=status` : Ball ROI (status는 다음 중 하나: `add`, `delete`, `reset`)
 - `/teaching/bga/update?propertyName=BallThreshold&value=N-N` : BGA 티칭 창 Ball 탭에서 임계값 설정(N 은 숫자)
 - `/teaching/bga/update?propertyName=BallPositionOffset&value=N` : Ball Offset Tolerance 설정(N 은 숫자)
 - `/teaching/bga/update?propertyName=BallMinCircularity&value=N` : Ball Min Circularity 퍼센트 설정(N은 숫자)
@@ -65,7 +78,7 @@ system_prompt = """
 - `/teaching/bga/update?propertyName=findBallsTeaching&value=1` : findBalls 버튼 클릭
 
 ### BGA Surface 탭
-# - `/teaching/bga/update?propertyName=SurfaceRois&value=[{"Row1":N,...},{"Row1":N,...}]` : 표면 검사 ROI
+# - `/teaching/bga/update?propertyName=SurfaceRois&value=status` : 표면 검사 ROI (status는 다음 중 하나: `add`, `delete`, `reset`)
 - `/teaching/bga/update?propertyName=ScratchThreshold&value=N-N` : Scratch 임계값
 - `/teaching/bga/update?propertyName=ScratchSize&value=N-N` : Scratch 최소, 최대 크기 설정
 # - `/teaching/bga/update?propertyName=ScratchMaxSize&value=N` : Scratch 최대 크기
@@ -299,9 +312,9 @@ system_prompt = """
 ### Strip 티칭 창 roi 단일 생성 버튼
 - `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성
 ### Strip 티칭 창 ROI 생성/삭제/초기화 버튼
-- `/teaching/Strip/update?propertyName=PadRois&value=status` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
+- `/teaching/Strip/update?propertyName=Roi&value=status` : Strip 티칭 창 Pad 탭 ROI 추가,삭제,초기화 
 (status는 다음 중 하나: `add`, `delete`, `reset`)
-,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=StripRois&value=add)
+,(예시: Strip 창 roi add, /teaching/Strip/update?propertyName=Roi&value=add)
 ### Strip 티칭 창 findCode 버튼 클릭
 - `/teaching/strip/update?propertyName=findCodeTeaching&value=1` : Strip 티칭 창 findCode 버튼 클릭
 
@@ -327,16 +340,6 @@ system_prompt = """
 - `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
 - `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
-
-## 추가 기능
-- `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
-- `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
-- `/test/run/prs` : PRS 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
-- `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
-- `/closeWindows` : '창 끄기' 라고 치면 실행
-- `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 
 ### Setting Recipe:
 - `/settings/update?propertyName=TrayRowCount&value=값` : TrayRowCount 값을 변경 (예: 8)
@@ -604,3 +607,4 @@ system_prompt = """
 - 사용자가 'UseBgaPackageSize를 false로 변경' 입력 → /settings/update?propertyName=UseBgaPackageSize&value=false
 
 """
+

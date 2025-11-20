@@ -29,9 +29,6 @@ system_prompt = """
 - `/closeWindows?window=status` : 사용자가 지정한 창만 끄기. current_opened_window_and_tab 값에서 window 부분을 status로 전달
 (예시: 현재 열려있는 창이 bga 티칭창이면, /closeWindows/window=bga)
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
-
 
 ### Strip 티칭 창 roi 단일 생성 버튼
 - `/teaching/strip/update?propertyName=StripRois&value=N-N-N-N` : Strip 티칭 창 해당 탭에서 ROI 생성

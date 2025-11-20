@@ -29,9 +29,6 @@ system_prompt = """
 - `/closeWindows?window=status` : 사용자가 지정한 창만 끄기. current_opened_window_and_tab 값에서 window 부분을 status로 전달
 (예시: 현재 열려있는 창이 bga 티칭창이면, /closeWindows/window=bga)
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
-
 
 ## 조명창 실시간 라이브 뷰 열기
 ### 혹 프롬프트가 '카메라 바꿔' 이면 아래 명령어 중 하나를 반환

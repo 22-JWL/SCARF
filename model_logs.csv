@@ -1092,3 +1092,109 @@ qfn 티칭창 열어줘,{},,"json
 /windows/light/live?camera=PRS
 "
 카메라 바꿔,{'light': 'NoTab'},light,/calibration/update?propertyName=camera&value=status
+calibration,{},[],"json
+/calibration/update?propertyName=threshold&value=100-200
+"
+calibration threshold 2-33,{'calibration': 'NoTab'},['calibration'],/calibration/update?propertyName=threshold&value=2-33
+chat clear,{},[],/chat/clear
+"[{'Sender': 'User', 'Time': '00:29', 'Message': 'chat clear'}, {'Sender': 'System', 'Time': '00:30', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Time': '00:30', 'Message': '엉'}]",{},[],"json
+/chat/clear
+"
+clear chat,{},[],/chat/clear
+"[{'Sender': 'User', 'Message': 'clear chat'}, {'Sender': 'System', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Message': '응응'}]",{},[],"json
+/chat/clear
+"
+clear chat,{},[],/chat/clear
+"[{'Sender': 'User', 'Message': 'clear chat'}, {'Sender': 'System', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Message': '구래라~'}]",{},[],/chat/clear
+clear chat,{},[],/chat/clear
+"[{'Sender': 'User', 'Message': 'clear chat'}, {'Sender': 'System', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Message': 'yesssss'}]",{},[],"json
+/chat/clear
+"
+clear chat,{},[],/chat/clear
+"[{'Sender': 'User', 'Message': 'clear chat'}, {'Sender': 'System', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Message': '구래라~'}]",{},[],/chat/clear
+clear chat,{},[],/chat/clear
+"[{'Sender': 'User', 'Message': 'clear chat'}, {'Sender': 'System', 'Message': '해당 명령을 실행할까요?'}, {'Sender': 'User', 'Message': '그래라~~'}]",{},[],"json
+/chat/clear
+"
+clear chat,{},[],/chat/clear
+"clear chat
+해당 명령을 실행할까요?
+그래라ㅏㅏㅏ",{},[],/chat/clear
+clear char,{},[],/chat/clear
+"User: clear char, System: 해당 명령을 실행할까요?, User: yessssssss",{},[],"json
+/chat/clear
+"
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 그래라",{},['confirmLog'],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 그래라",{},['confirmLog'],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 어 해",{},['confirmLog'],/clearChat
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yessssssss",{},['confirmLog'],/openWindow/yes
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 그래라ㅏㅏㅏㅏ",{},['confirmLog'],/openWindow/yes
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-05_2023-10-10
+"
+창 꺼,{'history': 'NoTab'},['history'],/closeWindows
+"User: 창 꺼, System: 해당 명령을 실행할까요?, User: 어엉",{'history': 'NoTab'},['confirmLog'],/openWindow/no
+clear chat,{'history': 'NoTab'},['history'],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 어 초기화해",{'history': 'NoTab'},['confirmLog'],/openWindow/yes
+창 꺼줘,{'history': 'NoTab'},['history'],/closeWindows
+"User: 창 꺼줘, System: 해당 명령을 실행할까요?, User: 네",{'history': 'NoTab'},['confirmLog'],/closeWindow/yes
+history 창 열어,{},[],"
+/history/update?propertyName=date&value=2023-10-05_2023-10-06
+"
+창 꺼,{'history': 'NoTab'},['history'],/closeWindows
+"User: 창 꺼, System: 해당 명령을 실행할까요?, User: 네네",{'history': 'NoTab'},['confirmLog'],/execute/yes
+lot data 창 켜,{},[],"
+/windows/lot
+"
+history 창 켜,{'LotWindow': 'NoTab'},[],"json
+/history/update?propertyName=camera&value=PRS
+"
+lot data 창 꺼,"{'LotWindow': 'NoTab', 'history': 'NoTab'}",['history'],/windows/lot
+history 창 꺼,"{'LotWindow': 'NoTab', 'history': 'NoTab'}",['history'],/windows/history
+histroy 창 꺼,"{'LotWindow': 'NoTab', 'history': 'NoTab'}",['history'],/windows/lot
+기록 창 끄라고,"{'LotWindow': 'NoTab', 'history': 'NoTab'}",['history'],/closeWindows?window=history
+"User: 기록 창 끄라고, System: 해당 명령을 실행할까요?, User: 그래","{'LotWindow': 'NoTab', 'history': 'NoTab'}",['confirmLog'],/execute/yes
+run prs test,{},[],"json
+/test/run/prs
+"
+"User: run prs test, System: 해당 명령을 실행할까요?, User: 웅웅",{},['confirmLog'],/execute/yes
+1번 카메라 켜줘,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/live/toggle?switch=ON&no=1
+엉,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/NO_FUNCTION
+prs test mode,{},[],"json
+/test/run/prs
+"
+"User: prs test mode, System: 해당 명령을 실행할까요?, User: 구래라",{},['confirmLog'],/execute/no
+prs test mode,{},[],"json
+/test/run/prs
+"
+"User: prs test mode, System: 해당 명령을 실행할까요?, User: 네",{},['confirmLog'],/execute/yes
+1번 카메라 켜,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/live/toggle?switch=ON&no=1
+"User: 1번 카메라 켜, System: 현재 run mode이므로 실행이 어렵습니다. Set up mode로 바꿔주세요. 바꾸시겠습니까?, User: 네네","{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","json
+/mode/set?mode=SETUP
+"
+histtory,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/history
+clear chat,{},['confirmLog'],/execute/no
+clear chat,{},['confirmLog'],/execute/no
+lga,{},['confirmLog'],/execute/no
+lga,{},['confirmLog'],/execute/no
+bga,{},[],"json
+/teaching/bga/update?propertyName=PackageThreshold&value=N-N
+"
+threshold 3-33,{'bga': 'Package'},['bga'],/teaching/bga/update?propertyName=PackageThreshold&value=3-33
+clear chat,{'bga': 'Package'},['bga'],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yesss",{'bga': 'Package'},['confirmLog'],/execute/yes
+bga threshold 2-33,{'bga': 'Package'},['bga'],/teaching/bga/update?propertyName=PackageThreshold&value=2-33
+bga top roi 200-300-400-500,{'bga': 'Package'},['bga'],/teaching/bga/update?propertyName=PackageRoiTop_&value=200-300-400-500
+창 꺼,{'bga': 'Package'},['bga'],/closeWindows
+"User: 창 꺼, System: 해당 명령을 실행할까요?, User: 어어",{'bga': 'Package'},['confirmLog'],/execute/no
+창 끄라고,{'bga': 'Package'},['bga'],/closeWindows
+"User: 창 끄라고, System: 해당 명령을 실행할까요?, User: 어",{'bga': 'Package'},['confirmLog'],/execute/no
+아니 창끄라고,{'bga': 'Package'},['bga'],/closeWindows?window=bga
+"User: 아니 창끄라고, System: 해당 명령을 실행할까요?, User: 창 꺼",{'bga': 'Package'},['confirmLog'],/execute/yes
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: 초기화",{},['confirmLog'],/execute/yes

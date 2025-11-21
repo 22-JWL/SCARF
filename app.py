@@ -56,7 +56,7 @@ class Instruct(Resource):
         api_url = f"http://{client_ip}:3000{result['output']}"
         
         #local에서..
-        #api_url = f"http://localhost:3000{result['output']}"
+        api_url = f"http://localhost:3000{result['output']}"
         
         try:
             response = requests.get(api_url)

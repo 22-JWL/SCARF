@@ -18,6 +18,7 @@ system_prompt = """
 - `/windows/lot` : lot data 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
+- `/exit` : 프로그램 나가기
 - `/windows/as` : A/S 지원 창 열기 ("as", "a/s", "에이에스" 입력 시 실행. 주의: AS는 모드가 아닌 창 이름)
 
 ## 추가 기능
@@ -27,10 +28,8 @@ system_prompt = """
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행
 - `/closeWindows?window=status` : 사용자가 지정한 창만 끄기. current_opened_window_and_tab 값에서 window 부분을 status로 전달
-(예시: 현재 열려있는 창이 bga 티칭창이면, /closeWindows/window=bga)
+(예시: 현재 열려있는 창이 history 이면, /closeWindows/window=history)
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 
 
 ## history 창 값 변경 및 업데이트

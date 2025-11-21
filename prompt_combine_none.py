@@ -20,6 +20,7 @@ system_prompt = """
 - `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
 - `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
+- `/exit` : 프로그램 나가기
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
 ## A/S 지원 창 (고객 지원)

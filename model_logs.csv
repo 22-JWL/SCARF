@@ -1092,3 +1092,114 @@ qfn 티칭창 열어줘,{},,"json
 /windows/light/live?camera=PRS
 "
 카메라 바꿔,{'light': 'NoTab'},light,/calibration/update?propertyName=camera&value=status
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+종료,{'Detail Inspection Result': 'NoTab'},[],"json
+/exit
+"
+a/s ,{'Detail Inspection Result': 'NoTab'},[],/windows/as
+a/s,{'Detail Inspection Result': 'NoTab'},[],/windows/as
+exit,{'Detail Inspection Result': 'NoTab'},[],/exit
+exit,{'Detail Inspection Result': 'NoTab'},[],/exit
+a/s,{},[],/windows/as
+a/s,{},[],/windows/as
+change recipe,{},[],/test/run/prs
+yes,{},[],"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+change recipe,{},[],/test/run/prs
+yes,{},[],"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+레시피 저장해줘,{},[],"json
+/settings/update?propertyName=RecipeSave&value=true
+"
+프로그램 종료,{},[],"json
+/exit
+"
+대화 초기화,{},[],"json
+/chat/clear
+"
+yes,{},[],"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+exit calibration,{},[],/calibration/exit
+chat 종료,{},[],/exit
+exit,{},[],/exit
+shut down,{},[],/mode/set?mode=RUN
+프로그램 종료,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/exit
+open Lot data,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/lot
+close chat,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/closeWindows
+yes,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/NO_FUNCTION
+네,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/NO_FUNCTION
+lot info,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/lot
+lga,{},[],"json
+/windows/teaching/lga
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+safsdf\,{},[],/NO_FUNCTION
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+히스토리,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+run prs test,{},[],/test/run/prs
+yes,{},[],"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+ㄷ턋,{},[],/NO_FUNCTION
+EXIT,{},[],/exit
+HISTORY,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+history,{},[],"json
+/history/update?propertyName=date&value=2023-10-27_2023-10-28
+"
+꺼줘,{},[],/exit
+꺼줘,{},[],/exit
+꺼줘,{},[],/exit
+clear,{},[],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+yes,{},[],"json
+/settings/update?propertyName=UseBgaPackageSize&value=false
+"

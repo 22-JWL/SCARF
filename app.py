@@ -4,17 +4,16 @@ from flask import request
 from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
+import os
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
 
-app = Flask(__name__)
-api = Api(app, version='1.1', title='반도체 검사 시스템 인터페이스',
-          description='LLM 명령 실행 및 Intent 분류')
+app = Flask(__name__)                                                    # Flask 앱 생성
+api = Api(app, version='1.2', title='반도체 검사 시스템 인터페이스',       # API 버전 및 제목 설정
+          description='LLM 명령 실행 및 Intent 분류 (복합 명령어 지원)')
 
-
-# LLM 명령 실행 namespace
-ns_instruct = api.namespace('instruct', description='LLM 명령 실행')
+ns_instruct = api.namespace('instruct', description='LLM 명령 실행')     # 명령 실행 네임스페이스
 
 input_model = api.model('InputModel', {
     'text': fields.String(required=True, description='명령어 텍스트'),
@@ -33,36 +32,62 @@ output_model = api.model('OutputModel', {
 })
 
 
-
 @ns_instruct.route('/')
 class Instruct(Resource):
     @ns_instruct.expect(input_model)
     @ns_instruct.marshal_with(output_model)
     def post(self):
-        """사용자 명령어를 입력받아 함수 호출 형식으로 응답"""
-        print("Received JSON payload:", api.payload)  # <-- 여기 추가
+        """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
+        print("Received JSON payload:", api.payload)
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         current_window_info = api.payload['current_opened_window_and_tab']
 
         result = run_model(user_input, current_window_info, model_name)
+        
         # output에서 "json\n" 제거
-        result['output'] = result['output'].replace("json\n", "").strip()
+        result['output'] = result['output'].replace("json\n", "").replace("json", "").strip()
 
-        # 클라이언트 IP 주소 가져오기
-        client_ip = request.remote_addr
+        # 복합 명령어 처리: 여러 API를 줄바꿈으로 구분
+        api_calls = result['output'].strip().split('\n')
+        api_calls = [call.strip() for call in api_calls if call.strip() and not call.startswith('#')]
         
-        # 클라이언트 IP로 API 주소를 만듦
-        api_url = f"http://{client_ip}:3000{result['output']}"
+        print(f"\n[API Calls Detected] {len(api_calls)} API(s)")
+        for idx, api_call in enumerate(api_calls, 1):
+            print(f"  {idx}. {api_call}")
         
-        #local에서..
-        #api_url = f"http://localhost:3000{result['output']}"
+        # 각 API 순차 실행
+        success_count = 0
+        failed_apis = []
         
-        try:
-            response = requests.get(api_url)
-            # 필요하면 써
-        except Exception as err:
-            print(err)
+        for api_call in api_calls:
+            if api_call == "/NO_FUNCTION":
+                print(f"[Skip] {api_call}")
+                continue
+            
+            # API 호출
+            api_url = f"http://localhost:3000{api_call}"
+            
+            try:
+                response = requests.get(api_url, timeout=30)  # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
+                if response.status_code == 200:
+                    success_count += 1
+                    print(f"[Success] {api_call} → {response.status_code}")
+                else:
+                    failed_apis.append(api_call)
+                    print(f"[Failed] {api_call} → {response.status_code}")
+            except Exception as err:
+                failed_apis.append(api_call)
+                print(f"[Error] {api_call} → {err}")
+        
+        # 실행 결과 요약
+        print(f"\n[Execution Summary]")
+        print(f"  Total APIs: {len(api_calls)}")
+        print(f"  Success: {success_count}")
+        print(f"  Failed: {len(failed_apis)}")
+        if failed_apis:
+            print(f"  Failed APIs: {failed_apis}")
+        print("-" * 50)
 
         return result
 
@@ -91,7 +116,8 @@ class Classify(Resource):
         model_dir = api.payload.get('model_dir', DEFAULT_MODEL_DIR)
         return classify_text(text, model_dir)
 
-# llm모델 전환 namespace
+
+# LLM 모델 전환 namespace
 ns_models = api.namespace('models', description='모델 전환/관리')
 
 switch_request = api.model('ModelSwitchRequest', {
@@ -108,6 +134,7 @@ switch_response = api.model('ModelSwitchResponse', {
     })),
 })
 
+
 @ns_models.route('/switch')
 class ModelSwitch(Resource):
     @ns_models.expect(switch_request)
@@ -118,6 +145,7 @@ class ModelSwitch(Resource):
         new_name = payload.get('model_name')
         result = switch_model(new_name)
         return result
+
 
 # 서버 실행
 if __name__ == '__main__':

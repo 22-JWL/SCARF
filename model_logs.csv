@@ -1203,3 +1203,14 @@ clear chat,{},[],/chat/clear
 yes,{},[],"json
 /settings/update?propertyName=UseBgaPackageSize&value=false
 "
+히스토리,{},[],/windows/history
+히스토리 켜주고 lga창 켜줘,{'history': 'NoTab'},['history'],"/windows/history
+/windows/teaching/lga"
+히스토리 켜주고 lga창 켜줘,{},[],"/windows/history
+/windows/teaching/lga"
+히스토리 켜주고 lga창 켜줘,{},[],"/windows/history
+/windows/teaching/lga"
+lga창 켜ㅜ저,{},[],/windows/teaching/lga
+설정창 열고 히스토리 창 켜줘,{},[],"/windows/settings
+/windows/history"
+히스토리 창 켜줘,{},[],/windows/history

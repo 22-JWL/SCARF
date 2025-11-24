@@ -14,6 +14,18 @@ SPECIFIC_CONTENT = """
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기, 레시피, 레시피 창 열기
 - `/windows/lot` : lot data 창 열기
+- `/windows/monitor` : monitor 창 열기
+
+## 재티칭(Re-teach)
+- `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
+- `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
+
+## 모드 변경
+- `/mode/set?mode=RUN` : 검사 모드로 변경
+- `/mode/set?mode=SETUP` : 설정 모드로 변경
+
+## 프로그램 종료
+- `/exit` : 프로그램 나가기
 ...
 """
 

@@ -1203,3 +1203,347 @@ clear chat,{},[],/chat/clear
 yes,{},[],"json
 /settings/update?propertyName=UseBgaPackageSize&value=false
 "
+lga,{},[],/windows/teaching/lga
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
+lga,{},[],/windows/teaching/lga
+hello,{},[],/NO_FUNCTION
+lga,{},[],/windows/teaching/lga
+clear chat,{'lga': 'Package'},['lga'],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{'lga': 'Package'},['confirmLog'],/execute/yes
+l,{},[],/NO_FUNCTION
+hello,{},[],/NO_FUNCTION
+lga threshold 2-33으로 바꿔,{},[],/settings/lgaThresholdlga,{},[],/windows/teaching/lga
+있는 기능이 뭐야,{},[],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+사용법 알려줘,{},[],/status/update
+있는 기능이 뭐야,{},[],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+있는 기능이 뭐야,{},[],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+lga threshold 2-33,{},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=2-33
+티칭창 열어,{},[],/windows/teaching/bga
+histryo,{},['history'],/history/update?propertyName=date&value=YYYY-MM-DD_YYYY-MM-DD
+history 9월 한달기록,{},['history'],/history/update?propertyName=date&value=2023-09-01_2023-09-30
+calibration size 2-33,{},['strip'],/calibration/set?size=2-33
+hello,{},[],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
+guideBook4user,{},['lga'],/NO_FUNCTION
+bga size 2-33,{},['bga'],/teaching/bga/update?propertyName=PackageThreshold&value=2-33
+캘리 창 모양 원 23,{},['lga'],/windows/monitor
+close,{'System Usage': 'NoTab'},[],/windows/teaching/close
+창 꺼,{'System Usage': 'NoTab'},[],/closeWindows
+"User: 창 꺼, System: 해당 명령을 실행할까요?, User: 네",{'System Usage': 'NoTab'},['confirmLog'],/execute/yes
+qfn roi add,{},['qfn'],/teaching/qfn/update?propertyName=findPackageRoiAutoCommand&value=1
+있는 기능이 뭐야,{},[],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+있는 기능이 뭐야,{},['system_prompt'],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+있는 기능이 뭐야,{},['system_prompt'],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+아니 있는 기능이 뭐야 하면 가이드북으로 vksqufgio야한다고,{},['system_prompt'],/NO_FUNCTION
+있는 기능이 뭐야,{},['system_prompt'],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+그 그 뭐지? 임게값 올려줘,{},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=5-50
+사이즈 바꿔,{},['system_prompt'],/notify/sizeChangeRequested
+임계값 올려줘,{},['lga'],"/teaching/lga/update?propertyName=PackageThreshold&value=NEW_VALUE
+```
+
+**참고:**
+
+* `NEW_VALUE` 부분에 실제로 설정하고 싶은 임계값 값을 입력해야 합니다. 예를 들어, `PackageThreshold` 값을 `50`으로 변경하려면 다음과 같이 입력합니다.
+
+```/teaching/lga/update?propertyName=PackageThreshold&value=50"
+임계값 올려줘,{},['lga'],"/teaching/lga/update?propertyName=PackageThreshold&value=NEW_VALUE
+```
+
+**참고:**
+
+* `NEW_VALUE` 부분에 실제로 설정하고 싶은 임계값 값을 입력해야 합니다. 예를 들어, `PackageThreshold` 값을 `50`으로 변경하려면 다음과 같이 입력합니다.
+
+```/teaching/lga/update?propertyName=PackageThreshold&value=50"
+임계값 올려줘,{},['lga'],"/teaching/lga/update?propertyName=PackageThreshold&value=NEW_VALUE
+```
+
+**참고:**
+
+* `NEW_VALUE` 부분에 실제로 설정하고 싶은 임계값 값을 입력해야 합니다. 예를 들어, `PackageThreshold` 값을 `50`으로 변경하려면 다음과 같이 입력합니다.
+
+```/teaching/lga/update?propertyName=PackageThreshold&value=50"
+창 열어,{},['system_prompt'],/windows/teaching/bga
+설명,{},['system_prompt'],/Gvision/CurrentInfo
+사이즈 23 바꿔,{},['strip'],/Gvision/CurrentInfo/update?size=23
+임계값 올려,{},['lga'],"/teaching/lga/update?propertyName=PackageThreshold&value=NEW_VALUE-NEW_VALUE``` 
+
+**(참고: ""NEW_VALUE"" 부분을 실제 임계값 값으로 변경해야 합니다.)**"
+valueUpdate_unknown,{},['system_prompt'],/NO_FUNCTION
+어떤 임계값을 올려,{},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=N-N
+roi,{},['mapping'],"/teaching/mapping/update?propertyName=GridRoi_&value=N-N-N-N
+/teaching/mapping/update?propertyName=CodeRoi_&value=N-N-N-N
+/teaching/mapping/update?propertyName=RejectMarkRoi_&value=N-N-N-N"
+임계값 3-33바꿔,{},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=3-33
+임계값 바꿔,{},['system_prompt'],/settings/thresholds
+임계값 2-33,{},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=2-33
+사이즈 바꿔,{},['strip'],/gvision/info
+lga,{},['system_prompt'],/windows/teaching/lga
+lga,{},['system_prompt'],/windows/teaching/lga
+lga 창 열어,{},['system_prompt'],/windows/teaching/lga
+lga,{},['system_prompt'],/windows/teaching/lga
+임계값 1-22,{},['system_prompt'],/NO_FUNCTION
+qfn,{},['system_prompt'],/windows/teaching/qfn
+2-33 사이즈 변경,{},['system_prompt'],/settings/size/2-33
+roi 생성,{},['system_prompt'],/api/roi/create
+lga,{},['system_prompt'],/windows/teaching/lga
+임곅밧 4-55,{},['system_prompt'],/Gvision/CurrentInfo
+로이 생성,{},['system_prompt'],/NO_FUNCTION
+티칭창 열어,{},['system_prompt'],/windows/teaching/bga
+dksssud,{},['system_prompt'],/NO_FUNCTION
+있는 기능이 뭐야,{},['system_prompt'],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/test/run/prs
+/test/run/map
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/mode/set?mode=RUN
+/mode/set?mode=SETUP
+/windows/as"
+안녕,{},['system_prompt'],/NO_FUNCTION
+배고파,{},['system_prompt'],/NO_FUNCTION
+임계값 2-33,{},['system_prompt'],/NO_FUNCTION
+roi 생성,{},['system_prompt'],/api/roi/create
+티칭창 열어,{},['system_prompt'],/windows/teaching/bga
+이번달 기록,{},['system_prompt'],/NO_FUNCTION
+이번달 기록 보여줘,{},['history'],/history/update?propertyName=date&value=2023-10_2023-11-30
+티칭창 열어줘,{},['system_prompt'],/windows/teaching/bga
+"이거 뭐하는 기능임?
+",{},['system_prompt'],/NO_FUNCTION
+이거 있는 기능이 뭔데?,{},['system_prompt'],/NO_FUNCTION
+티칭창 열어,{},['system_prompt'],/windows/teaching/bga
+사이즈 변경,{},['strip'],/no_function
+캘리,{},['system_prompt'],/windows/light
+캘리브레이션,{},['calibration'],/calibration/update?propertyName=threshold&value=0-255
+cali,{},['calibration'],/calibration/update?propertyName=status&value=status
+기능이 뭐야,{},['system_prompt'],/NO_FUNCTION
+티칭창 열어,{},['system_prompt'],/windows/teaching/bga
+티칭창 열어,{},['Basic_unknown'],"{
+  ""required"": {
+    ""action"": ""openWindow"",
+    ""windowName"": """"
+  },
+  ""question"": {
+    ""windowName"": ""어떤 티칭창을 열까요? (lga, qfn, bga, mapping, strip 중에서 선택)""
+  }
+}"
+창 열어,{},['system_prompt'],/windows/teaching/bga
+ㅇㅁㄹㄴㅇㅁㅇㅁㅇ 창열어,{},['Basic_unknown'],/vague?question%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D%84%20%EC%97%B4%EB%A0%A4%EA%B3%A0%20%ED%95%98%EC%8B%9C%EB%82%98%EC%9A%94%3F%20%EC%A0%9C%EC%8B%9C%EB%90%9C%20%EB%AA%A9%EB%A1%9D%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94%3A%0A-%20lga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20qfn%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20bga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20mapping%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20strip%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20history%20%3A%20%EA%B2%80%EC%82%AC%20%EA%B8%B0%EB%A1%9D%0A-%20light%20%3A%20%EC%A1%B0%EB%AA%85%20%EC%84%A4%EC%A0%95%0A-%20calibration%20%3A%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%2C%20%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%84%A4%EC%A0%95%0A-%20settings%20%3A%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EC%A0%95%0A-%20lotData%20%3A%20Lot%20%EB%8D%B0%EC%9D%B4%ED%84%B0%0A-%20monitor%20%3A%20%EB%AA%A8%EB%8B%88%ED%84%B0
+창 열어줘,{},['system_prompt'],/windows/teaching/bga
+창 열어,{},['system_prompt'],/windows/teaching/bga
+창 열어,{},['Basic_unknown'],/vague?question%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%EC%95%84%EB%9E%98%20%EB%AA%A9%EB%A1%9D%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94%3A%0A-%20lga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20qfn%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20bga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20mapping%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20strip%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20history%20%3A%20%EA%B2%80%EC%82%AC%20%EA%B8%B0%EB%A1%9D%0A-%20light%20%3A%20%EC%A1%B0%EB%AA%85%20%EC%84%A4%EC%A0%95%0A-%20calibration%20%3A%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%2C%20%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%84%A4%EC%A0%95%0A-%20settings%20%3A%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EC%A0%95%0A-%20lotData%0A-%20monitor
+창 열어,{},['Basic_unknown'],/vague?question%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%EC%95%84%EB%9E%98%20%EB%AA%A9%EB%A1%9D%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94%3A%0A-%20lga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20qfn%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20bga%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20mapping%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20strip%20%3A%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%0A-%20history%20%3A%20%EA%B2%80%EC%82%AC%20%EA%B8%B0%EB%A1%9D%0A-%20light%20%3A%20%EC%A1%B0%EB%AA%85%20%EC%84%A4%EC%A0%95%0A-%20calibration%20%3A%20%EC%BA%98%EB%A6%AC%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%85%98%2C%20%EC%B9%B4%EB%A9%94%EB%9D%BC%20%EC%84%A4%EC%A0%95%0A-%20settings%20%3A%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EC%A0%95%0A-%20lotData%0A-%20monitor
+dasdd창 열어,{},['Basic_unknown'],"{
+  ""required"": {
+    ""action"": ""openWindow"",
+    ""windowName"": ""dasdd창 열어""
+  },
+  ""question"": {
+    ""windowName"": """" 
+  }
+}
+```
+
+**설명:**
+
+* 사용자 입력 ""dasdd창 열어""는 명확한 창 이름을 제공하지 않습니다. 
+* 따라서 `windowName` 슬롯을 채우기 위해 사용자에게 질문을 생성합니다. 
+* 질문은 ""어떤 창을 열까요?""로 간결하고 자연스럽게 작성되었습니다."
+3ㄷㄱㅈㄱㄷ 창 열어,{},['Basic_unknown'],"{
+  ""required"": {
+    ""action"": ""openWindow"",
+    ""windowName"": ""3ᄃᄀᄌᄀᄃ 창 열어""
+  },
+  ""slots"": {
+    ""tabName"": """" 
+  },
+  ""question"": """"
+}
+```
+
+**설명:**
+
+* **required 슬롯:** 사용자 입력에서 창 이름이 명확하게 제시되지 않았으므로, `""windowName""` 슬롯에 사용자 입력을 그대로 저장했습니다. 
+* **slots:**  `tabName` 슬롯은 현재 질문과 관련이 없으므로 빈 문자열로 설정했습니다.
+* **question:**  현재 질문은 필요하지 않습니다. 창 이름이 명확하게 주어졌기 때문입니다."
+창 열어,{},['Basic_unknown'],/vague?question=%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%EC%97%B4%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%B0%BD%20%EB%AA%A9%EB%A1%9D%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.
+티칭창 열어줘,{},['Basic_unknown'],/vague?question=%EC%96%B4%EB%96%A4%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%28lga%2C%20qfn%2C%20bga%20%EC%A4%91%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.%29
+lga,{},['system_prompt'],/windows/teaching/lga
+clear chat,{},['guideBook'],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
+sdasda 창 열어,{},['Basic_unknown'],/vague?question=%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%EC%A0%9C%EC%8B%9C%EB%90%9C%20%EC%B0%BD%20%EC%9D%B4%EB%A6%84%27sdasda%27%EB%8A%94%20%EC%A1%B4%EC%9E%AC%ED%95%98%EC%A7%80%20%EC%95%8A%EC%8A%B5%EB%8B%88%EB%8B%A4.
+history,{},['history'],/windows/history
+티칭창 열어봐,{},['Basic_unknown'],/vague?question=%EC%96%B4%EB%96%A4%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%28lga%2C%20qfn%2C%20bga%20%EC%A4%91%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.%29
+mapping,{},['mapping'],/teaching/mapping/update?propertyName=findPackagesTeaching&value=1
+티칭 창 열어,{},['Basic_unknown'],/vague?question=%EC%96%B4%EB%96%A4%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F
+lga,{},['system_prompt'],/windows/teaching/lga
+열 수 있는 창이 뭐야,{},['system_prompt'],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/prs/reteach"
+열 수 있는 창이 뭐야,{},['guideBook'],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/prs/reteach"
+열수있는 창이 뭐랴,{},['system_prompt'],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+열 수 있는 창이 뭐임?,{},['system_prompt'],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/teaching/prs/reteach"

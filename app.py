@@ -31,65 +31,98 @@ output_model = api.model('OutputModel', {
     'gpu_memory': fields.Nested(gpu_model)
 })
 
-
+# 단일 명령만 지원
 @ns_instruct.route('/')
 class Instruct(Resource):
     @ns_instruct.expect(input_model)
     @ns_instruct.marshal_with(output_model)
     def post(self):
-        """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
-        print("Received JSON payload:", api.payload)
+        """사용자 명령어를 입력받아 함수 호출 형식으로 응답"""
+        print("Received JSON payload:", api.payload)  # <-- 여기 추가
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         current_window_info = api.payload['current_opened_window_and_tab']
 
         result = run_model(user_input, current_window_info, model_name)
-        
         # output에서 "json\n" 제거
-        result['output'] = result['output'].replace("json\n", "").replace("json", "").strip()
+        result['output'] = result['output'].replace("json\n", "").strip()
 
-        # 복합 명령어 처리: 여러 API를 줄바꿈으로 구분
-        api_calls = result['output'].strip().split('\n')
-        api_calls = [call.strip() for call in api_calls if call.strip() and not call.startswith('#')]
+        # 클라이언트 IP 주소 가져오기
+        # client_ip = request.remote_addr
         
-        print(f"\n[API Calls Detected] {len(api_calls)} API(s)")
-        for idx, api_call in enumerate(api_calls, 1):
-            print(f"  {idx}. {api_call}")
+        # 클라이언트 IP로 API 주소를 만듦
+        # api_url = f"http://{client_ip}:3000{result['output']}"
         
-        # 각 API 순차 실행
-        success_count = 0
-        failed_apis = []
+        #local에서..
+        api_url = f"http://localhost:3000{result['output']}"
         
-        for api_call in api_calls:
-            if api_call == "/NO_FUNCTION":
-                print(f"[Skip] {api_call}")
-                continue
-            
-            # API 호출
-            api_url = f"http://localhost:3000{api_call}"
-            
-            try:
-                response = requests.get(api_url, timeout=30)  # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
-                if response.status_code == 200:
-                    success_count += 1
-                    print(f"[Success] {api_call} → {response.status_code}")
-                else:
-                    failed_apis.append(api_call)
-                    print(f"[Failed] {api_call} → {response.status_code}")
-            except Exception as err:
-                failed_apis.append(api_call)
-                print(f"[Error] {api_call} → {err}")
-        
-        # 실행 결과 요약
-        print(f"\n[Execution Summary]")
-        print(f"  Total APIs: {len(api_calls)}")
-        print(f"  Success: {success_count}")
-        print(f"  Failed: {len(failed_apis)}")
-        if failed_apis:
-            print(f"  Failed APIs: {failed_apis}")
-        print("-" * 50)
+        try:
+            response = requests.get(api_url)
+            # 필요하면 써
+        except Exception as err:
+            print(err)
 
         return result
+
+# 복합 명령어 지원 (주석 처리된 부분)
+# @ns_instruct.route('/')
+# class Instruct(Resource):
+#     @ns_instruct.expect(input_model)
+#     @ns_instruct.marshal_with(output_model)
+#     def post(self):
+#         """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
+#         print("Received JSON payload:", api.payload)
+#         user_input = api.payload['text']
+#         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
+#         current_window_info = api.payload['current_opened_window_and_tab']
+
+#         result = run_model(user_input, current_window_info, model_name)
+        
+#         # output에서 "json\n" 제거
+#         result['output'] = result['output'].replace("json\n", "").replace("json", "").strip()
+
+#         # 복합 명령어 처리: 여러 API를 줄바꿈으로 구분
+#         api_calls = result['output'].strip().split('\n')
+#         api_calls = [call.strip() for call in api_calls if call.strip() and not call.startswith('#')]
+        
+#         print(f"\n[API Calls Detected] {len(api_calls)} API(s)")
+#         for idx, api_call in enumerate(api_calls, 1):
+#             print(f"  {idx}. {api_call}")
+        
+#         # 각 API 순차 실행
+#         success_count = 0
+#         failed_apis = []
+        
+#         for api_call in api_calls:
+#             if api_call == "/NO_FUNCTION":
+#                 print(f"[Skip] {api_call}")
+#                 continue
+            
+#             # API 호출
+#             api_url = f"http://localhost:3000{api_call}"
+            
+#             try:
+#                 response = requests.get(api_url, timeout=30)  # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
+#                 if response.status_code == 200:
+#                     success_count += 1
+#                     print(f"[Success] {api_call} → {response.status_code}")
+#                 else:
+#                     failed_apis.append(api_call)
+#                     print(f"[Failed] {api_call} → {response.status_code}")
+#             except Exception as err:
+#                 failed_apis.append(api_call)
+#                 print(f"[Error] {api_call} → {err}")
+        
+#         # 실행 결과 요약
+#         print(f"\n[Execution Summary]")
+#         print(f"  Total APIs: {len(api_calls)}")
+#         print(f"  Success: {success_count}")
+#         print(f"  Failed: {len(failed_apis)}")
+#         if failed_apis:
+#             print(f"  Failed APIs: {failed_apis}")
+#         print("-" * 50)
+
+#         return result
 
 
 # Intent 분류 namespace

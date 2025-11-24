@@ -51,13 +51,6 @@ COMMON_WINDOWS = """
 """
 
 COMMON_FEATURES = """
-## 조명창 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=PRS` : PRS 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=BarCode` : BarCode 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=SettingX1` : SettingX1 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=SettingX2` : SettingX2 카메라 실시간 라이브 뷰 열기
-- `/windows/light/live?camera=Mapping` : Mapping 카메라 실시간 라이브 뷰 열기
-
 ## 추가 기능
 - `/live/toggle?switch=ON&no=N` : 카메라 N번 라이브 켜기 (N은 1~6)
 - `/live/toggle?switch=OFF&no=N` : 카메라 N번 라이브 끄기 (N은 1~6)
@@ -65,8 +58,6 @@ COMMON_FEATURES = """
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 """
 
 COMMON_ENDING = """

@@ -3,7 +3,7 @@ import time
 from transformers import AutoModelForCausalLM, AutoTokenizer
 # from prompt_combine_none_add_ex import system_prompt
 # from prompt_combine_none_add_ex1 import system_prompt
-from prompt_combine_none import system_prompt
+from basic_prompt import system_prompt
 # from prompt_combine import system_prompt
 # from prompt_only import system_prompt
 import re

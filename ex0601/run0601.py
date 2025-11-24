@@ -1,6 +1,6 @@
 import pandas as pd
 from model_runner import run_model  # 사용자 정의 모델 함수
-from prompt_combine_none import system_prompt
+from basic_prompt import system_prompt
 
 #===============================================================================ex1===============================================================================
 # 1. 데이터 로드

@@ -1,6 +1,6 @@
 import pandas as pd
 from model_runner import run_model  # 사용자 정의 모델 함수
-from prompt_combine_none import system_prompt
+from basic_prompt import system_prompt
 
 base_system_prompt = system_prompt
 label_map = {0: "일반질의", 1: "관련없는 질문", 2: "복합질의"}

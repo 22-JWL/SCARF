@@ -1,0 +1,11 @@
+{
+  "required": {
+    "action": "",
+    "windowName": "",
+    "PropertyType": ""
+  },
+  "slots": {
+    "value": "",
+    "tabName": ""
+  }
+}

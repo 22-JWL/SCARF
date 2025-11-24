@@ -1,7 +1,8 @@
 import torch
 import time
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from prompt_combine_none import system_prompt
+from basic_prompt import system_prompt
+from router import router_prompt
 from prompt_classify_by_windows.bga import system_prompt as bga_prompt
 from prompt_classify_by_windows.lga import system_prompt as lga_prompt
 from prompt_classify_by_windows.qfn import system_prompt as qfn_prompt
@@ -11,11 +12,15 @@ from prompt_classify_by_windows.light import system_prompt as light_prompt
 from prompt_classify_by_windows.history import system_prompt as history_prompt
 from prompt_classify_by_windows.strip import system_prompt as strip_prompt
 from prompt_classify_by_windows.settings import system_prompt as settings_prompt
+from prompt_classify_by_windows.confirmLog import system_prompt as confirmLog_prompt
+from prompt_classify_by_windows.vague_openWindow import system_prompt as vague_openWindow
 from intent_classifier import classify_text 
+from urllib.parse import quote
 import re
 import gc
 import csv
 import os
+import json
 
 # 현재 사용 가능한 장치 설정 (GPU 사용 가능 여부 확인)
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -163,13 +168,40 @@ def log_to_csv(user_input, current_window_info, llm_output, System_prompt):
             llm_output
         ])
 
-def filter_system_prompt(current_window_info: str) -> str:
+def route_intent(prompt: str, model, tokenizer) -> str:
+    messages = [
+        {"role": "system", "content": router_prompt},
+        {"role": "user", "content": prompt}
+    ]
+
+    # Intent 분류 실행
+    # 토크나이징
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_tensors="pt"
+    ).to(DEVICE)
+
+    # 모델 생성
+    output = model.generate(
+        input_ids,
+        eos_token_id=tokenizer.eos_token_id,
+        max_new_tokens=50,  # 분류용은 길게 필요 없음
+        do_sample=False
+    )
+    # 디코딩
+    decoded = tokenizer.decode(output[0], skip_special_tokens=True)
+    # assistant 부분만 추출
+    category = decoded.split('[|assistant|]')[-1].strip().split("\n")[0]
+    print(f"[Routed Category] {category}")
+    return filter_system_prompt(category, prompt)
+
+def filter_system_prompt(current_window_info: str, prompt: str) -> str:
     """
     현재 열린 창에 따라 적절한 프롬프트를 선택하는 함수.
-    
     Args:
         current_window_info (str): 현재 열린 창 정보.
-    
     Returns:
         tuple: 매칭된 키와 결합된 프롬프트.
     """
@@ -186,23 +218,35 @@ def filter_system_prompt(current_window_info: str) -> str:
         "calibration": calibration_prompt,
         "history": history_prompt,
         "settings": settings_prompt,
-        "": system_prompt
+        "Basic_unknown" : vague_openWindow,  # 그냥 창 열기인데 창 이름이 없는 경우
+        "valueUpdate_vague" : system_prompt, # 나중에 슬롯인가 질문을 생성할 수 있는 애로 바꿔야함...
+        "guideBook" : system_prompt, # 있는 기능 뭐야 물을때,,,
+        "": system_prompt # basic은 없으니 여기 들어가게됨..
     }
 
     matched_keys = []
     matched_prompts = []
 
-    # 현재 창 정보와 매핑된 프롬프트 찾기
-    for key, prompt in mapping.items():
-        if key and key in info:
-            matched_keys.append(key)
-            matched_prompts.append(prompt)
+    if "해당 명령을 실행할까요?" in prompt:  # contain만 확인
+        # print("[INFO] confirmLog prompt matched.")
+        matched_prompts = [confirmLog_prompt]  # 덮어쓰기
+        matched_keys.append("confirmLog")
+        return ["confirmLog"], confirmLog_prompt
 
+    for key, prompt_item in mapping.items():
+        if key:  # 빈 문자열 제외
+            # 대소문자 구분 없이 매칭
+            if key.lower() in current_window_info.lower():
+                matched_keys.append(key)
+                matched_prompts.append(prompt_item)
+
+    # 아무것도 매칭되지 않으면 기본 시스템 프롬프트 사용
     if not matched_prompts:
-        return [], system_prompt
+        return ["system_prompt"], system_prompt
 
-    # 매칭된 프롬프트 결합
+    # 여러 개의 창 프롬프트를 하나로 결합 (공백이나 구분자 포함)
     combined_prompt = "\n\n".join(matched_prompts)
+
     return matched_keys, combined_prompt
 
 def run_model(prompt: str, current_window_info: dict, model_name: str):
@@ -248,8 +292,13 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
     # 추론 실행
     start = time.time()
 
-    # 프롬프트 구성
-    selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()))
+    if not current_window_info: # 창이 열려있는 정보가 없으면 어떤 내용이 들어올지 모르니 의도분류하기...
+        selected_key, system_prompt_selected = route_intent(prompt, current_model, current_tokenizer)
+        print(  f"[Selected System Prompt Key]: {selected_key}")
+        # selected_key, system_prompt_selected = slot_fill_intent(prompt, current_model, current_tokenizer)
+    else:
+        # 프롬프트 구성
+        selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()),prompt)
     messages = [
         {"role": "system", "content": system_prompt_selected},
         {"role": "user", "content": f"{prompt}\n\n[Gvision Current Info]\n{current_window_info}"}
@@ -281,7 +330,17 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
     assistant_only = assistant_only.replace("json\n", "").replace("json", "").strip()
     
     print(f"[LLM Output]\n{assistant_only}")
-    
+
+    try:
+        data = json.loads(assistant_only)
+        window_question = data.get("question", {}).get("windowName", "")
+        print(f"\n[Window Question]: {window_question}")
+        window_question = quote(window_question)
+        assistant_only = "/vague?question=" + window_question
+    except json.JSONDecodeError:
+        # JSON이 아니면 그냥 빈 문자열 처리 또는 원문 그대로 사용
+        window_question = ""
+
     allocated, reserved = get_gpu_memory()
 
     # 로그 기록

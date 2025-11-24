@@ -1,19 +1,13 @@
 # flask_LLM
-
-## Prompt_combine_none.py 파일에 추가
-## 0911
-- /chat/clear 추가
-- history 기간 설정(set)
-
-### 0903
-- /closeWindows 추가
-### 0829
-- /test/run/prs
-- /test/run/map
-- 이 두가지 추가
+진행사항
+- 현재 열고자하는 창이 모호하면 & 아무 창도 안 열려 있으면
+- 모호 프롬프트로 판단하여 질문 생성
+  
+https://github.com/user-attachments/assets/9f268eb9-021c-4f37-bc99-79d19be16253  
 
 
+https://github.com/user-attachments/assets/153475db-b4ba-4b1f-83f9-1438cbd15cad  
 
-
-## gpu 개선 2025.09.10
-pip install accelerate
+---
+목표
+- 바꾸려는 값 또한 모호시 질문...

@@ -5,6 +5,7 @@ from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
 import requests
 import os
+import time
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
@@ -38,6 +39,9 @@ class Instruct(Resource):
     @ns_instruct.marshal_with(output_model)
     def post(self):
         """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
+        
+        total_start = time.time()
+        
         print("Received JSON payload:", api.payload)
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
@@ -79,6 +83,9 @@ class Instruct(Resource):
             except Exception as err:
                 failed_apis.append(api_call)
                 print(f"[Error] {api_call} → {err}")
+                
+            total_end = time.time()
+            total_elapsed = total_end - total_start
         
         # 실행 결과 요약
         print(f"\n[Execution Summary]")
@@ -87,6 +94,7 @@ class Instruct(Resource):
         print(f"  Failed: {len(failed_apis)}")
         if failed_apis:
             print(f"  Failed APIs: {failed_apis}")
+        print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")
         print("-" * 50)
 
         return result

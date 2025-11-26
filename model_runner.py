@@ -14,6 +14,8 @@ from prompt_classify_by_windows.strip import system_prompt as strip_prompt
 from prompt_classify_by_windows.settings import system_prompt as settings_prompt
 from prompt_classify_by_windows.confirmLog import system_prompt as confirmLog_prompt
 from prompt_classify_by_windows.vague_openWindow import system_prompt as vague_openWindow
+from prompt_classify_by_windows.vague_updateValue import system_prompt as vague_updateValue
+from prompt_classify_by_windows.guidebook import system_prompt as guidebook_prompt
 from intent_classifier import classify_text 
 from urllib.parse import quote
 import re
@@ -219,8 +221,8 @@ def filter_system_prompt(current_window_info: str, prompt: str) -> str:
         "history": history_prompt,
         "settings": settings_prompt,
         "Basic_unknown" : vague_openWindow,  # 그냥 창 열기인데 창 이름이 없는 경우
-        "valueUpdate_vague" : system_prompt, # 나중에 슬롯인가 질문을 생성할 수 있는 애로 바꿔야함...
-        "guideBook" : system_prompt, # 있는 기능 뭐야 물을때,,,
+        "valueUpdate_unknown" : vague_updateValue, # 나중에 슬롯인가 질문을 생성할 수 있는 애로 바꿔야함...
+        "guideBook" : guidebook_prompt, # 있는 기능 뭐야 물을때,,,
         "": system_prompt # basic은 없으니 여기 들어가게됨..
     }
 
@@ -333,10 +335,10 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
 
     try:
         data = json.loads(assistant_only)
-        window_question = data.get("question", {}).get("windowName", "")
+        window_question = data.get("response", "")
         print(f"\n[Window Question]: {window_question}")
         window_question = quote(window_question)
-        assistant_only = "/vague?question=" + window_question
+        assistant_only = "/vague?response=" + window_question
     except json.JSONDecodeError:
         # JSON이 아니면 그냥 빈 문자열 처리 또는 원문 그대로 사용
         window_question = ""

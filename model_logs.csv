@@ -1214,3 +1214,41 @@ lga창 켜ㅜ저,{},[],/windows/teaching/lga
 설정창 열고 히스토리 창 켜줘,{},[],"/windows/settings
 /windows/history"
 히스토리 창 켜줘,{},[],/windows/history
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"

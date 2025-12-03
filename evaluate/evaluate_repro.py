@@ -7,7 +7,7 @@ from .reproducibility_evaluator import (
 )
 
 
-def main(sample_n: int = 1):   # 필요하면 샘플 수 조정
+def main(sample_n: int = 100):   # 필요하면 샘플 수 조정
     print("evaluate_repro 실행됨")
 
     base_dir = Path(__file__).resolve().parent

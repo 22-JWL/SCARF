@@ -275,11 +275,26 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
 
     # 출력 디코딩
     decoded_output = current_tokenizer.decode(output[0], skip_special_tokens=True)
-    assistant_only = decoded_output.split('[|assistant|]')[1].strip().strip("\n").strip("`")
-    
-    # "json\n" 제거 및 정리
-    assistant_only = assistant_only.replace("json\n", "").replace("json", "").strip()
-    
+
+    # EXAONE vs Qwen 파서 분리
+    is_exaone = "EXAONE" in current_model_name or "exaone" in current_model_name.lower()
+
+    if is_exaone:
+        # EXAONE: 복합 명령 모두 추출 (assistant 블록 전체 사용)
+        try:
+            assistant_only = decoded_output.split('[|assistant|]')[1].strip()
+        except:
+            assistant_only = decoded_output.strip()   # fallback
+    else:
+        # Qwen / ChatML fallback: 슬래시(/)로 시작하는 줄만 API로 인식
+        lines = decoded_output.strip().split("\n")
+        api_candidates = [line.strip() for line in lines if line.strip().startswith("/")]
+        assistant_only = "\n".join(api_candidates) if api_candidates else "/NO_FUNCTION"
+
+   # EXAONE 백틱 제거 
+    assistant_only = assistant_only.replace("```", "").strip()
+    assistant_only = assistant_only.replace("`", "").strip()
+
     print(f"[LLM Output]\n{assistant_only}")
     
     allocated, reserved = get_gpu_memory()

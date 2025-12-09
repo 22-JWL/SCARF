@@ -1640,3 +1640,45 @@ dkssud,{},['Basic_unknown'],/vague?response=%EC%96%B4%EB%96%A4%20%EC%B0%BD%EC%9D
 안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%9D%98%20Micro%20Gpt%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%96%B4%EB%96%A4%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%8B%B6%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B3%80%EA%B2%BD%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%9C%EB%A9%B4%20%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94.
 prs run mode,{},['system_prompt'],/mode/set?mode=PRSRUN
 prs mode,{},"['bga', 'lga', 'qfn', 'mapping', 'strip', 'calibration']",/mode/set?mode=PRS
+안녕,{},[],/NO_FUNCTION
+안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%9D%98%20Micro%20Gpt%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%96%B4%EB%96%A4%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%8B%B6%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B3%80%EA%B2%BD%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%9C%EB%A9%B4%20%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94.
+안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%9D%98%20Micro%20Gpt%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%96%B4%EB%96%A4%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%8B%B6%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B3%80%EA%B2%BD%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%9C%EB%A9%B4%20%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94.
+안녈,{},['Basic_unknown'],"입력이 명확하지 않아 이해하기 어렵습니다. 창 이름을 요청하시는 건가요? 아니면 다른 정보를 제공하시려는 건가요? 좀 더 구체적인 요청을 주시면 도와드리겠습니다. 예를 들어, ""어떤 창을 열고 싶으신가요?"" 또는 ""현재 어떤 정보를 확인하고 싶으신가요?""와 같은 질문이 도움이 될 것 같습니다.
+
+만약 창 이름을 지정해 주시거나 추가 정보를 제공해 주시면, 그에 맞는 JSON 형식의 응답을 드릴 수 있습니다. 어떻게 도와드릴 수 있을까요?"
+안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%9D%98%20Micro%20Gpt%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%96%B4%EB%96%A4%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%8B%B6%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B3%80%EA%B2%BD%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%9C%EB%A9%B4%20%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94.
+안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%9D%98%20Micro%20Gpt%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%96%B4%EB%96%A4%20%EA%B8%B0%EB%8A%A5%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0%20%EC%8B%B6%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B3%80%EA%B2%BD%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%9C%EB%A9%B4%20%EC%95%8C%EB%A0%A4%EC%A3%BC%EC%84%B8%EC%9A%94.
+lga 시스템 설명,{},['guideBook'],"{
+    ""response"": ""LG-A (Leadless Grid Array) 시스템은 반도체 칩에 직접 납땜되지 않은 패드 배열을 가진 칩을 검사하는 데 특화된 기능을 제공합니다. 이 시스템은 다음과 같은 주요 특징을 가지고 있습니다:
+
+1. **티칭 창**: LG-A 타입의 자재에 대한 정확한 티칭을 지원합니다. 이 창을 통해 칩의 패드 배열 위치를 정확하게 지정하여 검사 정확도를 높일 수 있습니다.
+2. **설정 옵션**: FOV (Field of View), Block Size 등 다양한 설정을 통해 검사 효율성을 최적화할 수 있습니다.
+3. **검사 항목**: 패드의 위치, 크기, 결함 등을 정밀하게 검사할 수 있도록 설계되어 있습니다.
+
+만약 LG-A 타입의 검사에 대해 더 구체적인 설정 방법이나 특정 기능에 대한 자세한 설명이"
+lga tjfaud,{},['Basic_unknown'],/vague?response=%EC%96%B4%EB%96%A4%20%ED%8B%B0%EC%B9%AD%EC%B0%BD%EC%9D%84%20%EC%97%B4%EA%B9%8C%EC%9A%94%3F%20%28lga%2C%20qfn%2C%20bga%20%EC%A4%91%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%20%EA%B0%80%EB%8A%A5%ED%95%A9%EB%8B%88%EB%8B%A4.%29
+lga  설명,{},['system_prompt'],/windows/teaching/lga
+lga 기능 설명,{},['guideBook'],"{
+    ""response"": ""LGA (Leadless Grid Array) 기능은 반도체 패키지 중 하나인 LGA 타입의 칩을 검사하는 데 특화되어 있습니다. 이 기능을 사용하면 다음과 같은 작업을 수행할 수 있습니다:
+
+1. **티칭(Teaching)**: LGA 타입의 자재 상단 면을 정확하게 티칭하여 검사 정확도를 높입니다. 다양한 설정 옵션을 통해 자재의 특징에 맞게 조정할 수 있습니다.
+2. **설정 조정**: 검사 시 임계값, ROI(Region of Interest) 설정 등을 조정하여 원하는 검사 기준에 맞출 수 있습니다.
+3. **검사 실행**: 티칭된 정보를 바탕으로 LGA 타입의 칩을 자동으로 검사하고 결함을 식별합니다.
+
+만약 LGA 타입 외의 다른 타입에 대한 자세한 설정 방법이나 다른 기능에 대해 궁금한 점이 있다면 알려"
+lga 기능 설멸,{},['guideBook'],"{
+    ""response"": ""LGA (Leadless Grid Array) 기능은 반도체 패키지 중 하나인 LGA 타입의 칩을 검사하는 데 특화되어 있습니다. 이 기능을 사용하면 다음과 같은 작업을 수행할 수 있습니다:
+
+1. **티칭(Teaching)**: LGA 타입의 칩의 특징적인 구조를 시스템에 학습시켜 정확한 검사를 가능하게 합니다.
+2. **검사 설정**: 검사 시 임계값 조정, ROI(Region of Interest) 설정 등 다양한 검사 파라미터를 조정할 수 있습니다.
+3. **결과 분석**: 검사 결과를 분석하고 에러 이미지를 확인하여 품질 관리에 활용할 수 있습니다.""
+}"
+안녕,{},['guideBook'],/vague?response=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%21%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B2%80%EC%82%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20Gvision%EC%97%90%20%EB%8C%80%ED%95%B4%20%EA%B6%81%EA%B8%88%ED%95%9C%20%EC%A0%90%EC%9D%B4%20%EC%9E%88%EC%9C%BC%EC%8B%A0%EA%B0%80%EC%9A%94%3F%20%EC%B0%BD%20%EC%97%B4%EA%B8%B0%2C%20%EA%B0%92%20%EC%A1%B0%EC%A0%95%2C%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95%20%EB%93%B1%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%9E%90%EC%84%B8%ED%9E%88%20%EC%95%8C%EB%A0%A4%EB%93%9C%EB%A6%B4%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+lga 기능 설명,{},['guideBook'],"{
+    ""response"": ""LGA (Leadless Grid Array) 기능은 반도체 패키지 중 하나인 LGA 타입의 칩을 검사하는 데 특화되어 있습니다. 이 기능을 사용하면:
+
+1. **정확한 티칭**: LGA 칩의 특징적인 구조에 맞춰 티칭 창을 통해 정확한 위치 설정이 가능합니다.
+2. **고도의 검사 정확도**: 다양한 검사 파라미터를 조정하여 높은 정확도의 결함 검출이 가능합니다.
+3. **효율적인 검사**: 자동화된 프로세스를 통해 빠르고 효율적인 검사를 수행할 수 있습니다.""
+}"
+lga 창이 뭐야,{},['guideBook'],/vague?response=LGA%20%EC%B0%BD%EC%9D%80%20LGA%20%28Leadless%20Grid%20Array%29%20%ED%83%80%EC%9E%85%EC%9D%98%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%B9%A9%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%8B%B0%EC%B9%AD%20%EC%B0%BD%EC%9E%85%EB%8B%88%EB%8B%A4.%20%EC%9D%B4%20%EC%B0%BD%EC%9D%84%20%ED%86%B5%ED%95%B4%20%EC%B9%A9%EC%9D%98%20%EC%83%81%EB%8B%A8%20%EB%A9%B4%EC%9D%84%20%EC%A0%95%ED%99%95%ED%95%98%EA%B2%8C%20%ED%8B%B0%EC%B9%AD%ED%95%98%EC%97%AC%20%EA%B2%80%EC%82%AC%20%EC%A0%95%ED%99%95%EB%8F%84%EB%A5%BC%20%EB%86%92%EC%9D%BC%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%84%A4%EC%A0%95%20%EC%98%B5%EC%85%98%EC%9D%84%20%ED%86%B5%ED%95%B4%20%EC%B9%A9%EC%9D%98%20%ED%8A%B9%EC%A7%95%EC%97%90%20%EB%A7%9E%EA%B2%8C%20%EC%A1%B0%EC%A0%95%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.

@@ -334,11 +334,23 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
     print(f"[LLM Output]\n{assistant_only}")
 
     try:
-        data = json.loads(assistant_only)
+        # 1) JSON 블록만 정규식으로 추출
+        match = re.search(r'\{[\s\S]*\}', assistant_only)
+        if not match:
+            raise ValueError("JSON 블록을 찾을 수 없습니다.")
+
+        json_text = match.group(0)
+
+        # 2) JSON 파싱
+        data = json.loads(json_text)
+
+        # 3) response 값 가져오기
         window_question = data.get("response", "")
-        print(f"\n[Window Question]: {window_question}")
-        window_question = quote(window_question)
-        assistant_only = "/vague?response=" + window_question
+        print("[Window Question]:", window_question)
+
+        # 4) URL 인코딩 후 최종 URL 생성
+        encoded = quote(window_question)
+        assistant_only = "/vague?response=" + encoded
     except json.JSONDecodeError:
         # JSON이 아니면 그냥 빈 문자열 처리 또는 원문 그대로 사용
         window_question = ""

@@ -3,11 +3,27 @@ from flask_restx import Api, Resource, fields
 from flask import request
 from model_runner import run_model, switch_model
 from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZER_NAME
+from router import UncertaintyRouter
 import requests
 import os
 import time
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
+
+# SetFit Router 초기화 (앱 시작 시 모델 로드)
+ROUTER_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "SetFit-router", "ai_engine", "models", "router_distilbert")
+router = None
+
+def initialize_router():
+    """라우터 초기화 함수"""
+    global router
+    if os.path.exists(ROUTER_MODEL_PATH):
+        print(f"[INFO] Initializing SetFit Router from: {ROUTER_MODEL_PATH}")
+        router = UncertaintyRouter(ROUTER_MODEL_PATH)
+        print("[INFO] Router initialized successfully")
+    else:
+        print(f"[WARNING] Router model not found at: {ROUTER_MODEL_PATH}")
+        print("[WARNING] Router will not be available")
 
 
 app = Flask(__name__)                                                    # Flask 앱 생성
@@ -27,7 +43,10 @@ gpu_model = api.model('GpuModel', {
 })
 
 output_model = api.model('OutputModel', {
+    'status': fields.String(description='처리 상태 (rejected/processed)'),
+    'routing_result': fields.String(description='라우팅 결과 (OUT_OF_SCOPE/Uncertain/Complex/Simple)'),
     'output': fields.String(description='LLM 응답 함수 호출 결과'),
+    'message': fields.String(description='거절 메시지 (status=rejected인 경우)'),
     'elapsed_time': fields.Float(description='응답 시간(초)'),
     'gpu_memory': fields.Nested(gpu_model)
 })
@@ -38,15 +57,51 @@ class Instruct(Resource):
     @ns_instruct.expect(input_model)
     @ns_instruct.marshal_with(output_model)
     def post(self):
-        """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
-        
+        """
+        SetFit Router를 사용한 지능형 명령 처리 (복합 명령어 지원)
+
+        - Case 1: OOS (도메인 밖) -> 즉시 거절
+        - Case 2: Uncertain/Complex -> EXAONE LLM으로 처리 및 API 실행
+        """
+
         total_start = time.time()
-        
+
         print("Received JSON payload:", api.payload)
         user_input = api.payload['text']
         model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
         current_window_info = api.payload['current_opened_window_and_tab']
 
+        # ===== SetFit Router 라우팅 로직 추가 =====
+        if router is not None:
+            routing_result = router.route_query(user_input)
+
+            print(f"\n[Routing Decision]")
+            print(f"  Text: {user_input}")
+            print(f"  Label: {routing_result['label']}")
+            print(f"  Reason: {routing_result['reason']}")
+            print(f"  Confidence: {routing_result['confidence']:.3f}")
+            print(f"  Use LLM: {routing_result['should_use_llm']}")
+
+            # Case 1: OOS (도메인 밖) -> 즉시 거절
+            if not routing_result['should_use_llm']:
+                elapsed = time.time() - total_start
+                print(f"[REJECTED] OOS query blocked ({elapsed:.3f}s)")
+
+                return {
+                    'status': 'rejected',
+                    'routing_result': routing_result['reason'],
+                    'message': routing_result['reject_message'],
+                    'output': '/NO_FUNCTION',
+                    'elapsed_time': elapsed,
+                    'gpu_memory': {'allocated_mb': 0.0, 'reserved_mb': 0.0}
+                }
+
+            print(f"[PROCESSING] Routing to LLM... (Reason: {routing_result['reason']})")
+        else:
+            print("[WARNING] Router not initialized, proceeding with LLM")
+            routing_result = None
+
+        # ===== Case 2: Uncertain/Complex/Simple -> LLM 처리 =====
         result = run_model(user_input, current_window_info, model_name)
         
         # output에서 "json\n" 제거
@@ -68,10 +123,10 @@ class Instruct(Resource):
             if api_call == "/NO_FUNCTION":
                 print(f"[Skip] {api_call}")
                 continue
-            
+
             # API 호출
             api_url = f"http://localhost:3000{api_call}"
-            
+
             try:
                 response = requests.get(api_url, timeout=30)  # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
                 if response.status_code == 200:
@@ -83,10 +138,10 @@ class Instruct(Resource):
             except Exception as err:
                 failed_apis.append(api_call)
                 print(f"[Error] {api_call} → {err}")
-                
-            total_end = time.time()
-            total_elapsed = total_end - total_start
-        
+
+        # 총 경과 시간 계산 (루프 밖에서)
+        total_elapsed = time.time() - total_start
+
         # 실행 결과 요약
         print(f"\n[Execution Summary]")
         print(f"  Total APIs: {len(api_calls)}")
@@ -96,6 +151,10 @@ class Instruct(Resource):
             print(f"  Failed APIs: {failed_apis}")
         print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")
         print("-" * 50)
+
+        # 라우팅 정보 추가하여 반환
+        result['status'] = 'processed'
+        result['routing_result'] = routing_result['reason'] if routing_result else 'No Router'
 
         return result
 
@@ -157,4 +216,8 @@ class ModelSwitch(Resource):
 
 # 서버 실행
 if __name__ == '__main__':
+    # Router 초기화
+    initialize_router()
+
+    # Flask 앱 실행
     app.run(host='0.0.0.0', port=5000, debug=False)

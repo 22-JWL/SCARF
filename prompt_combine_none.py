@@ -29,4 +29,4 @@ SPECIFIC_CONTENT = """
 """
 
 # 공통 프롬프트 + 특화 프롬프트 결합
-system_prompt = build_prompt(SPECIFIC_CONTENT)
+system_prompt = build_prompt()

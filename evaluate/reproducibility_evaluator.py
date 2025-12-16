@@ -42,7 +42,6 @@ def call_instruct_api(
     """
     app.py 의 /instruct/ 엔드포인트를 그대로 호출해서
     LLM 최종 output 문자열을 가져온다.
-    (app.py 에서 [LLM Output] 아래 찍히는 것과 동일)
     """
     if current_opened_window_and_tab is None:
         current_opened_window_and_tab = {}
@@ -57,7 +56,6 @@ def call_instruct_api(
         resp = requests.post(INSTRUCT_URL, json=payload, timeout=120)
     except Exception as e:
         print(f"[ERROR] /instruct 호출 실패: {e}")
-        # 실패 시에는 NO_FUNCTION 한 개만 반환했다고 간주
         return "/NO_FUNCTION"
 
     if resp.status_code != 200:
@@ -70,23 +68,15 @@ def call_instruct_api(
         print(f"[ERROR] /instruct 응답 JSON 파싱 실패: {e}")
         return "/NO_FUNCTION"
 
-    # app.py OutputModel: {'output': str, 'elapsed_time': float, 'gpu_memory': {...}}
     output = data.get("output", "")
     if not isinstance(output, str):
         output = str(output)
+
     return output
 
 
 # 2) LLM 출력에서 API 리스트 추출
-#    (app.py 의 api_calls 처리와 동일한 로직)
 def extract_all_apis(text: str) -> List[str]:
-    """
-    LLM 출력 문자열을 줄바꿈 기준으로 쪼개서
-    각 줄을 하나의 API로 본다.
-    - app.py 의 이 부분과 동일한 동작:
-        api_calls = result['output'].strip().split('\n')
-        api_calls = [call.strip() for call in api_calls if call.strip() and not call.startswith('#')]
-    """
     if not text or not isinstance(text, str):
         return ["/NO_FUNCTION"]
 
@@ -104,32 +94,30 @@ def extract_all_apis(text: str) -> List[str]:
 
 # 3) 한 문장에 대해 runs번 /instruct 호출 → 재현도 체크
 def test_reproducibility(text: str, runs: int) -> tuple[bool, list[list[str]]]:
-    """
-    하나의 문장(text)에 대해 runs번 /instruct 를 호출하고
-    각 호출에서 나온 API 리스트가 모두 동일한지 확인한다.
-    """
     outputs: List[List[str]] = []
 
     state: Dict[str, str] = {}
 
     for _ in range(runs):
-        raw = call_instruct_api(text=text, model_name=DEFAULT_EVAL_MODEL, current_opened_window_and_tab=state)
+        raw = call_instruct_api(
+            text=text,
+            model_name=DEFAULT_EVAL_MODEL,
+            current_opened_window_and_tab=state
+        )
         apis = extract_all_apis(raw)
         outputs.append(apis)
 
-    # 모두 첫 번째와 동일하면 OK
     ok = all(o == outputs[0] for o in outputs)
     return ok, outputs
 
 
-# 4) 하나의 데이터셋(single/multi/irrelevant/typo) 평가
+# 4) 하나의 데이터셋 평가
 def evaluate_one_dataset(cfg: DatasetConfig, results_dir: Path, debug_n: int = 5):
     if not cfg.path.exists():
         raise FileNotFoundError(f"Dataset not found: {cfg.path}")
 
     df = pd.read_csv(cfg.path, encoding="utf-8-sig")
 
-    # 샘플링
     if cfg.sample_n is not None and len(df) > cfg.sample_n:
         df = df.sample(n=cfg.sample_n, random_state=42).reset_index(drop=True)
 
@@ -181,9 +169,9 @@ def evaluate_one_dataset(cfg: DatasetConfig, results_dir: Path, debug_n: int = 5
     return metrics
 
 
-# 5) 모든 데이터셋 통합 평가
+# 5) 전체 평가
 def evaluate_all_repro(configs, results_dir: Path):
-    summary: Dict[str, Dict] = {}
+    summary = {}
     total_samples = 0
     total_consistent = 0
 
@@ -193,16 +181,14 @@ def evaluate_all_repro(configs, results_dir: Path):
         total_samples += m["sample_n"]
         total_consistent += m["consistent"]
 
-    # 전체 통합 재현도
     overall = (total_consistent / total_samples) if total_samples > 0 else 0.0
     summary["overall_reproducibility"] = overall
 
-    # 요약 출력
     print("\n=== 재현도 전체 요약 ===")
     for name, m in summary.items():
         if name == "overall_reproducibility":
             continue
         print(f"- {name}: {m['reproducibility']:.4f}")
-    print(f"\n 전체 통합 재현도: {overall:.4f}")
 
+    print(f"\n 전체 통합 재현도: {overall:.4f}")
     return summary

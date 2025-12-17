@@ -1,9 +1,9 @@
 from common_prompt import build_prompt
 
 BGA_SPECIFIC = """
+현재 열린 창의 탭 정보를 보고 BGA 티칭 창과 관련된 API 호출을 반환해.
 
 ## BGA 티칭 창 값 변경 및 업데이트
-
 ### BGA 티칭 창 임계값 변경
 -`/teaching/bga/update?propertyName=PackageThreshold&value=N-N` : BGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
 -`/teaching/bga/update?propertyName=ScratchThreshold&value=N-N` : BGA 티칭 창 Scratch 임계값 설정(N 은 숫자)

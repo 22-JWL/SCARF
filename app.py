@@ -65,9 +65,10 @@ class Instruct(Resource):
         failed_apis = []
         
         for api_call in api_calls:
-            if api_call == "/NO_FUNCTION":
-                print(f"[Skip] {api_call}")
-                continue
+            # 단일의 경우 no function 도 받아야해서 임시방편으로 일단 주석 처리 _희연
+            # if api_call == "/NO_FUNCTION":
+            #     print(f"[Skip] {api_call}")
+            #     continue
             
             # API 호출
             api_url = f"http://localhost:3000{api_call}"
@@ -94,7 +95,7 @@ class Instruct(Resource):
         print(f"  Failed: {len(failed_apis)}")
         if failed_apis:
             print(f"  Failed APIs: {failed_apis}")
-        print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")
+        # print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")  # 오류 발생하여 주석 처리_희연
         print("-" * 50)
 
         return result

@@ -11,6 +11,7 @@ from prompt_classify_by_windows.light import system_prompt as light_prompt
 from prompt_classify_by_windows.history import system_prompt as history_prompt
 from prompt_classify_by_windows.strip import system_prompt as strip_prompt
 from prompt_classify_by_windows.settings import system_prompt as settings_prompt
+from prompt_classify_by_windows.confirmLog import system_prompt as confirmLog_prompt
 from intent_classifier import classify_text 
 import re
 import gc
@@ -163,19 +164,9 @@ def log_to_csv(user_input, current_window_info, llm_output, System_prompt):
             llm_output
         ])
 
-def filter_system_prompt(current_window_info: str) -> str:
-    """
-    현재 열린 창에 따라 적절한 프롬프트를 선택하는 함수.
-    
-    Args:
-        current_window_info (str): 현재 열린 창 정보.
-    
-    Returns:
-        tuple: 매칭된 키와 결합된 프롬프트.
-    """
+def filter_system_prompt(current_window_info: str, prompt: str) -> str:
     info = current_window_info.lower()
 
-    # 창 정보에 따른 프롬프트 매핑
     mapping = {
         "bga": bga_prompt,
         "lga": lga_prompt,
@@ -192,18 +183,27 @@ def filter_system_prompt(current_window_info: str) -> str:
     matched_keys = []
     matched_prompts = []
 
-    # 현재 창 정보와 매핑된 프롬프트 찾기
+# 2. confirmLog 체크: 최근 메시지에서 system이 확인 메시지 보냈는지 확인
+    if "해당 명령을 실행할까요?" in prompt:  # contain만 확인
+        print("[INFO] confirmLog prompt matched.")
+        matched_prompts = [confirmLog_prompt]  # 덮어쓰기
+        matched_keys.append("confirmLog")
+        return ["confirmLog"], confirmLog_prompt
+
     for key, prompt in mapping.items():
-        if key and key in info:
+        if key and key in info:  # 빈 문자열("")은 제외
             matched_keys.append(key)
             matched_prompts.append(prompt)
 
+    # 아무것도 매칭되지 않으면 기본 시스템 프롬프트 사용
     if not matched_prompts:
         return [], system_prompt
 
-    # 매칭된 프롬프트 결합
+    # 여러 개의 창 프롬프트를 하나로 결합 (공백이나 구분자 포함)
     combined_prompt = "\n\n".join(matched_prompts)
+
     return matched_keys, combined_prompt
+
 
 def run_model(prompt: str, current_window_info: dict, model_name: str):
     """
@@ -249,10 +249,10 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
     start = time.time()
 
     # 프롬프트 구성
-    selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()))
+    selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()),prompt)
     messages = [
         {"role": "system", "content": system_prompt_selected},
-        {"role": "user", "content": f"{prompt}\n\n[Gvision Current Info]\n{current_window_info}"}
+        {"role": "user", "content": f"{prompt}\n\n[Gvision current_opened_window_and_tab]\n{current_window_info}"}
     ]
 
     # 입력 ID 생성

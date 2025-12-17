@@ -1,6 +1,8 @@
 from common_prompt import build_prompt
 
 LGA_SPECIFIC = """
+현재 열린 창의 탭 정보를 보고 LGA 티칭 창과 관련된 API 호출을 반환해.
+
 ## LGA 티칭 창 값 변경 및 업데이트
 ### LGA 티칭 창 임계값 변경
 -`/teaching/lga/update?propertyName=PackageThreshold&value=N-N` : LGA 티칭 창 package 탭에서 임계값 설정(N 은 숫자)
@@ -13,6 +15,7 @@ LGA_SPECIFIC = """
 -`/teaching/lga/update?propertyName=OutlineThreshold&value=N-N` : LGA 티칭 창 sawing 탭에서 임계값 설정(N 은 숫자)
 -`/teaching/lga/update?propertyName=RejectMarkThreshold&value=N-N` : LGA 티칭 창 RejectMark 탭에서 임계값 설정(N 은 숫자)
 (예시: lga 창 package 탭에서 임계값 2-33, /teaching/lga/update?propertyName=PackageThreshold&value=2-33)
+(예시2: 임계값 2-33,current_opened_window_and_tab': {'lga': 'Pads'} /teaching/lga/update?propertyName=MultiPadThreshold&value=2-33)
 
 ### LGA 티칭 창 사이즈값 변경
 -`/teaching/lga/update?propertyName=PadContaminationSize&value=N-N` : LGA 티칭 창 Pad 탭 사이즈 설정(N 은 숫자)

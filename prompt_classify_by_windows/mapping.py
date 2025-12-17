@@ -1,6 +1,8 @@
 from common_prompt import build_prompt
 
 MAPPING_SPECIFIC = """
+현재 열린 창의 탭 정보를 보고 mapping 티칭 창과 관련된 API 호출을 반환해.
+
 ## mapping 티칭 창 값 변경 및 업데이트
 ### mapping 티칭 창 임계값 변경
 -`/teaching/mapping/update?propertyName=MarkThreshold&value=N-N` : mapping 티칭 창 Mark 탭에서 임계값 설정(N 은 숫자)

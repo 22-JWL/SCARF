@@ -1214,3 +1214,123 @@ lga창 켜ㅜ저,{},[],/windows/teaching/lga
 설정창 열고 히스토리 창 켜줘,{},[],"/windows/settings
 /windows/history"
 히스토리 창 켜줘,{},[],/windows/history
+setting,{},[],/windows/settings
+DBSaveDays 값을 변경 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=DBSaveDays&value=23
+setting,{},[],/windows/settings
+db save day 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveDays&value=23
+setting,{},[],/windows/settings
+setting,{},[],/windows/settings
+image save day 34,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveOption&value=image_save_day_34
+SaveDays 값을 변경 (예: 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveDays&value=23
+setting,{},[],/windows/settings
+calibration 십자선 타입 fullsize,{},[],/windows/calibration/fullsize
+claibration,{},[],/windows/calibration
+calibration 십자선 타입 fullsize,{'calibration': 'NoTab'},['calibration'],/calibration/update?propertyName=RETICLETYPE&value=FULLSIZE
+sdsds,{},[],/NO_FUNCTION
+clearchat,{},[],/chat/clear
+yes,{},[],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+yes,{},[],/openWindow/yes
+lga,{},[],/windows/teaching/lga
+clear chat,{},[],/chat/clear
+yes,{},[],/execute/yes
+prs run mode,{},[],/mode/set?mode=RUN
+test run prs,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/test/run/prs
+yes,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/NO_FUNCTION
+test run prs,{},[],/test/run/prs
+yes,{},[],/execute/yes
+clear chat,{},[],/chat/clear
+yes,{},[],/execute/yes
+창 닫기,{},[],/windows/teaching/close
+창 그기,{},[],/windows/teaching/bga
+close window,{},[],/windows/teaching/close
+closeWindows,{},[],/windows/teaching/closeWindows
+/closeWindows,{},[],/closeWindows
+yes,{},[],/execute/yes
+/closeWindows,{},[],/closeWindows
+clear chat,{},[],/chat/clear
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},[],/chat/clear
+"User: yes, System: 해당 명령을 실행할까요?, User: yes",{},[],/execute/yes
+history,{},[],/windows/history
+closewindows,{'history': 'NoTab'},['history'],/closeWindows
+"User: closewindows, System: 해당 명령을 실행할까요?, User: yes",{'history': 'NoTab'},['history'],/closeWindows
+"User: yes, System: 해당 명령을 실행할까요?, User: fdfd",{},[],/NO_FUNCTION
+cccccccc,{},[],/NO_FUNCTION
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},[],/chat/clear
+"User: yes, System: 해당 명령을 실행할까요?, User: clear chat",{},['confirmLog'],/execute/yes
+clear chat,{},['confirmLog'],/execute/no
+clear chat,{},['confirmLog'],/execute/no
+close window,{},['confirmLog'],/execute/no
+history,{},['confirmLog'],/execute/no
+history,{},['confirmLog'],/execute/no
+history,{},['confirmLog'],/execute/no
+history,{},['confirmLog'],/execute/no
+heellloo,{},[],/NO_FUNCTION
+close window,{},[],/windows/teaching/close
+clear chat,{},[],/chat/clear
+"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
+hello,{},[],/NO_FUNCTION
+sadadsad,{},[],/NO_FUNCTION
+dsdsd,{},[],/NO_FUNCTION
+안녕,{},[],/NO_FUNCTION
+hello,{},[],/NO_FUNCTION
+안녕,{},[],/NO_FUNCTION
+dadsada,{},[],/NO_FUNCTION
+history,{},[],/windows/history
+ㄴㅇㅁㄻㄴㄹ,{},[],/Gvision/CurrentInfo
+ㅇㄴㅇㄴㅇㄴㅇ,{},[],/NO_FUNCTION
+ㅇcadsfdasf,{},[],/NO_FUNCTION
+test run prs,{},[],/test/run/prs
+"User: test run prs, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
+set up mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/mode/set?mode=SETUP
+sfasfdasfasdf,{},[],/NO_FUNCTION
+ㄴㅇㅁㄴㅇㅇㅁㄴㅇㅁ,{},[],"/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+ㄹㅇㄴㄹㄴㅇㄹ,{},[],/NO_FUNCTION
+fdsfsdfdsf,{},[],/NO_FUNCTION
+sendExecute,{},[],/execute/yes
+sendExecute,{},[],/execute/yes
+sendExecute,{},[],/execute/yes
+ddsd,{},[],/NO_FUNCTION
+있는 기능이 뭐야ㅕ,{},[],"/live/toggle?switch=ON&no=N
+/live/toggle?switch=OFF&no=N
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/window/light/live?camera=Mapping
+/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/mode/set?mode=RUN
+/mode/set?mode=SETUP"
+dffdsafda,{},[],/NO_FUNCTION
+yjtjyjtj,{},[],/NO_FUNCTION
+ㅎㅇ,{},[],/NO_FUNCTION
+lga,{},[],/windows/teaching/lga
+임계값 3-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=3-44
+현재 탭에서 임계값 3-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=3-44
+현재 탭 이름이; 뭐야,{'lga': 'Pads'},['lga'],/teaching/lga/tabName
+현재 탬에서 입계값 5-66,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=5-66
+LGA 티칭 창 Pad 탭에서 임계값 설정(N 은 숫자) 4-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=MultiPadThreshold&value=4-44
+임계값 2-33,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=MultiPadThreshold&value=2-33
+임계값 3-44,{'lga': 'Leads'},['lga'],/teaching/lga/update?propertyName=LeadThreshold&value=3-44
+scratch 3-44,{'lga': 'Surface'},['lga'],/teaching/lga/update?propertyName=ScratchThreshold&value=3-44
+창 닫아줘,{'lga': 'Surface'},['lga'],/closeWindows
+"User: 창 닫아줘, System: 해당 명령을 실행할까요?, User: 네",{'lga': 'Surface'},['confirmLog'],/execute/yes
+ㅇㄴㅁㄴㅇㅁㅇㄴ,{},[],/Gvision/CurrentInfo
+ewrewrerer,{},[],/NO_FUNCTION

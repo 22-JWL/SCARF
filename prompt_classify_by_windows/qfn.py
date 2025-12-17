@@ -1,6 +1,8 @@
 from common_prompt import build_prompt
 
 QFN_SPECIFIC = """
+현재 열린 창의 탭 정보를 보고 QFN 티칭 창과 관련된 API 호출을 반환해.
+
 ## qfn 티칭 창 값 변경 및 업데이트
 ### qfn 티칭 창 임계값 변경
 -`/teaching/qfn/update?propertyName=PackageThreshold&value=N-N` : qfn 티칭 창 package 탭에서 임계값 설정(N 은 숫자)

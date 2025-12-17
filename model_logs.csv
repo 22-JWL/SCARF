@@ -1214,98 +1214,1733 @@ lga창 켜ㅜ저,{},[],/windows/teaching/lga
 설정창 열고 히스토리 창 켜줘,{},[],"/windows/settings
 /windows/history"
 히스토리 창 켜줘,{},[],/windows/history
-setting,{},[],/windows/settings
-DBSaveDays 값을 변경 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=DBSaveDays&value=23
-setting,{},[],/windows/settings
-db save day 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveDays&value=23
-setting,{},[],/windows/settings
-setting,{},[],/windows/settings
-image save day 34,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveOption&value=image_save_day_34
-SaveDays 값을 변경 (예: 23,{'settings': 'ETC'},['settings'],/settings/update?propertyName=SaveDays&value=23
-setting,{},[],/windows/settings
-calibration 십자선 타입 fullsize,{},[],/windows/calibration/fullsize
-claibration,{},[],/windows/calibration
-calibration 십자선 타입 fullsize,{'calibration': 'NoTab'},['calibration'],/calibration/update?propertyName=RETICLETYPE&value=FULLSIZE
-sdsds,{},[],/NO_FUNCTION
-clearchat,{},[],/chat/clear
-yes,{},[],/NO_FUNCTION
-clear chat,{},[],/chat/clear
-yes,{},[],/openWindow/yes
-lga,{},[],/windows/teaching/lga
-clear chat,{},[],/chat/clear
-yes,{},[],/execute/yes
-prs run mode,{},[],/mode/set?mode=RUN
-test run prs,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/test/run/prs
-yes,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/NO_FUNCTION
-test run prs,{},[],/test/run/prs
-yes,{},[],/execute/yes
-clear chat,{},[],/chat/clear
-yes,{},[],/execute/yes
-창 닫기,{},[],/windows/teaching/close
-창 그기,{},[],/windows/teaching/bga
-close window,{},[],/windows/teaching/close
-closeWindows,{},[],/windows/teaching/closeWindows
-/closeWindows,{},[],/closeWindows
-yes,{},[],/execute/yes
-/closeWindows,{},[],/closeWindows
-clear chat,{},[],/chat/clear
-clear chat,{},[],/chat/clear
-"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},[],/chat/clear
-"User: yes, System: 해당 명령을 실행할까요?, User: yes",{},[],/execute/yes
-history,{},[],/windows/history
-closewindows,{'history': 'NoTab'},['history'],/closeWindows
-"User: closewindows, System: 해당 명령을 실행할까요?, User: yes",{'history': 'NoTab'},['history'],/closeWindows
-"User: yes, System: 해당 명령을 실행할까요?, User: fdfd",{},[],/NO_FUNCTION
-cccccccc,{},[],/NO_FUNCTION
-clear chat,{},[],/chat/clear
-"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},[],/chat/clear
-"User: yes, System: 해당 명령을 실행할까요?, User: clear chat",{},['confirmLog'],/execute/yes
-clear chat,{},['confirmLog'],/execute/no
-clear chat,{},['confirmLog'],/execute/no
-close window,{},['confirmLog'],/execute/no
-history,{},['confirmLog'],/execute/no
-history,{},['confirmLog'],/execute/no
-history,{},['confirmLog'],/execute/no
-history,{},['confirmLog'],/execute/no
-heellloo,{},[],/NO_FUNCTION
-close window,{},[],/windows/teaching/close
-clear chat,{},[],/chat/clear
-"User: clear chat, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
-hello,{},[],/NO_FUNCTION
-sadadsad,{},[],/NO_FUNCTION
-dsdsd,{},[],/NO_FUNCTION
-안녕,{},[],/NO_FUNCTION
-hello,{},[],/NO_FUNCTION
-안녕,{},[],/NO_FUNCTION
-dadsada,{},[],/NO_FUNCTION
-history,{},[],/windows/history
-ㄴㅇㅁㄻㄴㄹ,{},[],/Gvision/CurrentInfo
-ㅇㄴㅇㄴㅇㄴㅇ,{},[],/NO_FUNCTION
-ㅇcadsfdasf,{},[],/NO_FUNCTION
-test run prs,{},[],/test/run/prs
-"User: test run prs, System: 해당 명령을 실행할까요?, User: yes",{},['confirmLog'],/execute/yes
-set up mode,"{'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/mode/set?mode=SETUP
-sfasfdasfasdf,{},[],/NO_FUNCTION
-ㄴㅇㅁㄴㅇㅇㅁㄴㅇㅁ,{},[],"/live/toggle?switch=ON&no=1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+ROI 리셋해 줘 ,{},[],/settings/roiReset
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+LgaLeadPerimeter를 3.3으로 바꿀게요,{},[],/settings/lgaLeadPerimeter
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+LGA NoDevice 기능 해제 할게요,{},[],/windows/teaching/lga/noDevice/disable
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+Sawing 임계값 3-15,{},[],/NO_FUNCTION
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+실시간 라이브 카메라 prs로,{},[],/windows/light/live?camera=PRS
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+삼번 카메라 꺼 ,{},[],/live/toggle?switch=OFF&no=3
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+캘리브레이션 사이즈 초기화,{},[],/windows/calibration
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+SettingX1 라이브 뷰 보여줘,{},[],/windows/light/live?camera=SettingX1
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+no ,{},[],/NO_FUNCTION
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+불 좀 꺼 ,{},[],/mode/set?mode=SETUP
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+맵핑 레시피 검증,{},[],/test/run/map
+MapPackageSizeColor Black으로,{},[],/live/toggle?switch=ON&no=1
+MapPackageSizeColor Black으로,{},[],/live/toggle?switch=ON&no=1
+MapPackageSizeColor Black으로,{},[],/live/toggle?switch=ON&no=1
+PadOffsetT 0.12로 맞춤,{},[],/settings/padOffsetT?value=0.12
+PadOffsetT 0.12로 맞춤,{},[],/settings/padOffsetT?value=0.12
+PadOffsetT 0.12로 맞춤,{},[],/settings/padOffsetT?value=0.12
+QFN DontCare 로이 삭제,{},[],/teaching/qfn/dontcare/remove
+QFN DontCare 로이 삭제,{},[],/teaching/qfn/dontcare/remove
+QFN DontCare 로이 삭제,{},[],/teaching/qfn/dontcare/remove
+5번 카메라 꺼,{},[],/live/toggle?switch=OFF&no=5
+5번 카메라 꺼,{},[],/live/toggle?switch=OFF&no=5
+5번 카메라 꺼,{},[],/live/toggle?switch=OFF&no=5
+카메라 4번 라이브 켜,{},[],/live/toggle?switch=ON&no=4
+카메라 4번 라이브 켜,{},[],/live/toggle?switch=ON&no=4
+카메라 4번 라이브 켜,{},[],/live/toggle?switch=ON&no=4
+PadCount 색상 Olive로,{},[],/no_function
+PadCount 색상 Olive로,{},[],/no_function
+PadCount 색상 Olive로,{},[],/no_function
+SETUP 모드 켜,{},[],/mode/set?mode=SETUP
+SETUP 모드 켜,{},[],/mode/set?mode=SETUP
+SETUP 모드 켜,{},[],/mode/set?mode=SETUP
+Leads 임계치 14-36,{},[],/NO_FUNCTION
+Leads 임계치 14-36,{},[],/NO_FUNCTION
+Leads 임계치 14-36,{},[],/NO_FUNCTION
+RejectMark 색상 Blue로 변경,{},[],/settings/colorScheme?color=Blue&type=RejectMark
+RejectMark 색상 Blue로 변경,{},[],/settings/colorScheme?color=Blue&type=RejectMark
+RejectMark 색상 Blue로 변경,{},[],/settings/colorScheme?color=Blue&type=RejectMark
+Surface ROI 전면 리셋 부탁해요,{},[],/windows/teaching/mapping/roi/reset
+Surface ROI 전면 리셋 부탁해요,{},[],/windows/teaching/mapping/roi/reset
+Surface ROI 전면 리셋 부탁해요,{},[],/windows/teaching/mapping/roi/reset
+calibration pad,{},[],/windows/calibration
+calibration pad,{},[],/windows/calibration
+calibration pad,{},[],/windows/calibration
+qfn 티칭 창 보정 값 자동 설정,{},[],/windows/teaching/qfn/auto_calibrate
+qfn 티칭 창 보정 값 자동 설정,{},[],/windows/teaching/qfn/auto_calibrate
+qfn 티칭 창 보정 값 자동 설정,{},[],/windows/teaching/qfn/auto_calibrate
+QFN Lead 로이 초기화,{},[],/teaching/qfn/init
+QFN Lead 로이 초기화,{},[],/teaching/qfn/init
+QFN Lead 로이 초기화,{},[],/teaching/qfn/init
+MarkCount 5로 바꿔줘,{},[],/settings/markCount?value=5
+MarkCount 5로 바꿔줘,{},[],/settings/markCount?value=5
+MarkCount 5로 바꿔줘,{},[],/settings/markCount?value=5
+코너 각도 2.5,{},[],/NO_FUNCTION
+코너 각도 2.5,{},[],/NO_FUNCTION
+코너 각도 2.5,{},[],/NO_FUNCTION
+Surface ROI 제거 요청,{},[],/windows/teaching/roi/remove
+Surface ROI 제거 요청,{},[],/windows/teaching/roi/remove
+Surface ROI 제거 요청,{},[],/windows/teaching/roi/remove
+리드 폭 1.8 설정,{},[],/settings/leadWidth?value=1.8
+리드 폭 1.8 설정,{},[],/settings/leadWidth?value=1.8
+리드 폭 1.8 설정,{},[],/settings/leadWidth?value=1.8
+PadPerimeter를 4로 해 주세요,{},[],/settings/padPerimeter?value=4
+PadPerimeter를 4로 해 주세요,{},[],/settings/padPerimeter?value=4
+PadPerimeter를 4로 해 주세요,{},[],/settings/padPerimeter?value=4
+매핑 설정 창 띄워 주세요,{},[],/windows/teaching/mapping
+매핑 설정 창 띄워 주세요,{},[],/windows/teaching/mapping
+매핑 설정 창 띄워 주세요,{},[],/windows/teaching/mapping
+MapPackageSize 가로 16.8로,{},[],/no_function
+MapPackageSize 가로 16.8로,{},[],/no_function
+MapPackageSize 가로 16.8로,{},[],/no_function
+Pads 로이 생성해,{},[],/windows/teaching/pads
+Pads 로이 생성해,{},[],/windows/teaching/pads
+Pads 로이 생성해,{},[],/windows/teaching/pads
+QFN 표면 결함 검출 테스트,{},[],/test/run/map
+QFN 표면 결함 검출 테스트,{},[],/test/run/map
+QFN 표면 결함 검출 테스트,{},[],/test/run/map
+LGA PackageSizeHeight 6.1,{},[],/windows/teaching/lga/packageSizeHeight
+LGA PackageSizeHeight 6.1,{},[],/windows/teaching/lga/packageSizeHeight
+LGA PackageSizeHeight 6.1,{},[],/windows/teaching/lga/packageSizeHeight
+BGA Edge 감지 모드를 First,{},[],/mode/set?mode=BGA_EDGE_DETECTION_FIRST
+BGA Edge 감지 모드를 First,{},[],/mode/set?mode=BGA_EDGE_DETECTION_FIRST
+BGA Edge 감지 모드를 First,{},[],/mode/set?mode=BGA_EDGE_DETECTION_FIRST
+BGA FirstPin/Pattern 로이 생성,{},[],/windows/teaching/bga/firstpin/pattern
+BGA FirstPin/Pattern 로이 생성,{},[],/windows/teaching/bga/firstpin/pattern
+BGA FirstPin/Pattern 로이 생성,{},[],/windows/teaching/bga/firstpin/pattern
+히스토리,{},[],/windows/history
+히스토리,{},[],/windows/history
+히스토리,{},[],/windows/history
+MarkCount를 3으로,{},[],/NO_FUNCTION
+MarkCount를 3으로,{},[],/NO_FUNCTION
+MarkCount를 3으로,{},[],/NO_FUNCTION
+Leads 임계값 4-29,{},[],/NO_FUNCTION
+Leads 임계값 4-29,{},[],/NO_FUNCTION
+Leads 임계값 4-29,{},[],/NO_FUNCTION
+5번 카메라 라이브 ,{},[],/windows/light/live?camera=PRS
+5번 카메라 라이브 ,{},[],/windows/light/live?camera=PRS
+5번 카메라 라이브 ,{},[],/windows/light/live?camera=PRS
+BGA Edge Detect Mode Last,{},[],/windows/teaching/bga/edge_detect_mode/last
+BGA Edge Detect Mode Last,{},[],/windows/teaching/bga/edge_detect_mode/last
+BGA Edge Detect Mode Last,{},[],/windows/teaching/bga/edge_detect_mode/last
+MapPackageSize 사용 설정,{},[],/settings/mapPackageSize
+MapPackageSize 사용 설정,{},[],/settings/mapPackageSize
+MapPackageSize 사용 설정,{},[],/settings/mapPackageSize
+MappingSawOffsetX 0.2로 설정,{},[],/settings/mappingSawOffsetX
+MappingSawOffsetX 0.2로 설정,{},[],/settings/mappingSawOffsetX
+MappingSawOffsetX 0.2로 설정,{},[],/settings/mappingSawOffsetX
+MapNoDeviceColor Blue로 변경,{},[],/settings/color/mapno/blue
+MapNoDeviceColor Blue로 변경,{},[],/settings/color/mapno/blue
+MapNoDeviceColor Blue로 변경,{},[],/settings/color/mapno/blue
+RUN 모드 켜,{},[],/mode/set?mode=RUN
+RUN 모드 켜,{},[],/mode/set?mode=RUN
+RUN 모드 켜,{},[],/mode/set?mode=RUN
+BGA 티칭 DontCare ROI 생성,{},[],/windows/teaching/bga/dontcare_roi_create
+BGA 티칭 DontCare ROI 생성,{},[],/windows/teaching/bga/dontcare_roi_create
+BGA 티칭 DontCare ROI 생성,{},[],/windows/teaching/bga/dontcare_roi_create
+LgaPadPerimeter 4.2,{},[],/windows/teaching/lga/perimeter/4.2
+LgaPadPerimeter 4.2,{},[],/windows/teaching/lga/perimeter/4.2
+LgaPadPerimeter 4.2,{},[],/windows/teaching/lga/perimeter/4.2
+QFN Lead 로이 추가,{},[],/windows/teaching/qfn
+QFN Lead 로이 추가,{},[],/windows/teaching/qfn
+QFN Lead 로이 추가,{},[],/windows/teaching/qfn
+조명 설정창 켜,{},[],/windows/light
+조명 설정창 켜,{},[],/windows/light
+조명 설정창 켜,{},[],/windows/light
+DontCare 영역 리셋,{},[],/live/toggle?switch=OFF&no=1
+DontCare 영역 리셋,{},[],/live/toggle?switch=OFF&no=1
+DontCare 영역 리셋,{},[],/live/toggle?switch=OFF&no=1
+BGA 티칭 창 DontCare 탭 ROI 초기화 ,{},[],/windows/teaching/bga/dontcare/roi_reset
+BGA 티칭 창 DontCare 탭 ROI 초기화 ,{},[],/windows/teaching/bga/dontcare/roi_reset
+BGA 티칭 창 DontCare 탭 ROI 초기화 ,{},[],/windows/teaching/bga/dontcare/roi_reset
+DontCare 영역 리셋 할게요,{},[],/teaching/dontcare/reset
+DontCare 영역 리셋 할게요,{},[],/teaching/dontcare/reset
+DontCare 영역 리셋 할게요,{},[],/teaching/dontcare/reset
+매핑 창 띄워주세요,{},[],/windows/teaching/mapping
+매핑 창 띄워주세요,{},[],/windows/teaching/mapping
+매핑 창 띄워주세요,{},[],/windows/teaching/mapping
+조명 켜. ,{},[],/windows/light/live?camera=PRS
+조명 켜. ,{},[],/windows/light/live?camera=PRS
+조명 켜. ,{},[],/windows/light/live?camera=PRS
+MapPackageType LGA로 변경해주세요,{},[],/windows/teaching/lga
+MapPackageType LGA로 변경해주세요,{},[],/windows/teaching/lga
+MapPackageType LGA로 변경해주세요,{},[],/windows/teaching/lga
+카메라 5 off,{},[],/live/toggle?switch=OFF&no=5
+카메라 5 off,{},[],/live/toggle?switch=OFF&no=5
+카메라 5 off,{},[],/live/toggle?switch=OFF&no=5
+MappingSawOffsetY 0.35로 조정,{},[],/settings/mappingSawOffsetY
+MappingSawOffsetY 0.35로 조정,{},[],/settings/mappingSawOffsetY
+MappingSawOffsetY 0.35로 조정,{},[],/settings/mappingSawOffsetY
+보정 탭 패드로 바꿔줘,{},[],/windows/teaching/bga
+보정 탭 패드로 바꿔줘,{},[],/windows/teaching/bga
+보정 탭 패드로 바꿔줘,{},[],/windows/teaching/bga
+매핑 유형 자재 창 보여줘,{},[],/windows/teaching/mapping
+매핑 유형 자재 창 보여줘,{},[],/windows/teaching/mapping
+매핑 유형 자재 창 보여줘,{},[],/windows/teaching/mapping
+셋업 모드 전환,{},[],/mode/set?mode=SETUP
+셋업 모드 전환,{},[],/mode/set?mode=SETUP
+셋업 모드 전환,{},[],/mode/set?mode=SETUP
+UseMapNoDevice 활성화해주세요,{},[],/mode/set?mode=RUN
+UseMapNoDevice 활성화해주세요,{},[],/mode/set?mode=RUN
+UseMapNoDevice 활성화해주세요,{},[],/mode/set?mode=RUN
+NoDeviceColor를 Navy로 변경,{},[],/settings/deviceColor?color=Navy
+NoDeviceColor를 Navy로 변경,{},[],/settings/deviceColor?color=Navy
+NoDeviceColor를 Navy로 변경,{},[],/settings/deviceColor?color=Navy
+BGA findBalls,{},[],/windows/teaching/bga/findBalls
+BGA findBalls,{},[],/windows/teaching/bga/findBalls
+BGA findBalls,{},[],/windows/teaching/bga/findBalls
+Grid BGA Corner Degree Top Left 설정 ,{},[],/settings/bga/corner_degree_top_left
+Grid BGA Corner Degree Top Left 설정 ,{},[],/settings/bga/corner_degree_top_left
+Grid BGA Corner Degree Top Left 설정 ,{},[],/settings/bga/corner_degree_top_left
+운전모드 시작해. ,{},[],/mode/set?mode=RUN
+운전모드 시작해. ,{},[],/mode/set?mode=RUN
+운전모드 시작해. ,{},[],/mode/set?mode=RUN
+보정 창 threshold 초기화,{},[],/windows/calibration/threshold
+보정 창 threshold 초기화,{},[],/windows/calibration/threshold
+보정 창 threshold 초기화,{},[],/windows/calibration/threshold
+런 켜,{},[],/mode/set?mode=RUN
+런 켜,{},[],/mode/set?mode=RUN
+런 켜,{},[],/mode/set?mode=RUN
+카메라 1 OFF,{},[],/live/toggle?switch=OFF&no=1
+카메라 1 OFF,{},[],/live/toggle?switch=OFF&no=1
+카메라 1 OFF,{},[],/live/toggle?switch=OFF&no=1
+히스토리 창 열어 줘. ,{},[],/windows/history
+히스토리 창 열어 줘. ,{},[],/windows/history
+히스토리 창 열어 줘. ,{},[],/windows/history
+Mapping 카메라 라이브 보여줘,{},[],/windows/light/live?camera=Mapping
+Mapping 카메라 라이브 보여줘,{},[],/windows/light/live?camera=Mapping
+Mapping 카메라 라이브 보여줘,{},[],/windows/light/live?camera=Mapping
+LgaPadPitch 값 0.95로,{},[],/NO_FUNCTION
+LgaPadPitch 값 0.95로,{},[],/NO_FUNCTION
+LgaPadPitch 값 0.95로,{},[],/NO_FUNCTION
+Mapping 카메라 실시간 보기,{},[],/windows/light/live?camera=Mapping
+Mapping 카메라 실시간 보기,{},[],/windows/light/live?camera=Mapping
+Mapping 카메라 실시간 보기,{},[],/windows/light/live?camera=Mapping
+Run 화면 열어줘,{},[],/mode/set?mode=RUN
+Run 화면 열어줘,{},[],/mode/set?mode=RUN
+Run 화면 열어줘,{},[],/mode/set?mode=RUN
+5번 카메라 라이브 켜,{},[],/windows/light/live?camera=SettingX1
+5번 카메라 라이브 켜,{},[],/windows/light/live?camera=SettingX1
+5번 카메라 라이브 켜,{},[],/windows/light/live?camera=SettingX1
+QFN Surface 로이 추가,{},[],/windows/teaching/qfn/surface_roi_add
+QFN Surface 로이 추가,{},[],/windows/teaching/qfn/surface_roi_add
+QFN Surface 로이 추가,{},[],/windows/teaching/qfn/surface_roi_add
+Package 임계값을 1-14로 조정해 주세요,{},[],/settings/packageThresholdAdjustment?min=1&max=14
+Package 임계값을 1-14로 조정해 주세요,{},[],/settings/packageThresholdAdjustment?min=1&max=14
+Package 임계값을 1-14로 조정해 주세요,{},[],/settings/packageThresholdAdjustment?min=1&max=14
+Grid BGA Package Width 설정 ,{},[],/settings/bga/gridWidth
+Grid BGA Package Width 설정 ,{},[],/settings/bga/gridWidth
+Grid BGA Package Width 설정 ,{},[],/settings/bga/gridWidth
+PRS 실행,{},[],/test/run/prs
+PRS 실행,{},[],/test/run/prs
+PRS 실행,{},[],/test/run/prs
+LGA RejectMark 색상을 Silver로,{},[],/settings/rejectMarkColor?color=Silver
+LGA RejectMark 색상을 Silver로,{},[],/settings/rejectMarkColor?color=Silver
+LGA RejectMark 색상을 Silver로,{},[],/settings/rejectMarkColor?color=Silver
+DontCare 전체 초기화,{},[],/system/reset/dontcare
+DontCare 전체 초기화,{},[],/system/reset/dontcare
+DontCare 전체 초기화,{},[],/system/reset/dontcare
+LgaPadArea 13으로 설정해 주시겠어요?,{},[],/settings/lgaPadArea?value=13
+LgaPadArea 13으로 설정해 주시겠어요?,{},[],/settings/lgaPadArea?value=13
+LgaPadArea 13으로 설정해 주시겠어요?,{},[],/settings/lgaPadArea?value=13
+LGA PadCount 활성화 해 주세요,{},[],/windows/teaching/lga/padcount/activate
+LGA PadCount 활성화 해 주세요,{},[],/windows/teaching/lga/padcount/activate
+LGA PadCount 활성화 해 주세요,{},[],/windows/teaching/lga/padcount/activate
+MappingSawOffsetX 0.38로 세팅,{},[],/settings/mappingSawOffsetX
+MappingSawOffsetX 0.38로 세팅,{},[],/settings/mappingSawOffsetX
+MappingSawOffsetX 0.38로 세팅,{},[],/settings/mappingSawOffsetX
+BGA 티칭 창 Ball 탭 ROI 초기화,{},[],/windows/teaching/bga/ball/roi/init
+BGA 티칭 창 Ball 탭 ROI 초기화,{},[],/windows/teaching/bga/ball/roi/init
+BGA 티칭 창 Ball 탭 ROI 초기화,{},[],/windows/teaching/bga/ball/roi/init
+QFN 소잉 탭으로 이동,{},[],/windows/teaching/qfn
+QFN 소잉 탭으로 이동,{},[],/windows/teaching/qfn
+QFN 소잉 탭으로 이동,{},[],/windows/teaching/qfn
+캘리브레이션,{},[],/windows/calibration
+캘리브레이션,{},[],/windows/calibration
+캘리브레이션,{},[],/windows/calibration
+히스토리 기록 창 닫기,{},[],/windows/history/close
+히스토리 기록 창 닫기,{},[],/windows/history/close
+히스토리 기록 창 닫기,{},[],/windows/history/close
+QFN Result tab,{},[],/windows/teaching/qfn/result
+QFN Result tab,{},[],/windows/teaching/qfn/result
+QFN Result tab,{},[],/windows/teaching/qfn/result
+DontCare 영역 삭제해 주세요,{},[],/NO_FUNCTION
+DontCare 영역 삭제해 주세요,{},[],/NO_FUNCTION
+DontCare 영역 삭제해 주세요,{},[],/NO_FUNCTION
+카메라 3 on,{},[],/live/toggle?switch=ON&no=3
+카메라 3 on,{},[],/live/toggle?switch=ON&no=3
+카메라 3 on,{},[],/live/toggle?switch=ON&no=3
+LGA 티칭 창 열어줘,{},[],/windows/teaching/lga
+LGA 티칭 창 열어줘,{},[],/windows/teaching/lga
+LGA 티칭 창 열어줘,{},[],/windows/teaching/lga
+LGA PadCount 기능 정지할게요,{},[],/system/control/lgaPadCountStop
+LGA PadCount 기능 정지할게요,{},[],/system/control/lgaPadCountStop
+LGA PadCount 기능 정지할게요,{},[],/system/control/lgaPadCountStop
+보정창 십자선 풀사이즈로 바꿔줘,{},[],/windows/calibration/crosshair
+보정창 십자선 풀사이즈로 바꿔줘,{},[],/windows/calibration/crosshair
+보정창 십자선 풀사이즈로 바꿔줘,{},[],/windows/calibration/crosshair
+MapPackageOffset 사용 해제,{},[],/no_function
+MapPackageOffset 사용 해제,{},[],/no_function
+MapPackageOffset 사용 해제,{},[],/no_function
+calibration size 초기화,{},[],/windows/calibration/init
+calibration size 초기화,{},[],/windows/calibration/init
+calibration size 초기화,{},[],/windows/calibration/init
+MapNoDevice 기능 끄기,{},[],/settings/mapNoDeviceOff
+MapNoDevice 기능 끄기,{},[],/settings/mapNoDeviceOff
+MapNoDevice 기능 끄기,{},[],/settings/mapNoDeviceOff
+런화면띄워,{},[],/windows/teaching/run
+런화면띄워,{},[],/windows/teaching/run
+런화면띄워,{},[],/windows/teaching/run
+Sawing 임계값 7-18로 바꿨어요,{},[],/notifications/update?threshold=7-18
+Sawing 임계값 7-18로 바꿨어요,{},[],/notifications/update?threshold=7-18
+Sawing 임계값 7-18로 바꿨어요,{},[],/notifications/update?threshold=7-18
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+히스토리 띄우고 QC 티칭창도 보여줘,{},[],"/windows/history
+/windows/teaching/qc"
+SettingX1 카메라 라이브 켜고 Calibration 창에서 vision 탭 열기,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+SettingX1 카메라 라이브 켜고 Calibration 창에서 vision 탭 열기,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+SettingX1 카메라 라이브 켜고 Calibration 창에서 vision 탭 열기,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+"LGA LeadOffsetX 0.1, Y 0.1, T 0.05로 설정하고 Perimeter 1.5로 지정해",{},[],/settings/lgaLeadOffsetX=0.1&Y=0.1&T=0.05&Perimeter=1.5
+"LGA LeadOffsetX 0.1, Y 0.1, T 0.05로 설정하고 Perimeter 1.5로 지정해",{},[],/settings/lgaLeadOffsetX=0.1&Y=0.1&T=0.05&Perimeter=1.5
+"LGA LeadOffsetX 0.1, Y 0.1, T 0.05로 설정하고 Perimeter 1.5로 지정해",{},[],/settings/lgaLeadOffsetX=0.1&Y=0.1&T=0.05&Perimeter=1.5
+검사 기록 창 열고 이번 달 PRS 카메라 기록 보여줘,{},[],"/windows/history
+/live/toggle?switch=ON&no=1"
+검사 기록 창 열고 이번 달 PRS 카메라 기록 보여줘,{},[],"/windows/history
+/live/toggle?switch=ON&no=1"
+검사 기록 창 열고 이번 달 PRS 카메라 기록 보여줘,{},[],"/windows/history
+/live/toggle?switch=ON&no=1"
+LGA 티칭 창 열고 Pads 탭으로 이동한 다음 ROI 초기화해줘,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/pads
+/windows/teaching/lga/pads/roi/init"
+LGA 티칭 창 열고 Pads 탭으로 이동한 다음 ROI 초기화해줘,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/pads
+/windows/teaching/lga/pads/roi/init"
+LGA 티칭 창 열고 Pads 탭으로 이동한 다음 ROI 초기화해줘,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/pads
+/windows/teaching/lga/pads/roi/init"
+카메라 1 off 하고 4번 카메라 켜,{},[],"/live/toggle?switch=OFF&no=1
+/live/toggle?switch=ON&no=4"
+카메라 1 off 하고 4번 카메라 켜,{},[],"/live/toggle?switch=OFF&no=1
+/live/toggle?switch=ON&no=4"
+카메라 1 off 하고 4번 카메라 켜,{},[],"/live/toggle?switch=OFF&no=1
+/live/toggle?switch=ON&no=4"
+"BGA BallSizeDiameter 1.0, Standard 1.2로 변경 후 SaveDays 30 설정",{},[],/settings/update?key=BallSizeDiameter&value=1.0&key2=Standard&value2=1.2&key3=SaveDays&value3=30
+"BGA BallSizeDiameter 1.0, Standard 1.2로 변경 후 SaveDays 30 설정",{},[],/settings/update?key=BallSizeDiameter&value=1.0&key2=Standard&value2=1.2&key3=SaveDays&value3=30
+"BGA BallSizeDiameter 1.0, Standard 1.2로 변경 후 SaveDays 30 설정",{},[],/settings/update?key=BallSizeDiameter&value=1.0&key2=Standard&value2=1.2&key3=SaveDays&value3=30
+매핑 티칭 창 열고 현재 매핑 샷 재티칭 시작해,{},[],"/windows/teaching/mapping
+/windows/teaching/mapping/reteach"
+매핑 티칭 창 열고 현재 매핑 샷 재티칭 시작해,{},[],"/windows/teaching/mapping
+/windows/teaching/mapping/reteach"
+매핑 티칭 창 열고 현재 매핑 샷 재티칭 시작해,{},[],"/windows/teaching/mapping
+/windows/teaching/mapping/reteach"
+lga 티칭창 열고 qc 티칭창 열어,{},[],"/windows/teaching/lga
+/windows/teaching/qc"
+lga 티칭창 열고 qc 티칭창 열어,{},[],"/windows/teaching/lga
+/windows/teaching/qc"
+lga 티칭창 열고 qc 티칭창 열어,{},[],"/windows/teaching/lga
+/windows/teaching/qc"
+카메라 1번 켜고 조명 창 열어,{},[],"/live/toggle?switch=ON&no=1
+/windows/light/live?camera=PRS"
+카메라 1번 켜고 조명 창 열어,{},[],"/live/toggle?switch=ON&no=1
+/windows/light/live?camera=PRS"
+카메라 1번 켜고 조명 창 열어,{},[],"/live/toggle?switch=ON&no=1
+/windows/light/live?camera=PRS"
+5번 카메라 꺼 창 닫아,{},[],"/live/toggle?switch=OFF&no=5
+/closeWindows"
+5번 카메라 꺼 창 닫아,{},[],"/live/toggle?switch=OFF&no=5
+/closeWindows"
+5번 카메라 꺼 창 닫아,{},[],"/live/toggle?switch=OFF&no=5
+/closeWindows"
+히스토리랑 조명,{},[],"/windows/history
+/windows/light/live?camera=PRS"
+히스토리랑 조명,{},[],"/windows/history
+/windows/light/live?camera=PRS"
+히스토리랑 조명,{},[],"/windows/history
+/windows/light/live?camera=PRS"
+"QFN 티칭 창 열고 QfnLeadOffsetY 0.2, QfnLeadOffsetT 0.08로 설정",{},[],"/windows/teaching/qfn
+/settings/QfnLeadOffsetY=0.2
+/settings/QfnLeadOffsetT=0.08"
+"QFN 티칭 창 열고 QfnLeadOffsetY 0.2, QfnLeadOffsetT 0.08로 설정",{},[],"/windows/teaching/qfn
+/settings/QfnLeadOffsetY=0.2
+/settings/QfnLeadOffsetT=0.08"
+"QFN 티칭 창 열고 QfnLeadOffsetY 0.2, QfnLeadOffsetT 0.08로 설정",{},[],"/windows/teaching/qfn
+/settings/QfnLeadOffsetY=0.2
+/settings/QfnLeadOffsetT=0.08"
+calibration 창에서 tab tray 선택 후 Test 버튼 실행,{},[],"/windows/calibration/tab/tray
+/test/run/calibration"
+calibration 창에서 tab tray 선택 후 Test 버튼 실행,{},[],"/windows/calibration/tab/tray
+/test/run/calibration"
+calibration 창에서 tab tray 선택 후 Test 버튼 실행,{},[],"/windows/calibration/tab/tray
+/test/run/calibration"
+"QFN LeadCount true, LeadPitch true로 두고 색상 각각 Purple, White로 세팅",{},[],"/settings/leadCount?value=QFN&pitch=true&color=Purple
+/settings/leadPitch?value=QFN&pitch=true&color=White"
+"QFN LeadCount true, LeadPitch true로 두고 색상 각각 Purple, White로 세팅",{},[],"/settings/leadCount?value=QFN&pitch=true&color=Purple
+/settings/leadPitch?value=QFN&pitch=true&color=White"
+"QFN LeadCount true, LeadPitch true로 두고 색상 각각 Purple, White로 세팅",{},[],"/settings/leadCount?value=QFN&pitch=true&color=Purple
+/settings/leadPitch?value=QFN&pitch=true&color=White"
+설정 모드 전환 후 라이트 열어,{},[],"/mode/set?mode=SETUP
+/windows/light"
+설정 모드 전환 후 라이트 열어,{},[],"/mode/set?mode=SETUP
+/windows/light"
+설정 모드 전환 후 라이트 열어,{},[],"/mode/set?mode=SETUP
+/windows/light"
+"LGA LeadOffset true, 색상 Lime으로 변경 후 LeadContamination true로 세팅",{},[],"/settings/leadOffset?value=true
+/settings/color?value=Lime
+/settings/leadContamination?value=true"
+"LGA LeadOffset true, 색상 Lime으로 변경 후 LeadContamination true로 세팅",{},[],"/settings/leadOffset?value=true
+/settings/color?value=Lime
+/settings/leadContamination?value=true"
+"LGA LeadOffset true, 색상 Lime으로 변경 후 LeadContamination true로 세팅",{},[],"/settings/leadOffset?value=true
+/settings/color?value=Lime
+/settings/leadContamination?value=true"
+prs 재티칭하고 설정모드로,{},[],"/windows/teaching/prs/reteach
+/mode/set?mode=SETUP"
+prs 재티칭하고 설정모드로,{},[],"/windows/teaching/prs/reteach
+/mode/set?mode=SETUP"
+prs 재티칭하고 설정모드로,{},[],"/windows/teaching/prs/reteach
+/mode/set?mode=SETUP"
+LGA 티칭창 열고 검사모드로 바꿔,{},[],"/windows/teaching/lga
+/mode/set?mode=RUN"
+LGA 티칭창 열고 검사모드로 바꿔,{},[],"/windows/teaching/lga
+/mode/set?mode=RUN"
+LGA 티칭창 열고 검사모드로 바꿔,{},[],"/windows/teaching/lga
+/mode/set?mode=RUN"
+피알에스 테스트하고 스트립 티칭창 열어,{},[],"/test/run/prs
+/windows/teaching/strip"
+피알에스 테스트하고 스트립 티칭창 열어,{},[],"/test/run/prs
+/windows/teaching/strip"
+피알에스 테스트하고 스트립 티칭창 열어,{},[],"/test/run/prs
+/windows/teaching/strip"
+BGA 티칭창 열고 BallCount 100으로 바꾸고 ChippingCount 4로 변경,{},[],"/windows/teaching/bga
+/teaching/settings/ballCount=100
+/teaching/settings/chippingCount=4"
+BGA 티칭창 열고 BallCount 100으로 바꾸고 ChippingCount 4로 변경,{},[],"/windows/teaching/bga
+/teaching/settings/ballCount=100
+/teaching/settings/chippingCount=4"
+BGA 티칭창 열고 BallCount 100으로 바꾸고 ChippingCount 4로 변경,{},[],"/windows/teaching/bga
+/teaching/settings/ballCount=100
+/teaching/settings/chippingCount=4"
+Calibration 창 열고 바텀 탭으로 변경한 뒤 Test 버튼 눌러,{},[],"/windows/calibration
+/windows/teaching/settings
+/test/run/calibration"
+Calibration 창 열고 바텀 탭으로 변경한 뒤 Test 버튼 눌러,{},[],"/windows/calibration
+/windows/teaching/settings
+/test/run/calibration"
+Calibration 창 열고 바텀 탭으로 변경한 뒤 Test 버튼 눌러,{},[],"/windows/calibration
+/windows/teaching/settings
+/test/run/calibration"
+라이트창이랑 세팅창 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=SettingX1"
+라이트창이랑 세팅창 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=SettingX1"
+라이트창이랑 세팅창 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=SettingX1"
+"TrayRowCount를 8로, TrayColCount를 10으로 바꾼 뒤 BlockRowCount 6으로 맞춰",{},[],"/settings/update?key=TrayRowCount&value=8
+/settings/update?key=TrayColCount&value=10
+/settings/update?key=BlockRowCount&value=6"
+"TrayRowCount를 8로, TrayColCount를 10으로 바꾼 뒤 BlockRowCount 6으로 맞춰",{},[],"/settings/update?key=TrayRowCount&value=8
+/settings/update?key=TrayColCount&value=10
+/settings/update?key=BlockRowCount&value=6"
+"TrayRowCount를 8로, TrayColCount를 10으로 바꾼 뒤 BlockRowCount 6으로 맞춰",{},[],"/settings/update?key=TrayRowCount&value=8
+/settings/update?key=TrayColCount&value=10
+/settings/update?key=BlockRowCount&value=6"
+Calibration 창 열고 bottom 탭에서 로이 재생성하고 임계값 100-200으로 설정,{},[],"/windows/calibration
+/windows/teaching/reteach?action=reset_bottom_tab&threshold=100-200"
+Calibration 창 열고 bottom 탭에서 로이 재생성하고 임계값 100-200으로 설정,{},[],"/windows/calibration
+/windows/teaching/reteach?action=reset_bottom_tab&threshold=100-200"
+Calibration 창 열고 bottom 탭에서 로이 재생성하고 임계값 100-200으로 설정,{},[],"/windows/calibration
+/windows/teaching/reteach?action=reset_bottom_tab&threshold=100-200"
+Calibration 창에서 tray 탭으로 이동 후 크기 min1-max99999 초기화,{},[],"/windows/calibration/tray
+/windows/calibration/tray/resetSizeMin1Max99999"
+Calibration 창에서 tray 탭으로 이동 후 크기 min1-max99999 초기화,{},[],"/windows/calibration/tray
+/windows/calibration/tray/resetSizeMin1Max99999"
+Calibration 창에서 tray 탭으로 이동 후 크기 min1-max99999 초기화,{},[],"/windows/calibration/tray
+/windows/calibration/tray/resetSizeMin1Max99999"
+bga랑 map 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/mapping"
+bga랑 map 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/mapping"
+bga랑 map 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/mapping"
+"LGA ChippingColor Violet, RejectMarkColor Coral로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/color/violet
+/windows/teaching/lga/rejectMark/coral"
+"LGA ChippingColor Violet, RejectMarkColor Coral로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/color/violet
+/windows/teaching/lga/rejectMark/coral"
+"LGA ChippingColor Violet, RejectMarkColor Coral로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/color/violet
+/windows/teaching/lga/rejectMark/coral"
+bga티칭창이랑 qfn 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/qfn"
+bga티칭창이랑 qfn 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/qfn"
+bga티칭창이랑 qfn 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/qfn"
+QFN 티칭 시작하고 설정 모드로 전환,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+QFN 티칭 시작하고 설정 모드로 전환,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+QFN 티칭 시작하고 설정 모드로 전환,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+"BGA 패턴 개수 16으로, BurrCount 2로, RejectMarkCount 1로 세팅",{},[],"/settings/bgaPatternCount=16
+/settings/burrCount=2
+/settings/rejectMarkCount=1"
+"BGA 패턴 개수 16으로, BurrCount 2로, RejectMarkCount 1로 세팅",{},[],"/settings/bgaPatternCount=16
+/settings/burrCount=2
+/settings/rejectMarkCount=1"
+"BGA 패턴 개수 16으로, BurrCount 2로, RejectMarkCount 1로 세팅",{},[],"/settings/bgaPatternCount=16
+/settings/burrCount=2
+/settings/rejectMarkCount=1"
+lga 티칭 보고 조명창 띄워,{},[],"/windows/teaching/lga
+/windows/light/live?camera=PRS"
+lga 티칭 보고 조명창 띄워,{},[],"/windows/teaching/lga
+/windows/light/live?camera=PRS"
+lga 티칭 보고 조명창 띄워,{},[],"/windows/teaching/lga
+/windows/light/live?camera=PRS"
+검사 기록 창 열고 PRS 및 BarCode 카메라 기록 각각 별도 필터로 출력,{},[],"/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode"
+검사 기록 창 열고 PRS 및 BarCode 카메라 기록 각각 별도 필터로 출력,{},[],"/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode"
+검사 기록 창 열고 PRS 및 BarCode 카메라 기록 각각 별도 필터로 출력,{},[],"/windows/history
+/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode"
+모든 창 닫고 시스템을 Run 모드로 전환,{},[],"/closeWindows
+/mode/set?mode=RUN"
+모든 창 닫고 시스템을 Run 모드로 전환,{},[],"/closeWindows
+/mode/set?mode=RUN"
+모든 창 닫고 시스템을 Run 모드로 전환,{},[],"/closeWindows
+/mode/set?mode=RUN"
+큐씨티칭창 보고 런모드로 가자,{},[],/mode/set?mode=RUN
+큐씨티칭창 보고 런모드로 가자,{},[],/mode/set?mode=RUN
+큐씨티칭창 보고 런모드로 가자,{},[],/mode/set?mode=RUN
+LGA 티칭 창 열고 Leads 탭으로 이동해서 ROI 추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/leads"
+LGA 티칭 창 열고 Leads 탭으로 이동해서 ROI 추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/leads"
+LGA 티칭 창 열고 Leads 탭으로 이동해서 ROI 추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/leads"
+1번 카메라 켜고 스트립 티칭창 열어줘,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/strip"
+1번 카메라 켜고 스트립 티칭창 열어줘,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/strip"
+1번 카메라 켜고 스트립 티칭창 열어줘,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/strip"
+"Calibration 창 열고 shape circle_60, select BIGGEST로 바꾸기",{},[],"/windows/calibration
+/windows/teaching/mapping/shape_circle_60
+/windows/teaching/mapping/select_BIGGEST"
+"Calibration 창 열고 shape circle_60, select BIGGEST로 바꾸기",{},[],"/windows/calibration
+/windows/teaching/mapping/shape_circle_60
+/windows/teaching/mapping/select_BIGGEST"
+"Calibration 창 열고 shape circle_60, select BIGGEST로 바꾸기",{},[],"/windows/calibration
+/windows/teaching/mapping/shape_circle_60
+/windows/teaching/mapping/select_BIGGEST"
+LGA 티칭 창 Threshold를 3-45로 설정한 다음 티칭 테스트 시작,{},[],"/teaching/settings?type=LGA&threshold=3-45
+/test/run/teaching?type=LGA"
+LGA 티칭 창 Threshold를 3-45로 설정한 다음 티칭 테스트 시작,{},[],"/teaching/settings?type=LGA&threshold=3-45
+/test/run/teaching?type=LGA"
+LGA 티칭 창 Threshold를 3-45로 설정한 다음 티칭 테스트 시작,{},[],"/teaching/settings?type=LGA&threshold=3-45
+/test/run/teaching?type=LGA"
+매핑 티칭창 열고 검사모드로 전환해줘,{},[],"/windows/teaching/mapping
+/mode/set?mode=RUN"
+매핑 티칭창 열고 검사모드로 전환해줘,{},[],"/windows/teaching/mapping
+/mode/set?mode=RUN"
+매핑 티칭창 열고 검사모드로 전환해줘,{},[],"/windows/teaching/mapping
+/mode/set?mode=RUN"
+PRS 테스트 실행 후 창 닫아줘,{},[],"/test/run/prs
+/closeWindows"
+PRS 테스트 실행 후 창 닫아줘,{},[],"/test/run/prs
+/closeWindows"
+PRS 테스트 실행 후 창 닫아줘,{},[],"/test/run/prs
+/closeWindows"
+모든 창 닫고 새채팅으로 초기화,{},[],"/closeWindows
+/chat/clear"
+모든 창 닫고 새채팅으로 초기화,{},[],"/closeWindows
+/chat/clear"
+모든 창 닫고 새채팅으로 초기화,{},[],"/closeWindows
+/chat/clear"
+조명창 켜고 셋업모드로,{},[],"/mode/set?mode=SETUP
+/windows/light/live?camera=PRS"
+조명창 켜고 셋업모드로,{},[],"/mode/set?mode=SETUP
+/windows/light/live?camera=PRS"
+조명창 켜고 셋업모드로,{},[],"/mode/set?mode=SETUP
+/windows/light/live?camera=PRS"
+카메라 3 켜고 나서 창 닫아,{},[],"/live/toggle?switch=ON&no=3
+/closeWindows"
+카메라 3 켜고 나서 창 닫아,{},[],"/live/toggle?switch=ON&no=3
+/closeWindows"
+카메라 3 켜고 나서 창 닫아,{},[],"/live/toggle?switch=ON&no=3
+/closeWindows"
+QFN 티칭 창 연 다음 CornerDegree를 2.5로 맞추고 테스트 실행해,{},[],"/windows/teaching/qfn
+/teaching/cornerDegree?value=2.5
+/test/run/map"
+QFN 티칭 창 연 다음 CornerDegree를 2.5로 맞추고 테스트 실행해,{},[],"/windows/teaching/qfn
+/teaching/cornerDegree?value=2.5
+/test/run/map"
+QFN 티칭 창 연 다음 CornerDegree를 2.5로 맞추고 테스트 실행해,{},[],"/windows/teaching/qfn
+/teaching/cornerDegree?value=2.5
+/test/run/map"
+"QFN SawOffsetX 0.3, SawOffsetY 0.3으로 맞추고 CornerDegree 2.0으로 설정",{},[],/settings/update?key1=SawOffsetX&value1=0.3&key2=SawOffsetY&value2=0.3&key3=CornerDegree&value3=2.0
+"QFN SawOffsetX 0.3, SawOffsetY 0.3으로 맞추고 CornerDegree 2.0으로 설정",{},[],/settings/update?key1=SawOffsetX&value1=0.3&key2=SawOffsetY&value2=0.3&key3=CornerDegree&value3=2.0
+"QFN SawOffsetX 0.3, SawOffsetY 0.3으로 맞추고 CornerDegree 2.0으로 설정",{},[],/settings/update?key1=SawOffsetX&value1=0.3&key2=SawOffsetY&value2=0.3&key3=CornerDegree&value3=2.0
+스트립이랑 비지에이 티칭창 보여줘,{},[],"/windows/teaching/strip
+/windows/teaching/bga"
+스트립이랑 비지에이 티칭창 보여줘,{},[],"/windows/teaching/strip
+/windows/teaching/bga"
+스트립이랑 비지에이 티칭창 보여줘,{},[],"/windows/teaching/strip
+/windows/teaching/bga"
+맵 테스트 실행 끝나면 창 닫아,{},[],/closeWindows
+맵 테스트 실행 끝나면 창 닫아,{},[],/closeWindows
+맵 테스트 실행 끝나면 창 닫아,{},[],/closeWindows
+"QFN PadSizeWidth 3.0, Height 2.0, PadArea 4로 업데이트",{},[],"/notify/update?data={""PadSizeWidth"":3.0,""PadSizeHeight"":2.0,""PadArea"":4}"
+"QFN PadSizeWidth 3.0, Height 2.0, PadArea 4로 업데이트",{},[],"/notify/update?data={""PadSizeWidth"":3.0,""PadSizeHeight"":2.0,""PadArea"":4}"
+"QFN PadSizeWidth 3.0, Height 2.0, PadArea 4로 업데이트",{},[],"/notify/update?data={""PadSizeWidth"":3.0,""PadSizeHeight"":2.0,""PadArea"":4}"
+맵 테스트하고 셋업모드 변경,{},[],"/test/run/map
+/mode/set?mode=SETUP"
+맵 테스트하고 셋업모드 변경,{},[],"/test/run/map
+/mode/set?mode=SETUP"
+맵 테스트하고 셋업모드 변경,{},[],"/test/run/map
+/mode/set?mode=SETUP"
+BGA NoDevice true로 바꾸고 색상 Red로 지정,{},[],/settings/bgaDeviceStatus?status=true&color=Red
+BGA NoDevice true로 바꾸고 색상 Red로 지정,{},[],/settings/bgaDeviceStatus?status=true&color=Red
+BGA NoDevice true로 바꾸고 색상 Red로 지정,{},[],/settings/bgaDeviceStatus?status=true&color=Red
+Calibration 창에서 유사도 원형(60)으로 바꾸고 크기 1-999로 바꿔,{},[],/windows/calibration/setSimilarity?similarity=60&sizeRange=1-999
+Calibration 창에서 유사도 원형(60)으로 바꾸고 크기 1-999로 바꿔,{},[],/windows/calibration/setSimilarity?similarity=60&sizeRange=1-999
+Calibration 창에서 유사도 원형(60)으로 바꾸고 크기 1-999로 바꿔,{},[],/windows/calibration/setSimilarity?similarity=60&sizeRange=1-999
+3번 카메라 끄고 창 닫아,{},[],"/live/toggle?switch=OFF&no=3
+/closeWindows"
+3번 카메라 끄고 창 닫아,{},[],"/live/toggle?switch=OFF&no=3
+/closeWindows"
+3번 카메라 끄고 창 닫아,{},[],"/live/toggle?switch=OFF&no=3
+/closeWindows"
+bga티칭창이랑 strip 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/strip"
+bga티칭창이랑 strip 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/strip"
+bga티칭창이랑 strip 티칭창 보고싶어,{},[],"/windows/teaching/bga
+/windows/teaching/strip"
+2번 카메라 끄고 매핑창 켜,{},[],"/live/toggle?switch=OFF&no=1
+/windows/teaching/mapping"
+2번 카메라 끄고 매핑창 켜,{},[],"/live/toggle?switch=OFF&no=1
+/windows/teaching/mapping"
+2번 카메라 끄고 매핑창 켜,{},[],"/live/toggle?switch=OFF&no=1
+/windows/teaching/mapping"
+롯 보고 매핑도 궁금해,{},[],"/windows/lot
+/windows/teaching/mapping"
+롯 보고 매핑도 궁금해,{},[],"/windows/lot
+/windows/teaching/mapping"
+롯 보고 매핑도 궁금해,{},[],"/windows/lot
+/windows/teaching/mapping"
+2번 카메라 보여주고 매핑티칭창 열어,{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping"
+2번 카메라 보여주고 매핑티칭창 열어,{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping"
+2번 카메라 보여주고 매핑티칭창 열어,{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping"
+검사모드 실행 후 PRS 테스트,{},[],/test/run/prs
+검사모드 실행 후 PRS 테스트,{},[],/test/run/prs
+검사모드 실행 후 PRS 테스트,{},[],/test/run/prs
+calibration 창 열고 pad 탭으로 이동 후 size 1-500으로 설정,{},[],"/windows/calibration
+/windows/teaching/calibration/pad/size"
+calibration 창 열고 pad 탭으로 이동 후 size 1-500으로 설정,{},[],"/windows/calibration
+/windows/teaching/calibration/pad/size"
+calibration 창 열고 pad 탭으로 이동 후 size 1-500으로 설정,{},[],"/windows/calibration
+/windows/teaching/calibration/pad/size"
+맵 테스팅 하고 기록창 확인,{},[],"/test/run/map
+/windows/history"
+맵 테스팅 하고 기록창 확인,{},[],"/test/run/map
+/windows/history"
+맵 테스팅 하고 기록창 확인,{},[],"/test/run/map
+/windows/history"
+Mapping package offset을 true로 바꾸고 ScratchColor를 Brown으로 설정,{},[],"/settings/mappingPackageOffset?value=true
+/settings/scratchColor?value=Brown"
+Mapping package offset을 true로 바꾸고 ScratchColor를 Brown으로 설정,{},[],"/settings/mappingPackageOffset?value=true
+/settings/scratchColor?value=Brown"
+Mapping package offset을 true로 바꾸고 ScratchColor를 Brown으로 설정,{},[],"/settings/mappingPackageOffset?value=true
+/settings/scratchColor?value=Brown"
+4번 카메라 열고 prs 리티칭,{},[],"/windows/light/live?camera=PRS
+/windows/teaching/prs/reteach"
+4번 카메라 열고 prs 리티칭,{},[],"/windows/light/live?camera=PRS
+/windows/teaching/prs/reteach"
+4번 카메라 열고 prs 리티칭,{},[],"/windows/light/live?camera=PRS
+/windows/teaching/prs/reteach"
+BGA 티칭 창 열고 PatternCount 20으로 수정하고 ForeignMaterialCount 3으로 입력,{},[],"/windows/teaching/bga
+/windows/teaching/bga/PatternCount=20
+/windows/teaching/bga/ForeignMaterialCount=3"
+BGA 티칭 창 열고 PatternCount 20으로 수정하고 ForeignMaterialCount 3으로 입력,{},[],"/windows/teaching/bga
+/windows/teaching/bga/PatternCount=20
+/windows/teaching/bga/ForeignMaterialCount=3"
+BGA 티칭 창 열고 PatternCount 20으로 수정하고 ForeignMaterialCount 3으로 입력,{},[],"/windows/teaching/bga
+/windows/teaching/bga/PatternCount=20
+/windows/teaching/bga/ForeignMaterialCount=3"
+PRS 기반 테스트 실행 후 결과 창 닫기,{},[],/closeWindows
+PRS 기반 테스트 실행 후 결과 창 닫기,{},[],/closeWindows
+PRS 기반 테스트 실행 후 결과 창 닫기,{},[],/closeWindows
+"mapping 티칭 창 열고 MapTextAngle 1.0, MapTextOffsetY 1.0으로 세팅",{},[],"/windows/teaching/mapping
+/settings/MapTextAngle=1.0
+/settings/MapTextOffsetY=1.0"
+"mapping 티칭 창 열고 MapTextAngle 1.0, MapTextOffsetY 1.0으로 세팅",{},[],"/windows/teaching/mapping
+/settings/MapTextAngle=1.0
+/settings/MapTextOffsetY=1.0"
+"mapping 티칭 창 열고 MapTextAngle 1.0, MapTextOffsetY 1.0으로 세팅",{},[],"/windows/teaching/mapping
+/settings/MapTextAngle=1.0
+/settings/MapTextOffsetY=1.0"
+"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭 진행",{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/teaching/mapping/reteach"
+"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭 진행",{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/teaching/mapping/reteach"
+"Mapping 카메라 라이브 뷰 켜고, mapping 티칭창 열어서 재티칭 진행",{},[],"/windows/light/live?camera=Mapping
+/windows/teaching/mapping
+/teaching/mapping/reteach"
+LGA 티칭창 열고 Surface 탭으로 이동한 후 티칭 테스트 실행해,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/Surface
+/test/run/prs"
+LGA 티칭창 열고 Surface 탭으로 이동한 후 티칭 테스트 실행해,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/Surface
+/test/run/prs"
+LGA 티칭창 열고 Surface 탭으로 이동한 후 티칭 테스트 실행해,{},[],"/windows/teaching/lga
+/windows/teaching/lga/tabs/Surface
+/test/run/prs"
+"PackageHeight 12.3, Width 10.5 설정 후 SaveOption Option1로 지정",{},[],"/settings/packageHeight?value=12.3
+/settings/packageWidth?value=10.5
+/settings/saveOption?value=Option1"
+"PackageHeight 12.3, Width 10.5 설정 후 SaveOption Option1로 지정",{},[],"/settings/packageHeight?value=12.3
+/settings/packageWidth?value=10.5
+/settings/saveOption?value=Option1"
+"PackageHeight 12.3, Width 10.5 설정 후 SaveOption Option1로 지정",{},[],"/settings/packageHeight?value=12.3
+/settings/packageWidth?value=10.5
+/settings/saveOption?value=Option1"
+"Strip 티칭 창 열고 ROI 추가 좌표 500,500 크기 1000,1000으로 만들고 검사 모드로 바꿔",{},[],"/windows/teaching/strip
+/roi/add?x=500&y=500&width=1000&height=1000
+/mode/set?mode=RUN"
+"Strip 티칭 창 열고 ROI 추가 좌표 500,500 크기 1000,1000으로 만들고 검사 모드로 바꿔",{},[],"/windows/teaching/strip
+/roi/add?x=500&y=500&width=1000&height=1000
+/mode/set?mode=RUN"
+"Strip 티칭 창 열고 ROI 추가 좌표 500,500 크기 1000,1000으로 만들고 검사 모드로 바꿔",{},[],"/windows/teaching/strip
+/roi/add?x=500&y=500&width=1000&height=1000
+/mode/set?mode=RUN"
+"IsMappingUsed true, IsPrsUsed false로 수정하고 Run 모드로 진입",{},[],/mode/set?mode=RUN
+"IsMappingUsed true, IsPrsUsed false로 수정하고 Run 모드로 진입",{},[],/mode/set?mode=RUN
+"IsMappingUsed true, IsPrsUsed false로 수정하고 Run 모드로 진입",{},[],/mode/set?mode=RUN
+"BGA BallPitch 0.8, BallPitchStandard 0.9로 변경하고 RejectMarkColor Gold로 바꿔",{},[],"/settings/update?key=BGA_BallPitch&value=0.8
+/settings/update?key=BallPitchStandard&value=0.9
+/settings/update?key=RejectMarkColor&value=Gold"
+"BGA BallPitch 0.8, BallPitchStandard 0.9로 변경하고 RejectMarkColor Gold로 바꿔",{},[],"/settings/update?key=BGA_BallPitch&value=0.8
+/settings/update?key=BallPitchStandard&value=0.9
+/settings/update?key=RejectMarkColor&value=Gold"
+"BGA BallPitch 0.8, BallPitchStandard 0.9로 변경하고 RejectMarkColor Gold로 바꿔",{},[],"/settings/update?key=BGA_BallPitch&value=0.8
+/settings/update?key=BallPitchStandard&value=0.9
+/settings/update?key=RejectMarkColor&value=Gold"
+"Mapping 창 열고 MapForeignMaterial true, MapForeignMaterialColor Pink로 지정",{},[],"/windows/teaching/mapping
+/teaching/mapping/set?material=Foreign&color=Pink"
+"Mapping 창 열고 MapForeignMaterial true, MapForeignMaterialColor Pink로 지정",{},[],"/windows/teaching/mapping
+/teaching/mapping/set?material=Foreign&color=Pink"
+"Mapping 창 열고 MapForeignMaterial true, MapForeignMaterialColor Pink로 지정",{},[],"/windows/teaching/mapping
+/teaching/mapping/set?material=Foreign&color=Pink"
+Mapping ForeignMaterial 기능 false로 하고 색상을 Pink로 변경,{},[],"/settings/foreignMaterialMapping?enabled=false
+/light/setColor?color=Pink"
+Mapping ForeignMaterial 기능 false로 하고 색상을 Pink로 변경,{},[],"/settings/foreignMaterialMapping?enabled=false
+/light/setColor?color=Pink"
+Mapping ForeignMaterial 기능 false로 하고 색상을 Pink로 변경,{},[],"/settings/foreignMaterialMapping?enabled=false
+/light/setColor?color=Pink"
+"Strip 티칭 창 , 조명 설정 창 둘 다 열어줘",{},[],"/windows/teaching/strip
+/windows/light"
+"Strip 티칭 창 , 조명 설정 창 둘 다 열어줘",{},[],"/windows/teaching/strip
+/windows/light"
+"Strip 티칭 창 , 조명 설정 창 둘 다 열어줘",{},[],"/windows/teaching/strip
+/windows/light"
+LGA PackageOffset을 true로 변경하고 색상을 Blue로 지정,{},[],"/settings/lgaOffset?value=true
+/settings/color?value=Blue"
+LGA PackageOffset을 true로 변경하고 색상을 Blue로 지정,{},[],"/settings/lgaOffset?value=true
+/settings/color?value=Blue"
+LGA PackageOffset을 true로 변경하고 색상을 Blue로 지정,{},[],"/settings/lgaOffset?value=true
+/settings/color?value=Blue"
+PRS 카메라 실시간 라이브 켜고 조명창도 같이 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live?camera=Mapping"
+PRS 카메라 실시간 라이브 켜고 조명창도 같이 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live?camera=Mapping"
+PRS 카메라 실시간 라이브 켜고 조명창도 같이 열어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live?camera=Mapping"
+mapping 티칭 창 열고 MappingSawOffsetColor를 Navy로 설정,{},[],"/windows/teaching/mapping
+/settings/MappingSawOffsetColor=Navy"
+mapping 티칭 창 열고 MappingSawOffsetColor를 Navy로 설정,{},[],"/windows/teaching/mapping
+/settings/MappingSawOffsetColor=Navy"
+mapping 티칭 창 열고 MappingSawOffsetColor를 Navy로 설정,{},[],"/windows/teaching/mapping
+/settings/MappingSawOffsetColor=Navy"
+Calibration 창 열고 tab을 pad로 변경한 다음 LightSave 작업 수행,{},[],"/windows/calibration
+/windows/teaching/tab/pad
+/test/run/lightSave"
+Calibration 창 열고 tab을 pad로 변경한 다음 LightSave 작업 수행,{},[],"/windows/calibration
+/windows/teaching/tab/pad
+/test/run/lightSave"
+Calibration 창 열고 tab을 pad로 변경한 다음 LightSave 작업 수행,{},[],"/windows/calibration
+/windows/teaching/tab/pad
+/test/run/lightSave"
+"Mapping WrongMark 기능 false, TextAngle true로 바꾸고 색상 Purple로 지정",{},[],/settings/update?key=mapping_wrongmark&value=false&key2=text_angle&value2=true&key3=color&value3=Purple
+"Mapping WrongMark 기능 false, TextAngle true로 바꾸고 색상 Purple로 지정",{},[],/settings/update?key=mapping_wrongmark&value=false&key2=text_angle&value2=true&key3=color&value3=Purple
+"Mapping WrongMark 기능 false, TextAngle true로 바꾸고 색상 Purple로 지정",{},[],/settings/update?key=mapping_wrongmark&value=false&key2=text_angle&value2=true&key3=color&value3=Purple
+1번 카메라 켠 뒤 qc 티칭창 띄워,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/qc"
+1번 카메라 켠 뒤 qc 티칭창 띄워,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/qc"
+1번 카메라 켠 뒤 qc 티칭창 띄워,{},[],"/live/toggle?switch=ON&no=1
+/windows/teaching/qc"
+"LGA 티칭 창 열고 Leads 탭에서 LeadCount true, LeadCountColor Pink로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/Leads/setting?LeadCount=true&LeadCountColor=Pink"
+"LGA 티칭 창 열고 Leads 탭에서 LeadCount true, LeadCountColor Pink로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/Leads/setting?LeadCount=true&LeadCountColor=Pink"
+"LGA 티칭 창 열고 Leads 탭에서 LeadCount true, LeadCountColor Pink로 수정",{},[],"/windows/teaching/lga
+/windows/teaching/lga/Leads/setting?LeadCount=true&LeadCountColor=Pink"
+QFN LeadPitch를 0.5로 맞추고 LeadOffsetX 0.1로 변경,{},[],/settings/update?key=LeadPitch&value=0.5&key2=LeadOffsetX&value2=0.1
+QFN LeadPitch를 0.5로 맞추고 LeadOffsetX 0.1로 변경,{},[],/settings/update?key=LeadPitch&value=0.5&key2=LeadOffsetX&value2=0.1
+QFN LeadPitch를 0.5로 맞추고 LeadOffsetX 0.1로 변경,{},[],/settings/update?key=LeadPitch&value=0.5&key2=LeadOffsetX&value2=0.1
+캘리 창에서 recticletype FULLSIZE로 설정 후 recreate ROI 실행,{},[],"/windows/calibration/recticletype?value=FULLSIZE
+/live/toggle?switch=ON&no=1
 /live/toggle?switch=ON&no=2
 /live/toggle?switch=ON&no=3
 /live/toggle?switch=ON&no=4
 /live/toggle?switch=ON&no=5
 /live/toggle?switch=ON&no=6"
-ㄹㅇㄴㄹㄴㅇㄹ,{},[],/NO_FUNCTION
-fdsfsdfdsf,{},[],/NO_FUNCTION
-sendExecute,{},[],/execute/yes
-sendExecute,{},[],/execute/yes
-sendExecute,{},[],/execute/yes
-ddsd,{},[],/NO_FUNCTION
-있는 기능이 뭐야ㅕ,{},[],"/live/toggle?switch=ON&no=N
-/live/toggle?switch=OFF&no=N
-/windows/light/live?camera=PRS
+캘리 창에서 recticletype FULLSIZE로 설정 후 recreate ROI 실행,{},[],"/windows/calibration/recticletype?value=FULLSIZE
+/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+캘리 창에서 recticletype FULLSIZE로 설정 후 recreate ROI 실행,{},[],"/windows/calibration/recticletype?value=FULLSIZE
+/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+Strip 창 열고 ROI 모두 리셋 후 검사 모드로 변경,{},[],"/windows/teaching/strip
+/windows/teaching/strip/resetROI
+/mode/set?mode=RUN"
+Strip 창 열고 ROI 모두 리셋 후 검사 모드로 변경,{},[],"/windows/teaching/strip
+/windows/teaching/strip/resetROI
+/mode/set?mode=RUN"
+Strip 창 열고 ROI 모두 리셋 후 검사 모드로 변경,{},[],"/windows/teaching/strip
+/windows/teaching/strip/resetROI
+/mode/set?mode=RUN"
+맵핑 티칭창 열고 prs 재티칭 해,{},[],"/windows/teaching/mapping
+/windows/teaching/prs/reteach"
+맵핑 티칭창 열고 prs 재티칭 해,{},[],"/windows/teaching/mapping
+/windows/teaching/prs/reteach"
+맵핑 티칭창 열고 prs 재티칭 해,{},[],"/windows/teaching/mapping
+/windows/teaching/prs/reteach"
+조명창 열고 검사 뭐했었는지 보여줘,{},[],"/windows/light/live?camera=PRS
+/windows/history"
+조명창 열고 검사 뭐했었는지 보여줘,{},[],"/windows/light/live?camera=PRS
+/windows/history"
+조명창 열고 검사 뭐했었는지 보여줘,{},[],"/windows/light/live?camera=PRS
+/windows/history"
+검사 모드로 바꾸고 히스토리 띄워,{},[],"/mode/set?mode=RUN
+/windows/history"
+검사 모드로 바꾸고 히스토리 띄워,{},[],"/mode/set?mode=RUN
+/windows/history"
+검사 모드로 바꾸고 히스토리 띄워,{},[],"/mode/set?mode=RUN
+/windows/history"
+BGA 티칭 창 열고 CornerDegreeTopLeft를 89.8로 변경하고 BallCount 200으로 바꿔,{},[],"/windows/teaching/bga
+/teaching/bga/CornerDegreeTopLeft=89.8
+/teaching/bga/BallCount=200"
+BGA 티칭 창 열고 CornerDegreeTopLeft를 89.8로 변경하고 BallCount 200으로 바꿔,{},[],"/windows/teaching/bga
+/teaching/bga/CornerDegreeTopLeft=89.8
+/teaching/bga/BallCount=200"
+BGA 티칭 창 열고 CornerDegreeTopLeft를 89.8로 변경하고 BallCount 200으로 바꿔,{},[],"/windows/teaching/bga
+/teaching/bga/CornerDegreeTopLeft=89.8
+/teaching/bga/BallCount=200"
+런 모드에서 띄웠던 창 닫아,{},[],/closeWindows
+런 모드에서 띄웠던 창 닫아,{},[],/closeWindows
+런 모드에서 띄웠던 창 닫아,{},[],/closeWindows
+LOT 창 열고 QC 티칭도 해,{},[],"/windows/lot
+/windows/teaching/qc"
+LOT 창 열고 QC 티칭도 해,{},[],"/windows/lot
+/windows/teaching/qc"
+LOT 창 열고 QC 티칭도 해,{},[],"/windows/lot
+/windows/teaching/qc"
+prs test하자. 그리고 재팅칭도 해,{},[],"/test/run/prs
+/windows/teaching/prs/reteach"
+prs test하자. 그리고 재팅칭도 해,{},[],"/test/run/prs
+/windows/teaching/prs/reteach"
+prs test하자. 그리고 재팅칭도 해,{},[],"/test/run/prs
+/windows/teaching/prs/reteach"
+LGA 티칭 창 열고 ROI 모두 삭제 후 Result 탭으로 이동,{},[],"/windows/teaching/lga
+/windows/teaching/lga/deleteROI
+/windows/teaching/lga/navigateToResultTab"
+LGA 티칭 창 열고 ROI 모두 삭제 후 Result 탭으로 이동,{},[],"/windows/teaching/lga
+/windows/teaching/lga/deleteROI
+/windows/teaching/lga/navigateToResultTab"
+LGA 티칭 창 열고 ROI 모두 삭제 후 Result 탭으로 이동,{},[],"/windows/teaching/lga
+/windows/teaching/lga/deleteROI
+/windows/teaching/lga/navigateToResultTab"
+Calibration 창 열고 vision 탭에서 유사도 사각형 50 설정하고 카메라 CENTER로 바꿔,{},[],"/windows/calibration
+/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+Calibration 창 열고 vision 탭에서 유사도 사각형 50 설정하고 카메라 CENTER로 바꿔,{},[],"/windows/calibration
+/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+Calibration 창 열고 vision 탭에서 유사도 사각형 50 설정하고 카메라 CENTER로 바꿔,{},[],"/windows/calibration
+/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+Calibration 창 열고 threshold 0-255로 초기화한 후 roi 재생성,{},[],"/windows/calibration
+/setting/threshold?value=0-255
+/regenerateROI"
+Calibration 창 열고 threshold 0-255로 초기화한 후 roi 재생성,{},[],"/windows/calibration
+/setting/threshold?value=0-255
+/regenerateROI"
+Calibration 창 열고 threshold 0-255로 초기화한 후 roi 재생성,{},[],"/windows/calibration
+/setting/threshold?value=0-255
+/regenerateROI"
+SettingX2 카메라 실시간 보기 열고 live no=4 끄기,{},[],"/windows/light/live?camera=SettingX2
+/live/toggle?switch=OFF&no=4"
+SettingX2 카메라 실시간 보기 열고 live no=4 끄기,{},[],"/windows/light/live?camera=SettingX2
+/live/toggle?switch=OFF&no=4"
+SettingX2 카메라 실시간 보기 열고 live no=4 끄기,{},[],"/windows/light/live?camera=SettingX2
+/live/toggle?switch=OFF&no=4"
+LGA CornerDegree를 3.0으로 설정하고 PadPitch 1.0으로 맞춰,{},[],"/settings/lgaCornerDegree?value=3.0
+/settings/padPitch?value=1.0"
+LGA CornerDegree를 3.0으로 설정하고 PadPitch 1.0으로 맞춰,{},[],"/settings/lgaCornerDegree?value=3.0
+/settings/padPitch?value=1.0"
+LGA CornerDegree를 3.0으로 설정하고 PadPitch 1.0으로 맞춰,{},[],"/settings/lgaCornerDegree?value=3.0
+/settings/padPitch?value=1.0"
+셋 모드에서 0번카메라 꺼,{},[],/live/toggle?switch=OFF&no=0
+셋 모드에서 0번카메라 꺼,{},[],/live/toggle?switch=OFF&no=0
+셋 모드에서 0번카메라 꺼,{},[],/live/toggle?switch=OFF&no=0
+"매핑 패키지 사이즈 폭 12.0, 높이 6.0으로 수정하고 MarkCount를 3으로 바꿔",{},[],/test/run/map
+"매핑 패키지 사이즈 폭 12.0, 높이 6.0으로 수정하고 MarkCount를 3으로 바꿔",{},[],/test/run/map
+"매핑 패키지 사이즈 폭 12.0, 높이 6.0으로 수정하고 MarkCount를 3으로 바꿔",{},[],/test/run/map
+"BGA SawOffsetX, Y를 0.3으로 변경 후 테스트 실행",{},[],/test/run/map
+"BGA SawOffsetX, Y를 0.3으로 변경 후 테스트 실행",{},[],/test/run/map
+"BGA SawOffsetX, Y를 0.3으로 변경 후 테스트 실행",{},[],/test/run/map
+2번 카메라 끄고 라이트창 열기,{},[],"/live/toggle?switch=OFF&no=2
+/windows/light/live?camera=BarCode"
+2번 카메라 끄고 라이트창 열기,{},[],"/live/toggle?switch=OFF&no=2
+/windows/light/live?camera=BarCode"
+2번 카메라 끄고 라이트창 열기,{},[],"/live/toggle?switch=OFF&no=2
+/windows/light/live?camera=BarCode"
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+오늘 이벤트 뭐 있어?,{},[],/NO_FUNCTION
+지하철 노선도 보여줘,{},[],/NO_FUNCTION
+지하철 노선도 보여줘,{},[],/NO_FUNCTION
+지하철 노선도 보여줘,{},[],/NO_FUNCTION
+오늘 휴게소 추천해줘,{},[],/NO_FUNCTION
+오늘 휴게소 추천해줘,{},[],/NO_FUNCTION
+오늘 휴게소 추천해줘,{},[],/NO_FUNCTION
+고양이 사진 골라줘,{},[],/NO_FUNCTION
+고양이 사진 골라줘,{},[],/NO_FUNCTION
+고양이 사진 골라줘,{},[],/NO_FUNCTION
+커피 쿠폰 줘,{},[],/NO_FUNCTION
+커피 쿠폰 줘,{},[],/NO_FUNCTION
+커피 쿠폰 줘,{},[],/NO_FUNCTION
+시계 알려줘,{},[],/NO_FUNCTION
+시계 알려줘,{},[],/NO_FUNCTION
+시계 알려줘,{},[],/NO_FUNCTION
+아침 몇 시에 일어나?,{},[],/NO_FUNCTION
+아침 몇 시에 일어나?,{},[],/NO_FUNCTION
+아침 몇 시에 일어나?,{},[],/NO_FUNCTION
+교통상황 어때?,{},[],/NO_FUNCTION
+교통상황 어때?,{},[],/NO_FUNCTION
+교통상황 어때?,{},[],/NO_FUNCTION
+오늘의 운세가 뭐야?,{},[],/NO_FUNCTION
+오늘의 운세가 뭐야?,{},[],/NO_FUNCTION
+오늘의 운세가 뭐야?,{},[],/NO_FUNCTION
+오늘 날씨 어때?,{},[],/NO_FUNCTION
+오늘 날씨 어때?,{},[],/NO_FUNCTION
+오늘 날씨 어때?,{},[],/NO_FUNCTION
+시험 잘 볼 수 있을까?,{},[],/mode/set?mode=SETUP
+시험 잘 볼 수 있을까?,{},[],/mode/set?mode=SETUP
+시험 잘 볼 수 있을까?,{},[],/mode/set?mode=SETUP
+넷플릭스 새작품 뭐 있어?,{},[],/NO_FUNCTION
+넷플릭스 새작품 뭐 있어?,{},[],/NO_FUNCTION
+넷플릭스 새작품 뭐 있어?,{},[],/NO_FUNCTION
+창문 닫아줘,{},[],/closeWindows
+창문 닫아줘,{},[],/closeWindows
+창문 닫아줘,{},[],/closeWindows
+주식 투자 잘하는 법 알려줘,{},[],/NO_FUNCTION
+주식 투자 잘하는 법 알려줘,{},[],/NO_FUNCTION
+주식 투자 잘하는 법 알려줘,{},[],/NO_FUNCTION
+집주소 저장,{},[],/NO_FUNCTION
+집주소 저장,{},[],/NO_FUNCTION
+집주소 저장,{},[],/NO_FUNCTION
+휴가 일정 언제야?,{},[],/NO_FUNCTION
+휴가 일정 언제야?,{},[],/NO_FUNCTION
+휴가 일정 언제야?,{},[],/NO_FUNCTION
+국제 학생증 만들기,{},[],/NO_FUNCTION
+국제 학생증 만들기,{},[],/NO_FUNCTION
+국제 학생증 만들기,{},[],/NO_FUNCTION
+수면 시간 추천해줘,{},[],/NO_FUNCTION
+수면 시간 추천해줘,{},[],/NO_FUNCTION
+수면 시간 추천해줘,{},[],/NO_FUNCTION
+피자 주문해줘,{},[],/NO_FUNCTION
+피자 주문해줘,{},[],/NO_FUNCTION
+피자 주문해줘,{},[],/NO_FUNCTION
+티비 켜줘,{},[],/mode/set?mode=RUN
+티비 켜줘,{},[],/mode/set?mode=RUN
+티비 켜줘,{},[],/mode/set?mode=RUN
+화분 관리 방법 알려줘,{},[],/NO_FUNCTION
+화분 관리 방법 알려줘,{},[],/NO_FUNCTION
+화분 관리 방법 알려줘,{},[],/NO_FUNCTION
+기차 시간표 보여줘,{},[],/NO_FUNCTION
+기차 시간표 보여줘,{},[],/NO_FUNCTION
+기차 시간표 보여줘,{},[],/NO_FUNCTION
+독감 예방접종 필요해?,{},[],/windows/teaching/qfn
+독감 예방접종 필요해?,{},[],/windows/teaching/qfn
+독감 예방접종 필요해?,{},[],/windows/teaching/qfn
+운동 루틴 알려줘,{},[],/NO_FUNCTION
+운동 루틴 알려줘,{},[],/NO_FUNCTION
+운동 루틴 알려줘,{},[],/NO_FUNCTION
+건강검진 예약 해줘,{},[],/NO_FUNCTION
+건강검진 예약 해줘,{},[],/NO_FUNCTION
+건강검진 예약 해줘,{},[],/NO_FUNCTION
+너 어디 살아?,{},[],/NO_FUNCTION
+너 어디 살아?,{},[],/NO_FUNCTION
+너 어디 살아?,{},[],/NO_FUNCTION
+오래 살려면 어떻게 해야 해?,{},[],/NO_FUNCTION
+오래 살려면 어떻게 해야 해?,{},[],/NO_FUNCTION
+오래 살려면 어떻게 해야 해?,{},[],/NO_FUNCTION
+운동 타이머 시작해줘,{},[],/timer/start
+운동 타이머 시작해줘,{},[],/timer/start
+운동 타이머 시작해줘,{},[],/timer/start
+SNS에 사진 올려줘,{},[],/NO_FUNCTION
+SNS에 사진 올려줘,{},[],/NO_FUNCTION
+SNS에 사진 올려줘,{},[],/NO_FUNCTION
+호텔 예약 해줘,{},[],/NO_FUNCTION
+호텔 예약 해줘,{},[],/NO_FUNCTION
+호텔 예약 해줘,{},[],/NO_FUNCTION
+내일 비오나?,{},[],/NO_FUNCTION
+내일 비오나?,{},[],/NO_FUNCTION
+내일 비오나?,{},[],/NO_FUNCTION
+PC방 위치 알려줘,{},[],/NO_FUNCTION
+PC방 위치 알려줘,{},[],/NO_FUNCTION
+PC방 위치 알려줘,{},[],/NO_FUNCTION
+지도 펼쳐줘,{},[],/Gvision/info
+지도 펼쳐줘,{},[],/Gvision/info
+지도 펼쳐줘,{},[],/Gvision/info
+생일 축하해줘,{},[],/NO_FUNCTION
+생일 축하해줘,{},[],/NO_FUNCTION
+생일 축하해줘,{},[],/NO_FUNCTION
+부동산 시세 알려줘,{},[],/NO_FUNCTION
+부동산 시세 알려줘,{},[],/NO_FUNCTION
+부동산 시세 알려줘,{},[],/NO_FUNCTION
+친구랑 약속 있어?,{},[],/NO_FUNCTION
+친구랑 약속 있어?,{},[],/NO_FUNCTION
+친구랑 약속 있어?,{},[],/NO_FUNCTION
+책 제목 알려줘,{},[],/NO_FUNCTION
+책 제목 알려줘,{},[],/NO_FUNCTION
+책 제목 알려줘,{},[],/NO_FUNCTION
+오늘 할 일 정리해줘,{},[],"/windows/history
+/windows/settings"
+오늘 할 일 정리해줘,{},[],"/windows/history
+/windows/settings"
+오늘 할 일 정리해줘,{},[],"/windows/history
+/windows/settings"
+출근시간 몇 시야?,{},[],/NO_FUNCTION
+출근시간 몇 시야?,{},[],/NO_FUNCTION
+출근시간 몇 시야?,{},[],/NO_FUNCTION
+새로운 소식 없어?,{},[],/news/check
+새로운 소식 없어?,{},[],/news/check
+새로운 소식 없어?,{},[],/news/check
+일기 써줘,{},[],/windows/teaching/history
+일기 써줘,{},[],/windows/teaching/history
+일기 써줘,{},[],/windows/teaching/history
+이모티콘 보내줘,{},[],/NO_FUNCTION
+이모티콘 보내줘,{},[],/NO_FUNCTION
+이모티콘 보내줘,{},[],/NO_FUNCTION
+음악 틀어줘,{},[],/NO_FUNCTION
+음악 틀어줘,{},[],/NO_FUNCTION
+음악 틀어줘,{},[],/NO_FUNCTION
+점심 뭐 추천해?,{},[],/NO_FUNCTION
+점심 뭐 추천해?,{},[],/NO_FUNCTION
+점심 뭐 추천해?,{},[],/NO_FUNCTION
+채팅방 입장,{},[],/windows/chat
+채팅방 입장,{},[],/windows/chat
+채팅방 입장,{},[],/windows/chat
+오늘의 핫이슈 알려줘,{},[],/NO_FUNCTION
+오늘의 핫이슈 알려줘,{},[],/NO_FUNCTION
+오늘의 핫이슈 알려줘,{},[],/NO_FUNCTION
+지하철 시간표 보여줘,{},[],/NO_FUNCTION
+지하철 시간표 보여줘,{},[],/NO_FUNCTION
+지하철 시간표 보여줘,{},[],/NO_FUNCTION
+소식지 구독 신청,{},[],/NO_FUNCTION
+소식지 구독 신청,{},[],/NO_FUNCTION
+소식지 구독 신청,{},[],/NO_FUNCTION
+사진찍어줘,{},[],/camera/take_photo
+사진찍어줘,{},[],/camera/take_photo
+사진찍어줘,{},[],/camera/take_photo
+투자 성향 테스트 해줘,{},[],/NO_FUNCTION
+투자 성향 테스트 해줘,{},[],/NO_FUNCTION
+투자 성향 테스트 해줘,{},[],/NO_FUNCTION
+영어 단어 테스트,{},[],/test/english/vocabulary
+영어 단어 테스트,{},[],/test/english/vocabulary
+영어 단어 테스트,{},[],/test/english/vocabulary
+실시간 검색어 알려줘,{},[],/NO_FUNCTION
+실시간 검색어 알려줘,{},[],/NO_FUNCTION
+실시간 검색어 알려줘,{},[],/NO_FUNCTION
+날씨 알람 맞춰줘,{},[],/NO_FUNCTION
+날씨 알람 맞춰줘,{},[],/NO_FUNCTION
+날씨 알람 맞춰줘,{},[],/NO_FUNCTION
+영화 추천해줘,{},[],/NO_FUNCTION
+영화 추천해줘,{},[],/NO_FUNCTION
+영화 추천해줘,{},[],/NO_FUNCTION
+오늘 생일이야,{},[],/NO_FUNCTION
+오늘 생일이야,{},[],/NO_FUNCTION
+오늘 생일이야,{},[],/NO_FUNCTION
+오늘의 명작 추천해줘,{},[],/NO_FUNCTION
+오늘의 명작 추천해줘,{},[],/NO_FUNCTION
+오늘의 명작 추천해줘,{},[],/NO_FUNCTION
+뉴스 보여줘,{},[],/news/gvision
+뉴스 보여줘,{},[],/news/gvision
+뉴스 보여줘,{},[],/news/gvision
+온라인 쇼핑몰 추천해줘,{},[],/NO_FUNCTION
+온라인 쇼핑몰 추천해줘,{},[],/NO_FUNCTION
+온라인 쇼핑몰 추천해줘,{},[],/NO_FUNCTION
+어떻게 지내?,{},[],/NO_FUNCTION
+어떻게 지내?,{},[],/NO_FUNCTION
+어떻게 지내?,{},[],/NO_FUNCTION
+영화 관람평 알려줘,{},[],/NO_FUNCTION
+영화 관람평 알려줘,{},[],/NO_FUNCTION
+영화 관람평 알려줘,{},[],/NO_FUNCTION
+하늘 사진 보여줘,{},[],/NO_FUNCTION
+하늘 사진 보여줘,{},[],/NO_FUNCTION
+하늘 사진 보여줘,{},[],/NO_FUNCTION
+음식점 예약해줘,{},[],/NO_FUNCTION
+음식점 예약해줘,{},[],/NO_FUNCTION
+음식점 예약해줘,{},[],/NO_FUNCTION
+요리 레시피 추천해줄래?,{},[],/NO_FUNCTION
+요리 레시피 추천해줄래?,{},[],/NO_FUNCTION
+요리 레시피 추천해줄래?,{},[],/NO_FUNCTION
+저녁 추천좀,{},[],/NO_FUNCTION
+저녁 추천좀,{},[],/NO_FUNCTION
+저녁 추천좀,{},[],/NO_FUNCTION
+나 대신 전화해줘,{},[],/chat/clear
+나 대신 전화해줘,{},[],/chat/clear
+나 대신 전화해줘,{},[],/chat/clear
+계산기 실행,{},[],/NO_FUNCTION
+계산기 실행,{},[],/NO_FUNCTION
+계산기 실행,{},[],/NO_FUNCTION
+오늘 생일인 사람 알려줘,{},[],/NO_FUNCTION
+오늘 생일인 사람 알려줘,{},[],/NO_FUNCTION
+오늘 생일인 사람 알려줘,{},[],/NO_FUNCTION
+반려동물 이름 추천해줘,{},[],/NO_FUNCTION
+반려동물 이름 추천해줘,{},[],/NO_FUNCTION
+반려동물 이름 추천해줘,{},[],/NO_FUNCTION
+유행어 알려줘,{},[],/NO_FUNCTION
+유행어 알려줘,{},[],/NO_FUNCTION
+유행어 알려줘,{},[],/NO_FUNCTION
+미세먼지 농도 알려줘,{},[],/NO_FUNCTION
+미세먼지 농도 알려줘,{},[],/NO_FUNCTION
+미세먼지 농도 알려줘,{},[],/NO_FUNCTION
+물 값 계산해줘,{},[],/NO_FUNCTION
+물 값 계산해줘,{},[],/NO_FUNCTION
+물 값 계산해줘,{},[],/NO_FUNCTION
+여름방학 추천 여행지,{},[],/NO_FUNCTION
+여름방학 추천 여행지,{},[],/NO_FUNCTION
+여름방학 추천 여행지,{},[],/NO_FUNCTION
+희귀 동물 사진 보여줘,{},[],/NO_FUNCTION
+희귀 동물 사진 보여줘,{},[],/NO_FUNCTION
+희귀 동물 사진 보여줘,{},[],/NO_FUNCTION
+환율 정보 보여줘,{},[],/NO_FUNCTION
+환율 정보 보여줘,{},[],/NO_FUNCTION
+환율 정보 보여줘,{},[],/NO_FUNCTION
+걷기 기록 시작,{},[],/walking/start
+걷기 기록 시작,{},[],/walking/start
+걷기 기록 시작,{},[],/walking/start
+노래 따라 불러줘,{},[],/NO_FUNCTION
+노래 따라 불러줘,{},[],/NO_FUNCTION
+노래 따라 불러줘,{},[],/NO_FUNCTION
+날씨 정보 알려줘,{},[],/NO_FUNCTION
+날씨 정보 알려줘,{},[],/NO_FUNCTION
+날씨 정보 알려줘,{},[],/NO_FUNCTION
+선물 추천해줘,{},[],/NO_FUNCTION
+선물 추천해줘,{},[],/NO_FUNCTION
+선물 추천해줘,{},[],/NO_FUNCTION
+오늘의 주식 상승종목?,{},[],/NO_FUNCTION
+오늘의 주식 상승종목?,{},[],/NO_FUNCTION
+오늘의 주식 상승종목?,{},[],/NO_FUNCTION
+쪽지 남겨줘,{},[],/notifications/newMessage
+쪽지 남겨줘,{},[],/notifications/newMessage
+쪽지 남겨줘,{},[],/notifications/newMessage
+집 가는 길 안내해줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn"
+집 가는 길 안내해줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn"
+집 가는 길 안내해줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn"
+뉴스 속보 보여줘,{},[],/news/updates
+뉴스 속보 보여줘,{},[],/news/updates
+뉴스 속보 보여줘,{},[],/news/updates
+시내버스 첫차 시간,{},[],/NO_FUNCTION
+시내버스 첫차 시간,{},[],/NO_FUNCTION
+시내버스 첫차 시간,{},[],/NO_FUNCTION
+주유소 어디 있어?,{},[],/NO_FUNCTION
+주유소 어디 있어?,{},[],/NO_FUNCTION
+주유소 어디 있어?,{},[],/NO_FUNCTION
+배달 음식 뭐가 맛있어?,{},[],/NO_FUNCTION
+배달 음식 뭐가 맛있어?,{},[],/NO_FUNCTION
+배달 음식 뭐가 맛있어?,{},[],/NO_FUNCTION
+점심 뭐 먹지?,{},[],/NO_FUNCTION
+점심 뭐 먹지?,{},[],/NO_FUNCTION
+점심 뭐 먹지?,{},[],/NO_FUNCTION
+숙제 도와줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+숙제 도와줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+숙제 도와줘,{},[],"/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+택시 불러줘,{},[],/NO_FUNCTION
+택시 불러줘,{},[],/NO_FUNCTION
+택시 불러줘,{},[],/NO_FUNCTION
+주말에 뭐하지?,{},[],/NO_FUNCTION
+주말에 뭐하지?,{},[],/NO_FUNCTION
+주말에 뭐하지?,{},[],/NO_FUNCTION
+지금 몇 시지?,{},[],/NO_FUNCTION
+지금 몇 시지?,{},[],/NO_FUNCTION
+지금 몇 시지?,{},[],/NO_FUNCTION
+환자 위치 추적,{},[],/NO_FUNCTION
+환자 위치 추적,{},[],/NO_FUNCTION
+환자 위치 추적,{},[],/NO_FUNCTION
+대박이다,{},[],/NO_FUNCTION
+대박이다,{},[],/NO_FUNCTION
+대박이다,{},[],/NO_FUNCTION
+지도에서 길 찾기,{},[],/NO_FUNCTION
+지도에서 길 찾기,{},[],/NO_FUNCTION
+지도에서 길 찾기,{},[],/NO_FUNCTION
+친구한테 문자 보내줘,{},[],/chat/send?message=Gvision%20Current%20Info%20업데이트%20필요함
+친구한테 문자 보내줘,{},[],/chat/send?message=Gvision%20Current%20Info%20업데이트%20필요함
+친구한테 문자 보내줘,{},[],/chat/send?message=Gvision%20Current%20Info%20업데이트%20필요함
+영화 티켓 예매해줘,{},[],/NO_FUNCTION
+영화 티켓 예매해줘,{},[],/NO_FUNCTION
+영화 티켓 예매해줘,{},[],/NO_FUNCTION
+오늘의 명언 알려줘,{},[],/NO_FUNCTION
+오늘의 명언 알려줘,{},[],/NO_FUNCTION
+오늘의 명언 알려줘,{},[],/NO_FUNCTION
+공부 자극해줘,{},[],/gvision/info
+공부 자극해줘,{},[],/gvision/info
+공부 자극해줘,{},[],/gvision/info
+칼로리 계산기 틀어줘,{},[],/NO_FUNCTION
+칼로리 계산기 틀어줘,{},[],/NO_FUNCTION
+칼로리 계산기 틀어줘,{},[],/NO_FUNCTION
+유튜브 켜줘,{},[],/NO_FUNCTION
+유튜브 켜줘,{},[],/NO_FUNCTION
+유튜브 켜줘,{},[],/NO_FUNCTION
+여권 발급 정보,{},[],/NO_FUNCTION
+여권 발급 정보,{},[],/NO_FUNCTION
+여권 발급 정보,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+피알에스 재티칭 시작,{},[],/windows/teaching/prs/reteach
+피알에스 재티칭 시작,{},[],/windows/teaching/prs/reteach
+피알에스 재티칭 시작,{},[],/windows/teaching/prs/reteach
+calibration 창서 원유사도60으로 사이즈 1-999초기화,{},[],/windows/calibration/reset?size=1-999
+calibration 창서 원유사도60으로 사이즈 1-999초기화,{},[],/windows/calibration/reset?size=1-999
+calibration 창서 원유사도60으로 사이즈 1-999초기화,{},[],/windows/calibration/reset?size=1-999
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+qfn 찬 여고 커너디그리 2.5 설정후 테스트,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+qfn 찬 여고 커너디그리 2.5 설정후 테스트,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+qfn 찬 여고 커너디그리 2.5 설정후 테스트,{},[],"/windows/teaching/qfn
+/mode/set?mode=SETUP"
+5번카며라꺼,{},[],/Gvision/CurrentInfo
+5번카며라꺼,{},[],/Gvision/CurrentInfo
+5번카며라꺼,{},[],/Gvision/CurrentInfo
+맵 제티칭 해,{},[],/windows/teaching/mapping/reteach
+맵 제티칭 해,{},[],/windows/teaching/mapping/reteach
+맵 제티칭 해,{},[],/windows/teaching/mapping/reteach
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+2 가메라 켜,{},[],/live/toggle?switch=ON&no=2
+2 가메라 켜,{},[],/live/toggle?switch=ON&no=2
+2 가메라 켜,{},[],/live/toggle?switch=ON&no=2
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+네 번 카메라 켜,{},[],"/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+네 번 카메라 켜,{},[],"/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+네 번 카메라 켜,{},[],"/live/toggle?switch=ON&no=1
+/live/toggle?switch=ON&no=2
+/live/toggle?switch=ON&no=3
+/live/toggle?switch=ON&no=4
+/live/toggle?switch=ON&no=5
+/live/toggle?switch=ON&no=6"
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+pw 테슽틀런,{},[],/NO_FUNCTION
+pw 테슽틀런,{},[],/NO_FUNCTION
+pw 테슽틀런,{},[],/NO_FUNCTION
+검사 기록창 여구 이번달 prs기록봐,{},[],"/windows/history
+/test/run/prs"
+검사 기록창 여구 이번달 prs기록봐,{},[],"/windows/history
+/test/run/prs"
+검사 기록창 여구 이번달 prs기록봐,{},[],"/windows/history
+/test/run/prs"
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+setx1 카메라 라이브키고 캘리브 비젼탭,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+setx1 카메라 라이브키고 캘리브 비젼탭,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+setx1 카메라 라이브키고 캘리브 비젼탭,{},[],"/windows/light/live?camera=SettingX1
+/windows/calibration"
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+lga 칭 열여,{},[],/windows/teaching/lga
+lga 칭 열여,{},[],/windows/teaching/lga
+lga 칭 열여,{},[],/windows/teaching/lga
+qfn 리드피치 0.5 리드오프셋x 0.1로,{},[],/no_function
+qfn 리드피치 0.5 리드오프셋x 0.1로,{},[],/no_function
+qfn 리드피치 0.5 리드오프셋x 0.1로,{},[],/no_function
+BGA티칭창열려,{},[],/windows/teaching/bga
+BGA티칭창열려,{},[],/windows/teaching/bga
+BGA티칭창열려,{},[],/windows/teaching/bga
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+카메라 3번 키워,{},[],/live/toggle?switch=ON&no=3
+카메라 3번 키워,{},[],/live/toggle?switch=ON&no=3
+카메라 3번 키워,{},[],/live/toggle?switch=ON&no=3
+lga 티칭창 열여서 pads 탭 가고 ROI 처초화,{},[],"/windows/teaching/lga
+/windows/teaching/lga/pads
+/windows/teaching/lga/roi_crop"
+lga 티칭창 열여서 pads 탭 가고 ROI 처초화,{},[],"/windows/teaching/lga
+/windows/teaching/lga/pads
+/windows/teaching/lga/roi_crop"
+lga 티칭창 열여서 pads 탭 가고 ROI 처초화,{},[],"/windows/teaching/lga
+/windows/teaching/lga/pads
+/windows/teaching/lga/roi_crop"
+prs테스트 끝나고 창끄기,{},[],"/test/run/prs
+/closeWindows"
+prs테스트 끝나고 창끄기,{},[],"/test/run/prs
+/closeWindows"
+prs테스트 끝나고 창끄기,{},[],"/test/run/prs
+/closeWindows"
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+런몯루 바꿔,{},[],/NO_FUNCTION
+런몯루 바꿔,{},[],/NO_FUNCTION
+런몯루 바꿔,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+패키지 높이12.3 너비10.5 저장옵션1,{},[],/NO_FUNCTION
+패키지 높이12.3 너비10.5 저장옵션1,{},[],/NO_FUNCTION
+패키지 높이12.3 너비10.5 저장옵션1,{},[],/NO_FUNCTION
+prw런해줭,{},[],/mode/set?mode=RUN
+prw런해줭,{},[],/mode/set?mode=RUN
+prw런해줭,{},[],/mode/set?mode=RUN
+스트림 빌 티칭 창 열어,{},[],/windows/teaching/strip
+스트림 빌 티칭 창 열어,{},[],/windows/teaching/strip
+스트림 빌 티칭 창 열어,{},[],/windows/teaching/strip
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+lga 찬 서피스탭 가서 티칭테스트 하기,{},[],/windows/teaching/lga
+lga 찬 서피스탭 가서 티칭테스트 하기,{},[],/windows/teaching/lga
+lga 찬 서피스탭 가서 티칭테스트 하기,{},[],/windows/teaching/lga
+lga 티칭 창 열여,{},[],/windows/teaching/lga
+lga 티칭 창 열여,{},[],/windows/teaching/lga
+lga 티칭 창 열여,{},[],/windows/teaching/lga
+카메라 0반껏줘,{},[],/live/toggle?switch=ON&no=0
+카메라 0반껏줘,{},[],/live/toggle?switch=ON&no=0
+카메라 0반껏줘,{},[],/live/toggle?switch=ON&no=0
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+bga 쏘오프셋x0.3 y0.3 테스트런,{},[],/test/run/bga?offsetX=0.3&offsetY=0.3
+bga 쏘오프셋x0.3 y0.3 테스트런,{},[],/test/run/bga?offsetX=0.3&offsetY=0.3
+bga 쏘오프셋x0.3 y0.3 테스트런,{},[],/test/run/bga?offsetX=0.3&offsetY=0.3
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+조명장 엾어,{},[],"/windows/light/live?camera=PRS
 /windows/light/live?camera=BarCode
 /windows/light/live?camera=SettingX1
 /windows/light/live?camera=SettingX2
-/window/light/live?camera=Mapping
-/windows/teaching/lga
+/windows/light/live?camera=Mapping"
+조명장 엾어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live?camera=Mapping"
+조명장 엾어,{},[],"/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode
+/windows/light/live?camera=SettingX1
+/windows/light/live?camera=SettingX2
+/windows/light/live?camera=Mapping"
+커매라 5번 끄고싶어,{},[],/live/toggle?switch=OFF&no=5
+커매라 5번 끄고싶어,{},[],/live/toggle?switch=OFF&no=5
+커매라 5번 끄고싶어,{},[],/live/toggle?switch=OFF&no=5
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+윈도우 다닫기,{},[],/windows/close
+윈도우 다닫기,{},[],/windows/close
+윈도우 다닫기,{},[],/windows/close
+LGA티칭창열어조,{},[],/windows/teaching/lga
+LGA티칭창열어조,{},[],/windows/teaching/lga
+LGA티칭창열어조,{},[],/windows/teaching/lga
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘",{},[],/windows/teaching/bga/cornerLeft?value=89.8&barCount=200
+"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘",{},[],/windows/teaching/bga/cornerLeft?value=89.8&barCount=200
+"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘",{},[],/windows/teaching/bga/cornerLeft?value=89.8&barCount=200
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+0번 커메라 끄기,{},[],/live/toggle?switch=OFF&no=0
+0번 커메라 끄기,{},[],/live/toggle?switch=OFF&no=0
+0번 커메라 끄기,{},[],/live/toggle?switch=OFF&no=0
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+stripp 창열기,{},[],/windows/teaching/strip
+stripp 창열기,{},[],/windows/teaching/strip
+stripp 창열기,{},[],/windows/teaching/strip
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+0번 카메라 커,{},[],/windows/light/live?camera=0
+0번 카메라 커,{},[],/windows/light/live?camera=0
+0번 카메라 커,{},[],/windows/light/live?camera=0
+lga 티칭챵 열어줘,{},[],/windows/teaching/lga
+lga 티칭챵 열어줘,{},[],/windows/teaching/lga
+lga 티칭챵 열어줘,{},[],/windows/teaching/lga
+"mappingused 트루, prsused 폴스 런모드",{},[],/windows/teaching/mapping/reteach
+"mappingused 트루, prsused 폴스 런모드",{},[],/windows/teaching/mapping/reteach
+"mappingused 트루, prsused 폴스 런모드",{},[],/windows/teaching/mapping/reteach
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+prw테스트 실행,{},[],/test/run/prw
+prw테스트 실행,{},[],/test/run/prw
+prw테스트 실행,{},[],/test/run/prw
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+카머라 1번 킨다,{},[],/windows/light/live?camera=SettingX1
+카머라 1번 킨다,{},[],/windows/light/live?camera=SettingX1
+카머라 1번 킨다,{},[],/windows/light/live?camera=SettingX1
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+스트립 티치앛ㅇ 열어,{},[],/windows/teaching/strip
+스트립 티치앛ㅇ 열어,{},[],/windows/teaching/strip
+스트립 티치앛ㅇ 열어,{},[],/windows/teaching/strip
+시스톨이 보여죠,{},[],/Gvision/status
+시스톨이 보여죠,{},[],/Gvision/status
+시스톨이 보여죠,{},[],/Gvision/status
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+맵 피 티칭 작동,{},[],/windows/teaching/mapping
+맵 피 티칭 작동,{},[],/windows/teaching/mapping
+맵 피 티칭 작동,{},[],/windows/teaching/mapping
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+bga 티칭창열여,{},[],/windows/teaching/bga
+bga 티칭창열여,{},[],/windows/teaching/bga
+bga 티칭창열여,{},[],/windows/teaching/bga
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+lga 티칭 창 리즈탭 ROI추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/roi/add"
+lga 티칭 창 리즈탭 ROI추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/roi/add"
+lga 티칭 창 리즈탭 ROI추가 후 테스트,{},[],"/windows/teaching/lga
+/windows/teaching/lga/roi/add"
+맵 테습트런 실행,{},[],/test/run/map
+맵 테습트런 실행,{},[],/test/run/map
+맵 테습트런 실행,{},[],/test/run/map
+창아 꺼조,{},[],/closeWindows
+창아 꺼조,{},[],/closeWindows
+창아 꺼조,{},[],/closeWindows
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+히스톨이창 보여줘,{},[],/windows/teaching/mapping
+히스톨이창 보여줘,{},[],/windows/teaching/mapping
+히스톨이창 보여줘,{},[],/windows/teaching/mapping
+4번 카메라 보여조,{},[],/windows/light/live?camera=PRS
+4번 카메라 보여조,{},[],/windows/light/live?camera=PRS
+4번 카메라 보여조,{},[],/windows/light/live?camera=PRS
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+검ㅅㅏ 모ㅡ드 변경,{},[],/mode/set?mode=RUN
+검ㅅㅏ 모ㅡ드 변경,{},[],/mode/set?mode=RUN
+검ㅅㅏ 모ㅡ드 변경,{},[],/mode/set?mode=RUN
+5번 커마래 꺼,{},[],/live/toggle?switch=OFF&no=5
+5번 커마래 꺼,{},[],/live/toggle?switch=OFF&no=5
+5번 커마래 꺼,{},[],/live/toggle?switch=OFF&no=5
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+qfn쏘오프셋 x0.3 y0.3 코너디그리2,{},[],/teaching/qfn/offset?x=0.3&y=0.3&cornerAngle=2
+qfn쏘오프셋 x0.3 y0.3 코너디그리2,{},[],/teaching/qfn/offset?x=0.3&y=0.3&cornerAngle=2
+qfn쏘오프셋 x0.3 y0.3 코너디그리2,{},[],/teaching/qfn/offset?x=0.3&y=0.3&cornerAngle=2
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+환경설정 보여줭,{},[],/windows/settings
+환경설정 보여줭,{},[],/windows/settings
+환경설정 보여줭,{},[],/windows/settings
+피알에스재티칭,{},[],/windows/teaching/prs/reteach
+피알에스재티칭,{},[],/windows/teaching/prs/reteach
+피알에스재티칭,{},[],/windows/teaching/prs/reteach
+"calibration창 임게값0-255,roi재생",{},[],/windows/calibration/roi=0-255
+"calibration창 임게값0-255,roi재생",{},[],/windows/calibration/roi=0-255
+"calibration창 임게값0-255,roi재생",{},[],/windows/calibration/roi=0-255
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+nan,{},[],/NO_FUNCTION
+련 모드로 바꿔죠,{},[],/mode/set?mode=RUN
+련 모드로 바꿔죠,{},[],/mode/set?mode=RUN
+련 모드로 바꿔죠,{},[],/mode/set?mode=RUN
+/windows/history,{},[],/windows/history
+Open history window,{},[],/windows/history
+Open history window,{},[],/windows/history
+Turn on the mapping view,{'history': 'NoTab'},['history'],/windows/teaching/mapping/reteach
+Open history window and then start run mode,{'history': 'NoTab'},['history'],/windows/teaching/bga
+Show the strip ROI,{},[],/windows/teaching/strip
+Open history and then switch to mapping,{},[],/windows/teaching/lga
+안녕 런모드를 켠 후에 조명 창을 켜줄래?,{},[],"```
+/windows/light/live?camera=PRS
+```"
+안녕 런모드를 켠 후에 조명 창을 켜줄래?,{},[],"```
+/windows/light/live?camera=PRS
+```"
+창 닫고 티칭창 열어줘 ,{'light': 'NoTab'},['light'],"```
+/windows/teaching/bga
+```"
+티칭창 열고 bga열어줘,{},[],"```
+/windows/teaching/bga
+/windows/teaching/bga
+```"
+티칭창 열고 bga열어줘,{},[],"/windows/teaching/bga
+/windows/teaching/bga"
+히스토리 창 열고 조명 창 열어줘,{},[],"/windows/history
+/windows/light/live?camera=PRS"
+히스토라ㅣ,{},[],/windows/history
+창 닫고 티칭창 열어줘 ,{'history': 'NoTab'},['history'],"/windows/teaching/bga
+/windows/teaching/qfn
+/windows/teaching/mapping
+/windows/teaching/strip"
+창 닫아줘,{'strip': 'Barcode'},['strip'],/closeWindows
+네,{'strip': 'Barcode'},['strip'],/NO_FUNCTION
+티칭창 닫아줘,{'strip': 'Barcode'},['strip'],/windows/teaching/strip
+히스토리 창 열고 조명 창 열어줘,{},[],"/windows/history
+/windows/light/live?camera=PRS"
+안녕 런모드를 켠 후에 조명 창을 켜줄래?,{},[],/windows/light/live?camera=PRS
+모든 창 다 켜줘,{},[],"/windows/teaching/lga
 /windows/teaching/qfn
 /windows/teaching/bga
 /windows/teaching/mapping
@@ -1316,21 +2951,57 @@ ddsd,{},[],/NO_FUNCTION
 /windows/settings
 /windows/lot
 /windows/monitor
-/mode/set?mode=RUN
-/mode/set?mode=SETUP"
-dffdsafda,{},[],/NO_FUNCTION
-yjtjyjtj,{},[],/NO_FUNCTION
-ㅎㅇ,{},[],/NO_FUNCTION
-lga,{},[],/windows/teaching/lga
-임계값 3-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=3-44
-현재 탭에서 임계값 3-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=3-44
-현재 탭 이름이; 뭐야,{'lga': 'Pads'},['lga'],/teaching/lga/tabName
-현재 탬에서 입계값 5-66,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=PackageThreshold&value=5-66
-LGA 티칭 창 Pad 탭에서 임계값 설정(N 은 숫자) 4-44,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=MultiPadThreshold&value=4-44
-임계값 2-33,{'lga': 'Pads'},['lga'],/teaching/lga/update?propertyName=MultiPadThreshold&value=2-33
-임계값 3-44,{'lga': 'Leads'},['lga'],/teaching/lga/update?propertyName=LeadThreshold&value=3-44
-scratch 3-44,{'lga': 'Surface'},['lga'],/teaching/lga/update?propertyName=ScratchThreshold&value=3-44
-창 닫아줘,{'lga': 'Surface'},['lga'],/closeWindows
-"User: 창 닫아줘, System: 해당 명령을 실행할까요?, User: 네",{'lga': 'Surface'},['confirmLog'],/execute/yes
-ㅇㄴㅁㄴㅇㅁㅇㄴ,{},[],/Gvision/CurrentInfo
-ewrewrerer,{},[],/NO_FUNCTION
+/windows/teaching/prs/reteach
+/windows/teaching/mapping/reteach"
+히스토리 창 열고 조명 창 열어줘,{'System Usage': 'NoTab'},[],"/windows/history
+/windows/light/live?camera=PRS"
+히스토리 켜고 모니터 창도 열어줘,{'System Usage': 'NoTab'},[],"/windows/history
+/windows/monitor"
+모든 창 다 꺼줘,"{'lga': 'Package', 'qfn': 'Package', 'bga': 'Package', 'mapping': 'Package', 'strip': 'Barcode', 'LotWindow': 'NoTab', 'System Usage': 'NoTab'}","['bga', 'lga', 'qfn', 'mapping', 'strip']","/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip
+/windows/history
+/windows/light
+/windows/calibration
+/windows/settings
+/windows/lot
+/windows/monitor
+/windows/as"
+조명 창 열고 티칭창도 열어줘,{'System Usage': 'NoTab'},[],"/windows/light/live?camera=PRS
+/windows/teaching/lga"
+티칭창 열고 BGA 창 열어줘,{'System Usage': 'NoTab'},[],"/windows/teaching/bga
+/windows/teaching/bga"
+라이트 열고 히스토리도 같이 열어,{'System Usage': 'NoTab'},[],"/windows/light/live?camera=PRS
+/windows/history"
+창 닫고 티칭창 열어줘,{'System Usage': 'NoTab'},[],"/closeWindows
+/windows/teaching/lga"
+응,{'System Usage': 'NoTab'},[],/NO_FUNCTION
+히스토리,{'System Usage': 'NoTab'},[],/windows/history
+지금 창 닫고 모니터 열어줘,"{'System Usage': 'NoTab', 'history': 'NoTab'}",['history'],/windows/monitor
+실행 모드 켠 다음에 라이트 창 열어줘,{'System Usage': 'NoTab'},[],"/mode/set?mode=RUN
+/windows/light/live?camera=PRS"
+세탑모드로 전환하고 티칭창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","/mode/set?mode=TOP
+/windows/teaching/strip"
+히스토리,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/history
+창 닫은 다음에 BGA 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'history': 'NoTab'}","['mapping', 'strip', 'history']",/windows/teaching/bga
+실행 모드 켠 다음에 라이트 창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/light
+런모드 켜고 BGA 창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","/mode/set?mode=RUN
+/windows/teaching/bga"
+라이브 켠 다음 히스토리도 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","/windows/history
+/windows/light/live?camera=PRS"
+PRS 카메라 켜고 조명 창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","/windows/light/live?camera=PRS
+/windows/light/live?camera=BarCode"
+라이브 켜,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/light/live?camera=PRS
+라이브 꺼주고 모니터 창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'light': 'NoTab'}","['mapping', 'strip', 'light']","/live/toggle?switch=OFF&no=1
+/windows/monitor"
+PRS 켜고 티칭창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'light': 'NoTab'}","['mapping', 'strip', 'light']","/live/toggle?switch=ON&no=1
+/windows/teaching/prs"
+안녕 런모드를 켠 후에 조명 창을 켜줄래?,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']",/windows/light/live?camera=PRS
+티칭창 열어줘 ,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab'}","['mapping', 'strip']","/windows/teaching/lga
+/windows/teaching/qfn
+/windows/teaching/bga
+/windows/teaching/mapping
+/windows/teaching/strip"
+안녕,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'lga': 'Package', 'qfn': 'Package', 'bga': 'Package', 'mapping': 'Package', 'strip': 'Barcode'}","['bga', 'lga', 'qfn', 'mapping', 'strip']",/windows/history

@@ -6,6 +6,7 @@ from intent_classifier import classify_text, DEFAULT_MODEL_DIR, DEFAULT_TOKENIZE
 import requests
 import os
 import time
+from whitelist_filter import create_url_whitelist #whitelist
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
@@ -32,6 +33,9 @@ output_model = api.model('OutputModel', {
     'gpu_memory': fields.Nested(gpu_model)
 })
 
+# whitelist url 생성
+file_path = r"whitelist_getURL.py"
+is_valid_api_safe = create_url_whitelist(file_path)
 
 @ns_instruct.route('/')
 class Instruct(Resource):
@@ -63,18 +67,44 @@ class Instruct(Resource):
         # 각 API 순차 실행
         success_count = 0
         failed_apis = []
+        #final_api_calls = [] # 테스트용
         
         for api_call in api_calls:
-            # 단일의 경우 no function 도 받아야해서 임시방편으로 일단 주석 처리 _희연
-            # if api_call == "/NO_FUNCTION":
-            #     print(f"[Skip] {api_call}")
-            #     continue
-            
-            # API 호출
-            api_url = f"http://localhost:3000{api_call}"
-            
+            if api_call == "/NO_FUNCTION":
+                #final_api_calls.append(api_call) # 테스트용
+                print(f"[Skip] {api_call}")
+                #continue
+
+            # 화이트리스트 검증
+            if is_valid_api_safe(api_call):
+                api_url = f"http://localhost:3000{api_call}"
+                #final_api_calls.append(api_call) # 테스트용
+            else:
+                # 안전하지 않은 API → LLM에게 fallback 요청 (재검증)
+                print(f"[Blocked] Unsafe API call: {api_call}")
+                fallback_prompt = (
+                    f"'{api_call}'는 허용되지 않는 URL입니다. "
+                    f"프롬프트 내에 존재하는 URL로 변환해 주세요. "
+                    "백틱(`)이나 코드블록 없이 URL만 출력하세요."
+                )
+                fallback_result = run_model(fallback_prompt, current_window_info, model_name)
+                api_call = fallback_result['output'].replace("```", "").replace("json", "").strip()
+
+                result['output'] = api_call
+
+                if is_valid_api_safe(api_call):
+                    api_url = f"http://localhost:3000{api_call}"
+                    #final_api_calls.append(api_call) # 테스트용
+                else:
+                    print(f"[Fallback Unsafe] {api_call}")
+                    # 없는 기능으로 임시 변환
+                    result['output'] = "/NO_FUNCTION"
+                    api_call = "/NO_FUNCTION"
+                    api_url = "http://localhost:3000" + result['output']
+                    #final_api_calls.append(api_call) # 테스트용
+                
             try:
-                response = requests.get(api_url, timeout=30)  # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
+                response = requests.get(api_url, timeout=30) # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
                 if response.status_code == 200:
                     success_count += 1
                     print(f"[Success] {api_call} → {response.status_code}")
@@ -84,9 +114,9 @@ class Instruct(Resource):
             except Exception as err:
                 failed_apis.append(api_call)
                 print(f"[Error] {api_call} → {err}")
-                
-            total_end = time.time()
-            total_elapsed = total_end - total_start
+
+        total_end = time.time()
+        total_elapsed = total_end - total_start
         
         # 실행 결과 요약
         print(f"\n[Execution Summary]")
@@ -95,8 +125,10 @@ class Instruct(Resource):
         print(f"  Failed: {len(failed_apis)}")
         if failed_apis:
             print(f"  Failed APIs: {failed_apis}")
-        # print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")  # 오류 발생하여 주석 처리_희연
+        print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")
         print("-" * 50)
+
+        #result['final_api_calls'] = final_api_calls
 
         return result
 

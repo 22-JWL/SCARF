@@ -35,8 +35,8 @@ COMMON_WINDOWS = """
 - `/windows/light` : 조명 설정 창 열기
 - `/windows/calibration` : 보정(캘리브레이션) 창 열기
 - `/windows/settings` : 설정창 열기
-- `/windows/lot` : lot data 창 열기
-- `/windows/monitor` : monitor 창 열기
+- `/windows/teaching/prs/reteach` : 현재 PRS 결과 기반 재티칭 창 열기
+- `/windows/teaching/mapping/reteach` : 현재 매핑 샷 기반 재티칭 창 열기
 - `/mode/set?mode=RUN` : 검사 모드로 변경
 - `/mode/set?mode=SETUP` : 설정 모드로 변경
 
@@ -46,6 +46,16 @@ COMMON_WINDOWS = """
   * 중요: "as"나 "a/s"는 창 이름이지 모드가 아님. mode가 아닌 windows API임
   * 예시: 사용자 입력 "as" → 반환값 "/windows/as"
   * 예시: 사용자 입력 "a/s" → 반환값 "/windows/as"
+
+## Lot Data 창
+- `/windows/lot` : Lot Data 창 열기
+  * 사용자가 다음을 입력하면 이 API를 반환: "lot", "롯", "랏", "로트", "lot data", "생산량", "생산 기록", "수율", "통계"
+  
+
+## Monitor 창
+- `/windows/monitor` : monitor 창 열기
+  * 사용자가 다음을 입력하면 이 API를 반환: "cpu", "ram", "사용량", "시스템 상태", "pc 상태", "모니터", "System Usage"
+  
 """
 
 COMMON_FEATURES = """
@@ -63,8 +73,8 @@ COMMON_FEATURES = """
 - `/test/run/map` : 매핑 기반 현재 레시피 및 티칭 정보 검증을 위한 테스트 실행
 - `/closeWindows` : '창 끄기' 라고 치면 실행
 - `/chat/clear` : '대화 초기화' 또는 '새채팅' 라고 치면 실행
-- `/execute/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
-- `/execute/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
+- `/openWindow/yes` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "응", "네", "yes", "좋아", "예"
+- `/openWindow/no` : 사용자가 입력한 단답이 다음 중 하나이면 실행: "아니", "싫어", "no"
 """
 
 COMMON_ENDING = """

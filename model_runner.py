@@ -29,6 +29,7 @@ print(f"[INFO] Preloading model: {DEFAULT_MODEL_NAME}")
 # 모델과 토크나이저 로드
 current_model = AutoModelForCausalLM.from_pretrained(
     DEFAULT_MODEL_NAME,
+    revision="c38726a",
     torch_dtype=torch.bfloat16,
     trust_remote_code=True,
     device_map="auto"

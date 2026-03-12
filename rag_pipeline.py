@@ -14,8 +14,8 @@ import os
 import time
 from threading import Lock
 
-# ── ragTest 경로 설정 ─────────────────────────────────────────────────────────
-RAGTEST_ROOT = r"C:\Users\AMLPC01\Documents\GitHub\ragTest"
+# ── ragTest 경로 설정 (flask_LLM/ragTest/ 하위에 복사됨) ─────────────────────
+RAGTEST_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ragTest")
 RAGTEST_SRC  = os.path.join(RAGTEST_ROOT, "src")
 RAGTEST_SLOT = os.path.join(RAGTEST_ROOT, "experiment", "slot_filling")
 

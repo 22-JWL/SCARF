@@ -7,6 +7,7 @@ import requests
 import os
 import time
 from whitelist_filter import create_url_whitelist #whitelist
+import rag_pipeline
 
 DEFAULT_MODEL_NAME = "distilbert-base-multilingual-cased"
 
@@ -18,8 +19,10 @@ api = Api(app, version='1.2', title='반도체 검사 시스템 인터페이스'
 ns_instruct = api.namespace('instruct', description='LLM 명령 실행')     # 명령 실행 네임스페이스
 
 input_model = api.model('InputModel', {
-    'text': fields.String(required=True, description='명령어 텍스트'),
-    'model_name': fields.String(required=False, description='사용할 모델명')
+    'text': fields.String(required=False, description='명령어 텍스트 (새 명령 시 필수)'),
+    'model_name': fields.String(required=False, description='사용할 모델명'),
+    'session_id': fields.String(required=False, description='슬롯 필링 세션 ID (후속 답변 시 사용)'),
+    'answer': fields.String(required=False, description='슬롯 필링 후속 답변 (session_id 와 함께 사용)'),
 })
 
 gpu_model = api.model('GpuModel', {
@@ -28,9 +31,12 @@ gpu_model = api.model('GpuModel', {
 })
 
 output_model = api.model('OutputModel', {
-    'output': fields.String(description='LLM 응답 함수 호출 결과'),
+    'output': fields.String(description='LLM 응답 / 실행된 API URL / 슬롯 필링 질문'),
     'elapsed_time': fields.Float(description='응답 시간(초)'),
-    'gpu_memory': fields.Nested(gpu_model)
+    'gpu_memory': fields.Nested(gpu_model),
+    'status': fields.String(description='처리 상태: complete | need_info | error'),
+    'session_id': fields.String(description='슬롯 필링 세션 ID (need_info 시 반환)'),
+    'intent': fields.String(description='분류된 인텐트'),
 })
 
 # whitelist url 생성
@@ -42,95 +48,187 @@ class Instruct(Resource):
     @ns_instruct.expect(input_model)
     @ns_instruct.marshal_with(output_model)
     def post(self):
-        """사용자 명령어를 입력받아 함수 호출 형식으로 응답 (복합 명령어 지원)"""
-        
-        total_start = time.time()
-        
-        print("Received JSON payload:", api.payload)
-        user_input = api.payload['text']
-        model_name = api.payload.get('model_name', DEFAULT_MODEL_NAME)
-        current_window_info = api.payload['current_opened_window_and_tab']
+        """사용자 명령어를 입력받아 함수 호출 형식으로 응답.
 
+        신규 명령: text 필드를 포함해서 전송.
+        슬롯 필링 후속 답변: session_id + answer 필드를 포함해서 전송.
+        """
+        total_start = time.time()
+        print("Received JSON payload:", api.payload)
+
+        model_name          = api.payload.get('model_name', DEFAULT_MODEL_NAME)
+        current_window_info = api.payload.get('current_opened_window_and_tab', {})
+        session_id          = api.payload.get('session_id')
+        answer              = api.payload.get('answer')
+
+        def _gpu_mem():
+            from model_runner import get_gpu_memory
+            alloc, resv = get_gpu_memory()
+            return {"allocated_mb": alloc, "reserved_mb": resv}
+
+        # ── 슬롯 필링 후속 답변 처리 ─────────────────────────────────────────
+        if session_id and answer is not None:
+            print(f"[RAG] 슬롯 필링 계속: session_id={session_id}, answer={answer}")
+            rag_result = rag_pipeline.continue_session(session_id, answer)
+
+            total_elapsed = round(time.time() - total_start, 5)
+
+            if rag_result["status"] == "need_info":
+                # 다음 질문을 클라이언트에게 반환
+                print(f"[RAG] 다음 질문: {rag_result['output']}")
+                return {
+                    "output":       rag_result["output"],
+                    "status":       "need_info",
+                    "session_id":   rag_result["session_id"],
+                    "intent":       rag_result.get("intent", ""),
+                    "elapsed_time": total_elapsed,
+                    "gpu_memory":   _gpu_mem(),
+                }
+
+            if rag_result["status"] == "complete":
+                api_url_path = rag_result["output"]
+                print(f"[RAG] 슬롯 필링 완료, API 실행: {api_url_path}")
+                _execute_api_calls([api_url_path], current_window_info, model_name)
+                return {
+                    "output":       api_url_path,
+                    "status":       "complete",
+                    "intent":       rag_result.get("intent", ""),
+                    "elapsed_time": total_elapsed,
+                    "gpu_memory":   _gpu_mem(),
+                }
+
+            # error
+            return {
+                "output":       rag_result["output"],
+                "status":       "error",
+                "elapsed_time": total_elapsed,
+                "gpu_memory":   _gpu_mem(),
+            }
+
+        # ── 신규 명령 처리 ────────────────────────────────────────────────────
+        user_input = api.payload.get('text', '')
+        if not user_input:
+            return {
+                "output":       "text 또는 (session_id + answer) 중 하나를 제공해야 합니다.",
+                "status":       "error",
+                "elapsed_time": 0.0,
+                "gpu_memory":   _gpu_mem(),
+            }
+
+        print(f"[RAG] 신규 명령 처리: {user_input}")
+        rag_result = rag_pipeline.process_new_query(user_input)
+        print(f"[RAG] 파이프라인 결과: status={rag_result['status']}")
+
+        # 3a. 모호 → 슬롯 필링 질문 반환
+        if rag_result["status"] == "need_info":
+            total_elapsed = round(time.time() - total_start, 5)
+            print(f"[RAG] 슬롯 필링 시작, 첫 질문: {rag_result['output']}")
+            return {
+                "output":       rag_result["output"],
+                "status":       "need_info",
+                "session_id":   rag_result["session_id"],
+                "intent":       rag_result.get("intent", ""),
+                "elapsed_time": total_elapsed,
+                "gpu_memory":   _gpu_mem(),
+            }
+
+        # 3b. 슬롯이 첫 발화에서 이미 완성된 경우
+        if rag_result["status"] == "complete":
+            api_url_path = rag_result["output"]
+            print(f"[RAG] 즉시 완성, API 실행: {api_url_path}")
+            _execute_api_calls([api_url_path], current_window_info, model_name)
+            total_elapsed = round(time.time() - total_start, 5)
+            return {
+                "output":       api_url_path,
+                "status":       "complete",
+                "intent":       rag_result.get("intent", ""),
+                "elapsed_time": total_elapsed,
+                "gpu_memory":   _gpu_mem(),
+            }
+
+        # 3c. 거부됨 (no_function)
+        if rag_result["status"] == "rejected":
+            total_elapsed = round(time.time() - total_start, 5)
+            return {
+                "output":       "/NO_FUNCTION",
+                "status":       "complete",
+                "intent":       "no_function",
+                "elapsed_time": total_elapsed,
+                "gpu_memory":   _gpu_mem(),
+            }
+
+        # 3d. 명확한 명령 → LLM 호출
+        # (rag_result["status"] == "use_llm")
         result = run_model(user_input, current_window_info, model_name)
-        
-        # output에서 "json\n" 제거
+
+        # output 정리
         result['output'] = result['output'].replace("json\n", "").replace("json", "").strip()
 
-        # 복합 명령어 처리: 여러 API를 줄바꿈으로 구분
+        # 복합 명령어 처리
         api_calls = result['output'].strip().split('\n')
-        api_calls = [call.strip() for call in api_calls if call.strip() and not call.startswith('#')]
-        
+        api_calls = [c.strip() for c in api_calls if c.strip() and not c.startswith('#')]
+
         print(f"\n[API Calls Detected] {len(api_calls)} API(s)")
-        for idx, api_call in enumerate(api_calls, 1):
-            print(f"  {idx}. {api_call}")
-        
-        # 각 API 순차 실행
-        success_count = 0
-        failed_apis = []
-        #final_api_calls = [] # 테스트용
-        
-        for api_call in api_calls:
-            if api_call == "/NO_FUNCTION":
-                #final_api_calls.append(api_call) # 테스트용
-                print(f"[Skip] {api_call}")
-                #continue
+        for idx, call in enumerate(api_calls, 1):
+            print(f"  {idx}. {call}")
 
-            # 화이트리스트 검증
-            if is_valid_api_safe(api_call):
-                api_url = f"http://localhost:3000{api_call}"
-                #final_api_calls.append(api_call) # 테스트용
-            else:
-                # 안전하지 않은 API → LLM에게 fallback 요청 (재검증)
-                print(f"[Blocked] Unsafe API call: {api_call}")
-                fallback_prompt = (
-                    f"'{api_call}'는 허용되지 않는 URL입니다. "
-                    f"프롬프트 내에 존재하는 URL로 변환해 주세요. "
-                    "백틱(`)이나 코드블록 없이 URL만 출력하세요."
-                )
-                fallback_result = run_model(fallback_prompt, current_window_info, model_name)
-                api_call = fallback_result['output'].replace("```", "").replace("json", "").strip()
+        _execute_api_calls(api_calls, current_window_info, model_name)
 
-                result['output'] = api_call
-
-                if is_valid_api_safe(api_call):
-                    api_url = f"http://localhost:3000{api_call}"
-                    #final_api_calls.append(api_call) # 테스트용
-                else:
-                    print(f"[Fallback Unsafe] {api_call}")
-                    # 없는 기능으로 임시 변환
-                    result['output'] = "/NO_FUNCTION"
-                    api_call = "/NO_FUNCTION"
-                    api_url = "http://localhost:3000" + result['output']
-                    #final_api_calls.append(api_call) # 테스트용
-                
-            try:
-                response = requests.get(api_url, timeout=30) # cpu 사용으로 인한 임시로 30초 타임아웃 설정 (원래 5초)
-                if response.status_code == 200:
-                    success_count += 1
-                    print(f"[Success] {api_call} → {response.status_code}")
-                else:
-                    failed_apis.append(api_call)
-                    print(f"[Failed] {api_call} → {response.status_code}")
-            except Exception as err:
-                failed_apis.append(api_call)
-                print(f"[Error] {api_call} → {err}")
-
-        total_end = time.time()
-        total_elapsed = total_end - total_start
-        
-        # 실행 결과 요약
-        print(f"\n[Execution Summary]")
-        print(f"  Total APIs: {len(api_calls)}")
-        print(f"  Success: {success_count}")
-        print(f"  Failed: {len(failed_apis)}")
-        if failed_apis:
-            print(f"  Failed APIs: {failed_apis}")
+        total_elapsed = round(time.time() - total_start, 5)
         print(f"  Total Elapsed Time: {total_elapsed:.3f} seconds")
         print("-" * 50)
 
-        #result['final_api_calls'] = final_api_calls
-
+        result['status'] = "complete"
+        result['intent'] = rag_result.get("intent", "")
         return result
+
+
+def _execute_api_calls(api_calls: list, current_window_info: dict, model_name: str) -> None:
+    """API 목록을 순차 실행한다 (화이트리스트 검증 포함)."""
+    success_count = 0
+    failed_apis   = []
+
+    for api_call in api_calls:
+        if api_call == "/NO_FUNCTION":
+            print(f"[Skip] {api_call}")
+            continue
+
+        # 화이트리스트 검증
+        if is_valid_api_safe(api_call):
+            api_url = f"http://localhost:3000{api_call}"
+        else:
+            print(f"[Blocked] Unsafe API call: {api_call}")
+            fallback_prompt = (
+                f"'{api_call}'는 허용되지 않는 URL입니다. "
+                "프롬프트 내에 존재하는 URL로 변환해 주세요. "
+                "백틱(`)이나 코드블록 없이 URL만 출력하세요."
+            )
+            fallback_result = run_model(fallback_prompt, current_window_info, model_name)
+            api_call = fallback_result['output'].replace("```", "").replace("json", "").strip()
+
+            if is_valid_api_safe(api_call):
+                api_url = f"http://localhost:3000{api_call}"
+            else:
+                print(f"[Fallback Unsafe] {api_call}")
+                api_call = "/NO_FUNCTION"
+                api_url  = f"http://localhost:3000{api_call}"
+
+        try:
+            response = requests.get(api_url, timeout=30)
+            if response.status_code == 200:
+                success_count += 1
+                print(f"[Success] {api_call} → {response.status_code}")
+            else:
+                failed_apis.append(api_call)
+                print(f"[Failed] {api_call} → {response.status_code}")
+        except Exception as err:
+            failed_apis.append(api_call)
+            print(f"[Error] {api_call} → {err}")
+
+    print(f"\n[Execution Summary] Total={len(api_calls)}, "
+          f"Success={success_count}, Failed={len(failed_apis)}")
+    if failed_apis:
+        print(f"  Failed APIs: {failed_apis}")
 
 
 # Intent 분류 namespace

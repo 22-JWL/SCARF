@@ -15,7 +15,6 @@ flask_LLM/
 ├── whitelist_filter.py       # API URL 화이트리스트 검증
 ├── whitelist_getURL.py       # 허용 URL 목록 정의
 ├── prompt_combine_none.py    # 기본 시스템 프롬프트
-├── prompt_classify_by_windows/ # 창별 특화 시스템 프롬프트
 ├── rag_pipeline.py           # SCARF 파이프라인 통합 모듈  ← 신규
 ├── slot_url_builder.py       # 슬롯 → API URL 변환기       ← 신규
 ├── ragTest/                  # SCARF 프레임워크 소스        ← 신규

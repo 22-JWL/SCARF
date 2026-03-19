@@ -1214,6 +1214,8 @@ lga창 켜ㅜ저,{},[],/windows/teaching/lga
 설정창 열고 히스토리 창 켜줘,{},[],"/windows/settings
 /windows/history"
 히스토리 창 켜줘,{},[],/windows/history
+"bga 티칭 창 cornerLeft를 89.8,불카운트200바꿔줘",{},[],/teaching/bga/cornerLeft?value=89.8&barCount=200
+날씨,{},[],/NO_FUNCTION
 카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
 카메라 one 라이브 켜줘 ,{},[],/windows/light/live?camera=SettingX1
 MapPackageSizeWidth 12로 설정,{},[],/settings/mapPackageSizeWidth?value=12
@@ -3005,3 +3007,15 @@ PRS 켜고 티칭창 열어줘,"{'System Usage': 'NoTab', 'PRS Device View': 'No
 /windows/teaching/mapping
 /windows/teaching/strip"
 안녕,"{'System Usage': 'NoTab', 'PRS Device View': 'NoTab', 'Mapping Device View': 'NoTab', 'PRS Inspection': 'NoTab', 'Mapping Inspection': 'NoTab', 'Top Strip Inspection': 'NoTab', 'FloatingMenuWindow': 'NoTab', 'Detail Inspection Result': 'NoTab', 'X1 Picker Device View': 'NoTab', 'X2 Picker Device View': 'NoTab', 'PRS Result View': 'NoTab', 'Mapping Result View': 'NoTab', 'lga': 'Package', 'qfn': 'Package', 'bga': 'Package', 'mapping': 'Package', 'strip': 'Barcode'}","['bga', 'lga', 'qfn', 'mapping', 'strip']",/windows/history
+lga 창 열어줘,{},[],/windows/teaching/lga
+lga 창 열어줘,{},[],/windows/teaching/lga
+날씨뭐야,{'lga': 'Surface'},['lga'],/NO_FUNCTION
+날씨 뭐야?,{},[],/NO_FUNCTION
+lga 창 열어,{},[],/windows/teaching/lga
+임계값 올려,{},[],/settings/thresholds
+'/settings/thresholds'는 허용되지 않는 URL입니다. 프롬프트 내에 존재하는 URL로 변환해 주세요. 백틱(`)이나 코드블록 없이 URL만 출력하세요.,{},[],/windows/settings
+임계값 올려,{},[],/settings/thresholds
+'/settings/thresholds'는 허용되지 않는 URL입니다. 프롬프트 내에 존재하는 URL로 변환해 주세요. 백틱(`)이나 코드블록 없이 URL만 출력하세요.,{},[],/windows/settings
+임계값,{},[],/NO_FUNCTION
+임계값 올려,{},[],/settings/thresholds
+'/settings/thresholds'는 허용되지 않는 URL입니다. 프롬프트 내에 존재하는 URL로 변환해 주세요. 백틱(`)이나 코드블록 없이 URL만 출력하세요.,{},[],/windows/settings

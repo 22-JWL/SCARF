@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d51f8f9-7517-47cd-9b83-0c6a584e689a" name="변경" comment="feat : 3단계 파이프라인 flask적용">
+    <list default="true" id="3d51f8f9-7517-47cd-9b83-0c6a584e689a" name="변경" comment="feat : 3단계 파이프라인 수정, readme 추가">
       <change afterPath="$PROJECT_DIR$/models.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_logs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/model_logs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ragTest/experiment/ambiguity_classifier_v1/train/train_ambiguity_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ragTest/experiment/ambiguity_classifier_v1/train/train_ambiguity_classifier.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -205,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773287773471</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat : 3단계 파이프라인 flask 통합">
+      <option name="closed" value="true" />
+      <created>1773288169726</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773288169726</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat : 3단계 파이프라인 수정, readme 추가">
+      <option name="closed" value="true" />
+      <created>1773365703723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773365703723</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +244,8 @@
     <MESSAGE value="feat : addmodel" />
     <MESSAGE value="fix : downgrade exaone" />
     <MESSAGE value="feat : 3단계 파이프라인 flask적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 3단계 파이프라인 flask적용" />
+    <MESSAGE value="feat : 3단계 파이프라인 flask 통합" />
+    <MESSAGE value="feat : 3단계 파이프라인 수정, readme 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 3단계 파이프라인 수정, readme 추가" />
   </component>
 </project>

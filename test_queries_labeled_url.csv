@@ -1,0 +1,247 @@
+﻿id,text,label,index,description,subCategory,index_Classifier,slot_filling,url
+1,임계값 자동으로 설정해줘,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoThresholdSet,
+2,auto threshold,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoThresholdSet,
+3,자동 임계값 실행,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoThresholdSet,
+4,ROI 자동으로 다시 잡아줘,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoRoiGenerate,
+5,자동 설정 기능 실행,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=NONE,
+6,검사 설정 자동으로 한 번에 해줘,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=NONE,
+7,자동 구성으로 설정 진행,,1,,auto_configuration_execute,0,window_name=NONE|auto_type=NONE,
+8,임계값 자동으로 맞춰줘,,2,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoThresholdSet,
+9,로이 자동으로 잡아줘,,2,,auto_configuration_execute,0,window_name=NONE|auto_type=NONE,
+10,자동으로 검사 설정 맞추는 기능 실행,,2,,auto_configuration_execute,0,window_name=NONE|auto_type=NONE,
+11,임계값 자동으로 구성,,2,,auto_configuration_execute,0,window_name=NONE|auto_type=AutoThresholdSet,
+12,BGA 볼 영역 자동으로 설정,,3,,auto_configuration_execute,1,window_name=bga|auto_type=findBallRoiAutoCommand,/teaching/bga/update?propertyName=findBallRoiAutoCommand&value=1
+13,BGA 검사 자동 설정 실행,,3,,auto_configuration_execute,1,window_name=bga|auto_type=findBallRoiAutoCommand,/teaching/bga/update?propertyName=findBallRoiAutoCommand&value=1
+14,LGA Auto ROI,,3,,auto_configuration_execute,1,window_name=lga|auto_type=AutoRoiGenerate,/teaching/lga/update?propertyName=findPackageRoiAutoCommand&value=1
+15,십자선 기본으로 바꿔줘,,1,,calibration,0,action_type=reticle_type|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=DEFAULT|camera_type=NONE,
+16,모양 원으로,,1,,calibration,0,action_type=shape_similarity|button_action=NONE|shape_type=circle|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+17,십자선 타입 fullsize로,,1,,calibration,0,action_type=reticle_type|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=FULLSIZE|camera_type=NONE,
+18,원 유사도 70,,1,,calibration,0,action_type=shape_similarity|button_action=NONE|shape_type=circle|similarity_value=70|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+19,보정 설정 다시 해줘,,1,,calibration,0,action_type=NONE|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+20,캘리브레이션 옵션 조정,,1,,calibration,0,action_type=NONE|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+21,보정 화면 설정 바꿔줘,,1,,calibration,0,action_type=NONE|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+22,캘리창에서 유사도 재설정,,2,,calibration,0,action_type=shape_similarity|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+23,캘리창에서 유사도를 적당하게 바꿔줘,,2,,calibration,0,action_type=shape_similarity|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+24,보정창에서 카메라 변경해,,2,,calibration,0,action_type=camera|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+25,보정 기준을 다시 맞춰줘,,2,,calibration,0,action_type=reference_select|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=NONE,
+26,보정 화면에서 십자선 타입을 FULLSIZE로 변경,,3,,calibration,1,action_type=reticle_type|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=FULLSIZE|camera_type=NONE,/calibration/update?propertyName=recticletype&value=FULLSIZE
+27,캘리브레이션 기준 선택을 가장 큰 객체로 설정,,3,,calibration,1,action_type=reference_select|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=BIGGEST|reticle_type=NONE|camera_type=NONE,/calibration/update?propertyName=select&value=BIGGEST
+28,보정창 카메라를 SettingX1으로 변경,,3,,calibration,1,action_type=camera|button_action=NONE|shape_type=NONE|similarity_value=NONE|reference_type=NONE|reticle_type=NONE|camera_type=SettingX1,/calibration/update?propertyName=camera&value=SettingX1
+29,모드 바꿔줘,,1,,change_mode,0,operation=NONE,
+30,작업 모드 변경,,1,,change_mode,0,operation=NONE,
+31,지금 상태 다른 모드로 전환,,1,,change_mode,0,operation=NONE,
+32,운영 모드 전환해,,1,,change_mode,0,operation=NONE,
+33,장비 모드 좀 바꿔,,1,,change_mode,0,operation=NONE,
+34,현재 모드 변경,,1,,change_mode,0,operation=NONE,
+35,다른 모드 변경,,1,,change_mode,0,operation=NONE,
+36,모드 전환 필요해,,1,,change_mode,0,operation=NONE,
+37,설정 말고 다른 모드로,,1,,change_mode,0,operation=NONE,
+38,ㄹㅓㄴ 모드 변경,,1,,change_mode,0,operation=NONE,
+39,설저ㅇ 모드 고,,1,,change_mode,0,operation=NONE,
+40,PRS 재티칭 모드로 변경시켜줘,,3,,change_mode,1,operation=PRS_RETEACH,/windows/teaching/prs/reteach
+41,PRS 재티칭 모드로 변경시켜줘,?,3,,change_mode,1,operation=PRS_RETEACH,/windows/teaching/prs/reteach
+42,PRS 리티치 모드로 전환,?,3,,change_mode,1,operation=PRS_RETEACH,/windows/teaching/prs/reteach
+43,장비를 RUN 모드로 바꿔,?,3,,change_mode,1,operation=RUN,/mode/set?mode=RUN
+44,채팅 기록 초기화,?,3,,chat_clear,1,NONE,/chat/clear
+45,clear chat,?,3,,chat_clear,1,NONE,/chat/clear
+46,최근 대화 내용 지우기,?,3,,chat_clear,1,NONE,/chat/clear
+47,이전 메시지 모두 삭제,?,3,,chat_clear,1,NONE,/chat/clear
+48,채팅 기록 지워줘,?,3,,chat_clear,1,NONE,/chat/clear
+49,대화 내용 초기화,?,3,,chat_clear,1,NONE,/chat/clear
+50,지금까지 채팅 전부 삭제,?,3,,chat_clear,1,NONE,/chat/clear
+51,채팅창 비워줘,?,3,,chat_clear,1,NONE,/chat/clear
+52,이전 대화 기록 클리어,?,3,,chat_clear,1,NONE,/chat/clear
+53,대화 로그 초기화해,?,3,,chat_clear,1,NONE,/chat/clear
+54,지금 열려있는 창 닫아,?,2,,close_windows,1,NONE,/closeWindows
+55,열려 있는 LGA 창 닫기,?,3,,close_windows,1,NONE,/closeWindows
+56,창 닫어,?,3,,close_windows,1,NONE,/closeWindows
+57,티칭창 모두 닫기,?,3,,close_windows,1,NONE,/closeWindows
+58,창 꺼주세요,?,3,,close_windows,1,NONE,/closeWindows
+59,현재 화면 종료,?,3,,close_windows,1,NONE,/closeWindows
+60,lga 창 꺼줘,?,3,,close_windows,1,NONE,/closeWindows
+61,bga 창 닫아,?,3,,close_windows,1,NONE,/closeWindows
+62,기록 화면 전부 닫기,?,3,,close_windows,1,NONE,/closeWindows
+63,열린 창들 종료해,?,3,,close_windows,1,NONE,/closeWindows
+64,LGA 모델 영역 ROI 생성,,2,,geometry_set,0,window_name=lga|geometry_position=PackageModelRoi_|coordinate_value=NONE,
+65,LGA RejectMark 위치 ROI 지정,,2,,geometry_set,0,window_name=lga|geometry_position=RejectMarkRoi_|coordinate_value=NONE,
+66,QFN 패키지 왼쪽 외곽 ROI 생성,?,2,,geometry_set,0,window_name=qfn|geometry_position=PackageRoiLeft_|coordinate_value=NONE,
+67,QFN 패키지 오른쪽 ROI 좌표 지정,?,2,,geometry_set,0,window_name=qfn|geometry_position=PackageRoiRight_|coordinate_value=NONE,
+68,bga Package 외곽 ROI (좌측) 변경,,2,,geometry_set,0,window_name=bga|geometry_position=PackageRoiLeft_|coordinate_value=NONE,
+69, 패키지 하단 ROI 좌표 10-20-30-40 입력,,1,,geometry_set,0,window_name=NONE|geometry_position=PackageRoiBottom_|coordinate_value=10-20-30-40,
+70,패키지 오른쪽 ROI 설정 5-15-25-35,,1,,geometry_set,0,window_name=NONE|geometry_position=PackageRoiRight_|coordinate_value=5-15-25-35,
+71,퍼스트핀 영역 좌표로 ROI 설정 0-0-50-50,,1,,geometry_set,0,window_name=NONE|geometry_position=FirstPinRoi_|coordinate_value=0-0-50-50,
+72,패키지 상단 ROI 좌표 10-20-30-40 입력,,1,,geometry_set,0,window_name=NONE|geometry_position=PackageRoiTop_|coordinate_value=10-20-30-40,
+73,패키지 오른쪽 ROI 설정 5-15-25-35,,1,,geometry_set,0,window_name=NONE|geometry_position=PackageRoiRight_|coordinate_value=5-15-25-35,
+74,퍼스트핀 영역 좌표로 ROI 설정 0-0-50-50,,1,,geometry_set,0,window_name=NONE|geometry_position=FirstPinRoi_|coordinate_value=0-0-50-50,
+75,QFN 패키지 상단 ROI 좌표 12-8-24-30,,3,,geometry_set,1,window_name=qfn|geometry_position=PackageRoiTop_|coordinate_value=12-8-24-30,/teaching/qfn/update?propertyName=PackageRoiTop_&value=12-8-24-30
+76,QFN 패키지 하단 영역 ROI 입력 2-2-48-48,?,3,,geometry_set,1,window_name=qfn|geometry_position=PackageRoiBottom_|coordinate_value=2-2-48-48,/teaching/qfn/update?propertyName=PackageRoiBottom_&value=2-2-48-48
+77,LGA 패키지 중심 좌표 입력 15-25-35-45,?,3,,geometry_set,1,window_name=lga|geometry_position=PackageModelRoi_|coordinate_value=15-25-35-45,/teaching/lga/update?propertyName=PackageModelRoi_&value=15-25-35-45
+78,LGA 필터링 조건 적용,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+79,검사 기록 필터 적용,,2,,history_set,0,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+80,기록 조회 조건 다시 설정,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+81,검사 이력 필터링,,2,,history_set,0,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+82,저번달 기록 보여줘,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+83,기록 조건 바꿔서 다시 보고 싶어,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+84,검사 매핑 필터 다시 적용,,2,,history_set,0,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=Mapping|button_action=NONE,
+85,선택된 기준으로 기록 보기,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+86,검사 기록 설정 변경,,2,,history_set,0,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+87,기록 조회 옵션 조정,,2,,history_set,0,filter_type=NONE|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+88,검사 결과 필터 다시 설정,,2,,history_set,0,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,
+89,2026-09-01_2026-09-25 검사 기록만 보여줘,,3,,history_set,1,filter_type=inspection|date_range=2026-09-01_2026-09-25|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,/history/update?propertyName=inspection&value=2025-09-01_2025-09-30
+90,2025-08-01_2025-09-01 한 달 검사 기록 조회,,3,,history_set,1,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=NONE|button_action=NONE,/history/update?propertyName=inspection&value=2025-08-01_2025-09-01
+91,LGA 검사 기록만 필터링해서 보기,,3,,history_set,1,filter_type=inspection|date_range=NONE|camera_type=NONE|history_inspection_type=Lga|button_action=NONE,/history/update?propertyName=inspection&value=Lga
+92,inspectRejectMark 버튼 눌러줘,,1,,inspection_execute,0,window_name=NONE|inspection_type=inspectRejectMarkTeaching,
+93,검사 시작해,,1,,inspection_execute,0,window_name=NONE|inspection_type=inspectTeaching,
+94,검사 버튼 눌러줘,,1,,inspection_execute,0,window_name=NONE|inspection_type=inspectTeaching,
+95,검사 다시 돌려봐,,1,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+96,티칭 검사 실행해,,1,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+97,볼 검사 테스트 실행,?,1,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+98,티칭 테스트 버튼 클릭해,,1,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+99,lga 이물질 값 잘 확인해,,2,,inspection_execute,0,window_name=lga|inspection_type=NONE,
+100,BGA 티칭 창에서 티칭 테스트 실행,?,2,,inspection_execute,0,window_name=bga|inspection_type=NONE,
+101,BGA 티칭 창에서 볼 검사 테스트 실행,?,2,,inspection_execute,0,window_name=bga|inspection_type=NONE,
+102,패키지 및 리드 검사 테스트 실행,?,2,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+103,BGA 티칭 창에서 볼 검사 테스트 실행,?,3,,inspection_execute,1,window_name=bga|inspection_type=findBallsTeaching,/teaching/bga/update?propertyName=findBallsTeaching&value=1
+104,LGA 티칭 창에서 패드 검사 티칭 테스트 실행,?,3,,inspection_execute,1,window_name=lga|inspection_type=findpadsTeaching,/teaching/lga/update?propertyName=findpadsTeaching&value=1
+105,LGA 티칭 창 티칭 검사 실행,?,3,,inspection_execute,1,window_name=lga|inspection_type=inspectTeaching,/teaching/lga/update?propertyName=inspectTeaching&value=1
+106,오늘 커피 너무 써서 깜짝 놀랐어,,0,,no_function,0,NONE,/NO_FUNCTION
+107,어제 본 드라마 결말이 좀 이상했어,,0,,no_function,0,NONE,/NO_FUNCTION
+108,아무 생각 없이 멍 때리고 싶다,,0,,no_function,0,NONE,/NO_FUNCTION
+109,야 너 누구냐ㅋㅋㅋ,,0,,no_function,0,NONE,/NO_FUNCTION
+110,지금 환율 좀 알려줘,,0,,no_function,0,NONE,/NO_FUNCTION
+111,청년희망적금 계좌 들고 싶은데,,0,,no_function,0,NONE,/NO_FUNCTION
+112,아오 집 가고 싶다!!,,0,,no_function,0,NONE,/NO_FUNCTION
+113,헐 밖에 비온다,,0,,no_function,0,NONE,/NO_FUNCTION
+114,연애 상담 해줘,,0,,no_function,0,NONE,/NO_FUNCTION
+115,점메추. 점심 메뉴 추천이라는 뜻,,0,,no_function,0,NONE,/NO_FUNCTION
+116,요즘 날씨 왜 이래?,,0,,no_function,0,NONE,/NO_FUNCTION
+117,내일 뭐 입지?,,0,,no_function,0,NONE,/NO_FUNCTION
+118,배고픈데 뭐 먹을까,,0,,no_function,0,NONE,/NO_FUNCTION
+119,오늘 기분이 좀 별로야,,0,,no_function,0,NONE,/NO_FUNCTION
+120,창 열어줘,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+121,화면 하나 띄워줘,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+122,창 열기,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+123,작업 화면 열어,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+124,티칭 화면 열어줘,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+125,관련 창 좀 보여줘,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+126,티칭창 열어,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+127,이전 화면 다시 열어,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+128,필요한 창 열어줘,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+129,그 창 다시 띄워봐,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+130,창 열어주세요,,1,,open_window,0,window_name=NONE,/NO_FUNCTION
+131,LGA 창 열기,,3,,open_window,1,window_name=lga,/windows/teaching/lga
+132,QFN 티칭 창 열기,,3,,open_window,1,window_name=qfn,/windows/teaching/qfn
+133,Calibration 창 켜줘,,3,,open_window,1,window_name=calibration,/windows/calibration
+134,ROI 다시 만들어,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+135,DontCare 탭 ROI 추가,,1,,roi_collection_control,0,window_name=NONE|roi_type=DontCareRoi|roi_action=add,
+136,ROI 추가,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+137,ROI 삭제,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=delete,
+138,로이 create,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+139,로이 recreate 해줘,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+140,ROI 하나 더 만들어줘,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+141,ROI 초기화,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=reset,
+142,티칭 창 package 탭에서 ROI 생성,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+143,티칭 창 Mark 탭에서 ROI 생성,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=add,
+144,해당 탭에서 로이 삭제,,1,,roi_collection_control,0,window_name=NONE|roi_type=NONE|roi_action=delete,
+145,BGA Package 모델 ROI 만들어,,3,,roi_collection_control,1,window_name=bga|roi_type=NONE|roi_action=add,/teaching/bga/update?propertyName=Roi&value=add
+146,mapping 티칭 창 RejectMark 탭에서 ROI 생성,,3,,roi_collection_control,1,window_name=mapping|roi_type=RejectMarkRoi|roi_action=add,/teaching/mapping/update?propertyName=RejectMarkRoi&value=add
+147,QFN 티칭 창 Package 탭에서 ROI 삭제,,3,,roi_collection_control,1,window_name=qfn|roi_type=NONE|roi_action=delete,/teaching/qfn/update?propertyName=Roi&value=delete
+148,edge 모드 변경,,1,,set_option,0,window_name=NONE|option_type=EdgeDetectMode|option_value=NONE,
+149,edge 방향 바꿔줘,,1,,set_option,0,window_name=NONE|option_type=EdgeDetectDirection|option_value=NONE,
+150,자재 회전각 설정,,1,,set_option,0,window_name=NONE|option_type=RotateAngle|option_value=NONE,
+151,black to white로 edge 검출 모드 변경,,1,,set_option,0,window_name=NONE|option_type=NONE|option_value=NONE,
+152,edge 방향 밖에서 안으로 바꿔줘,,1,,set_option,0,window_name=NONE|option_type=EdgeDetectDirection|option_value=NONE,
+153,edge 방향 안에서 밖으로 바꿔줘,,1,,set_option,0,window_name=NONE|option_type=EdgeDetectDirection|option_value=NONE,
+154,검사 방향 옵션 수정,,1,,set_option,0,window_name=NONE|option_type=NONE|option_value=NONE,
+155,mapping 티칭 창 edge 모드 변경,,2,,set_option,0,window_name=mapping|option_type=EdgeDetectMode|option_value=NONE,
+156,mapping edge 모드 변경해,,2,,set_option,0,window_name=mapping|option_type=EdgeDetectMode|option_value=NONE,
+157,패티지 각도 90도로,,2,,set_option,0,window_name=NONE|option_type=RotateAngle|option_value=0,
+158,패키지 각도 바꿔줘,,2,,set_option,0,window_name=NONE|option_type=RotateAngle|option_value=NONE,
+159,BGA 패키지 edge 방향 OutToIn으로 변경,,3,,set_option,1,window_name=bga|option_type=EdgeDetectDirection|option_value=OutToIn,/teaching/bga/update?propertyName=EdgeDetectDirection&value=OutToIn
+160,BGA edge 검출 모드를 WhiteToBlack으로 바꿔,,3,,set_option,1,window_name=bga|option_type=EdgeDetectMode|option_value=WhiteToBlack,/teaching/bga/update?propertyName=EdgeDetectMode&value=WhiteToBlack
+161,mapping 패키지 각도 180도로 설정,,3,,set_option,1,window_name=mapping|option_type=RotateAngle|option_value=180,/teaching/mapping/update?propertyName=PackageRotateAngle&value=180
+162,Edge Threshold Amplitude 값 50,,1,,set_parameter,0,window_name=NONE|parameter_name=PackageThresholdDiff|parameter_value=50,
+163,Edge Threshold Amplitude 값 설정,,2,,set_parameter,0,window_name=NONE|parameter_name=PackageThresholdDiff|parameter_value=NONE,
+164,qfn 외곽선 너비를 적당히 바꿔,,2,,set_parameter,0,window_name=qfn|parameter_name=OutlineWidth|parameter_value=NONE,
+165,bga Edge Threshold Amplitude 값 재설정,,2,,set_parameter,0,window_name=bga|parameter_name=PackageThresholdDiff|parameter_value=NONE,
+166,Edge Threshold 값 23,?,2,,set_parameter,0,window_name=NONE|parameter_name=NONE|parameter_value=23,
+167,Outline Width 값 50,?,2,,set_parameter,0,window_name=NONE|parameter_name=OutlineWidth|parameter_value=50,
+168,외곽선 너비 값 조정,?,2,,set_parameter,0,window_name=NONE|parameter_name=OutlineWidth|parameter_value=NONE,
+169,앰플리튜드 값 33,?,2,,set_parameter,0,window_name=NONE|parameter_name=NONE|parameter_value=33,
+170,Edge Threshold 값 살짝 변경,?,2,,set_parameter,0,window_name=NONE|parameter_name=NONE|parameter_value=NONE,
+171,Outline Width 값 미세 조정,?,2,,set_parameter,0,window_name=NONE|parameter_name=OutlineWidth|parameter_value=NONE,
+172,앰플리튜드 값 튜닝,?,2,,set_parameter,0,window_name=NONE|parameter_name=NONE|parameter_value=NONE,
+173,lga Edge Threshold 값 30,?,2,,set_parameter,0,window_name=lga|parameter_name=NONE|parameter_value=30,
+174,비지에이 Outline Width 값 70,?,2,,set_parameter,0,window_name=bga|parameter_name=OutlineWidth|parameter_value=70,
+175,qfn 외곽선 너비 값 50,?,2,,set_parameter,0,window_name=qfn|parameter_name=OutlineWidth|parameter_value=50,
+176,Contamination 사이즈 설정,,1,,set_size,0,window_name=NONE|size_type=ContaminationSize|size_value=NONE,
+177,Surface contamination 크기 바꿔,,1,,set_size,0,window_name=NONE|size_type=ContaminationSize|size_value=NONE,
+178,사이즈 100-400으로 변경,,1,,set_size,0,window_name=NONE|size_type=NONE|size_value=100-400,
+179,ForeignMaterial 사이즈 설정,,1,,set_size,0,window_name=NONE|size_type=ForeignMaterialSize|size_value=NONE,
+180,사이즈 값 조정,,1,,set_size,0,window_name=NONE|size_type=NONE|size_value=NONE,
+181,결함 크기 기준 변경,,1,,set_size,0,window_name=NONE|size_type=NONE|size_value=NONE,
+182,LGA Scratch 탭 사이즈 재설정,,2,,set_size,0,window_name=lga|size_type=ScratchSize|size_value=NONE,
+183,보정 창에서 사이즈 설정,,2,,set_size,0,window_name=calibration|size_type=NONE|size_value=NONE,
+184,lga Contamination 값 설정해,,2,,set_size,0,window_name=lga|size_type=ContaminationSize|size_value=NONE,
+185,보정창에서 사이즈 다시 지정,,2,,set_size,0,window_name=calibration|size_type=NONE|size_value=NONE,
+186,mapping 티칭 창 Contamination 사이즈 범위 재설정,,2,,set_size,0,window_name=mapping|size_type=ContaminationSize|size_value=NONE,
+187,BGA 티칭 창 Scratch 사이즈를 5-30으로 변경,,3,,set_size,1,window_name=bga|size_type=ScratchSize|size_value=5-30,/teaching/bga/update?propertyName=ScratchSize&value=5-30
+188,QFN 티칭 창 ForeignMaterial 사이즈 10-60으로 설정,,3,,set_size,1,window_name=qfn|size_type=ForeignMaterialSize|size_value=10-60,/teaching/qfn/update?propertyName=ForeignMaterialSize&value=10-60
+189,LGA 티칭 창 RejectMark 사이즈 값을 3-15로 변경,,3,,set_size,1,window_name=lga|size_type=RejectMarkSize|size_value=3-15,/teaching/lga/update?propertyName=RejectMarkSize&value=3-15
+190,패키지 탭 fisrtpin 값 10-50,,1,,set_threshold,0,window_name=NONE|threshold_type=PackageThreshold|threshold_value=10-50,
+191,package 탭에서 임계값을 50-100으로,,1,,set_threshold,0,window_name=NONE|threshold_type=PackageThreshold|threshold_value=50-100,
+192,Scratch 임계값을 10-90으로 설정해줘,,1,,set_threshold,0,window_name=NONE|threshold_type=ScratchThreshold|threshold_value=10-90,
+193,sawing 외곽선 threshold를 10-60으로 설정,,1,,set_threshold,0,window_name=NONE|threshold_type=OutlineThreshold|threshold_value=10-60,
+194,Scratch 임계값을 0-100,,1,,set_threshold,0,window_name=NONE|threshold_type=ScratchThreshold|threshold_value=0-100,
+195,LGA 티칭 창 RejectMark 탭에서 임계값을 바꿔줘,,2,,set_threshold,0,window_name=lga|threshold_type=RejectMarkThreshold|threshold_value=NONE,
+196,LGA Scratch threshold change,,2,,set_threshold,0,window_name=lga|threshold_type=ScratchThreshold|threshold_value=NONE,
+197,bga 창 package 탭에서 임계값 변경해줘,,2,,set_threshold,0,window_name=bga|threshold_type=PackageThreshold|threshold_value=NONE,
+198,qfn 티칭 창 RejectMark threshold 바꿔줘,,2,,set_threshold,0,window_name=qfn|threshold_type=RejectMarkThreshold|threshold_value=NONE,
+199,lga Multi Pad Threshold 바꿔줘,,2,,set_threshold,0,window_name=lga|threshold_type=PadThreshold|threshold_value=NONE,
+200,LGA threshold change,,2,,set_threshold,0,window_name=lga|threshold_type=NONE|threshold_value=NONE,
+201,bga 창 package 탭에서 임계값 20-50,,3,,set_threshold,1,window_name=bga|threshold_type=PackageThreshold|threshold_value=20-50,/teaching/bga/update?propertyName=PackageThreshold&value=20-50
+202,qfn 티칭 창 Scratch threshold 30-80으로 변경,,3,,set_threshold,1,window_name=qfn|threshold_type=ScratchThreshold|threshold_value=30-80,/teaching/qfn/update?propertyName=ScratchThreshold&value=30-80
+203,LGA 퍼스트핀 임계값 30-80으로 변경,,3,,set_threshold,1,window_name=lga|threshold_type=FirstPinThreshold|threshold_value=30-80,/teaching/lga/update?propertyName=FirstPinThreshold&value=20-50
+204,현재 레시피 값 저장,,1,,setting_Preset,0,action=save|recipe_name=NONE|target_name=NONE,
+205,레시피 저장해,,1,,setting_Preset,0,action=save|recipe_name=NONE|target_name=NONE,
+206,새 레시피 만들어줘,,1,,setting_Preset,0,action=add|recipe_name=NONE|target_name=NONE,
+207,기존 레시피 수정,,1,,setting_Preset,0,action=NONE|recipe_name=NONE|target_name=NONE,
+208,레시피 설정 변경,,1,,setting_Preset,0,action=select|recipe_name=NONE|target_name=NONE,
+209,레시피 다시 적용,,1,,setting_Preset,0,action=select|recipe_name=NONE|target_name=NONE,
+210,설정값 프리셋 저장,,1,,setting_Preset,0,action=save|recipe_name=NONE|target_name=NONE,
+211,레시피 관리 화면에서 설정,,1,,setting_Preset,0,action=NONE|recipe_name=NONE|target_name=NONE,
+212,프리셋 작업 진행,,1,,setting_Preset,0,action=NONE|recipe_name=NONE|target_name=NONE,
+213,현재 설정 레시피로 저장,,1,,setting_Preset,0,action=save|recipe_name=NONE|target_name=NONE,
+214,레시피 관련 작업 실행,,1,,setting_Preset,0,action=NONE|recipe_name=NONE|target_name=NONE,
+215,새 sns 레시피 추가,,3,,setting_Preset,1,action=add|recipe_name=sns|target_name=NONE,/settings/update?propertyName=addRecipe&value=sns
+216,레시피 이름을 ttt에서 ddd로 변경,,3,,setting_Preset,1,action=select|recipe_name=NONE|target_name=NONE,/settings/update?propertyName=selectRecipe
+217,기존 레시피 ddd 불러와서 적용,,3,,setting_Preset,1,action=select|recipe_name=ddd|target_name=NONE,/settings/update?propertyName=selectRecipe&value=ddd
+218,TrayRowCount 값 4로 변경,,1,,system_setting,0,settingNumPropertyName=TrayRowCount|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=NONE,
+219,검사 색깔 빨간색으로,,1,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=Red,
+220,mapping 가로 세로 값을 바꿔줘,,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=NONE,
+221,bga Ball Min Circularity 30 바꿔,,1,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=30|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=NONE,
+222,MapContaminationColor blue로,,1,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=MapContaminationColor|setColorValue=Blue,
+223,레시피에서 Mapping 기능 사용 안 하도록 설정,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=NONE,
+224,BGA 검사에서 볼 피치 항목 사용하도록 켜,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=true|settingColorPropertyName=NONE|setColorValue=NONE,
+225,BGA 오염 검사 표시 색상을 빨간색으로 변경,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=Red,
+226,UseBgaBallPitch 를 false로 설정,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=UseBgaBallPitch|settingBoolValue=false|settingColorPropertyName=NONE|setColorValue=NONE,
+227,BGA 오염 검사 색깔을 초록색으로 바꿔,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=NONE|setColorValue=Green,
+228,LGA 패드 사이즈 검사 항목 비활성화,?,2,,system_setting,0,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=true|settingColorPropertyName=NONE|setColorValue=NONE,
+229,설정창에서 UseLgaPadPerimeter 비활성화,?,3,,system_setting,1,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=UseLgaPadPerimeter|settingBoolValue=true|settingColorPropertyName=NONE|setColorValue=NONE,/settings/update?propertyName=UseLgaPadPerimeter&value=true
+230,세팅창에서 MAP 검사에서 이물질 항목 사용하도록 설정,?,3,,system_setting,1,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=UseMapForeignMaterial|settingBoolValue=true|settingColorPropertyName=NONE|setColorValue=NONE,/settings/update?propertyName=UseMapForeignMaterial&value=true
+231,세팅에서 BgaBallPitchColor 검정색으로,?,3,,system_setting,1,settingNumPropertyName=NONE|settingNumValue=NONE|settingBoolPropertyName=NONE|settingBoolValue=NONE|settingColorPropertyName=BgaBallPitchColor|setColorValue=Black,/settings/update?propertyName=BgaBallPitchColor&value=Black
+232,탭 이동해줘,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=NONE,
+233,다음 단계로 이동,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=NONE,
+234,다음 탭으로 이동,?,1,,inspection_execute,0,window_name=NONE|inspection_type=NONE,
+235,Package 탭으로 이동해,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=Package,
+236,Mark 탭으로 이동해,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=Mark,
+237,Sawing 탭으로 이동해줘,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=Sawing,
+238,Ball 탭 이동해,,1,,ui_navigation_execute,0,window_name=NONE|tab_name=Ball,
+239,bga ForeignMaterial 탭으로 바꿔,?,2,,ui_navigation_execute,0,window_name=bga|tab_name=NONE,
+240,LGA 티칭 탭 Package로 이동,?,2,,ui_navigation_execute,0,window_name=lga|tab_name=Package,
+241,티칭 Surface 탭 열기,?,2,,ui_navigation_execute,0,window_name=NONE|tab_name=Surface,
+242,티칭 Ball 단계로 이동,?,2,,ui_navigation_execute,0,window_name=NONE|tab_name=Ball,
+243,티칭 Result 탭 보기,?,2,,ui_navigation_execute,0,window_name=NONE|tab_name=Result,
+244,QFN 티칭 RejectMark 단계 이동,?,3,,ui_navigation_execute,1,window_name=qfn|tab_name=RejectMark,/teaching/qfn/update?propertyName=moveTab&value=RejectMark
+245,BGA 티칭 Sawing 탭 전환,?,3,,ui_navigation_execute,1,window_name=bga|tab_name=Sawing,/teaching/bga/update?propertyName=moveTab&value=Sawing
+246,Calibration 창 pad 탭 이동,?,3,,ui_navigation_execute,1,window_name=calibration|tab_name=Pads,/teaching/calibration/update?propertyName=moveTab&value=Pads

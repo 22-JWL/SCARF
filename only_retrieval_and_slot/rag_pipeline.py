@@ -133,13 +133,13 @@ def process_new_query(text: str) -> dict:
     print(f"[RAG Stage2b] ambiguity={ambiguity}")
 
     # 명확 → LLM  # 일단 슬롯 평가를 위해 주석 처리
-    if not ambiguity["is_ambiguous"]:
-        return {
-            "status":    "use_llm",
-            "intent":    intent,
-            "ambiguity": ambiguity,
-            "stage_times": {"retriever_s": t_retriever, "classifier_s": t_classifier, "slot_s": 0.0, "exaone_s": 0.0},
-        }
+    # if not ambiguity["is_ambiguous"]:
+    #     return {
+    #         "status":    "use_llm",
+    #         "intent":    intent,
+    #         "ambiguity": ambiguity,
+    #         "stage_times": {"retriever_s": t_retriever, "classifier_s": t_classifier, "slot_s": 0.0, "exaone_s": 0.0},
+    #     }
 
     # ── Stage 3b: 모호 → 슬롯 필링 ───────────────────────────────────────────
     t0 = time.time()

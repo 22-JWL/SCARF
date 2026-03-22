@@ -82,20 +82,33 @@ def _build_url(intent: str, slots: dict) -> str:
     return build_url_from_slots(intent, slots)
 
 
-def _make_action_document(candidates: list) -> str:
+def _make_action_document(candidates: list, score_gap_threshold: float = 0.15) -> str:
     """
-    retrieve_action 결과 중 상위 후보의 description + useCase 를 합쳐
-    ambiguity classifier 의 document_text 로 사용할 문자열을 만든다.
+    retrieve_action 결과에서 score gap 기반으로 포함할 후보를 선별한 뒤
+    description + useCase 를 합쳐 ambiguity classifier 의 document_text 를 만든다.
+
+    score_gap_threshold:
+        top-1 score 대비 gap이 이 값 이하인 후보만 포함 (최대 3개).
+        gap이 작다 = 여러 API가 비슷하게 유사 = 진짜 모호한 상황.
+        gap이 크다 = top-1이 압도적 = 나머지는 노이즈.
+        예) top scores [0.90, 0.60, 0.55] → gap=0.30 > 0.15 → top-1만 포함
+            top scores [0.82, 0.80, 0.78] → gap=0.04 < 0.15 → 최대 3개 포함
     """
     if not candidates:
         return ""
-    top = candidates[0]
+    top_score = candidates[0].get("score", 1.0)
+    selected = [c for c in candidates
+                if top_score - c.get("score", 0.0) <= score_gap_threshold][:3]
     parts = []
-    if top.get("description"):
-        parts.append(top["description"])
-    if top.get("useCase"):
-        parts.append(f"({top['useCase']})")
-    return " ".join(parts)
+    for c in selected:
+        line = []
+        if c.get("description"):
+            line.append(c["description"])
+        if c.get("useCase"):
+            line.append(f"({c['useCase']})")
+        if line:
+            parts.append(" ".join(line))
+    return "\n".join(parts)
 
 
 # ── 공개 API ─────────────────────────────────────────────────────────────────

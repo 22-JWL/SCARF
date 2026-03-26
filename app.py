@@ -159,7 +159,13 @@ class Instruct(Resource):
 
         # 3d. 명확한 명령 → LLM 호출
         # (rag_result["status"] == "use_llm")
-        result = run_model(user_input, current_window_info, model_name)
+        result = run_model(
+            user_input,
+            current_window_info,
+            model_name,
+            action_candidates=rag_result.get("action_candidates"),
+            intent=rag_result.get("intent", ""),
+        )
 
         # output 정리
         result['output'] = result['output'].replace("json\n", "").replace("json", "").strip()

@@ -206,7 +206,8 @@ def filter_system_prompt(current_window_info: str, prompt: str) -> str:
     return matched_keys, combined_prompt
 
 
-def run_model(prompt: str, current_window_info: dict, model_name: str):
+def run_model(prompt: str, current_window_info: dict, model_name: str,
+              action_candidates: list = None, intent: str = ""):
     """
     LLM 모델을 실행하는 함수 - 복합 명령어 지원.
     
@@ -251,9 +252,29 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
 
     # 프롬프트 구성
     selected_key, system_prompt_selected = filter_system_prompt(" ".join(current_window_info.keys()),prompt)
+
+    # top-k 문서 컨텍스트 구성
+    candidates_context = ""
+    if action_candidates:
+        lines = []
+        for i, c in enumerate(action_candidates, 1):
+            desc = c.get("description", "")
+            use_case = c.get("useCase", "")
+            api_name = c.get("api_name", "")
+            line = f"{i}. {desc}"
+            if use_case:
+                line += f" ({use_case})"
+            if api_name:
+                line += f" → {api_name}"
+            lines.append(line)
+        header = f"[Retrieved API Candidates] (intent: {intent})" if intent else "[Retrieved API Candidates]"
+        candidates_context = f"\n\n{header}\n" + "\n".join(lines)
+
+    user_content = f"{prompt}{candidates_context}\n\n[Gvision current_opened_window_and_tab]\n{current_window_info}"
+
     messages = [
         {"role": "system", "content": system_prompt_selected},
-        {"role": "user", "content": f"{prompt}\n\n[Gvision current_opened_window_and_tab]\n{current_window_info}"}
+        {"role": "user", "content": user_content}
     ]
 
     # 입력 ID 생성

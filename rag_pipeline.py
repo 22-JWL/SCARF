@@ -52,6 +52,19 @@ run_pipeline.vectorstore = run_pipeline.load_or_build_vectorstore(
     embeddings=_embeddings,
     action_path=os.path.join(RAGTEST_ROOT, "data", "action.json"),
 )
+# DB가 비어있으면 메모리 내 재빌드
+if run_pipeline.vectorstore._collection.count() == 0:
+    print("[RAG] Vectorstore 비어있음 → 메모리 내 재빌드...")
+    from langchain_chroma import Chroma as _Chroma
+    _docs = run_pipeline.load_documents_from_json(
+        os.path.join(RAGTEST_ROOT, "data", "action.json")
+    )
+    run_pipeline.vectorstore = _Chroma.from_documents(
+        documents=_docs,
+        embedding=_embeddings,
+        collection_metadata={"hnsw:space": "cosine"},
+    )
+    print(f"[RAG] 재빌드 완료: {run_pipeline.vectorstore._collection.count()}개 문서")
 print("[RAG] Vectorstore 준비 완료.")
 
 # ── Stage 3b: DST 슬롯 필링 모델 로드 ────────────────────────────────────────
@@ -82,23 +95,53 @@ def _build_url(intent: str, slots: dict) -> str:
     return build_url_from_slots(intent, slots)
 
 
-def _make_action_document(candidates: list, score_gap_threshold: float = 0.15) -> str:
+def _make_action_document(
+    candidates: list,
+    score_gap_threshold: float = 0.15,
+    min_score: float = 0.55,
+) -> str:
     """
-    retrieve_action 결과에서 score gap 기반으로 포함할 후보를 선별한 뒤
+    retrieve_action 결과에서 두 조건을 모두 만족하는 후보를 선별해
     description + useCase 를 합쳐 ambiguity classifier 의 document_text 를 만든다.
 
-    score_gap_threshold:
-        top-1 score 대비 gap이 이 값 이하인 후보만 포함 (최대 3개).
-        gap이 작다 = 여러 API가 비슷하게 유사 = 진짜 모호한 상황.
-        gap이 크다 = top-1이 압도적 = 나머지는 노이즈.
-        예) top scores [0.90, 0.60, 0.55] → gap=0.30 > 0.15 → top-1만 포함
-            top scores [0.82, 0.80, 0.78] → gap=0.04 < 0.15 → 최대 3개 포함
+    선별 조건 (AND):
+      1) top_score - score <= score_gap_threshold  (상대: top-1 대비 gap)
+      2) score >= min_score                        (절대: 최소 신뢰도)
+
+    고정 개수([:N]) 없이 조건에 따라 가변적으로 결정됨.
+      예) scores [0.92, 0.91, 0.90, 0.55]  gap_thr=0.15  min=0.55
+          → gap: [0.00, 0.01, 0.02, 0.37]
+          → 1~3번 포함(gap 통과 + score>=0.55), 4번 제외(gap 초과)
+          → 유사 API 3개가 자연스럽게 선택됨
+
+      예) scores [0.95, 0.62, 0.55]  gap_thr=0.15  min=0.55
+          → gap: [0.00, 0.33, 0.40]
+          → 1번만 포함(top-1 압도적)
+          → classifier에 단일 문서 → 명확한 명령으로 판단
     """
     if not candidates:
         return ""
     top_score = candidates[0].get("score", 1.0)
-    selected = [c for c in candidates
-                if top_score - c.get("score", 0.0) <= score_gap_threshold][:3]
+    # score가 similarity(높을수록 유사)인지 distance(낮을수록 유사)인지 판별
+    # in-memory Chroma는 distance, persistent Chroma는 similarity 반환
+    is_distance = top_score < min_score  # similarity라면 top-1이 min_score 이상이어야 함
+    if is_distance:
+        # distance 기준: gap = score - top_score (양수), 절대값은 max_distance(=1-min_score)
+        max_dist = 1.0 - min_score
+        selected = [
+            c for c in candidates
+            if (c.get("score", 1.0) - top_score <= score_gap_threshold)
+            and (c.get("score", 1.0) <= max_dist)
+        ][:3]
+    else:
+        selected = [
+            c for c in candidates
+            if (top_score - c.get("score", 0.0) <= score_gap_threshold)
+            and (c.get("score", 0.0) >= min_score)
+        ][:3]
+    # 어떤 조건도 통과 못하면 top-1 강제 포함
+    if not selected:
+        selected = [candidates[0]]
     parts = []
     for c in selected:
         line = []
@@ -149,6 +192,7 @@ def process_new_query(text: str) -> dict:
         action_doc = _make_action_document(action_candidates)
         ambiguity  = classify_ambiguity(text, action_doc)
     else:
+        action_doc = ""
         # 후보가 없으면 category description 으로 fallback
         ambiguity = run_pipeline.check_ambiguity(text, sub_category)
     print(f"[RAG Stage2b] ambiguity={ambiguity}")
@@ -156,9 +200,11 @@ def process_new_query(text: str) -> dict:
     # ── Stage 3a: 명확한 명령 → LLM ─────────────────────────────────────────
     if not ambiguity["is_ambiguous"]:
         return {
-            "status":    "use_llm",
-            "intent":    intent,
-            "ambiguity": ambiguity,
+            "status":           "use_llm",
+            "intent":           intent,
+            "ambiguity":        ambiguity,
+            "action_doc":       action_doc,
+            "action_candidates": action_candidates,
         }
 
     # ── Stage 3b: 모호한 명령 → 슬롯 필링 ───────────────────────────────────
@@ -174,6 +220,7 @@ def process_new_query(text: str) -> dict:
             "intent":    intent,
             "slots":     state.slots,
             "ambiguity": ambiguity,
+            "action_doc": action_doc,
         }
 
     session_id = state.turn_id
@@ -191,6 +238,7 @@ def process_new_query(text: str) -> dict:
         "session_id": session_id,
         "intent":     intent,
         "ambiguity":  ambiguity,
+        "action_doc": action_doc,
     }
 
 

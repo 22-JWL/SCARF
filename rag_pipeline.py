@@ -19,7 +19,7 @@ import time
 from threading import Lock
 
 # ── 경로 설정 ─────────────────────────────────────────────────────────────────
-RAGTEST_ROOT = r"C:\Users\AMLPC03\deepseers\ragTest"
+RAGTEST_ROOT = r"C:\Users\AMLPC01\PycharmProjects\flask_LLM\ragTest"
 # os.path.join(os.path.dirname(os.path.abspath(__file__)), "ragTest")
 RAGTEST_SRC  = os.path.join(RAGTEST_ROOT, "src")
 RAGTEST_SLOT = os.path.join(RAGTEST_ROOT, "experiment", "slot_filling")
@@ -77,16 +77,30 @@ def _build_url(intent: str, slots: dict) -> str:
     return build_url_from_slots(intent, slots)
 
 
-def _make_action_document(candidates: list) -> str:
+def _make_action_document(candidates: list, score_gap_threshold: float = 0.05) -> str:
+    """
+    top-1과 score 차이가 threshold 이내인 후보들을 모두 포함하여
+    ambiguity classifier에 전달할 document 문자열을 생성한다.
+    차이가 크면 top-1만, 작으면 top-3까지 포함하여 모호성 판단 정확도를 높인다.
+    """
     if not candidates:
         return ""
-    top = candidates[0]
+
+    # Chroma는 distance 반환 (낮을수록 좋음) → gap = c.score - top_score
+    top_score = candidates[0].get("score", 0)
+    close = [c for c in candidates
+             if c.get("score", 0) - top_score <= score_gap_threshold]
+    close = close[:3]
+
     parts = []
-    if top.get("description"):
-        parts.append(top["description"])
-    if top.get("useCase"):
-        parts.append(f"({top['useCase']})")
-    return " ".join(parts)
+    for c in close:
+        desc = c.get("description", "")
+        use  = c.get("useCase", "")
+        entry = f"{desc} ({use})" if use else desc
+        if entry:
+            parts.append(entry)
+    # 학습 데이터와 동일하게 newline 구분
+    return "\n".join(parts)
 
 
 def process_new_query(text: str) -> dict:

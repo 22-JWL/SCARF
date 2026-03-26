@@ -1,3 +1,4 @@
+import os
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 
 id2label = {                                                    # 라벨 ID -> 라벨 이름 : 매핑 도메인에 맞는 의미 있는 문자열로 변환하기 위한 매핑 테이블.
@@ -11,7 +12,7 @@ id2label = {                                                    # 라벨 ID -> �
 
 
 
-DEFAULT_MODEL_DIR = "./result/checkpoint-40"                    # 파인튜닝된 intent 분류 모델이 저장된 로컬 디렉토리
+DEFAULT_MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "result", "checkpoint-40")                    # 파인튜닝된 intent 분류 모델이 저장된 로컬 디렉토리
 DEFAULT_TOKENIZER_NAME = "distilbert-base-multilingual-cased"   # 사용할 사전 학습 토크나이저 이름(HF Hub 상의 모델 이름)
 
 def classify_text(                                              # 분류 함수

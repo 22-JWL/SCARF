@@ -4,9 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d51f8f9-7517-47cd-9b83-0c6a584e689a" name="변경" comment="feat : 3단계 파이프라인 flask적용">
-      <change afterPath="$PROJECT_DIR$/models.zip" afterDir="false" />
+    <list default="true" id="3d51f8f9-7517-47cd-9b83-0c6a584e689a" name="변경" comment="feat : Sota Test">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__19___11_02__________.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__19___11_09__________.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__19__오후_11_02,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/models.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__19__오후_11_02,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__20___2_09__________.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/26__3__20__오후_2_09,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SCARF_overview.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_174454.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_175200.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_192703.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_194826.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_201758.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_203846.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_221555.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_223150.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_classifier_20260326_231150.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_detail_20260319_224520.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_detail_20260320_064359.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_detail_20260326_170206.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_detail_20260326_173113.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_e2e_comparison_20260327_023931.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_e2e_comparison_20260327_103448.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_e2e_comparison_20260327_111542.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_procot_comparison_20260327_163057.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_summary_20260319_224520.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_summary_20260320_064359.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_summary_20260326_170206.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval_results/eval_summary_20260326_173113.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_e2e_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_e2e_comparison.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_e2e_comparison_ProCoT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation_script.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/ambiguity/train/ambiguity_train_20260325.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/ambiguity/train/ambiguity_train_20260325_.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/ambiguity/train/ambiguity_train_v2.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/ambiguity/train/ambiguity_train_v3.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/retrieval/test/ambiguity_question_184.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/data/processed/retrieval/test/ambiguity_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/experiment/ambiguity_classifier_v1/test_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/experiment/ambiguity_classifier_v1/train/train_ambiguity_classifier_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ragTest/src/scripts/ambiguity_data_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/26__3__12___10_50__________.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/26__3__12___10_50__________.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/26__3__12__오전_10_50,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/26__3__12__오전_10_50,_체크아웃_전에_커밋되지_않은_변경_내용_[변경]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_logs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/model_logs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ragTest" beforeDir="false" afterPath="$PROJECT_DIR$/ragTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ragTest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ragTest/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +64,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="SCARF" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -41,19 +90,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.app.executor": "Run",
-    "Python.common_prompt.executor": "Run",
-    "Python.model_runner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "SCARF",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.common_prompt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_runner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SCARF-eval&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AMLPC01\PycharmProjects\flask_LLM\document" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="flask_LLM" />
@@ -205,7 +259,47 @@
       <option name="project" value="LOCAL" />
       <updated>1773287773471</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix : rag_pipeline">
+      <option name="closed" value="true" />
+      <created>1774184827699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774184827699</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix : rag_pipeline">
+      <option name="closed" value="true" />
+      <created>1774509372214</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774509372214</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix : rag_pipeline">
+      <option name="closed" value="true" />
+      <created>1774509405388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774509405388</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat : Sota Test">
+      <option name="closed" value="true" />
+      <created>1774544641247</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1774544641247</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat : Sota Test">
+      <option name="closed" value="true" />
+      <created>1774544658594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1774544658594</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +318,8 @@
     <MESSAGE value="feat : addmodel" />
     <MESSAGE value="fix : downgrade exaone" />
     <MESSAGE value="feat : 3단계 파이프라인 flask적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 3단계 파이프라인 flask적용" />
+    <MESSAGE value="fix : rag_pipeline" />
+    <MESSAGE value="feat : Sota Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Sota Test" />
   </component>
 </project>

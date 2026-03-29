@@ -1,3 +1,6 @@
 result/
 __pycache__/
 evaluate/results/
+document/
+.env
+eval_results

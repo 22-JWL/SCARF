@@ -34,7 +34,7 @@ current_model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True,
     device_map="auto"
 )
-current_tokenizer = AutoTokenizer.from_pretrained(DEFAULT_MODEL_NAME)
+current_tokenizer = AutoTokenizer.from_pretrained(DEFAULT_MODEL_NAME, trust_remote_code=True)
 current_model_name = DEFAULT_MODEL_NAME
 
 def extract_assistant_response(text: str) -> str:
@@ -124,7 +124,7 @@ def switch_model(new_model_name: str):
         trust_remote_code=True,
         device_map="auto",
     )
-    current_tokenizer = AutoTokenizer.from_pretrained(new_model_name)
+    current_tokenizer = AutoTokenizer.from_pretrained(new_model_name, trust_remote_code=True)
     current_model_name = new_model_name
 
     allocated, reserved = get_gpu_memory()
@@ -241,7 +241,7 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
             trust_remote_code=True,
             device_map="auto"
         )
-        current_tokenizer = AutoTokenizer.from_pretrained(model_name)
+        current_tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
         current_model_name = model_name
     else:
         print(f"[INFO] Reusing model: {model_name}")
@@ -261,12 +261,11 @@ def run_model(prompt: str, current_window_info: dict, model_name: str):
         messages,
         tokenize=True,
         add_generation_prompt=True,
-        return_tensors="pt"
+        return_dict=True, return_tensors="pt"
     ).to(DEVICE)
 
     # max_new_tokens 증가 (복합 명령어 지원)
-    output = current_model.generate(
-        input_ids,
+    output = current_model.generate(**input_ids,
         eos_token_id=current_tokenizer.eos_token_id,
         max_new_tokens=200,  # 100 → 200
         do_sample=False

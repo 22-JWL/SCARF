@@ -7,6 +7,7 @@ ft_train.py
 
 import random
 import csv
+from pathlib import Path
 from collections import defaultdict
 from sklearn.model_selection import train_test_split
 from sentence_transformers import SentenceTransformer, InputExample, losses, evaluation
@@ -211,7 +212,7 @@ print("\n=== Test 평가 ===")
 
 corpus      = {intent: desc for intent, desc in DESCRIPTIONS.items()}
 sub_cats    = list(corpus.keys())
-TEST_QUERY_PATH = r"C:\Users\AMLPC03\deepseers\ragTest\experiment\slot_filling\test_queries_labeled_url.csv"
+TEST_QUERY_PATH = str(Path(__file__).resolve().parent.parent.parent / "slot_filling" / "test_queries_labeled_url.csv")
 MAX_SS      = 200
 
 # ── 유틸 ─────────────────────────────────────────────────────────

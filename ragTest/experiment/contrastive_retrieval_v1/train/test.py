@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer, util
 from collections import defaultdict
 from sklearn.model_selection import train_test_split
 import csv, time, random, torch
+from pathlib import Path
 
 random.seed(42)
 
@@ -96,7 +97,7 @@ def evaluate_split(model, model_name):
 
 # ── 평가 2: test_queries_labeled_url.csv ─────────────────────────
 
-TEST_QUERY_PATH = r"C:\Users\AMLPC03\deepseers\ragTest\experiment\slot_filling\test_queries_labeled_url.csv"
+TEST_QUERY_PATH = str(Path(__file__).resolve().parent.parent.parent / "slot_filling" / "test_queries_labeled_url.csv")
 
 def evaluate_labeled(model, model_name):
     rows = list(csv.DictReader(open(TEST_QUERY_PATH, encoding="utf-8-sig")))

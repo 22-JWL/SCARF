@@ -10,7 +10,7 @@ import os
 
 from ambiguity_classifier import classify_ambiguity
 
-MODEL_PATH = "checkpoints/retrieval/koe5_dense_retriever_f"
+MODEL_PATH = "checkpoints/retrieval/koe5_finetuned_v2"
 DESC_PATH = "../data/category_description.json"
 ACTION_PATH = "../data/action.json"
 

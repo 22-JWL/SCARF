@@ -63,11 +63,11 @@ def load_ambiguity_classifier(
         checkpoint_dir = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
             "checkpoints",
-            "bge_m3_ko_ambiguity_classifier_v2",
+            "bge_m3_ko_ambiguity_classifier",
         )
 
     # config 로드
-    config_path = os.path.join(checkpoint_dir, "config.json")
+    config_path = os.path.join(checkpoint_dir, "model/config.json")
     with open(config_path, "r", encoding="utf-8") as f:
         config = json.load(f)
 

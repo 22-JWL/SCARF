@@ -26,12 +26,15 @@ from collections import Counter
 
 import numpy as np
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
 # ── 설정 ─────────────────────────────────────────────────────────────────────
-TEST_CSV      = "test_queries_labeled_url.csv"
+TEST_CSV      = str(PROJECT_ROOT / "test_queries_labeled_url.csv")
 PROCOT_MODEL  = "gpt-5.4"
 MAX_PROCOT_TURNS = 10  # SCARF slot filling과 동등한 최대 턴 수
 
-OUTPUT_DIR = Path("eval_results")
+OUTPUT_DIR = PROJECT_ROOT / "eval_results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 TIMESTAMP  = datetime.now().strftime("%Y%m%d_%H%M%S")
 RESULT_CSV = OUTPUT_DIR / f"eval_procot_{TIMESTAMP}.csv"

@@ -18,12 +18,15 @@ from datetime import datetime
 
 import torch
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
 # ── 설정 ─────────────────────────────────────────────────────────────────────
-TEST_CSV     = "test_queries_labeled_url.csv"
+TEST_CSV     = str(PROJECT_ROOT / "test_queries_labeled_url.csv")
 EXAONE_MODEL = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
 OPENAI_MODEL = "gpt-4.1-mini"
 
-OUTPUT_DIR = Path("eval_results")
+OUTPUT_DIR = PROJECT_ROOT / "eval_results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 TIMESTAMP  = datetime.now().strftime("%Y%m%d_%H%M%S")
 RESULT_CSV = OUTPUT_DIR / f"eval_e2e_comparison_{TIMESTAMP}.csv"

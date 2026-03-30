@@ -29,9 +29,13 @@ BGE-m3-ko Ambiguity Classifier 평가 스크립트
   topN_in_doc       : action_doc에 포함 여부 (1/0)
 """
 
+import sys
 import csv, time
 from pathlib import Path
 from datetime import datetime
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from rag_pipeline import (
     run_pipeline,
@@ -49,8 +53,8 @@ INTENT_MAP = {
     "no_function":    "no_function",
 }
 
-TEST_CSV   = "test_queries_labeled_url.csv"
-OUTPUT_DIR = Path("eval_results")
+TEST_CSV   = str(PROJECT_ROOT / "test_queries_labeled_url.csv")
+OUTPUT_DIR = PROJECT_ROOT / "eval_results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 TIMESTAMP  = datetime.now().strftime("%Y%m%d_%H%M%S")
 RESULT_CSV = OUTPUT_DIR / f"eval_classifier_{TIMESTAMP}.csv"

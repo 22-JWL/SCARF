@@ -23,9 +23,11 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 APP_URL      = "http://localhost:5000/instruct/"
-TEST_CSV     = "test_queries_labeled_url.csv"
-OUTPUT_DIR   = Path("eval_results")
+TEST_CSV     = str(PROJECT_ROOT / "test_queries_labeled_url.csv")
+OUTPUT_DIR   = PROJECT_ROOT / "eval_results"
 OUTPUT_DIR.mkdir(exist_ok=True)
 TIMESTAMP    = datetime.now().strftime("%Y%m%d_%H%M%S")
 DETAIL_CSV   = OUTPUT_DIR / f"eval_detail_{TIMESTAMP}.csv"

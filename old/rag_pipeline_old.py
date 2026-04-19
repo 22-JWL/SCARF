@@ -19,8 +19,7 @@ import time
 from threading import Lock
 
 # ── 경로 설정 (flask_LLM/ragTest/ 하위) ──────────────────────────────────────
-# RAGTEST_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ragTest")
-RAGTEST_ROOT = r"C:\Users\AMLPC03\deepseers\ragTest"
+RAGTEST_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ragTest")
 RAGTEST_SRC  = os.path.join(RAGTEST_ROOT, "src")
 RAGTEST_SLOT = os.path.join(RAGTEST_ROOT, "experiment", "slot_filling")
 

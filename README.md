@@ -1,4 +1,4 @@
-# flask_LLM
+# SCARF
 
 반도체 패키징 검사 시스템(Gvision)을 위한 LLM 명령 실행 서버.
 사용자의 자연어 명령을 받아 Gvision REST API 호출로 변환한다.

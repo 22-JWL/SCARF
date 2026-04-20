@@ -16,9 +16,9 @@ flask_LLM/
 ├── whitelist_getURL.py       # 허용 URL 목록 정의
 ├── prompt_combine_none.py    # 기본 시스템 프롬프트
 ├── prompt_classify_by_windows/ # 창별 특화 시스템 프롬프트
-├── rag_pipeline.py           # SCARF 파이프라인 통합 모듈  ← 신규
-├── slot_url_builder.py       # 슬롯 → API URL 변환기       ← 신규
-├── ragTest/                  # SCARF 프레임워크 소스        ← 신규
+├── rag_pipeline.py           # SCARF 파이프라인 통합 모듈  
+├── slot_url_builder.py       # 슬롯 → API URL 변환기       
+├── ragTest/                  # SCARF 프레임워크 소스       
 │   ├── src/
 │   │   ├── run_pipeline.py           # Stage1/2 파이프라인
 │   │   ├── ambiguity_classifier.py   # BGE-m3-ko 모호성 분류기
@@ -144,36 +144,3 @@ Stage 2: Neural Relevance Scoring
 - 응답 `status == "need_info"` → 질문을 채팅 버블로 표시, session_id 저장
 - 응답 `output == "/NO_FUNCTION"` → "죄송합니다. 저는 반도체 패키징 관련 요청만 처리합니다 다시 입력해주세요"
 
----
-
-## 변경 이력
-
-### SCARF 파이프라인 통합 (2026-03)
-- `ragTest/` 디렉토리를 프로젝트 내부로 복사 (외부 경로 의존성 제거)
-- `rag_pipeline.py` 신규 작성: SCARF Stage1~3 전체 흐름 구현
-  - Stage2에서 action.json 기반 `retrieve_action` 호출 추가 (Chroma vectorstore)
-  - `classify_ambiguity`에 category description 대신 **action description** 전달
-    → "subCategory 맞아?" 가 아닌 "특정 API 지목 가능한가?" 로 모호성 판단
-- `slot_url_builder.py` 신규 작성: intent + 슬롯 → Gvision API URL 변환
-- `app.py` 수정:
-  - `current_opened_window_and_tab` 선택 사항으로 변경
-  - 입력 필드 추가: `session_id`, `answer`
-  - 출력 필드 추가: `status`, `session_id`, `intent`
-  - `/NO_FUNCTION` 처리 분기 추가
-- `GvisionWpf/Api/ApiServer.cs`: `SendSlotFillingAnswerAsync` 메서드 추가
-- `GvisionWpf/UIs/ViewModels/ChatWindowViewModel.cs`:
-  - `_slotFillingSessionId` 세션 상태 필드 추가
-  - 응답 JSON 파싱 후 `need_info` / `complete` 분기 처리
-  - `/NO_FUNCTION` 응답 시 안내 메시지 표시
-
-### 화이트리스트 필터 추가 (이전)
-- API URL 화이트리스트 검증 (`whitelist_filter.py`)
-- 미허용 URL → LLM fallback 재검증
-
-### GPU 메모리 개선 (2025-09-10)
-- `pip install accelerate` 적용
-
-### 프롬프트 추가 이력
-- `0911`: `/chat/clear`, history 기간 설정(set) 추가
-- `0903`: `/closeWindows` 추가
-- `0829`: `/test/run/prs`, `/test/run/map` 추가

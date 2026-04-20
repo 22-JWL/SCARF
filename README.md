@@ -3,7 +3,7 @@
 반도체 패키징 검사 시스템(Gvision)을 위한 LLM 명령 실행 서버.
 사용자의 자연어 명령을 받아 Gvision REST API 호출로 변환한다.
 
-<img width="1229" height="528" alt="Scarf_overview" src="https://github.com/user-attachments/assets/7008878d-c13a-485f-bd27-14f375bd078c" />
+![로고이미지](./Scarf_overview.svg)
 
 
 ---
